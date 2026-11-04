@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">1</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.7577</data>
+  <data key="d4">147.33</data>
+</node>
+<node id="f136">
+  <data key="d1">Fruit yoghurt 2% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3043</data>
+  <data key="d4">71.0</data>
+</node>
+<node id="f137">
+  <data key="d1">Fruit yoghurt delicacy 7% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.15</data>
+  <data key="d4">42.0</data>
+</node>
+<node id="f2124">
+  <data key="d1">Oatmeal porridge boiled w/ milk</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1699</data>
+  <data key="d4">60.67</data>
+</node>
+<node id="f2612">
+  <data key="d1">Leek pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.35</data>
+  <data key="d4">28.0</data>
+</node>
+<node id="f310">
+  <data key="d1">Jerusalem artichoke boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2375</data>
+  <data key="d4">19.0</data>
+</node>
+<node id="f3825">
+  <data key="d1">Hamburger bun coarse</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2906</data>
+  <data key="d4">23.0</data>
+</node>
+<node id="f6763">
+  <data key="d1">Breakfast cereal puffed wheat w/ chocolate wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2351</data>
+  <data key="d4">13.67</data>
+</node>
+<node id="f6781">
+  <data key="d1">Breakfast cereal e.g. corn flakes</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2407</data>
+  <data key="d4">10.0</data>
+</node>
+<node id="f6878">
+  <data key="d1">Bread white tortilla gluten free</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2185</data>
+  <data key="d4">17.67</data>
+</node>
+<node id="f95">
+  <data key="d1">Cheese hard 17% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.1882</data>
+  <data key="d4">4.33</data>
+</node>
+<edge source="f123" target="f2124">
+  <data key="d5">0.1699</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f3825">
+  <data key="d5">0.1516</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f6763">
+  <data key="d5">0.1714</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f6781">
+  <data key="d5">0.2407</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f95">
+  <data key="d5">0.1714</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f310" target="f6878">
+  <data key="d5">0.2185</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3825" target="f6763">
+  <data key="d5">0.1516</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3825" target="f95">
+  <data key="d5">0.1516</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f6763" target="f95">
+  <data key="d5">0.1882</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

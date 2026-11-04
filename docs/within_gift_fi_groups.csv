@@ -1,0 +1,19 @@
+gift_group,foods,gift_subgroups,clusters,ari_vs_subgroup,nmi_vs_subgroup,same_subgroup_5nn_semantics,same_subgroup_5nn_composition,same_subgroup_5nn_fractions,same_subgroup_5nn_fused
+Composite dishes,1075,10,12,0.169,0.332,0.76,0.531,0.497,0.666
+Cereals and their products,607,5,11,0.021,0.111,0.808,0.598,0.669,0.665
+Sweets and sugars,551,6,11,0.093,0.316,0.883,0.765,0.795,0.849
+Milk and milk products,360,4,10,0.199,0.34,0.901,0.754,0.461,0.762
+Meat and meat products,330,4,9,0.148,0.303,0.838,0.601,0.695,0.748
+Vegetables and their products,283,4,9,0.048,0.147,0.609,0.481,0.488,0.543
+Beverages,212,7,8,0.228,0.392,0.739,0.449,0.496,0.523
+Fruits and their products,153,5,6,0.285,0.405,0.561,0.702,0.582,0.736
+"Fish, shellfish and their products",143,6,5,0.102,0.196,0.606,0.354,0.46,0.382
+Fats and oils,120,2,7,0.104,0.223,0.915,0.788,0.763,0.793
+"Herbs, spices and condiments",115,2,5,0.045,0.147,0.918,0.883,0.873,0.908
+Foods for particular nutritional uses,102,3,4,0.293,0.367,0.925,0.712,0.731,0.806
+"Pulses, nuts and seeds and their products",74,3,5,0.23,0.354,0.865,0.816,0.719,0.832
+Food additives,60,1,5,,,,,,
+Eggs and their products,22,1,3,,,,,,
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",20,2,2,0.8,0.752,0.77,0.93,0.68,0.94
+Savoury snacks,10,1,2,,,,,,
+Food supplements and similar,1,1,1,,,,,,

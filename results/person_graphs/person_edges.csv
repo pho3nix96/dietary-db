@@ -1,0 +1,1435 @@
+SUBJECT,source,target,meals_together,servings_together_per_day,source_group,target_group
+1,f123,f2124,1,0.1699,Milk products,Grains
+1,f123,f3825,1,0.1516,Milk products,Grains
+1,f123,f6763,1,0.1714,Milk products,Grains
+1,f123,f6781,1,0.2407,Milk products,Grains
+1,f123,f95,1,0.1714,Milk products,Milk products
+1,f310,f6878,1,0.2185,Vegetables,Grains
+1,f3825,f6763,1,0.1516,Grains,Grains
+1,f3825,f95,1,0.1516,Grains,Milk products
+1,f6763,f95,1,0.1882,Grains,Milk products
+2,f1010,f123,1,0.1095,Meat and eggs,Milk products
+2,f1010,f6757,1,0.1095,Meat and eggs,Grains
+2,f1010,f683,1,0.1095,Meat and eggs,Grains
+2,f103,f123,1,0.2417,Milk products,Milk products
+2,f103,f198,1,0.3832,Milk products,Grains
+2,f103,f683,1,0.1596,Milk products,Grains
+2,f123,f198,1,0.2417,Milk products,Grains
+2,f123,f6757,1,0.3317,Milk products,Grains
+2,f123,f683,3,0.5719,Milk products,Grains
+2,f198,f683,1,0.1596,Grains,Grains
+2,f2162,f2516,1,0.2958,Vegetables,Grains
+2,f295,f440,1,0.4292,Vegetables,Vegetables
+2,f295,f6366,1,0.2958,Vegetables,Seafood
+2,f6757,f683,1,0.1603,Grains,Grains
+3,f1008,f216,1,0.14,Meat and eggs,Grains
+3,f123,f6764,1,0.1276,Milk products,Grains
+3,f123,f6864,1,0.2794,Milk products,Grains
+3,f123,uU0005,1,0.2048,Milk products,Grains
+3,f7062,f814,1,0.2895,Meat and eggs,Grains
+4,f123,f173,1,0.3445,Milk products,Grains
+4,f123,f327,1,0.4989,Milk products,Vegetables
+4,f123,f4937,1,0.432,Milk products,Vegetables
+4,f123,f4938,1,0.4989,Milk products,Vegetables
+4,f123,f6276,1,0.432,Milk products,Legumes
+4,f173,f327,1,0.3445,Grains,Vegetables
+4,f173,f421,1,0.2,Grains,Vegetables
+4,f173,f4938,1,0.3445,Grains,Vegetables
+4,f173,f6084,1,0.331,Grains,Grains
+4,f173,f79,2,0.6275,Grains,Milk products
+4,f173,f95,1,0.331,Grains,Milk products
+4,f207,f7142,1,0.3163,Grains,Milk products
+4,f327,f4938,1,0.5167,Vegetables,Vegetables
+4,f3798,uU0007,1,0.2218,Grains,Milk products
+4,f3899,f4448,1,0.518,Vegetables,Grains
+4,f3899,f4938,1,0.7125,Vegetables,Vegetables
+4,f421,f79,1,0.2,Vegetables,Milk products
+4,f4448,f4938,1,0.518,Grains,Vegetables
+4,f4937,f6276,1,0.4458,Vegetables,Legumes
+4,f4937,f6349,1,0.3583,Vegetables,Vegetables
+4,f4937,uU0008,1,0.7708,Vegetables,Vegetables
+4,f4937,uU0009,1,0.7708,Vegetables,Grains
+4,f6084,f79,1,0.3498,Grains,Milk products
+4,f6084,f95,1,0.3498,Grains,Milk products
+4,f79,f95,1,0.3557,Milk products,Milk products
+4,uU0008,uU0009,1,0.7792,Vegetables,Grains
+5,f1008,f170,1,0.1671,Meat and eggs,Grains
+5,f1008,f422,1,0.1042,Meat and eggs,Vegetables
+5,f1009,f2123,1,0.1,Meat and eggs,Grains
+5,f1009,f219,1,0.16,Meat and eggs,Grains
+5,f1009,f6880,1,0.1,Meat and eggs,Grains
+5,f1009,uU0010,1,0.1,Meat and eggs,Milk products
+5,f123,f168,1,0.254,Milk products,Grains
+5,f1498,f216,1,0.0652,Meat and eggs,Grains
+5,f170,f422,1,0.1042,Grains,Vegetables
+5,f207,f2479,1,0.1703,Grains,Grains
+5,f207,f357,1,0.1703,Grains,Vegetables
+5,f2079,f347,1,0.3583,Grains,Vegetables
+5,f2123,f6880,1,0.497,Grains,Grains
+5,f2123,uU0010,1,0.4207,Grains,Milk products
+5,f2479,f357,1,0.3083,Grains,Vegetables
+5,f6880,uU0010,1,0.4207,Grains,Milk products
+6,f1105,f5861,1,0.5708,Meat and eggs,Vegetables
+6,f1105,f6782,1,0.6238,Meat and eggs,Grains
+6,f123,f2124,1,0.3939,Milk products,Grains
+6,f123,f3759,1,0.2083,Milk products,Fruits
+6,f123,f724,1,0.3219,Milk products,Grains
+6,f208,f2479,1,0.2411,Grains,Grains
+6,f208,f495,1,0.2411,Grains,Vegetables
+6,f2124,f3759,1,0.2083,Grains,Fruits
+6,f2479,f495,1,0.2833,Grains,Vegetables
+6,f2522,f448,1,0.6613,Grains,Vegetables
+6,f2522,uU0011,1,0.6613,Grains,Vegetables
+6,f448,uU0011,1,0.6917,Vegetables,Vegetables
+6,f5861,f6782,1,0.5708,Vegetables,Grains
+6,f6110,f7087,1,0.315,Grains,Milk products
+7,f123,f2123,1,0.3104,Milk products,Grains
+7,f123,f585,1,0.1333,Milk products,Fruits
+7,f123,f677,1,0.1936,Milk products,Grains
+7,f1335,f2522,1,0.6758,Seafood,Grains
+7,f1335,f291,1,0.3125,Seafood,Vegetables
+7,f2518,f291,1,0.2458,Grains,Vegetables
+7,f2520,f291,1,0.2417,Grains,Vegetables
+7,f2522,f291,1,0.3125,Grains,Vegetables
+7,f2522,f371,1,0.3667,Grains,Vegetables
+7,f585,f677,1,0.1333,Fruits,Grains
+7,f591,f681,1,0.2375,Fruits,Grains
+7,f591,uU0015,1,0.2375,Fruits,Milk products
+7,f681,uU0015,1,0.2587,Grains,Milk products
+8,f123,f2124,1,0.1851,Milk products,Grains
+8,f123,f305,1,0.3977,Milk products,Vegetables
+8,f123,f554,1,0.3703,Milk products,Fruits
+8,f123,f675,1,0.3703,Milk products,Grains
+8,f123,f683,1,0.1323,Milk products,Grains
+8,f123,uU0017,1,0.2167,Milk products,Fruits
+8,f554,f675,1,0.3731,Fruits,Grains
+8,f683,uU0017,1,0.1323,Grains,Fruits
+9,f100,f123,1,0.223,Milk products,Milk products
+9,f100,f1595,1,0.223,Milk products,Grains
+9,f100,f726,1,0.1132,Milk products,Grains
+9,f123,f1595,1,0.2435,Milk products,Grains
+9,f123,f592,1,0.2542,Milk products,Fruits
+9,f123,f6763,1,0.2383,Milk products,Grains
+9,f123,f682,1,0.2777,Milk products,Grains
+9,f123,f726,1,0.1132,Milk products,Grains
+9,f1595,f726,1,0.1132,Grains,Grains
+9,f180,f293,1,0.3583,Grains,Vegetables
+9,f180,uU0019,1,0.3669,Grains,Vegetables
+9,f2521,f448,1,0.4458,Grains,Vegetables
+9,f2521,uU0018,1,0.3565,Grains,Milk products
+9,f2522,f448,1,0.2708,Grains,Vegetables
+9,f2522,f6757,1,0.1857,Grains,Grains
+9,f293,uU0019,1,0.3583,Vegetables,Vegetables
+9,f392,f6272,1,0.3375,Vegetables,Vegetables
+9,f392,uU0020,1,0.3375,Vegetables,Grains
+9,f448,f6272,1,0.3542,Vegetables,Vegetables
+9,f448,f6757,1,0.1857,Vegetables,Grains
+9,f448,uU0018,1,0.3565,Vegetables,Milk products
+9,f592,f682,1,0.2542,Fruits,Grains
+9,f6272,uU0020,1,0.491,Vegetables,Grains
+9,f6759,f95,1,0.1682,Grains,Milk products
+10,f1010,f168,1,0.057,Meat and eggs,Grains
+10,f1011,f168,1,0.055,Meat and eggs,Grains
+10,f1011,f181,2,0.132,Meat and eggs,Grains
+10,f1011,f421,1,0.055,Meat and eggs,Vegetables
+10,f123,f168,1,0.1623,Milk products,Grains
+10,f123,f181,1,0.2013,Milk products,Grains
+10,f123,f7053,1,0.2792,Milk products,Vegetables
+10,f123,uU0022,1,0.2794,Milk products,Vegetables
+10,f168,f421,1,0.0917,Grains,Vegetables
+10,f168,f7053,1,0.1623,Grains,Vegetables
+10,f181,uU0022,1,0.2013,Grains,Vegetables
+10,f2522,f2617,1,0.4333,Grains,Vegetables
+11,f1009,f6761,1,0.11,Meat and eggs,Grains
+11,f181,f6070,1,0.3,Grains,Milk products
+11,f2606,f3819,1,0.3164,Vegetables,Grains
+11,f2606,f6782,1,0.4875,Vegetables,Grains
+11,f340,f3819,1,0.2612,Vegetables,Grains
+11,f340,f846,1,0.3958,Vegetables,Grains
+11,f3819,f6782,1,0.3164,Grains,Grains
+11,f3819,f846,1,0.2612,Grains,Grains
+11,f490,f6782,1,0.3958,Vegetables,Grains
+12,f123,f492,1,0.2625,Milk products,Vegetables
+12,f1306,f7053,1,0.3708,Seafood,Vegetables
+12,f1306,uU0025,1,0.25,Seafood,Milk products
+12,f1498,f6083,1,0.138,Meat and eggs,Grains
+12,f166,f79,1,0.2253,Grains,Milk products
+12,f194,f2240,1,0.1104,Grains,Meat and eggs
+12,f194,f422,1,0.125,Grains,Vegetables
+12,f2225,f78,1,0.2781,Grains,Milk products
+12,f2240,f422,1,0.1104,Meat and eggs,Vegetables
+12,f3790,f4937,1,0.0667,Grains,Vegetables
+12,f3790,f79,1,0.12,Grains,Milk products
+12,f4937,f79,1,0.0667,Vegetables,Milk products
+12,f7053,uU0025,1,0.25,Vegetables,Milk products
+13,f123,f1299,1,0.3017,Milk products,Seafood
+13,f123,f2164,1,0.3017,Milk products,Vegetables
+13,f1299,f2164,1,0.4375,Seafood,Vegetables
+13,f1347,f2559,1,0.3833,Seafood,Vegetables
+13,f1497,f165,1,0.0811,Meat and eggs,Grains
+13,f165,f2079,1,0.2444,Grains,Grains
+13,f165,f355,1,0.2444,Grains,Vegetables
+13,f2027,f591,1,0.2025,Grains,Fruits
+13,f2027,f7148,1,0.2025,Grains,Milk products
+13,f2079,f355,1,0.2792,Grains,Vegetables
+13,f591,f7148,1,0.2833,Fruits,Milk products
+14,f123,f677,1,0.1714,Milk products,Grains
+14,f123,f681,1,0.324,Milk products,Grains
+14,f123,uU0031,1,0.1714,Milk products,Fruits
+14,f1497,f6759,1,0.0778,Meat and eggs,Grains
+14,f2672,f3828,1,0.7708,Vegetables,Grains
+14,f677,uU0031,1,0.3292,Grains,Fruits
+14,f683,uU0029,1,0.28,Grains,Milk products
+15,f123,f492,1,0.25,Milk products,Vegetables
+15,f123,f6966,1,0.1408,Milk products,Grains
+15,f173,f78,1,0.2503,Grains,Milk products
+15,f206,f78,1,0.3472,Grains,Milk products
+15,f2516,f298,1,0.3667,Grains,Vegetables
+15,f492,f6966,1,0.1408,Vegetables,Grains
+15,f4937,f6966,1,0.1207,Vegetables,Grains
+15,f4937,f78,1,0.1458,Vegetables,Milk products
+15,f5862,f6966,1,0.181,Vegetables,Grains
+15,f6966,f78,1,0.1207,Grains,Milk products
+15,f6966,f79,1,0.177,Grains,Milk products
+16,f123,f2024,1,0.36,Milk products,Grains
+16,f123,f2514,2,0.7114,Milk products,Grains
+16,f123,f557,1,0.1958,Milk products,Fruits
+16,f123,f677,2,0.6697,Milk products,Grains
+16,f183,f80,1,0.1522,Grains,Milk products
+16,f2514,f4504,1,0.3431,Grains,Vegetables
+16,f2514,uU0035,1,0.317,Grains,Milk products
+16,f4504,uU0035,1,0.317,Vegetables,Milk products
+16,f557,f677,1,0.1958,Fruits,Grains
+17,f1006,f182,1,0.0591,Meat and eggs,Grains
+17,f103,f3795,1,0.1011,Milk products,Grains
+17,f123,f343,1,0.1646,Milk products,Vegetables
+17,f123,uU0038,1,0.1646,Milk products,Grains
+17,f1497,f164,1,0.071,Meat and eggs,Grains
+17,f1497,f2610,1,0.071,Meat and eggs,Vegetables
+17,f1497,f3798,1,0.071,Meat and eggs,Grains
+17,f1497,f422,1,0.071,Meat and eggs,Vegetables
+17,f164,f2517,1,0.3657,Grains,Grains
+17,f164,f2610,1,0.1417,Grains,Vegetables
+17,f164,f347,1,0.2167,Grains,Vegetables
+17,f2517,f347,1,0.2167,Grains,Vegetables
+17,f343,uU0038,1,0.3333,Vegetables,Grains
+17,f3798,f422,1,0.1458,Grains,Vegetables
+18,f1008,f222,1,0.1823,Meat and eggs,Grains
+18,f123,f6765,1,0.1612,Milk products,Grains
+18,f123,f679,1,0.1903,Milk products,Grains
+18,f123,f714,1,0.2576,Milk products,Grains
+18,f193,f295,1,0.4,Grains,Vegetables
+18,f193,f3756,1,0.4489,Grains,Grains
+18,f2225,f95,1,0.1737,Grains,Milk products
+18,f2520,f295,1,0.3208,Grains,Vegetables
+18,f295,f3756,1,0.4,Vegetables,Grains
+18,f3756,f490,1,0.3917,Grains,Vegetables
+19,f100,f6881,1,0.0975,Milk products,Grains
+19,f100,uU0043,1,0.075,Milk products,Vegetables
+19,f123,f1470,1,0.0299,Milk products,Meat and eggs
+19,f123,f355,1,0.1333,Milk products,Vegetables
+19,f123,f6086,1,0.1433,Milk products,Grains
+19,f123,f6786,1,0.1474,Milk products,Grains
+19,f123,f6881,1,0.0511,Milk products,Grains
+19,f1470,f6086,1,0.0299,Meat and eggs,Grains
+19,f1470,f6881,1,0.0299,Meat and eggs,Grains
+19,f1474,f6881,1,0.0339,Meat and eggs,Grains
+19,f2479,f2617,1,0.1167,Grains,Vegetables
+19,f2519,f390,1,0.1458,Grains,Vegetables
+19,f355,f6786,1,0.1333,Vegetables,Grains
+19,f6086,f6881,1,0.0511,Grains,Grains
+19,f6782,uU0042,1,0.3833,Grains,Vegetables
+19,f6881,uU0043,1,0.075,Grains,Vegetables
+20,f1010,uU0047,1,0.1139,Meat and eggs,Grains
+20,f120,f6862,1,0.35,Milk products,Grains
+20,f1314,f182,1,0.4498,Seafood,Grains
+20,f1314,f2513,1,0.8715,Seafood,Grains
+20,f1314,f406,1,0.2417,Seafood,Vegetables
+20,f148,f4588,1,0.227,Milk products,Fruits
+20,f148,f6862,1,0.227,Milk products,Grains
+20,f182,f2513,1,0.4498,Grains,Grains
+20,f182,f406,1,0.2417,Grains,Vegetables
+20,f182,f423,1,0.1625,Grains,Vegetables
+20,f2066,f2519,1,0.6717,Legumes,Grains
+20,f2066,f345,1,0.2417,Legumes,Vegetables
+20,f2513,f406,1,0.2417,Grains,Vegetables
+20,f2519,f345,1,0.2417,Grains,Vegetables
+20,f2522,f364,1,0.5083,Grains,Vegetables
+20,f2522,f539,1,0.6467,Grains,Vegetables
+20,f364,f539,1,0.5083,Vegetables,Vegetables
+20,f4588,f6862,1,0.3083,Fruits,Grains
+20,f566,f6864,1,0.2167,Fruits,Grains
+20,f566,uU0045,1,0.2167,Fruits,Milk products
+20,f6864,uU0045,1,0.3663,Grains,Milk products
+21,f1006,f198,1,0.1577,Meat and eggs,Grains
+21,f1009,f170,1,0.07,Meat and eggs,Grains
+21,f1009,f3793,1,0.07,Meat and eggs,Grains
+21,f1009,f998,1,0.07,Meat and eggs,Meat and eggs
+21,f123,f1331,1,0.183,Milk products,Seafood
+21,f123,f316,1,0.2246,Milk products,Vegetables
+21,f123,f3793,1,0.3291,Milk products,Grains
+21,f1331,f3793,1,0.183,Seafood,Grains
+21,f170,f3793,1,0.1498,Grains,Grains
+21,f170,f998,1,0.085,Grains,Meat and eggs
+21,f3793,f95,1,0.2461,Grains,Milk products
+21,f3793,f998,1,0.085,Grains,Meat and eggs
+21,f487,f6282,1,0.3875,Vegetables,Vegetables
+22,f1001,f182,1,0.077,Meat and eggs,Grains
+22,f1001,f725,1,0.077,Meat and eggs,Grains
+22,f1001,uU0053,1,0.077,Meat and eggs,Milk products
+22,f123,f162,1,0.189,Milk products,Grains
+22,f123,f354,1,0.1875,Milk products,Vegetables
+22,f162,f354,1,0.1875,Grains,Vegetables
+22,f166,f3756,1,0.2185,Grains,Grains
+22,f166,f6309,1,0.2185,Grains,Legumes
+22,f182,f725,1,0.1956,Grains,Grains
+22,f182,uU0053,1,0.2554,Grains,Milk products
+22,f2033,f2048,1,0.255,Grains,Milk products
+22,f354,f3756,1,0.2333,Vegetables,Grains
+22,f354,uU0054,1,0.1393,Vegetables,Grains
+22,f3756,f6309,1,0.3228,Grains,Legumes
+22,f3756,uU0054,1,0.1393,Grains,Grains
+22,f6086,f7257,1,0.2628,Grains,Milk products
+22,f725,uU0053,1,0.1956,Grains,Milk products
+23,f1000,f168,1,0.1095,Meat and eggs,Grains
+23,f1000,f6759,1,0.1952,Meat and eggs,Grains
+23,f123,f167,1,0.2611,Milk products,Grains
+23,f123,f2614,1,0.4577,Milk products,Vegetables
+23,f123,f299,1,0.4886,Milk products,Vegetables
+23,f123,f3793,1,0.3434,Milk products,Grains
+23,f167,f2614,1,0.2611,Grains,Vegetables
+23,f299,f3793,1,0.3434,Vegetables,Grains
+23,f3756,f434,1,0.3667,Grains,Vegetables
+23,f7150,uU0055,1,0.174,Meat and eggs,Grains
+23,f7150,uU0059,1,0.1417,Meat and eggs,Grains
+24,f114,f712,1,0.3509,Milk products,Grains
+24,f123,f2650,1,0.264,Milk products,Meat and eggs
+24,f123,f366,1,0.264,Milk products,Vegetables
+24,f123,f814,1,0.264,Milk products,Grains
+24,f137,f527,1,0.2333,Milk products,Fruits
+24,f137,f712,1,0.2333,Milk products,Grains
+24,f2650,f366,1,0.3417,Meat and eggs,Vegetables
+24,f2650,f814,1,0.6655,Meat and eggs,Grains
+24,f340,f814,1,0.3625,Vegetables,Grains
+24,f366,f814,2,0.5417,Vegetables,Grains
+24,f407,f814,1,0.3125,Vegetables,Grains
+24,f527,f712,1,0.3,Fruits,Grains
+24,f6088,f6863,1,0.3262,Milk products,Grains
+25,f123,f1294,1,0.1869,Milk products,Seafood
+25,f123,f226,1,0.1869,Milk products,Grains
+25,f123,f310,1,0.1869,Milk products,Vegetables
+25,f1294,f226,1,0.1889,Seafood,Grains
+25,f1294,f310,1,0.3594,Seafood,Vegetables
+25,f1294,f337,1,0.4125,Seafood,Vegetables
+25,f175,f7150,1,0.1336,Grains,Meat and eggs
+25,f2032,f217,1,0.1951,Grains,Grains
+25,f2032,f6069,1,0.1951,Grains,Milk products
+25,f2032,uU0061,1,0.0597,Grains,Meat and eggs
+25,f2033,uU0060,1,0.1867,Grains,Milk products
+25,f217,f6069,1,0.328,Grains,Milk products
+25,f217,uU0061,1,0.0597,Grains,Meat and eggs
+25,f226,f310,1,0.1889,Grains,Vegetables
+25,f6069,uU0061,1,0.0597,Milk products,Meat and eggs
+25,f7154,f725,1,0.293,Milk products,Grains
+26,f123,f195,1,0.2451,Milk products,Grains
+26,f123,f6893,1,0.384,Milk products,Legumes
+26,f123,f846,1,0.384,Milk products,Grains
+26,f1497,f163,1,0.0811,Meat and eggs,Grains
+26,f178,f319,1,0.2995,Grains,Vegetables
+26,f178,uU0066,1,0.2995,Grains,Milk products
+26,f2513,uU0063,1,0.396,Grains,Grains
+26,f319,uU0066,1,0.3407,Vegetables,Milk products
+26,f6086,f7152,1,0.2054,Grains,Milk products
+26,f6086,uU0065,1,0.2723,Grains,Milk products
+26,f6893,f846,1,0.602,Legumes,Grains
+27,f123,f178,1,0.4046,Milk products,Grains
+27,f123,f316,1,0.3086,Milk products,Vegetables
+27,f123,f814,1,0.3086,Milk products,Grains
+27,f190,f4937,1,0.4608,Grains,Vegetables
+27,f2025,f7087,1,0.308,Grains,Milk products
+27,f2033,f2048,1,0.1991,Grains,Milk products
+27,f2033,f586,1,0.1991,Grains,Fruits
+27,f2048,f586,1,0.3,Milk products,Fruits
+27,f227,f96,1,0.2209,Grains,Milk products
+27,f316,f814,1,0.5292,Vegetables,Grains
+27,f4157,f814,1,0.4958,Vegetables,Grains
+27,f4937,uU0068,1,0.3458,Vegetables,Grains
+27,f6069,f6086,1,0.344,Milk products,Grains
+28,f123,f180,1,0.2611,Milk products,Grains
+28,f123,f2123,1,0.2126,Milk products,Grains
+28,f123,f719,1,0.3326,Milk products,Grains
+28,f2520,f490,1,0.3167,Grains,Vegetables
+28,f677,uU0069,1,0.3407,Grains,Milk products
+29,f1009,f136,1,0.14,Meat and eggs,Milk products
+29,f1009,f3825,1,0.14,Meat and eggs,Grains
+29,f1009,f712,1,0.14,Meat and eggs,Grains
+29,f1011,uU0071,1,0.22,Meat and eggs,Grains
+29,f1313,f3899,1,0.5625,Seafood,Vegetables
+29,f1313,f846,1,0.6832,Seafood,Grains
+29,f136,f3825,1,0.1895,Milk products,Grains
+29,f136,f712,1,0.3436,Milk products,Grains
+29,f1478,f182,1,0.053,Meat and eggs,Grains
+29,f3825,f712,1,0.1895,Grains,Grains
+29,f3825,f78,1,0.1669,Grains,Milk products
+29,f3899,f846,1,0.5625,Vegetables,Grains
+30,f1008,f180,1,0.1139,Meat and eggs,Grains
+30,f123,f2123,1,0.2286,Milk products,Grains
+30,f123,f2124,1,0.2794,Milk products,Grains
+30,f123,f2559,1,0.2417,Milk products,Vegetables
+30,f123,f4588,1,0.2458,Milk products,Fruits
+30,f2079,f214,1,0.1533,Grains,Grains
+30,f2079,f407,1,0.3625,Grains,Vegetables
+30,f2079,f4187,1,0.5461,Grains,Seafood
+30,f2124,f4588,1,0.2458,Grains,Fruits
+30,f214,f407,1,0.1533,Grains,Vegetables
+30,f214,f4187,1,0.1533,Grains,Seafood
+30,f2517,f452,1,0.1125,Grains,Vegetables
+30,f2522,f2559,1,0.325,Grains,Vegetables
+30,f2522,f4187,1,0.743,Grains,Seafood
+30,f2559,f4187,1,0.325,Vegetables,Seafood
+30,f407,f4187,1,0.3625,Vegetables,Seafood
+31,f1011,f175,1,0.066,Meat and eggs,Grains
+31,f123,f166,1,0.1722,Milk products,Grains
+31,f123,f2479,1,0.3531,Milk products,Grains
+31,f123,f2513,1,0.2537,Milk products,Grains
+31,f123,f422,1,0.3458,Milk products,Vegetables
+31,f123,f555,1,0.3463,Milk products,Fruits
+31,f123,f683,1,0.2786,Milk products,Grains
+31,f166,f2513,1,0.1722,Grains,Grains
+31,f182,uU0076,1,0.0906,Grains,Meat and eggs
+31,f2479,f422,1,0.3458,Grains,Vegetables
+31,f2753,f422,1,0.3667,Meat and eggs,Vegetables
+31,f544,f814,1,0.4625,Vegetables,Grains
+31,f544,uU0075,1,0.3,Vegetables,Vegetables
+31,f555,f683,1,0.2786,Fruits,Grains
+31,f814,uU0075,1,0.3,Grains,Vegetables
+32,f1009,f3793,1,0.05,Meat and eggs,Grains
+32,f1009,f6879,1,0.07,Meat and eggs,Grains
+32,f123,f1385,1,0.2331,Milk products,Seafood
+32,f123,f2125,1,0.2331,Milk products,Grains
+32,f123,f2521,1,0.1937,Milk products,Grains
+32,f123,f3793,1,0.1885,Milk products,Grains
+32,f1346,f2521,1,0.4731,Seafood,Grains
+32,f1385,f2125,1,0.3039,Seafood,Grains
+32,f1385,f3793,1,0.1885,Seafood,Grains
+32,f209,f289,1,0.1447,Grains,Vegetables
+32,f209,f6786,1,0.1447,Grains,Grains
+32,f2125,f3793,1,0.1885,Grains,Grains
+32,f2521,f4939,1,0.2958,Grains,Vegetables
+32,f289,f6786,2,0.4625,Vegetables,Grains
+32,f339,f3791,1,0.0924,Vegetables,Grains
+32,f339,uU0078,1,0.1,Vegetables,Milk products
+32,f3791,uU0078,1,0.0924,Grains,Milk products
+33,f123,f2123,1,0.1687,Milk products,Grains
+33,f123,f2128,1,0.1834,Milk products,Grains
+33,f123,f677,1,0.1611,Milk products,Grains
+33,f1407,f404,1,0.2,Seafood,Vegetables
+33,f219,f404,1,0.1519,Grains,Vegetables
+34,f1131,f123,1,0.4251,Meat and eggs,Milk products
+34,f1131,f3756,1,0.8728,Meat and eggs,Grains
+34,f1131,f7182,1,0.325,Meat and eggs,Vegetables
+34,f123,f2025,1,0.2601,Milk products,Grains
+34,f123,f347,1,0.2375,Milk products,Vegetables
+34,f123,f3756,2,0.7337,Milk products,Grains
+34,f123,f678,1,0.1594,Milk products,Grains
+34,f123,f7182,1,0.325,Milk products,Vegetables
+34,f123,uU0082,1,0.1105,Milk products,Seafood
+34,f202,f95,1,0.1733,Grains,Milk products
+34,f347,f3756,1,0.2375,Vegetables,Grains
+34,f347,uU0082,1,0.1105,Vegetables,Seafood
+34,f3610,uU0081,1,0.9303,Meat and eggs,Legumes
+34,f3756,f7182,1,0.325,Grains,Vegetables
+34,f3756,uU0082,1,0.1105,Grains,Seafood
+34,f6761,f95,1,0.2641,Grains,Milk products
+35,f1009,f219,1,0.08,Meat and eggs,Grains
+35,f1009,f364,1,0.08,Meat and eggs,Vegetables
+35,f1477,f185,1,0.0686,Meat and eggs,Grains
+35,f1478,f182,1,0.0555,Meat and eggs,Grains
+35,f213,f339,1,0.1083,Grains,Vegetables
+35,f213,uU0085,1,0.1846,Grains,Milk products
+35,f219,f364,1,0.1125,Grains,Vegetables
+35,f339,uU0085,1,0.1083,Vegetables,Milk products
+35,f3819,f998,1,0.105,Grains,Meat and eggs
+36,f123,f1498,1,0.0537,Milk products,Meat and eggs
+36,f123,f1595,1,0.1992,Milk products,Grains
+36,f123,f714,1,0.1932,Milk products,Grains
+36,f123,f727,2,0.3759,Milk products,Grains
+36,f1498,f1595,1,0.0537,Meat and eggs,Grains
+36,f1498,f714,1,0.0537,Meat and eggs,Grains
+36,f1595,f714,1,0.1932,Grains,Grains
+36,f219,f2479,1,0.1608,Grains,Grains
+36,f219,f423,1,0.1608,Grains,Vegetables
+36,f2479,f367,1,0.2792,Grains,Vegetables
+36,f2479,f423,1,0.2458,Grains,Vegetables
+36,f367,uU0086,1,0.3708,Vegetables,Grains
+36,f423,f6292,1,0.4708,Vegetables,Legumes
+37,f1001,f170,1,0.077,Meat and eggs,Grains
+37,f123,f366,1,0.2349,Milk products,Vegetables
+37,f123,f5863,1,0.1583,Milk products,Vegetables
+37,f1474,f170,1,0.0385,Meat and eggs,Grains
+37,f1497,f3791,1,0.0372,Meat and eggs,Grains
+37,f1498,f170,1,0.069,Meat and eggs,Grains
+37,f1498,f421,1,0.069,Meat and eggs,Vegetables
+37,f1498,f97,1,0.069,Meat and eggs,Milk products
+37,f170,f421,1,0.0792,Grains,Vegetables
+37,f170,f97,1,0.108,Grains,Milk products
+37,f366,f846,1,0.2828,Vegetables,Grains
+37,f3791,f7142,1,0.1363,Grains,Milk products
+37,f421,f97,1,0.0792,Vegetables,Milk products
+38,f123,f597,1,0.1903,Milk products,Fruits
+38,f123,f677,1,0.3811,Milk products,Grains
+38,f123,f682,1,0.231,Milk products,Grains
+38,f123,f683,1,0.1903,Milk products,Grains
+38,f1310,f362,1,0.35,Seafood,Vegetables
+38,f1310,f804,1,0.5084,Seafood,Grains
+38,f2520,f6268,1,0.8651,Grains,Legumes
+38,f362,f804,1,0.35,Vegetables,Grains
+38,f597,f683,1,0.2023,Fruits,Grains
+39,f120,f2025,1,0.2806,Milk products,Grains
+39,f120,f725,1,0.2708,Milk products,Grains
+39,f135,f592,1,0.1833,Milk products,Fruits
+39,f135,f6765,1,0.1736,Milk products,Grains
+39,f592,f6765,1,0.1736,Fruits,Grains
+40,f1029,f2520,1,0.6171,Meat and eggs,Grains
+40,f1029,f305,1,0.5542,Meat and eggs,Vegetables
+40,f1029,f7029,1,0.4125,Meat and eggs,Vegetables
+40,f123,f555,1,0.3497,Milk products,Fruits
+40,f123,uU0090,1,0.3305,Milk products,Grains
+40,f147,f2061,1,0.276,Milk products,Grains
+40,f1497,f191,1,0.0778,Meat and eggs,Grains
+40,f187,f491,1,0.2321,Grains,Vegetables
+40,f187,uU0092,1,0.2321,Grains,Milk products
+40,f2520,f305,1,0.5542,Grains,Vegetables
+40,f491,uU0092,1,0.325,Vegetables,Milk products
+40,f555,uU0090,1,0.3305,Fruits,Grains
+41,f100,f173,1,0.2018,Milk products,Grains
+41,f100,f407,1,0.2,Milk products,Vegetables
+41,f1006,f202,1,0.0838,Meat and eggs,Grains
+41,f1010,f123,1,0.1358,Meat and eggs,Milk products
+41,f1010,f173,1,0.1358,Meat and eggs,Grains
+41,f1010,f726,1,0.1358,Meat and eggs,Grains
+41,f123,f173,1,0.358,Milk products,Grains
+41,f123,f3797,1,0.2264,Milk products,Grains
+41,f123,f495,1,0.3292,Milk products,Vegetables
+41,f123,f6277,1,0.4166,Milk products,Legumes
+41,f123,f726,1,0.2371,Milk products,Grains
+41,f1294,f495,1,0.25,Seafood,Vegetables
+41,f1294,uU0094,1,0.3337,Seafood,Grains
+41,f173,f407,1,0.2,Grains,Vegetables
+41,f173,f726,1,0.2371,Grains,Grains
+41,f2513,f495,1,0.4083,Grains,Vegetables
+41,f2513,uU0093,1,0.8428,Grains,Legumes
+41,f325,f6285,1,0.5792,Vegetables,Legumes
+41,f3797,f3828,1,0.3711,Grains,Grains
+41,f3797,f495,1,0.2264,Grains,Vegetables
+41,f3797,f6277,1,0.2264,Grains,Legumes
+41,f3797,f6893,1,0.3711,Grains,Legumes
+41,f3828,f6893,2,1.3951,Grains,Legumes
+41,f495,f6277,1,0.3292,Vegetables,Legumes
+41,f495,uU0093,1,0.4083,Vegetables,Legumes
+41,f495,uU0094,1,0.25,Vegetables,Grains
+42,f123,f325,1,0.1583,Milk products,Vegetables
+42,f123,f554,1,0.2292,Milk products,Fruits
+42,f123,f676,1,0.1744,Milk products,Grains
+42,f165,f3609,1,0.1426,Grains,Meat and eggs
+42,f165,f448,1,0.1426,Grains,Vegetables
+42,f201,f77,1,0.1234,Grains,Milk products
+42,f2561,f3609,1,0.225,Vegetables,Meat and eggs
+42,f2561,f3828,1,0.225,Vegetables,Grains
+42,f2610,f3793,1,0.075,Vegetables,Grains
+42,f2610,f80,1,0.075,Vegetables,Milk products
+42,f316,f6266,1,0.275,Vegetables,Legumes
+42,f316,f804,1,0.2427,Vegetables,Grains
+42,f3609,f3828,1,0.3796,Meat and eggs,Grains
+42,f3609,f448,2,0.4625,Meat and eggs,Vegetables
+42,f3793,f80,1,0.1371,Grains,Milk products
+42,f3819,f97,1,0.0904,Grains,Milk products
+42,f554,f676,1,0.1744,Fruits,Grains
+42,f6266,f804,1,0.2427,Legumes,Grains
+43,f123,f2027,1,0.2057,Milk products,Grains
+43,f123,f6763,1,0.2177,Milk products,Grains
+43,f123,f678,1,0.1783,Milk products,Grains
+43,f204,f2650,1,0.2844,Grains,Meat and eggs
+43,f204,f327,1,0.2583,Grains,Vegetables
+43,f204,f4591,1,0.2844,Grains,Grains
+43,f2650,f327,1,0.2583,Meat and eggs,Vegetables
+43,f2650,f4591,1,0.5035,Meat and eggs,Grains
+43,f327,f4591,1,0.2583,Vegetables,Grains
+43,f448,f6782,1,0.3458,Vegetables,Grains
+44,f123,f2518,1,0.3034,Milk products,Grains
+44,f123,uU0096,1,0.1498,Milk products,Grains
+44,f1470,f1478,1,0.0505,Meat and eggs,Meat and eggs
+44,f1470,f210,1,0.0787,Meat and eggs,Grains
+44,f1478,f210,1,0.0505,Meat and eggs,Grains
+44,f1498,f6757,1,0.1457,Meat and eggs,Grains
+44,f1498,uU0095,1,0.1457,Meat and eggs,Vegetables
+44,f2521,f2672,1,0.3458,Grains,Vegetables
+44,f2521,f6368,1,0.2829,Grains,Legumes
+44,f2672,f6368,1,0.2829,Vegetables,Legumes
+44,f3828,f452,1,0.2625,Grains,Vegetables
+44,f4579,f4591,1,0.798,Vegetables,Grains
+44,f6757,uU0095,1,0.1958,Grains,Vegetables
+44,f6895,f814,1,0.388,Legumes,Grains
+45,f1000,f200,1,0.0571,Meat and eggs,Grains
+45,f1299,f4591,1,0.3525,Seafood,Grains
+45,f2294,f2516,1,0.277,Meat and eggs,Grains
+45,f2294,f367,1,0.275,Meat and eggs,Vegetables
+45,f2294,uU0101,1,0.2983,Meat and eggs,Vegetables
+45,f2516,f367,1,0.275,Grains,Vegetables
+46,f1000,f175,1,0.1048,Meat and eggs,Grains
+46,f1131,f175,1,0.2972,Meat and eggs,Grains
+46,f1131,f339,1,0.3333,Meat and eggs,Vegetables
+46,f1131,f3828,1,0.9863,Meat and eggs,Grains
+46,f1131,f4947,1,0.4458,Meat and eggs,Vegetables
+46,f123,f1347,1,0.3291,Milk products,Seafood
+46,f123,f2617,1,0.2931,Milk products,Vegetables
+46,f123,f465,1,0.2833,Milk products,Vegetables
+46,f123,uU0102,1,0.2931,Milk products,Grains
+46,f1347,f2225,1,0.3374,Seafood,Grains
+46,f1347,f465,1,0.2833,Seafood,Vegetables
+46,f1347,uU0105,1,0.2083,Seafood,Vegetables
+46,f1498,f175,1,0.0613,Meat and eggs,Grains
+46,f1498,f208,1,0.0613,Meat and eggs,Grains
+46,f1498,f2225,1,0.1572,Meat and eggs,Grains
+46,f1498,f421,1,0.0613,Meat and eggs,Vegetables
+46,f175,f4947,1,0.2972,Grains,Vegetables
+46,f208,f421,1,0.1042,Grains,Vegetables
+46,f2225,uU0105,1,0.2083,Grains,Vegetables
+46,f2617,uU0102,1,0.3212,Vegetables,Grains
+46,f339,f3828,1,0.3333,Vegetables,Grains
+46,f422,f6309,1,0.2583,Vegetables,Legumes
+47,f1011,f195,1,0.0807,Meat and eggs,Grains
+47,f123,f168,1,0.3598,Milk products,Grains
+47,f123,f2513,1,0.372,Milk products,Grains
+47,f123,f291,2,0.756,Milk products,Vegetables
+47,f168,f2513,1,0.3598,Grains,Grains
+47,f168,f291,1,0.3598,Grains,Vegetables
+47,f183,f340,1,0.2459,Grains,Vegetables
+47,f183,f6782,1,0.2459,Grains,Grains
+47,f183,uU0107,1,0.2459,Grains,Milk products
+47,f2240,f6879,1,0.0871,Meat and eggs,Grains
+47,f2479,f291,1,0.4,Grains,Vegetables
+47,f2513,f291,1,0.375,Grains,Vegetables
+47,f340,f6782,1,0.4125,Vegetables,Grains
+47,f340,uU0107,1,0.4125,Vegetables,Milk products
+47,f6782,uU0107,1,0.4299,Grains,Milk products
+47,f7088,f710,1,0.2677,Milk products,Grains
+48,f1011,f4937,1,0.066,Meat and eggs,Vegetables
+48,f123,f1309,1,0.2349,Milk products,Seafood
+48,f123,f712,1,0.42,Milk products,Grains
+48,f123,f804,1,0.2349,Milk products,Grains
+48,f123,uU0113,1,0.2349,Milk products,Vegetables
+48,f1309,f804,1,0.4391,Seafood,Grains
+48,f1309,uU0113,1,0.2708,Seafood,Vegetables
+48,f804,uU0113,1,0.2708,Grains,Vegetables
+48,uU0109,uU0110,1,0.0537,Grains,Meat and eggs
+49,f123,f1299,1,0.3103,Milk products,Seafood
+49,f123,f2032,1,0.2417,Milk products,Grains
+49,f123,f294,1,0.3103,Milk products,Vegetables
+49,f123,f846,1,0.3103,Milk products,Grains
+49,f1299,f294,1,0.5042,Seafood,Vegetables
+49,f1299,f846,1,0.3388,Seafood,Grains
+49,f294,f846,1,0.3388,Vegetables,Grains
+49,f294,uU0115,1,0.2333,Vegetables,Legumes
+49,f322,f439,1,0.2875,Vegetables,Vegetables
+50,f123,f195,1,0.2709,Milk products,Grains
+50,f123,f2513,1,0.1389,Milk products,Grains
+50,f123,f2610,1,0.1389,Milk products,Vegetables
+50,f123,f407,1,0.1875,Milk products,Vegetables
+50,f123,f440,1,0.2709,Milk products,Vegetables
+50,f123,f4937,1,0.2709,Milk products,Vegetables
+50,f123,f6264,1,0.1389,Milk products,Legumes
+50,f123,f6280,1,0.2331,Milk products,Legumes
+50,f123,f6786,1,0.2709,Milk products,Grains
+50,f195,f440,1,0.3929,Grains,Vegetables
+50,f195,f4937,1,0.3708,Grains,Vegetables
+50,f195,f6786,1,0.3929,Grains,Grains
+50,f195,f79,1,0.2429,Grains,Milk products
+50,f2513,f2610,1,0.5167,Grains,Vegetables
+50,f2513,f6264,1,0.9747,Grains,Legumes
+50,f2610,f6264,1,0.5167,Vegetables,Legumes
+50,f407,f6280,1,0.1875,Vegetables,Legumes
+50,f440,f4937,1,0.3708,Vegetables,Vegetables
+50,f440,f6786,1,0.3975,Vegetables,Grains
+50,f4937,f6786,1,0.3708,Vegetables,Grains
+50,f6081,f79,1,0.2609,Grains,Milk products
+50,f6086,f7047,1,0.2723,Grains,Fruits
+50,f6086,f7154,1,0.2723,Grains,Milk products
+50,f7047,f7154,1,0.3125,Fruits,Milk products
+50,f7154,f728,2,0.3092,Milk products,Grains
+51,f103,f204,1,0.2576,Milk products,Grains
+51,f103,f364,1,0.1083,Milk products,Vegetables
+51,f123,f2124,1,0.2744,Milk products,Grains
+51,f123,f6759,1,0.1956,Milk products,Grains
+51,f123,uU0117,1,0.3583,Milk products,Fruits
+51,f123,uU0118,1,0.4406,Milk products,Meat and eggs
+51,f185,f364,1,0.2083,Grains,Vegetables
+51,f185,f80,1,0.2011,Grains,Milk products
+51,f204,f364,1,0.1083,Grains,Vegetables
+51,f2124,uU0117,1,0.2744,Grains,Fruits
+51,f2521,f4602,1,0.7042,Grains,Seafood
+51,f364,f80,1,0.2011,Vegetables,Milk products
+51,f407,f6782,1,0.5417,Vegetables,Grains
+52,f1000,f226,2,0.1238,Meat and eggs,Grains
+52,f1006,f181,1,0.0838,Meat and eggs,Grains
+52,f1497,f181,1,0.0947,Meat and eggs,Grains
+52,f185,f2606,1,0.154,Grains,Vegetables
+52,f185,f6302,1,0.154,Grains,Legumes
+52,f2521,f321,1,0.2708,Grains,Vegetables
+52,f2606,f6302,1,0.2708,Vegetables,Legumes
+52,f2606,f6786,1,0.2475,Vegetables,Grains
+53,f123,f714,1,0.1991,Milk products,Grains
+53,f2753,f452,1,0.3167,Meat and eggs,Vegetables
+53,f3794,f490,1,0.0945,Grains,Vegetables
+53,f3794,f804,1,0.0945,Grains,Grains
+53,f490,f804,1,0.2875,Vegetables,Grains
+53,f593,f6086,1,0.1958,Fruits,Grains
+53,f593,f6113,1,0.1958,Fruits,Milk products
+53,f6086,f6113,1,0.215,Grains,Milk products
+53,f6113,f721,1,0.1844,Milk products,Grains
+54,f123,f679,1,0.312,Milk products,Grains
+54,f123,f713,1,0.3223,Milk products,Grains
+54,f2067,f2125,1,0.5649,Legumes,Grains
+54,f2067,f2606,1,0.3208,Legumes,Vegetables
+54,f2079,f208,1,0.3214,Grains,Grains
+54,f2079,f452,1,0.325,Grains,Vegetables
+54,f2079,f6298,2,1.29,Grains,Vegetables
+54,f208,f6298,2,0.4671,Grains,Vegetables
+54,f208,uU0121,1,0.1456,Grains,Vegetables
+54,f2125,f2606,1,0.3208,Grains,Vegetables
+54,f2125,f6298,1,0.6875,Grains,Vegetables
+54,f2515,f421,1,0.2,Grains,Vegetables
+54,f452,f6298,1,0.325,Vegetables,Vegetables
+54,f6298,uU0121,1,0.5,Vegetables,Vegetables
+54,f679,f7087,1,0.2171,Grains,Milk products
+55,f123,f219,1,0.1563,Milk products,Grains
+55,f123,f336,1,0.3583,Milk products,Vegetables
+55,f126,f6764,1,0.1875,Milk products,Grains
+55,f2048,f721,1,0.1199,Milk products,Grains
+55,f219,f336,1,0.1563,Grains,Vegetables
+55,f2514,f404,1,0.3099,Grains,Vegetables
+55,f2514,f406,1,0.3042,Grains,Vegetables
+55,f2514,f6880,1,0.3099,Grains,Grains
+55,f2520,f2614,1,0.4,Grains,Vegetables
+55,f404,f6880,1,0.4417,Vegetables,Grains
+55,f7147,uU0123,1,0.2965,Milk products,Grains
+56,f114,f2032,1,0.266,Milk products,Grains
+56,f114,f7050,1,0.2844,Milk products,Fruits
+56,f119,f1604,1,0.2225,Milk products,Grains
+56,f119,f721,1,0.1107,Milk products,Grains
+56,f119,f79,1,0.2016,Milk products,Milk products
+56,f123,f172,1,0.2674,Milk products,Grains
+56,f123,f465,1,0.2333,Milk products,Vegetables
+56,f1604,f721,1,0.1107,Grains,Grains
+56,f1604,f79,1,0.2016,Grains,Milk products
+56,f172,f465,1,0.2333,Grains,Vegetables
+56,f2032,f7050,1,0.266,Grains,Fruits
+56,f2518,f465,1,0.4155,Grains,Vegetables
+56,f2518,f6287,1,0.4155,Grains,Legumes
+56,f465,f6287,1,0.4167,Vegetables,Legumes
+56,f7149,f727,1,0.2413,Milk products,Grains
+56,f721,f79,1,0.1107,Grains,Milk products
+57,f100,f3791,1,0.0531,Milk products,Grains
+57,f1009,f3793,1,0.035,Meat and eggs,Grains
+57,f123,f1298,1,0.1011,Milk products,Seafood
+57,f123,f183,1,0.123,Milk products,Grains
+57,f123,f381,1,0.2126,Milk products,Vegetables
+57,f1298,f381,1,0.1011,Seafood,Vegetables
+57,f1357,f168,1,0.1764,Seafood,Grains
+57,f1357,f3756,1,0.2361,Seafood,Grains
+57,f1357,uU0128,1,0.2694,Seafood,Milk products
+57,f147,f2025,1,0.1506,Milk products,Grains
+57,f147,f2061,1,0.096,Milk products,Grains
+57,f147,f3759,1,0.2125,Milk products,Fruits
+57,f168,f3756,1,0.1764,Grains,Grains
+57,f168,uU0128,1,0.1764,Grains,Milk products
+57,f183,f2517,1,0.1874,Grains,Grains
+57,f183,f297,1,0.1458,Grains,Vegetables
+57,f2025,f3759,1,0.1506,Grains,Fruits
+57,f2061,f6088,1,0.054,Grains,Milk products
+57,f2517,f297,1,0.1458,Grains,Vegetables
+57,f2519,f4947,1,0.225,Grains,Vegetables
+57,f2519,f539,1,0.2962,Grains,Vegetables
+57,f3756,uU0128,1,0.2361,Grains,Milk products
+57,f4947,f539,1,0.225,Vegetables,Vegetables
+58,f114,f2032,1,0.4777,Milk products,Grains
+58,f123,f3447,1,0.276,Milk products,Grains
+58,f2067,f358,1,0.4,Legumes,Vegetables
+58,f2067,f3825,1,0.1642,Legumes,Grains
+58,f2067,uU0130,1,0.2875,Legumes,Vegetables
+58,f2521,f305,1,0.35,Grains,Vegetables
+58,f327,f4591,1,0.3375,Vegetables,Grains
+58,f358,f3825,1,0.1642,Vegetables,Grains
+58,f358,uU0130,1,0.2875,Vegetables,Vegetables
+58,f3825,uU0130,1,0.1642,Grains,Vegetables
+58,f677,f7050,1,0.275,Grains,Fruits
+58,f677,uU0129,1,0.2362,Grains,Milk products
+58,f7050,uU0129,1,0.2362,Fruits,Milk products
+59,f1006,f3790,1,0.1479,Meat and eggs,Grains
+59,f123,f2609,1,0.3309,Milk products,Vegetables
+59,f123,f440,1,0.3309,Milk products,Vegetables
+59,f1312,f2520,1,1.0385,Seafood,Grains
+59,f1312,f2609,1,0.5167,Seafood,Vegetables
+59,f1312,f3828,1,0.8997,Seafood,Grains
+59,f1470,f202,1,0.0489,Meat and eggs,Grains
+59,f1470,f445,1,0.0489,Meat and eggs,Vegetables
+59,f148,f714,1,0.2342,Milk products,Grains
+59,f202,f445,1,0.1625,Grains,Vegetables
+59,f2520,f2609,1,0.5167,Grains,Vegetables
+59,f2609,f440,1,0.4958,Vegetables,Vegetables
+60,f100,f185,1,0.2929,Milk products,Grains
+60,f100,f2610,1,0.0958,Milk products,Vegetables
+60,f123,f2479,1,0.3634,Milk products,Grains
+60,f123,f2617,1,0.3042,Milk products,Vegetables
+60,f123,f424,1,0.3634,Milk products,Vegetables
+60,f123,f6280,1,0.1166,Milk products,Legumes
+60,f123,f6349,1,0.3343,Milk products,Vegetables
+60,f123,f7053,1,0.3634,Milk products,Vegetables
+60,f123,uU0134,1,0.2555,Milk products,Grains
+60,f185,f2610,1,0.0958,Grains,Vegetables
+60,f206,f2610,1,0.1042,Grains,Vegetables
+60,f206,f95,1,0.3231,Grains,Milk products
+60,f2479,f2651,1,2.2588,Grains,Legumes
+60,f2479,f289,1,0.6083,Grains,Vegetables
+60,f2479,f424,1,0.9333,Grains,Vegetables
+60,f2479,f7053,1,0.6042,Grains,Vegetables
+60,f2610,f95,1,0.1042,Vegetables,Milk products
+60,f2617,f6349,1,0.3042,Vegetables,Vegetables
+60,f2617,uU0134,1,0.2555,Vegetables,Grains
+60,f2651,f289,1,0.6083,Legumes,Vegetables
+60,f424,f7053,1,0.6042,Vegetables,Vegetables
+60,f6349,uU0134,1,0.2555,Vegetables,Grains
+60,f97,uU0133,1,0.2824,Milk products,Grains
+61,f120,f2028,1,0.1906,Milk products,Grains
+61,f120,f7019,1,0.285,Milk products,Fruits
+61,f123,f2608,1,0.3292,Milk products,Vegetables
+61,f123,f289,1,0.3394,Milk products,Vegetables
+61,f123,f345,1,0.325,Milk products,Vegetables
+61,f123,f357,1,0.4167,Milk products,Vegetables
+61,f123,f3793,1,0.3394,Milk products,Grains
+61,f123,f6286,2,0.9977,Milk products,Legumes
+61,f123,f681,1,0.4371,Milk products,Grains
+61,f123,f7019,1,0.3125,Milk products,Fruits
+61,f2028,f7019,1,0.1906,Grains,Fruits
+61,f2608,f6286,1,0.3292,Vegetables,Legumes
+61,f289,f3793,1,0.4646,Vegetables,Grains
+61,f357,f6286,1,0.4167,Vegetables,Legumes
+61,f6092,f728,1,0.1699,Milk products,Grains
+61,f681,f7019,1,0.3125,Grains,Fruits
+62,f181,f3610,1,0.1952,Grains,Meat and eggs
+62,f181,f4157,1,0.1708,Grains,Vegetables
+62,f181,f6786,1,0.1952,Grains,Grains
+62,f2517,f4157,1,0.4042,Grains,Vegetables
+62,f291,f3756,1,0.225,Vegetables,Grains
+62,f291,f6786,1,0.3625,Vegetables,Grains
+62,f291,f6896,1,0.225,Vegetables,Legumes
+62,f291,uU0137,1,0.1638,Vegetables,Grains
+62,f3610,f4157,1,0.1708,Meat and eggs,Vegetables
+62,f3610,f6786,1,0.4275,Meat and eggs,Grains
+62,f3756,f6896,1,0.4856,Grains,Legumes
+62,f3756,uU0137,1,0.1638,Grains,Grains
+62,f4157,f6786,2,0.3958,Vegetables,Grains
+62,f6896,uU0137,1,0.1638,Legumes,Grains
+63,f1406,f2516,1,0.6867,Seafood,Grains
+63,f1406,f3791,1,0.5896,Seafood,Grains
+63,f1406,f448,1,0.6867,Seafood,Vegetables
+63,f1474,f3797,1,0.1719,Meat and eggs,Grains
+63,f1478,f6083,1,0.0782,Meat and eggs,Grains
+63,f2516,f3791,1,0.5896,Grains,Grains
+63,f2516,f448,1,0.8,Grains,Vegetables
+63,f2520,f448,1,1.1708,Grains,Vegetables
+63,f2606,f6275,1,0.5458,Vegetables,Legumes
+63,f2606,f814,1,0.5458,Vegetables,Grains
+63,f3791,f448,1,0.5896,Grains,Vegetables
+63,f6275,f814,1,1.736,Legumes,Grains
+64,f1191,f3756,1,0.3886,Meat and eggs,Grains
+64,f1192,f357,1,0.3542,Meat and eggs,Vegetables
+64,f1192,f6761,1,0.3773,Meat and eggs,Grains
+64,f123,f4157,1,0.204,Milk products,Vegetables
+64,f123,f6765,1,0.2976,Milk products,Grains
+64,f123,f727,1,0.1683,Milk products,Grains
+64,f123,f728,1,0.1873,Milk products,Grains
+64,f123,f804,1,0.204,Milk products,Grains
+64,f1470,f217,1,0.076,Meat and eggs,Grains
+64,f357,f6761,1,0.3542,Vegetables,Grains
+64,f4157,f804,1,0.2958,Vegetables,Grains
+65,f1011,f175,2,0.2127,Meat and eggs,Grains
+65,f1011,f201,1,0.0587,Meat and eggs,Grains
+65,f1011,f2610,1,0.0587,Meat and eggs,Vegetables
+65,f1011,f3825,1,0.1137,Meat and eggs,Grains
+65,f1011,f6081,1,0.0807,Meat and eggs,Grains
+65,f1011,uU0141,1,0.0521,Meat and eggs,Meat and eggs
+65,f103,f6084,1,0.2438,Milk products,Grains
+65,f123,f2515,1,0.444,Milk products,Grains
+65,f123,f2561,1,0.444,Milk products,Vegetables
+65,f123,uU0142,1,0.2031,Milk products,Grains
+65,f175,f6081,1,0.2972,Grains,Grains
+65,f175,uU0141,1,0.0521,Grains,Meat and eggs
+65,f201,f2610,1,0.1417,Grains,Vegetables
+65,f2515,f2561,1,0.5,Grains,Vegetables
+65,f2515,uU0142,1,0.2031,Grains,Grains
+65,f2521,f346,1,0.4417,Grains,Vegetables
+65,f2521,uU0143,1,0.5706,Grains,Seafood
+65,f2561,uU0142,1,0.2031,Vegetables,Grains
+65,f346,uU0143,1,0.4417,Vegetables,Seafood
+65,f6081,uU0141,1,0.0521,Grains,Meat and eggs
+66,f1104,f337,1,0.1208,Legumes,Vegetables
+66,f1104,f6786,1,0.2525,Legumes,Grains
+66,f123,f2079,1,0.2297,Milk products,Grains
+66,f123,f2614,1,0.1333,Milk products,Vegetables
+66,f123,f2672,1,0.1611,Milk products,Vegetables
+66,f123,f337,1,0.225,Milk products,Vegetables
+66,f123,f527,1,0.1292,Milk products,Fruits
+66,f123,f6765,1,0.1033,Milk products,Grains
+66,f123,f681,2,0.3754,Milk products,Grains
+66,f2079,f337,1,0.225,Grains,Vegetables
+66,f2614,f6453,1,0.1708,Vegetables,Vegetables
+66,f2672,f3756,1,0.1763,Vegetables,Grains
+66,f337,f6786,1,0.1208,Vegetables,Grains
+66,f527,f681,1,0.1292,Fruits,Grains
+67,f1006,f185,1,0.0939,Meat and eggs,Grains
+67,f1175,f325,1,0.275,Meat and eggs,Vegetables
+67,f1175,f4448,1,0.6035,Meat and eggs,Grains
+67,f123,f1322,1,0.2674,Milk products,Seafood
+67,f123,f214,1,0.144,Milk products,Grains
+67,f123,f2518,1,0.2674,Milk products,Grains
+67,f123,f300,1,0.2674,Milk products,Vegetables
+67,f123,f3828,1,0.4491,Milk products,Grains
+67,f123,f712,2,0.532,Milk products,Grains
+67,f1322,f214,1,0.144,Seafood,Grains
+67,f1322,f2518,1,0.5776,Seafood,Grains
+67,f1322,f300,1,0.2708,Seafood,Vegetables
+67,f2025,f562,1,0.1916,Grains,Fruits
+67,f2025,f6093,1,0.1916,Grains,Milk products
+67,f214,f2518,1,0.144,Grains,Grains
+67,f214,f300,1,0.144,Grains,Vegetables
+67,f216,f6895,1,0.3071,Grains,Legumes
+67,f2518,f300,1,0.2708,Grains,Vegetables
+67,f325,f4448,1,0.275,Vegetables,Grains
+67,f562,f6093,1,0.2417,Fruits,Milk products
+68,f1009,f204,1,0.085,Meat and eggs,Grains
+68,f123,f1317,1,0.2023,Milk products,Seafood
+68,f123,f319,1,0.1792,Milk products,Vegetables
+68,f123,f3798,1,0.1976,Milk products,Grains
+68,f1317,f319,1,0.1792,Seafood,Vegetables
+68,f1317,f3798,1,0.1976,Seafood,Grains
+68,f1322,f421,1,0.2625,Seafood,Vegetables
+68,f1322,f846,1,0.4095,Seafood,Grains
+68,f1357,f2610,1,0.2833,Seafood,Vegetables
+68,f1477,f206,1,0.0829,Meat and eggs,Grains
+68,f1477,f213,1,0.0257,Meat and eggs,Grains
+68,f1477,f3798,1,0.0429,Meat and eggs,Grains
+68,f169,f288,1,0.2125,Grains,Vegetables
+68,f319,f3798,2,0.3566,Vegetables,Grains
+68,f421,f846,1,0.2625,Vegetables,Grains
+69,f123,f183,1,0.468,Milk products,Grains
+69,f123,f2027,1,0.1485,Milk products,Grains
+69,f123,f2031,2,0.4402,Milk products,Grains
+69,f123,f401,1,0.35,Milk products,Fruits
+69,f123,f846,1,0.468,Milk products,Grains
+69,f1329,f183,1,0.3045,Seafood,Grains
+69,f1329,f296,1,0.1958,Seafood,Vegetables
+69,f1404,f2514,1,0.376,Seafood,Grains
+69,f1404,f320,1,0.3583,Seafood,Fruits
+69,f183,f296,1,0.1958,Grains,Vegetables
+69,f183,f401,1,0.35,Grains,Fruits
+69,f183,f846,1,0.4977,Grains,Grains
+69,f2056,f4591,1,0.429,Meat and eggs,Grains
+69,f2514,f320,1,0.3583,Grains,Fruits
+69,f401,f846,1,0.35,Fruits,Grains
+70,f1478,f206,1,0.0454,Meat and eggs,Grains
+70,f172,f7142,1,0.1932,Grains,Milk products
+70,f2521,f467,1,0.8333,Grains,Vegetables
+70,f2930,f3828,1,0.4412,Meat and eggs,Grains
+70,f2930,f451,1,0.175,Meat and eggs,Vegetables
+70,f364,f3795,1,0.1,Vegetables,Grains
+70,f364,f3818,1,0.1,Vegetables,Grains
+70,f364,f998,1,0.1,Vegetables,Meat and eggs
+70,f3795,f3818,1,0.1361,Grains,Grains
+70,f3795,f998,1,0.1361,Grains,Meat and eggs
+70,f3818,f7142,1,0.1179,Grains,Milk products
+70,f3818,f998,1,0.165,Grains,Meat and eggs
+70,f3828,f451,1,0.175,Grains,Vegetables
+70,f7182,f846,1,0.3125,Vegetables,Grains
+70,f7182,uU0153,1,0.3125,Vegetables,Seafood
+70,f846,uU0153,1,0.4338,Grains,Seafood
+71,f1010,f128,1,0.1183,Meat and eggs,Milk products
+71,f1010,f168,1,0.0613,Meat and eggs,Grains
+71,f1010,f173,2,0.1402,Meat and eggs,Grains
+71,f1010,f364,1,0.0613,Meat and eggs,Vegetables
+71,f1010,f6761,1,0.1183,Meat and eggs,Grains
+71,f1010,f727,1,0.1183,Meat and eggs,Grains
+71,f1010,uU0157,1,0.042,Meat and eggs,Meat and eggs
+71,f1106,f2610,1,0.2375,Meat and eggs,Vegetables
+71,f123,f173,1,0.2567,Milk products,Grains
+71,f123,uU0159,1,0.3292,Milk products,Vegetables
+71,f128,f6761,1,0.327,Milk products,Grains
+71,f128,f727,1,0.1964,Milk products,Grains
+71,f1328,f2610,1,0.4417,Seafood,Vegetables
+71,f1329,f4157,1,0.375,Seafood,Vegetables
+71,f1477,f163,1,0.0629,Meat and eggs,Grains
+71,f168,f173,1,0.2399,Grains,Grains
+71,f168,f364,1,0.0708,Grains,Vegetables
+71,f168,uU0157,1,0.042,Grains,Meat and eggs
+71,f173,f364,1,0.0708,Grains,Vegetables
+71,f173,uU0157,1,0.042,Grains,Meat and eggs
+71,f173,uU0159,1,0.2567,Grains,Vegetables
+71,f364,uU0157,1,0.042,Vegetables,Meat and eggs
+71,f6092,f727,1,0.2413,Milk products,Grains
+71,f6761,f727,1,0.1964,Grains,Grains
+72,f1008,f182,2,0.4101,Meat and eggs,Grains
+72,f123,f2027,1,0.1886,Milk products,Grains
+72,f123,f6764,1,0.1577,Milk products,Grains
+72,f123,f679,1,0.3703,Milk products,Grains
+72,f2521,f289,1,0.4042,Grains,Vegetables
+72,f2521,uU0164,1,0.1603,Grains,Legumes
+72,f2610,uU0160,1,0.3,Vegetables,Grains
+72,f289,uU0164,1,0.1603,Vegetables,Legumes
+72,f2931,f342,1,0.3333,Meat and eggs,Vegetables
+72,f2931,uU0162,1,0.554,Meat and eggs,Grains
+72,f342,uU0162,1,0.3333,Vegetables,Grains
+72,f344,f3825,1,0.219,Vegetables,Grains
+72,f344,f6285,1,0.3917,Vegetables,Legumes
+72,f3825,f6285,1,0.219,Grains,Legumes
+73,f123,f214,1,0.4134,Milk products,Grains
+73,f123,f292,1,0.3625,Milk products,Vegetables
+73,f123,f320,1,0.2691,Milk products,Fruits
+73,f123,f6875,1,0.1687,Milk products,Grains
+73,f1604,f364,1,0.1458,Grains,Vegetables
+73,f1604,f6070,1,0.252,Grains,Milk products
+73,f214,f292,1,0.3625,Grains,Vegetables
+73,f214,f339,1,0.2167,Grains,Vegetables
+73,f214,f6070,2,0.5028,Grains,Milk products
+73,f2516,f465,1,0.4917,Grains,Vegetables
+73,f320,f6875,1,0.1687,Fruits,Grains
+73,f328,f3756,1,0.475,Vegetables,Grains
+73,f328,f6301,1,0.475,Vegetables,Legumes
+73,f339,f6070,1,0.2167,Vegetables,Milk products
+73,f364,f6070,1,0.1458,Vegetables,Milk products
+73,f3756,f6301,1,1.0225,Grains,Legumes
+74,f123,f676,1,0.1954,Milk products,Grains
+74,f123,f677,1,0.2356,Milk products,Grains
+74,f123,f683,1,0.1827,Milk products,Grains
+74,f1304,f185,1,0.1427,Seafood,Grains
+74,f1304,f2162,1,0.4375,Seafood,Vegetables
+74,f1304,f2516,1,0.5817,Seafood,Grains
+74,f185,f2162,1,0.1427,Grains,Vegetables
+74,f185,f2516,1,0.1427,Grains,Grains
+74,f2079,f289,1,0.5083,Grains,Vegetables
+74,f2079,f348,1,0.3583,Grains,Vegetables
+74,f2079,f4187,1,0.8142,Grains,Seafood
+74,f2162,f2516,2,0.7292,Vegetables,Grains
+74,f289,f4187,1,0.5083,Vegetables,Seafood
+75,f123,f335,1,0.3446,Milk products,Vegetables
+75,f123,f3447,1,0.2229,Milk products,Grains
+75,f123,f728,2,0.4128,Milk products,Grains
+75,f2651,f348,1,0.2917,Legumes,Vegetables
+75,f2651,f3791,1,0.2992,Legumes,Grains
+75,f348,f3791,1,0.2917,Vegetables,Grains
+75,f6889,uU0169,1,0.475,Legumes,Vegetables
+75,f7029,f814,1,0.3208,Vegetables,Grains
+76,f1106,f166,1,0.1589,Meat and eggs,Grains
+76,f1106,f316,1,0.6583,Meat and eggs,Vegetables
+76,f1106,f3828,1,0.9052,Meat and eggs,Grains
+76,f1106,uU0170,1,0.2583,Meat and eggs,Vegetables
+76,f128,f2032,1,0.3157,Milk products,Grains
+76,f128,f591,1,0.2833,Milk products,Fruits
+76,f130,f2061,1,0.162,Milk products,Grains
+76,f130,f554,1,0.3167,Milk products,Fruits
+76,f130,f721,1,0.2951,Milk products,Grains
+76,f166,uU0170,1,0.1589,Grains,Vegetables
+76,f2032,f591,1,0.2833,Grains,Fruits
+76,f2061,f554,1,0.162,Grains,Fruits
+76,f316,f3828,1,0.6583,Vegetables,Grains
+77,f1008,f219,1,0.1251,Meat and eggs,Grains
+77,f123,f170,1,0.252,Milk products,Grains
+77,f123,f2124,1,0.2333,Milk products,Grains
+77,f123,f2128,1,0.296,Milk products,Grains
+77,f123,f219,1,0.1072,Milk products,Grains
+77,f123,f325,1,0.1792,Milk products,Vegetables
+77,f123,f3756,2,0.6977,Milk products,Grains
+77,f123,f3794,1,0.077,Milk products,Grains
+77,f123,f495,1,0.3042,Milk products,Vegetables
+77,f123,f562,1,0.1792,Milk products,Fruits
+77,f123,f684,1,0.3319,Milk products,Grains
+77,f123,uU0171,1,0.1875,Milk products,Fruits
+77,f123,uU0172,1,0.1792,Milk products,Vegetables
+77,f170,f325,1,0.1792,Grains,Vegetables
+77,f170,f3756,1,0.252,Grains,Grains
+77,f170,f80,1,0.192,Grains,Milk products
+77,f2124,f562,1,0.1792,Grains,Fruits
+77,f2125,f316,1,0.1875,Grains,Vegetables
+77,f219,f495,1,0.1072,Grains,Vegetables
+77,f325,f3756,1,0.1792,Vegetables,Grains
+77,f3756,f3794,1,0.077,Grains,Grains
+77,f3756,uU0172,1,0.1792,Grains,Vegetables
+77,f3794,uU0172,1,0.077,Grains,Vegetables
+77,f684,uU0171,1,0.1875,Grains,Fruits
+78,f123,f1604,1,0.3394,Milk products,Grains
+78,f123,f2123,1,0.3446,Milk products,Grains
+78,f123,f2561,1,0.3583,Milk products,Vegetables
+78,f123,f424,2,0.945,Milk products,Vegetables
+78,f123,f684,2,0.425,Milk products,Grains
+78,f123,f6878,1,0.2432,Milk products,Grains
+78,f123,f97,1,0.192,Milk products,Milk products
+78,f123,uU0174,1,0.3958,Milk products,Vegetables
+78,f1604,f684,1,0.1499,Grains,Grains
+78,f1604,f97,1,0.192,Grains,Milk products
+78,f2561,f424,1,0.3583,Vegetables,Vegetables
+78,f393,f6268,1,0.3917,Vegetables,Legumes
+78,f424,f6878,1,0.2432,Vegetables,Grains
+78,f424,f7053,1,0.1833,Vegetables,Vegetables
+78,f424,uU0174,1,0.3958,Vegetables,Vegetables
+78,f684,f97,1,0.1499,Grains,Milk products
+78,f6878,uU0174,1,0.2432,Grains,Vegetables
+79,f1001,f445,1,0.1458,Meat and eggs,Vegetables
+79,f1001,f6761,1,0.176,Meat and eggs,Grains
+79,f1138,f2513,1,0.3641,Meat and eggs,Grains
+79,f1138,f392,1,0.4292,Meat and eggs,Vegetables
+79,f126,f1478,1,0.0555,Milk products,Meat and eggs
+79,f126,f2061,1,0.126,Milk products,Grains
+79,f126,f3818,1,0.2771,Milk products,Grains
+79,f1478,f2061,1,0.0555,Meat and eggs,Grains
+79,f1478,f3818,1,0.0555,Meat and eggs,Grains
+79,f2061,f3818,1,0.126,Grains,Grains
+79,f2513,f392,1,0.3641,Grains,Vegetables
+79,f445,f6761,1,0.1458,Vegetables,Grains
+79,f7148,f725,1,0.2332,Milk products,Grains
+80,f123,f3447,1,0.2949,Milk products,Grains
+80,f123,f713,2,0.6154,Milk products,Grains
+80,f208,f2522,1,0.3315,Grains,Grains
+80,f208,f348,1,0.3,Grains,Vegetables
+80,f208,f3828,1,0.3666,Grains,Grains
+80,f208,f5875,1,0.3315,Grains,Meat and eggs
+80,f2162,f2522,1,0.4978,Vegetables,Grains
+80,f2162,f6303,1,0.5667,Vegetables,Legumes
+80,f2522,f5875,1,0.7793,Grains,Meat and eggs
+80,f2522,f6303,1,0.4978,Grains,Legumes
+80,f348,f3828,1,0.3,Vegetables,Grains
+81,f1008,f6084,1,0.0742,Meat and eggs,Grains
+81,f1138,f2520,1,0.306,Meat and eggs,Grains
+81,f1138,f4947,1,0.1667,Meat and eggs,Vegetables
+81,f1138,uU0181,1,0.1501,Meat and eggs,Legumes
+81,f1149,f4448,1,0.3433,Meat and eggs,Grains
+81,f123,f2027,1,0.1755,Milk products,Grains
+81,f123,f2029,1,0.0929,Milk products,Grains
+81,f123,f725,1,0.3137,Milk products,Grains
+81,f2520,f4947,1,0.1667,Grains,Vegetables
+82,f123,f210,1,0.2357,Milk products,Grains
+82,f123,f2479,1,0.504,Milk products,Grains
+82,f123,f2514,1,0.4663,Milk products,Grains
+82,f123,f326,1,0.4667,Milk products,Vegetables
+82,f123,f347,1,0.2417,Milk products,Vegetables
+82,f123,f390,1,0.2917,Milk products,Vegetables
+82,f123,f538,1,0.3737,Milk products,Vegetables
+82,f126,f3447,1,0.3461,Milk products,Grains
+82,f126,f586,1,0.4,Milk products,Fruits
+82,f210,f390,1,0.2357,Grains,Vegetables
+82,f210,f538,1,0.2357,Grains,Vegetables
+82,f2479,f326,1,0.4667,Grains,Vegetables
+82,f3447,f586,1,0.3461,Grains,Fruits
+82,f390,f538,1,0.2917,Vegetables,Vegetables
+82,f523,f6113,1,0.3042,Fruits,Milk products
+82,f523,f710,1,0.3042,Fruits,Grains
+82,f586,f6862,1,0.3708,Fruits,Grains
+82,f586,f7257,1,0.34,Fruits,Milk products
+82,f6113,f710,1,0.4368,Milk products,Grains
+82,f6862,f7257,1,0.34,Grains,Milk products
+83,f123,f187,1,0.1409,Milk products,Grains
+83,f123,f2518,1,0.2554,Milk products,Grains
+83,f123,f404,1,0.3806,Milk products,Vegetables
+83,f123,f490,1,0.4625,Milk products,Vegetables
+83,f123,f7063,1,0.3806,Milk products,Meat and eggs
+83,f123,f804,1,0.3806,Milk products,Grains
+83,f1336,f2079,1,0.2086,Seafood,Grains
+83,f1336,f335,1,0.575,Seafood,Vegetables
+83,f1336,f401,1,0.3542,Seafood,Fruits
+83,f1336,uU0183,1,0.4828,Seafood,Milk products
+83,f135,f524,1,0.275,Milk products,Fruits
+83,f135,f6764,1,0.2034,Milk products,Grains
+83,f187,f404,1,0.1409,Grains,Vegetables
+83,f187,f7063,1,0.1409,Grains,Meat and eggs
+83,f187,f80,1,0.1492,Grains,Milk products
+83,f187,f804,1,0.1409,Grains,Grains
+83,f2031,f2048,1,0.2272,Grains,Milk products
+83,f2031,f584,1,0.2272,Grains,Fruits
+83,f2032,f2048,1,0.2542,Grains,Milk products
+83,f2048,f584,1,0.3983,Milk products,Fruits
+83,f2079,f335,1,0.2086,Grains,Vegetables
+83,f2079,uU0183,1,0.2086,Grains,Milk products
+83,f335,uU0183,1,0.4828,Vegetables,Milk products
+83,f404,f7063,1,0.4914,Vegetables,Meat and eggs
+83,f404,f804,1,0.4917,Vegetables,Grains
+83,f524,f6764,1,0.2034,Fruits,Grains
+83,f7063,f804,1,0.4914,Meat and eggs,Grains
+84,f1010,f174,1,0.092,Meat and eggs,Grains
+84,f1010,f182,1,0.1008,Meat and eggs,Grains
+84,f1119,f123,1,0.2571,Meat and eggs,Milk products
+84,f1119,f2514,1,0.4039,Meat and eggs,Grains
+84,f123,f168,1,0.1594,Milk products,Grains
+84,f123,f2514,1,0.2571,Milk products,Grains
+84,f123,f676,1,0.1594,Milk products,Grains
+84,f123,f998,1,0.095,Milk products,Meat and eggs
+84,f168,f676,1,0.1905,Grains,Grains
+84,f168,f998,1,0.095,Grains,Meat and eggs
+84,f174,f95,1,0.1239,Grains,Milk products
+84,f3818,f421,1,0.1042,Grains,Vegetables
+84,f3818,f95,1,0.1266,Grains,Milk products
+84,f421,f95,1,0.1042,Vegetables,Milk products
+84,f676,f998,1,0.095,Grains,Meat and eggs
+85,f1006,f1008,1,0.0684,Meat and eggs,Meat and eggs
+85,f1006,f1425,1,0.1586,Meat and eggs,Grains
+85,f1006,f214,1,0.0836,Meat and eggs,Grains
+85,f1008,f1425,1,0.0684,Meat and eggs,Grains
+85,f1008,f214,1,0.0684,Meat and eggs,Grains
+85,f123,f2128,1,0.2449,Milk products,Grains
+85,f123,f214,1,0.1486,Milk products,Grains
+85,f123,f226,1,0.218,Milk products,Grains
+85,f123,f2565,1,0.2833,Milk products,Vegetables
+85,f123,f337,1,0.1042,Milk products,Vegetables
+85,f123,f446,1,0.3703,Milk products,Vegetables
+85,f1425,f214,1,0.0836,Grains,Grains
+85,f1425,f77,1,0.1731,Grains,Milk products
+85,f214,f337,1,0.1042,Grains,Vegetables
+85,f226,f2565,1,0.218,Grains,Vegetables
+85,f226,f445,1,0.0792,Grains,Vegetables
+85,f226,f446,1,0.218,Grains,Vegetables
+85,f226,f77,1,0.108,Grains,Milk products
+85,f2565,f446,1,0.2833,Vegetables,Vegetables
+85,f445,f77,1,0.0792,Vegetables,Milk products
+86,f123,f2123,1,0.3777,Milk products,Grains
+86,f123,f590,1,0.3771,Milk products,Fruits
+86,f123,f678,2,0.5522,Milk products,Grains
+86,f1357,f293,1,0.3083,Seafood,Vegetables
+86,f1357,f804,1,0.5131,Seafood,Grains
+86,f1474,f202,1,0.0339,Meat and eggs,Grains
+86,f1476,f202,1,0.0629,Meat and eggs,Grains
+86,f202,f2479,1,0.1911,Grains,Grains
+86,f202,f444,1,0.1911,Grains,Vegetables
+86,f2125,f216,1,0.3315,Grains,Grains
+86,f2479,f444,1,0.3583,Grains,Vegetables
+86,f2517,f6311,1,0.5661,Grains,Legumes
+86,f293,f804,1,0.3083,Vegetables,Grains
+86,f3828,uU0189,1,0.7527,Grains,Meat and eggs
+86,f590,f678,1,0.2745,Fruits,Grains
+87,f1009,f123,1,0.25,Meat and eggs,Milk products
+87,f1009,f206,1,0.25,Meat and eggs,Grains
+87,f1009,f2124,1,0.25,Meat and eggs,Grains
+87,f1129,f2518,1,0.6056,Meat and eggs,Grains
+87,f1129,f296,1,0.5869,Meat and eggs,Vegetables
+87,f1129,f362,1,0.3958,Meat and eggs,Vegetables
+87,f1129,f6081,1,0.2721,Meat and eggs,Grains
+87,f123,f1331,1,0.3291,Milk products,Seafood
+87,f123,f206,1,0.2845,Milk products,Grains
+87,f123,f2124,1,0.2846,Milk products,Grains
+87,f123,f2516,1,0.3291,Milk products,Grains
+87,f123,f2614,1,0.3042,Milk products,Vegetables
+87,f123,f682,2,0.4649,Milk products,Grains
+87,f123,f7050,1,0.324,Milk products,Fruits
+87,f123,uU0192,1,0.3375,Milk products,Fruits
+87,f1331,f2516,1,0.5258,Seafood,Grains
+87,f1331,f2614,1,0.3042,Seafood,Vegetables
+87,f171,f80,1,0.1371,Grains,Milk products
+87,f206,f2124,1,0.2845,Grains,Grains
+87,f2516,f2614,1,0.3042,Grains,Vegetables
+87,f2518,f362,1,0.3958,Grains,Vegetables
+87,f2518,f6081,1,0.2721,Grains,Grains
+87,f362,f6081,1,0.2721,Vegetables,Grains
+87,f682,f7050,1,0.253,Grains,Fruits
+87,f682,uU0192,1,0.2119,Grains,Fruits
+88,f1011,f209,1,0.066,Meat and eggs,Grains
+88,f123,f725,1,0.204,Milk products,Grains
+88,f178,f713,1,0.2344,Grains,Grains
+88,f178,f998,1,0.08,Grains,Meat and eggs
+88,f178,uU0194,1,0.2344,Grains,Milk products
+88,f2520,f2932,2,1.3536,Grains,Meat and eggs
+88,f2520,f367,1,0.3292,Grains,Vegetables
+88,f2520,f492,1,0.325,Grains,Vegetables
+88,f2932,f367,1,0.3292,Meat and eggs,Vegetables
+88,f2932,f492,1,0.325,Meat and eggs,Vegetables
+88,f713,f998,1,0.08,Grains,Meat and eggs
+88,f713,uU0194,1,0.2567,Grains,Milk products
+88,f7147,f725,1,0.2934,Milk products,Grains
+88,f998,uU0194,1,0.08,Meat and eggs,Milk products
+89,f1008,uU0199,1,0.2658,Meat and eggs,Grains
+89,f1010,f201,1,0.0745,Meat and eggs,Grains
+89,f1113,f163,1,0.279,Meat and eggs,Grains
+89,f1113,f288,1,0.4375,Meat and eggs,Vegetables
+89,f1113,f3756,1,0.5978,Meat and eggs,Grains
+89,f1113,f4939,1,0.4083,Meat and eggs,Vegetables
+89,f1129,f171,1,0.4914,Meat and eggs,Grains
+89,f1129,f4939,1,0.5208,Meat and eggs,Vegetables
+89,f123,f2162,1,0.3857,Milk products,Vegetables
+89,f123,f3756,1,0.3857,Milk products,Grains
+89,f163,f288,1,0.279,Grains,Vegetables
+89,f170,f78,1,0.3337,Grains,Milk products
+89,f171,f4939,1,0.4914,Grains,Vegetables
+89,f2162,f3756,1,0.4125,Vegetables,Grains
+89,f2517,f434,1,0.675,Grains,Vegetables
+89,f2517,uU0198,1,0.816,Grains,Meat and eggs
+89,f3756,f4939,1,0.4083,Grains,Vegetables
+89,f434,uU0198,1,0.675,Vegetables,Meat and eggs
+89,f4591,uU0200,1,0.2792,Grains,Vegetables
+89,uU0195,uU0196,1,0.0789,Grains,Meat and eggs
+90,f120,f6863,1,0.1019,Milk products,Grains
+90,f123,f4937,1,0.2126,Milk products,Vegetables
+90,f1306,f2520,1,0.308,Seafood,Grains
+90,f1306,f2565,1,0.308,Seafood,Vegetables
+90,f147,f2032,1,0.1951,Milk products,Grains
+90,f172,uU0203,1,0.156,Grains,Milk products
+90,f2031,uU0202,1,0.1941,Grains,Milk products
+90,f2520,f2565,1,0.4917,Grains,Vegetables
+90,f2521,f328,1,0.1708,Grains,Vegetables
+90,f2521,uU0201,1,0.1667,Grains,Vegetables
+90,f328,uU0201,1,0.1667,Vegetables,Vegetables
+91,f123,f1470,1,0.0543,Milk products,Meat and eggs
+91,f123,f2123,1,0.3019,Milk products,Grains
+91,f123,f591,1,0.2966,Milk products,Fruits
+91,f123,f678,2,0.3282,Milk products,Grains
+91,f123,uU0205,1,0.2266,Milk products,Grains
+91,f1322,f2565,1,0.3208,Seafood,Vegetables
+91,f1470,f2123,1,0.0543,Meat and eggs,Grains
+91,f1470,uU0205,1,0.0543,Meat and eggs,Grains
+91,f178,f77,1,0.2149,Grains,Milk products
+91,f2123,uU0205,1,0.2266,Grains,Grains
+91,f2515,f291,1,0.2843,Grains,Vegetables
+91,f346,f6268,1,0.2208,Vegetables,Legumes
+91,f367,uU0206,1,0.2167,Vegetables,Milk products
+91,f591,f678,1,0.1089,Fruits,Grains
+92,f1008,f123,1,0.1823,Meat and eggs,Milk products
+92,f1008,f178,1,0.1823,Meat and eggs,Grains
+92,f1008,f6763,1,0.1823,Meat and eggs,Grains
+92,f1011,f6761,1,0.2493,Meat and eggs,Grains
+92,f123,f178,1,0.492,Milk products,Grains
+92,f123,f6763,1,0.3612,Milk products,Grains
+92,f123,f727,1,0.4601,Milk products,Grains
+92,f1298,f366,1,0.4088,Seafood,Vegetables
+92,f1298,f4591,1,0.4088,Seafood,Grains
+92,f178,f6763,1,0.3612,Grains,Grains
+92,f290,f4591,1,0.665,Vegetables,Grains
+92,f290,f467,1,0.8667,Vegetables,Vegetables
+92,f290,uU0207,1,0.2628,Vegetables,Milk products
+92,f320,f3756,1,0.5292,Fruits,Grains
+92,f343,f4591,1,0.6542,Vegetables,Grains
+92,f343,uU0208,1,0.5683,Vegetables,Grains
+92,f366,f4591,1,0.8542,Vegetables,Grains
+92,f4591,f467,1,0.665,Grains,Vegetables
+92,f4591,uU0207,1,0.2628,Grains,Milk products
+92,f4591,uU0208,1,0.5683,Grains,Grains
+92,f467,uU0207,1,0.2628,Vegetables,Milk products
+93,f123,f2123,1,0.2066,Milk products,Grains
+93,f123,f566,1,0.325,Milk products,Fruits
+93,f123,f675,1,0.336,Milk products,Grains
+93,f123,f684,1,0.3446,Milk products,Grains
+93,f123,f7042,1,0.2208,Milk products,Fruits
+93,f1298,f2125,1,0.2135,Seafood,Grains
+93,f182,f97,1,0.24,Grains,Milk products
+93,f3794,uU0210,1,0.2549,Grains,Milk products
+93,f566,f684,1,0.325,Fruits,Grains
+93,f675,f7042,1,0.2208,Grains,Fruits
+94,f1011,f167,1,0.0697,Meat and eggs,Grains
+94,f1011,f364,1,0.0625,Meat and eggs,Vegetables
+94,f1477,f222,1,0.04,Meat and eggs,Grains
+94,f167,f364,1,0.0625,Grains,Vegetables
+94,f183,uU0212,1,0.2108,Grains,Meat and eggs
+94,f2516,f5975,1,0.5583,Grains,Fruits
+94,f2516,f6893,1,0.674,Grains,Legumes
+94,f335,uU0214,1,0.375,Vegetables,Grains
+94,f335,uU0215,1,0.2914,Vegetables,Milk products
+94,f5975,f6893,1,0.5583,Fruits,Legumes
+94,uU0214,uU0215,1,0.2914,Grains,Milk products
+95,f1011,f2225,1,0.044,Meat and eggs,Grains
+95,f1129,f178,1,0.1563,Meat and eggs,Grains
+95,f1129,f5975,1,0.4125,Meat and eggs,Fruits
+95,f123,uU0216,1,0.252,Milk products,Fruits
+95,f123,uU0218,1,0.2474,Milk products,Grains
+95,f148,f727,1,0.1291,Milk products,Grains
+95,f178,f5975,1,0.1563,Grains,Fruits
+95,f2028,f7257,1,0.1685,Grains,Milk products
+95,f3759,f6086,1,0.2293,Fruits,Grains
+95,f3759,f7257,1,0.1971,Fruits,Milk products
+95,f6086,f7257,1,0.1971,Grains,Milk products
+95,uU0216,uU0218,1,0.2474,Fruits,Grains
+96,f1000,f172,1,0.1048,Meat and eggs,Grains
+96,f1000,f173,1,0.1,Meat and eggs,Grains
+96,f1009,f204,1,0.205,Meat and eggs,Grains
+96,f1009,f219,1,0.205,Meat and eggs,Grains
+96,f1009,f79,1,0.205,Meat and eggs,Milk products
+96,f123,f342,1,0.2983,Milk products,Vegetables
+96,f123,f6291,1,0.2983,Milk products,Legumes
+96,f204,f219,1,0.2457,Grains,Grains
+96,f204,f79,1,0.3083,Grains,Milk products
+96,f219,f79,1,0.2457,Grains,Milk products
+96,f219,f998,1,0.195,Grains,Meat and eggs
+96,f2479,f400,1,0.575,Grains,Vegetables
+96,f342,f6291,1,0.5125,Vegetables,Legumes
+96,f400,f6313,1,0.5417,Vegetables,Vegetables
+97,f1191,f123,1,0.3274,Meat and eggs,Milk products
+97,f1191,f327,1,0.3,Meat and eggs,Vegetables
+97,f1191,f4448,1,1.1243,Meat and eggs,Grains
+97,f123,f327,1,0.3,Milk products,Vegetables
+97,f123,f4448,1,0.3274,Milk products,Grains
+97,f327,f4448,1,0.3,Vegetables,Grains
+97,f404,f6303,1,0.5583,Vegetables,Legumes
+97,f404,f846,1,0.546,Vegetables,Grains
+97,f6303,f846,1,0.546,Legumes,Grains
+98,f1001,f182,1,0.0715,Meat and eggs,Grains
+98,f123,f202,1,0.0889,Milk products,Grains
+98,f123,f2522,1,0.312,Milk products,Grains
+98,f123,f3609,1,0.312,Milk products,Meat and eggs
+98,f123,uU0221,1,0.312,Milk products,Vegetables
+98,f1313,f392,1,0.425,Seafood,Vegetables
+98,f1313,f6782,1,0.4929,Seafood,Grains
+98,f200,f712,1,0.1682,Grains,Grains
+98,f200,f998,1,0.105,Grains,Meat and eggs
+98,f202,f2522,1,0.0889,Grains,Grains
+98,f202,f3609,1,0.0889,Grains,Meat and eggs
+98,f202,uU0221,1,0.0889,Grains,Vegetables
+98,f2522,f3609,1,0.5111,Grains,Meat and eggs
+98,f2522,uU0221,1,0.475,Grains,Vegetables
+98,f342,f6878,1,0.2144,Vegetables,Grains
+98,f3609,uU0221,1,0.475,Meat and eggs,Vegetables
+98,f392,f6782,1,0.425,Vegetables,Grains
+98,f712,f998,1,0.105,Grains,Meat and eggs
+99,f123,f2515,1,0.1371,Milk products,Grains
+99,f123,f338,1,0.1663,Milk products,Vegetables
+99,f123,f420,1,0.1371,Milk products,Vegetables
+99,f123,f804,1,0.1663,Milk products,Grains
+99,f1497,f6081,1,0.0541,Meat and eggs,Grains
+99,f1597,f407,1,0.0708,Grains,Vegetables
+99,f1597,f6070,1,0.2244,Grains,Milk products
+99,f1597,f6084,1,0.1802,Grains,Grains
+99,f1597,f7150,1,0.0405,Grains,Meat and eggs
+99,f2515,f420,1,0.3083,Grains,Vegetables
+99,f338,f804,1,0.2125,Vegetables,Grains
+99,f407,f6070,1,0.0708,Vegetables,Milk products
+99,f407,f6084,1,0.0708,Vegetables,Grains
+99,f407,f7150,1,0.0405,Vegetables,Meat and eggs
+99,f6070,f6084,1,0.1802,Milk products,Grains
+99,f6070,f7150,1,0.0405,Milk products,Meat and eggs
+99,f6084,f7150,1,0.0405,Grains,Meat and eggs
+99,uU0223,uU0224,1,0.1637,Grains,Milk products
+100,f1001,f185,1,0.066,Meat and eggs,Grains
+100,f114,f2033,1,0.2844,Milk products,Grains
+100,f114,f524,1,0.2083,Milk products,Fruits
+100,f123,f2522,1,0.4183,Milk products,Grains
+100,f123,f288,2,0.5726,Milk products,Vegetables
+100,f123,f4448,1,0.2349,Milk products,Grains
+100,f123,f5847,1,0.4183,Milk products,Meat and eggs
+100,f123,f6759,1,0.2972,Milk products,Grains
+100,f136,f185,1,0.199,Milk products,Grains
+100,f136,f593,1,0.225,Milk products,Fruits
+100,f136,f6863,2,0.3588,Milk products,Grains
+100,f136,f96,1,0.1497,Milk products,Milk products
+100,f185,f6863,1,0.199,Grains,Grains
+100,f185,f96,1,0.1497,Grains,Milk products
+100,f2033,f524,1,0.2083,Grains,Fruits
+100,f216,f335,1,0.3831,Grains,Vegetables
+100,f216,f4602,1,0.3831,Grains,Seafood
+100,f2522,f5847,1,0.5268,Grains,Meat and eggs
+100,f2522,f6759,1,0.2972,Grains,Grains
+100,f288,f4448,1,0.3583,Vegetables,Grains
+100,f335,f4602,1,0.4542,Vegetables,Seafood
+100,f5847,f6759,1,0.2972,Meat and eggs,Grains
+100,f593,f6863,1,0.1509,Fruits,Grains
+100,f6863,f96,1,0.1497,Grains,Milk products

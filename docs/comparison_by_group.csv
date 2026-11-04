@@ -1,0 +1,123 @@
+group,n_foods,totals,measured_fractions,all_fractions
+ALL FOODS,2606,0.325,0.426,0.435
+Red meat fresh frozen cooked,143,0.601,0.813,0.902
+DAIRY (neighbours that are dairy),116,0.431,0.703,0.716
+Sauce dressing mayonnaise,108,0.481,0.313,0.313
+Vegetables,106,0.428,0.428,0.428
+Buns cakes cookies,102,0.475,0.696,0.696
+Meat products meat dishes,102,0.294,0.304,0.304
+Fish and shellfish dishes,98,0.257,0.329,0.329
+Vegetable dishes and products,97,0.225,0.249,0.249
+Replacement for meat protein products and dishes,80,0.622,0.74,0.74
+Pizza pie pirog,72,0.367,0.658,0.658
+Fish fresh frozen cooked,61,0.364,0.515,0.515
+Soup,55,0.371,0.335,0.335
+Fruit fresh frozen,52,0.373,0.4,0.4
+Leguminous plant,50,0.516,0.492,0.504
+Potatoes products and dishes,47,0.23,0.532,0.532
+Sausages,47,0.519,0.621,0.621
+Soft bread,43,0.219,0.67,0.67
+Flour starch bran,42,0.2,0.414,0.438
+Poultry,38,0.116,0.537,0.632
+Vegetable products and milk replacement,38,0.3,0.479,0.479
+Root vegetables,37,0.157,0.254,0.254
+Nuts and seeds,35,0.623,0.697,0.697
+Breakfast cereals,34,0.306,0.547,0.547
+Dessert,34,0.118,0.2,0.2
+Crisp bread,33,0.479,0.436,0.436
+Berries fresh frozen,32,0.319,0.494,0.494
+Porridge,32,0.169,0.362,0.362
+Processed meat,31,0.129,0.2,0.2
+Ice cream,29,0.469,0.531,0.531
+Sweet soups sauce,27,0.193,0.281,0.281
+Pasta dishes,27,0.133,0.274,0.274
+Potatoes,26,0.708,0.831,0.831
+Offals,25,0.176,0.368,0.368
+Sweets with chocolate,25,0.176,0.616,0.616
+Rice rice noodles,24,0.4,0.467,0.642
+"Jam, marmelade, jelly, apple sauce",24,0.617,0.575,0.575
+"Grain bulgur, couscous",23,0.2,0.357,0.357
+Offal products and dishes,23,0.104,0.217,0.217
+Mixed origin fat,22,0.473,0.864,0.864
+Poultry products and dishes,21,0.01,0.067,0.067
+Fresh cheese and quark,20,0.18,0.12,0.12
+"Fruit syrup soft drink, non-alcoholic cider",20,0.5,0.41,0.41
+Fruit and berries dried,19,0.453,0.547,0.547
+"Cream, creme fraiche",19,0.484,0.263,0.263
+Fruit juices etc,19,0.358,0.347,0.347
+"Mustard ketchup HP sauce soja ""flavouring""",18,0.033,0.067,0.067
+Pasta,18,0.156,0.222,0.222
+Vegetable oils,18,0.567,0.522,0.522
+"Panncake, waffle, crepe",17,0.106,0.365,0.365
+Bouillon,17,0.365,0.424,0.424
+"Crisps, popcorn, etc.",17,0.094,0.165,0.165
+Flavoured fermented milk,17,0.224,0.576,0.576
+Fruit and berries preserved,15,0.2,0.2,0.2
+Natural fermented products,14,0.571,0.557,0.557
+Fish smoked,13,0.123,0.262,0.262
+Gruel,13,0.077,0.154,0.154
+Childrens food excl. gruel and porridge,13,0.123,0.2,0.2
+Shellfish squid fresh frozen cooked,13,0.169,0.108,0.108
+Sausage dishes,13,0.108,0.2,0.2
+Mayonnaise salad,13,0.2,0.138,0.138
+Sweets excluding chocolate,13,0.169,0.354,0.354
+Chocolate,12,0.3,0.15,0.15
+Milk,11,0.091,0.2,0.327
+Salty biscuits,11,0.091,0.055,0.055
+Mushroom,11,0.164,0.309,0.309
+Hard cheese,11,0.309,0.855,0.836
+Soft cheese,10,0.1,0.5,0.56
+Wine,10,0.22,0.24,0.24
+Mixed salad,10,0.12,0.08,0.08
+Coffee tea with milk,10,0.34,0.34,0.34
+Egg,10,0.32,0.2,0.2
+Vegetable mixes w root vegetables and or leguminous plants,9,0.2,0.556,0.556
+Blood products and dishes,9,0.111,0.489,0.489
+Fish fried,9,0.0,0.089,0.089
+"Diet products, nutritional therapy",8,0.0,0.05,0.05
+Fat of mixed origin >=80%fat,8,0.25,0.575,0.575
+"Roe, roe spread",8,0.05,0.1,0.1
+Spices,8,0.225,0.25,0.25
+Egg products and dishes,8,0.025,0.05,0.05
+Cocoa milkdrink milkshake smothie w youghurt,7,0.029,0.171,0.171
+Cheese dish,7,0.0,0.0,0.0
+Spirits,7,0.086,0.0,0.0
+Tea infusion,7,0.2,0.029,0.029
+Sugar syrup honey,7,0.4,0.086,0.086
+"Other fats (lard, tallow, coconut oil)",6,0.133,0.233,0.233
+Coffee infusion,6,0.133,0.2,0.2
+Butter,5,0.48,0.68,0.68
+Beer,5,0.36,0.2,0.2
+Bars protein musli etc,5,0.08,0.12,0.12
+Hamburger with bread,5,0.16,0.44,0.44
+Processed cheese,5,0.0,0.2,0.2
+"Water, mineral water",5,0.16,0.0,0.0
+Salt,5,0.32,0.36,0.36
+Rice dishes,4,0.0,0.1,0.1
+Whey products,4,0.0,0.15,0.15
+Vegetable juice,4,0.05,0.05,0.05
+"Beverages without energy, light soft drinks etc.",4,0.1,0.0,0.0
+Cacao products,4,0.1,0.3,0.3
+Beverage,4,0.1,0.1,0.1
+"Vineger, wine vineger",3,0.133,0.133,0.133
+Cheese with vegetable fat,3,0.4,0.4,0.4
+"Bakers yeast, baking powder",3,0.0,0.067,0.067
+"Cider, soft drink with alcohol, drinks",3,0.0,0.0,0.0
+Brawn,3,0.0,0.0,0.0
+Liqueur,3,0.267,0.067,0.067
+Algea,2,0.0,0.0,0.0
+"Sports drinks, energy drinks",2,0.0,0.0,0.0
+Miscellanous foods,2,0.2,0.2,0.2
+Rice cakes,2,0.0,0.0,0.0
+Blood,2,0.0,0.0,0.0
+Beverages miscellaneous,2,0.0,0.0,0.0
+Chewing gum,2,0.2,0.0,0.0
+Gelatine agar agar,2,0.0,0.0,0.0
+"Sweets, chocolate, chewing gum",2,0.2,0.2,0.2
+Dishes,1,0.0,0.0,0.0
+Different mixed dishes,1,0.0,0.0,0.0
+Artificial sweetener,1,0.0,0.0,0.0
+"Fruit/nuts mixtures ""fruits/nuts candies""",1,0.0,0.0,0.0
+"Other ""meat"", frog legs, snails,seal - fresh, frozen, cooked",1,0.0,0.0,0.0
+Taco shell,1,0.0,0.0,0.0
+Sweets sugar-free,1,0.0,0.0,0.0

@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">44</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.9343</data>
+  <data key="d4">181.67</data>
+</node>
+<node id="f137">
+  <data key="d1">Fruit yoghurt delicacy 7% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2202</data>
+  <data key="d4">61.67</data>
+</node>
+<node id="f1470">
+  <data key="d1">Goose liver paté canned smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0787</data>
+  <data key="d4">9.67</data>
+</node>
+<node id="f1478">
+  <data key="d1">Liver pâté spreadable 3-3.5% fat </data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0505</data>
+  <data key="d4">6.67</data>
+</node>
+<node id="f1498">
+  <data key="d1">Salami sausage smoked 34-44% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.1457</data>
+  <data key="d4">12.67</data>
+</node>
+<node id="f210">
+  <data key="d1">Bread wholegrain graham flour w/ milk app. 5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4616</data>
+  <data key="d4">31.33</data>
+</node>
+<node id="f2518">
+  <data key="d1">Rice instant boiled w/ 1% salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3167</data>
+  <data key="d4">41.67</data>
+</node>
+<node id="f2521">
+  <data key="d1">Pasta macaroni spaghetti dried boiled w/ salt gluten free  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.105</data>
+  <data key="d4">102.0</data>
+</node>
+<node id="f2672">
+  <data key="d1">Vegetables and root vegetables ovenbaked</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3458</data>
+  <data key="d4">27.67</data>
+</node>
+<node id="f3828">
+  <data key="d1">Pasta boiled w. salt wholegrain &gt;50%  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5451</data>
+  <data key="d4">56.0</data>
+</node>
+<node id="f452">
+  <data key="d1">Leek boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2625</data>
+  <data key="d4">21.0</data>
+</node>
+<node id="f4579">
+  <data key="d1">Broccoli gratin w/ cottage cheese tomato</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.8542</data>
+  <data key="d4">68.33</data>
+</node>
+<node id="f4591">
+  <data key="d1">Rice white short-grain boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.798</data>
+  <data key="d4">84.0</data>
+</node>
+<node id="f6368">
+  <data key="d1">Hummus w/ chickpeas beetroot</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.2829</data>
+  <data key="d4">44.0</data>
+</node>
+<node id="f6757">
+  <data key="d1">Bread w/ sifted rye app. 4% fibre e.g. rågkaka</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2255</data>
+  <data key="d4">17.0</data>
+</node>
+<node id="f6895">
+  <data key="d1">Vegetarian sausage w/ sunflower protein and pea protein heated chilled or frozen product</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.4119</data>
+  <data key="d4">57.67</data>
+</node>
+<node id="f814">
+  <data key="d1">Rice Chinese Asian boiled w/o salt from restaurant</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.388</data>
+  <data key="d4">38.67</data>
+</node>
+<node id="uU0095">
+  <data key="d1">Grandma's tomato canned w/ brine</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1958</data>
+  <data key="d4">15.67</data>
+</node>
+<node id="uU0096">
+  <data key="d1">Store-brand breakfast cereal muesli wholegrain w/ sugar fruit berries</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1498</data>
+  <data key="d4">14.0</data>
+</node>
+<node id="uU0098">
+  <data key="d1">Family recipe cashew nuts roasted</data>
+  <data key="d2">Nuts</data>
+  <data key="d3">0.3257</data>
+  <data key="d4">12.67</data>
+</node>
+<edge source="f123" target="f2518">
+  <data key="d5">0.3034</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="uU0096">
+  <data key="d5">0.1498</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1470" target="f1478">
+  <data key="d5">0.0505</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1470" target="f210">
+  <data key="d5">0.0787</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1478" target="f210">
+  <data key="d5">0.0505</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1498" target="f6757">
+  <data key="d5">0.1457</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1498" target="uU0095">
+  <data key="d5">0.1457</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="f2672">
+  <data key="d5">0.3458</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="f6368">
+  <data key="d5">0.2829</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2672" target="f6368">
+  <data key="d5">0.2829</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3828" target="f452">
+  <data key="d5">0.2625</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f4579" target="f4591">
+  <data key="d5">0.798</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f6757" target="uU0095">
+  <data key="d5">0.1958</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f6895" target="f814">
+  <data key="d5">0.388</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

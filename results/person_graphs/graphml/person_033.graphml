@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">33</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.528</data>
+  <data key="d4">102.67</data>
+</node>
+<node id="f1407">
+  <data key="d1">Squid deep fried</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">0.2303</data>
+  <data key="d4">17.33</data>
+</node>
+<node id="f142">
+  <data key="d1">Fermented milk 3% fat e.g. Kefir</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.1036</data>
+  <data key="d4">21.33</data>
+</node>
+<node id="f2123">
+  <data key="d1">Oatmeal porridge wholegrain fibre oats</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1687</data>
+  <data key="d4">46.0</data>
+</node>
+<node id="f2128">
+  <data key="d1">Porridge</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5088</data>
+  <data key="d4">142.67</data>
+</node>
+<node id="f219">
+  <data key="d1">Bread wholegrain rye w/ potato app. 5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1519</data>
+  <data key="d4">11.33</data>
+</node>
+<node id="f2612">
+  <data key="d1">Leek pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2083</data>
+  <data key="d4">16.67</data>
+</node>
+<node id="f404">
+  <data key="d1">Asparagus white canned w/o brine</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3792</data>
+  <data key="d4">30.33</data>
+</node>
+<node id="f495">
+  <data key="d1">Corn cobs boiled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2542</data>
+  <data key="d4">20.33</data>
+</node>
+<node id="f583">
+  <data key="d1">Pear</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.2458</data>
+  <data key="d4">19.67</data>
+</node>
+<node id="f677">
+  <data key="d1">Oatmeal porridge wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2368</data>
+  <data key="d4">64.0</data>
+</node>
+<node id="uU0080">
+  <data key="d1">Corn cobs boiled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2125</data>
+  <data key="d4">17.0</data>
+</node>
+<edge source="f123" target="f2123">
+  <data key="d5">0.1687</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2128">
+  <data key="d5">0.1834</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f677">
+  <data key="d5">0.1611</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1407" target="f404">
+  <data key="d5">0.2</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f219" target="f404">
+  <data key="d5">0.1519</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

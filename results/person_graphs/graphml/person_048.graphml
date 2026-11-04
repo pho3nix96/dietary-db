@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">48</data>
+<node id="f1011">
+  <data key="d1">Pork belly smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.066</data>
+  <data key="d4">6.0</data>
+</node>
+<node id="f1029">
+  <data key="d1">Collared brawn e.g. rullsylta</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.5257</data>
+  <data key="d4">38.33</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.6549</data>
+  <data key="d4">127.33</data>
+</node>
+<node id="f128">
+  <data key="d1">Fermented milk w/ acidophilus 3% fat e.g. A-fil</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2704</data>
+  <data key="d4">55.67</data>
+</node>
+<node id="f1309">
+  <data key="d1">Rainbow trout breaded fried</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">0.9959</data>
+  <data key="d4">73.0</data>
+</node>
+<node id="f299">
+  <data key="d1">Carrot canned w/ brine</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.475</data>
+  <data key="d4">38.0</data>
+</node>
+<node id="f423">
+  <data key="d1">Fefferoni pickled canned</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.4875</data>
+  <data key="d4">39.0</data>
+</node>
+<node id="f4937">
+  <data key="d1">Tomato red cherry tomato</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1208</data>
+  <data key="d4">9.67</data>
+</node>
+<node id="f712">
+  <data key="d1">Breakfast cereal wholegrain e.g. muesli cereal mix</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4387</data>
+  <data key="d4">20.0</data>
+</node>
+<node id="f804">
+  <data key="d1">Brown rice boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4391</data>
+  <data key="d4">63.33</data>
+</node>
+<node id="uU0109">
+  <data key="d1">Bread wholegrain rye with sunflower seeds</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4181</data>
+  <data key="d4">16.33</data>
+</node>
+<node id="uU0110">
+  <data key="d1">Salami sausage smoked 34-44% fat with pepper crust</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0537</data>
+  <data key="d4">4.67</data>
+</node>
+<node id="uU0113">
+  <data key="d1">Store-brand fefferoni pickled canned</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2708</data>
+  <data key="d4">21.67</data>
+</node>
+<node id="uU0114">
+  <data key="d1">Fefferoni pickled canned</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2667</data>
+  <data key="d4">21.33</data>
+</node>
+<edge source="f1011" target="f4937">
+  <data key="d5">0.066</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f1309">
+  <data key="d5">0.2349</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f712">
+  <data key="d5">0.42</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f804">
+  <data key="d5">0.2349</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="uU0113">
+  <data key="d5">0.2349</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1309" target="f804">
+  <data key="d5">0.4391</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1309" target="uU0113">
+  <data key="d5">0.2708</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f804" target="uU0113">
+  <data key="d5">0.2708</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="uU0109" target="uU0110">
+  <data key="d5">0.0537</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

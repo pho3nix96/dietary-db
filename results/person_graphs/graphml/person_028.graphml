@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">28</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.9463</data>
+  <data key="d4">184.0</data>
+</node>
+<node id="f148">
+  <data key="d1">Mild yoghurt vanilla flavour 2% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3749</data>
+  <data key="d4">82.0</data>
+</node>
+<node id="f180">
+  <data key="d1">Crisp bread wheat w/ poppy seeds 6% fibre e.g. frukost</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2611</data>
+  <data key="d4">12.33</data>
+</node>
+<node id="f201">
+  <data key="d1">Bread white wholegrain sour dough 4.4% fibre bake off e.g. coarse baguette </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1694</data>
+  <data key="d4">11.0</data>
+</node>
+<node id="f2123">
+  <data key="d1">Oatmeal porridge wholegrain fibre oats</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.6062</data>
+  <data key="d4">165.33</data>
+</node>
+<node id="f2520">
+  <data key="d1">Pasta tagliatelle w/ egg dried boiled w/ salt gluten free </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4571</data>
+  <data key="d4">40.33</data>
+</node>
+<node id="f334">
+  <data key="d1">Curly endive</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.375</data>
+  <data key="d4">30.0</data>
+</node>
+<node id="f490">
+  <data key="d1">Gherkins pickled in salt brine drained</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3167</data>
+  <data key="d4">25.33</data>
+</node>
+<node id="f598">
+  <data key="d1">Orange zest</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.7958</data>
+  <data key="d4">63.67</data>
+</node>
+<node id="f6053">
+  <data key="d1">Cashew nuts roasted w/ salt </data>
+  <data key="d2">Nuts</data>
+  <data key="d3">0.24</data>
+  <data key="d4">9.33</data>
+</node>
+<node id="f677">
+  <data key="d1">Oatmeal porridge wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.465</data>
+  <data key="d4">125.67</data>
+</node>
+<node id="f719">
+  <data key="d1">Breakfast cereal musli wholegrain w/ fruit berries</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4528</data>
+  <data key="d4">27.33</data>
+</node>
+<node id="uU0069">
+  <data key="d1">Organic milk 3% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3407</data>
+  <data key="d4">69.33</data>
+</node>
+<edge source="f123" target="f180">
+  <data key="d5">0.2611</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2123">
+  <data key="d5">0.2126</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f719">
+  <data key="d5">0.3326</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2520" target="f490">
+  <data key="d5">0.3167</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f677" target="uU0069">
+  <data key="d5">0.3407</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,114 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">52</data>
+<node id="f1000">
+  <data key="d1">Beef meat smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.1238</data>
+  <data key="d4">8.67</data>
+</node>
+<node id="f1006">
+  <data key="d1">Pork loin kasseler smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0838</data>
+  <data key="d4">5.67</data>
+</node>
+<node id="f1497">
+  <data key="d1">Mettwurst sausage smoked 35% fat </data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0947</data>
+  <data key="d4">9.33</data>
+</node>
+<node id="f181">
+  <data key="d1">Crisp bread wheat w/ sugar cinnamon app. 7% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4026</data>
+  <data key="d4">22.0</data>
+</node>
+<node id="f185">
+  <data key="d1">Bread wholegrain barley 3% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.154</data>
+  <data key="d4">13.67</data>
+</node>
+<node id="f2225">
+  <data key="d1">Crisp bread gluten free app. 7.5% fibre fortified e.g. grovknäcke </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2222</data>
+  <data key="d4">8.67</data>
+</node>
+<node id="f226">
+  <data key="d1">Bread white gluten free</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3827</data>
+  <data key="d4">26.33</data>
+</node>
+<node id="f2521">
+  <data key="d1">Pasta macaroni spaghetti dried boiled w/ salt gluten free  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4225</data>
+  <data key="d4">39.0</data>
+</node>
+<node id="f2606">
+  <data key="d1">Broccoli pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.7458</data>
+  <data key="d4">59.67</data>
+</node>
+<node id="f321">
+  <data key="d1">Celery</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2708</data>
+  <data key="d4">21.67</data>
+</node>
+<node id="f6302">
+  <data key="d1">Plant-based nugget soy protein ovenbaked</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.3529</data>
+  <data key="d4">21.67</data>
+</node>
+<node id="f6786">
+  <data key="d1">Noodles eggnoodles boiled w/o salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2475</data>
+  <data key="d4">33.0</data>
+</node>
+<edge source="f1000" target="f226">
+  <data key="d5">0.1238</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f1006" target="f181">
+  <data key="d5">0.0838</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1497" target="f181">
+  <data key="d5">0.0947</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f185" target="f2606">
+  <data key="d5">0.154</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f185" target="f6302">
+  <data key="d5">0.154</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="f321">
+  <data key="d5">0.2708</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2606" target="f6302">
+  <data key="d5">0.2708</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2606" target="f6786">
+  <data key="d5">0.2475</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

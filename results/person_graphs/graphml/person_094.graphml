@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">94</data>
+<node id="f1011">
+  <data key="d1">Pork belly smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0697</data>
+  <data key="d4">6.33</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3326</data>
+  <data key="d4">64.67</data>
+</node>
+<node id="f1477">
+  <data key="d1">Liver pâté spreadable app. 10% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.04</data>
+  <data key="d4">4.67</data>
+</node>
+<node id="f167">
+  <data key="d1">Crisp bread wholegrain rye app. 15% fibre e.g. flatbröd</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1341</data>
+  <data key="d4">6.33</data>
+</node>
+<node id="f183">
+  <data key="d1">Crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2108</data>
+  <data key="d4">12.0</data>
+</node>
+<node id="f222">
+  <data key="d1">Bread white water app. 3% fibre e.g. roll w/ cheese </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2259</data>
+  <data key="d4">15.33</data>
+</node>
+<node id="f2516">
+  <data key="d1">Rice long-grain parboiled boiled</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.674</data>
+  <data key="d4">73.0</data>
+</node>
+<node id="f335">
+  <data key="d1">Endive</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.375</data>
+  <data key="d4">30.0</data>
+</node>
+<node id="f364">
+  <data key="d1">Tomato</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.0625</data>
+  <data key="d4">5.0</data>
+</node>
+<node id="f3794">
+  <data key="d1">Bread wholegrain wheat rye app. 6% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.154</data>
+  <data key="d4">14.67</data>
+</node>
+<node id="f5975">
+  <data key="d1">Avocado frozen product</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.5583</data>
+  <data key="d4">44.67</data>
+</node>
+<node id="f6695">
+  <data key="d1">Pizza base cooked</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.9672</data>
+  <data key="d4">72.0</data>
+</node>
+<node id="f6893">
+  <data key="d1">Vegetarian sausage w/ soy protein heated chilled or frozen product</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.9858</data>
+  <data key="d4">54.33</data>
+</node>
+<node id="uU0211">
+  <data key="d1">Homemade apple w/ skin dried mix</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.7542</data>
+  <data key="d4">60.33</data>
+</node>
+<node id="uU0212">
+  <data key="d1">Store-brand pork ham dried cured italian prosciutto with pepper crust</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.2995</data>
+  <data key="d4">10.33</data>
+</node>
+<node id="uU0213">
+  <data key="d1">Market stall crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre with sunflower seeds</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3704</data>
+  <data key="d4">18.33</data>
+</node>
+<node id="uU0214">
+  <data key="d1">Store-brand rice long-grain parboiled boiled</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7536</data>
+  <data key="d4">69.67</data>
+</node>
+<node id="uU0215">
+  <data key="d1">Market stall milk 3% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2914</data>
+  <data key="d4">56.67</data>
+</node>
+<edge source="f1011" target="f167">
+  <data key="d5">0.0697</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1011" target="f364">
+  <data key="d5">0.0625</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1477" target="f222">
+  <data key="d5">0.04</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f167" target="f364">
+  <data key="d5">0.0625</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f183" target="uU0212">
+  <data key="d5">0.2108</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2516" target="f5975">
+  <data key="d5">0.5583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2516" target="f6893">
+  <data key="d5">0.674</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f335" target="uU0214">
+  <data key="d5">0.375</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f335" target="uU0215">
+  <data key="d5">0.2914</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f5975" target="f6893">
+  <data key="d5">0.5583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="uU0214" target="uU0215">
+  <data key="d5">0.2914</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

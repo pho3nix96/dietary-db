@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">8</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">1.1897</data>
+  <data key="d4">231.33</data>
+</node>
+<node id="f2124">
+  <data key="d1">Oatmeal porridge boiled w/ milk</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2305</data>
+  <data key="d4">82.33</data>
+</node>
+<node id="f2612">
+  <data key="d1">Leek pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.4</data>
+  <data key="d4">32.0</data>
+</node>
+<node id="f305">
+  <data key="d1">Carrot boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">1.4083</data>
+  <data key="d4">112.67</data>
+</node>
+<node id="f554">
+  <data key="d1">Blackberries</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.4083</data>
+  <data key="d4">32.67</data>
+</node>
+<node id="f598">
+  <data key="d1">Orange zest</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">1.0042</data>
+  <data key="d4">80.33</data>
+</node>
+<node id="f675">
+  <data key="d1">Buckwheat porridge w/ raisins</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3731</data>
+  <data key="d4">97.33</data>
+</node>
+<node id="f683">
+  <data key="d1">Porridge wholegrain w/ oat wheat bran raisins </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1323</data>
+  <data key="d4">63.0</data>
+</node>
+<node id="f814">
+  <data key="d1">Rice Chinese Asian boiled w/o salt from restaurant</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5017</data>
+  <data key="d4">50.0</data>
+</node>
+<node id="uU0017">
+  <data key="d1">Purple chokeberry</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.2167</data>
+  <data key="d4">17.33</data>
+</node>
+<edge source="f123" target="f2124">
+  <data key="d5">0.1851</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f305">
+  <data key="d5">0.3977</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f554">
+  <data key="d5">0.3703</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f675">
+  <data key="d5">0.3703</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f683">
+  <data key="d5">0.1323</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="uU0017">
+  <data key="d5">0.2167</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f554" target="f675">
+  <data key="d5">0.3731</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f683" target="uU0017">
+  <data key="d5">0.1323</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

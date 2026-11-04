@@ -1,0 +1,116 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">43</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.6017</data>
+  <data key="d4">117.0</data>
+</node>
+<node id="f2027">
+  <data key="d1">Breakfast cereal muesli wholegrain w/ sugar fruit nuts </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.225</data>
+  <data key="d4">16.67</data>
+</node>
+<node id="f204">
+  <data key="d1">Bread white milk app. 3% fibre e.g. Hönökaka</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2844</data>
+  <data key="d4">17.67</data>
+</node>
+<node id="f2650">
+  <data key="d1">Minced meat beef pork flavoured w/ taco spices</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.7417</data>
+  <data key="d4">59.0</data>
+</node>
+<node id="f327">
+  <data key="d1">Brussels sprouts</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2583</data>
+  <data key="d4">20.67</data>
+</node>
+<node id="f3793">
+  <data key="d1">Crisp bread wholegrain rye app. 14% fiber </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2559</data>
+  <data key="d4">12.67</data>
+</node>
+<node id="f448">
+  <data key="d1">Onion boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3458</data>
+  <data key="d4">27.67</data>
+</node>
+<node id="f4591">
+  <data key="d1">Rice white short-grain boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5035</data>
+  <data key="d4">53.0</data>
+</node>
+<node id="f6763">
+  <data key="d1">Breakfast cereal puffed wheat w/ chocolate wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2351</data>
+  <data key="d4">13.67</data>
+</node>
+<node id="f678">
+  <data key="d1">Porridge graham flour w/ dried fruit flax seeds e.g. molinogröt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3179</data>
+  <data key="d4">134.33</data>
+</node>
+<node id="f6782">
+  <data key="d1">Sushi rice boiled</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7186</data>
+  <data key="d4">66.33</data>
+</node>
+<edge source="f123" target="f2027">
+  <data key="d5">0.2057</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f6763">
+  <data key="d5">0.2177</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f678">
+  <data key="d5">0.1783</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f204" target="f2650">
+  <data key="d5">0.2844</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f204" target="f327">
+  <data key="d5">0.2583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f204" target="f4591">
+  <data key="d5">0.2844</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2650" target="f327">
+  <data key="d5">0.2583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2650" target="f4591">
+  <data key="d5">0.5035</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f327" target="f4591">
+  <data key="d5">0.2583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f448" target="f6782">
+  <data key="d5">0.3458</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

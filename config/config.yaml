@@ -1,0 +1,86 @@
+# Food space map configuration.
+# Every choice that changes the clusters lives here, so results are reproducible.
+
+input: data/processed/foods_lv.csv   # made by scripts/prepare_livsmedelsverket.py
+output_dir: results
+seed: 0
+
+# Column names in your food table
+columns:
+  id: food_id
+  name: name
+  description: description        # optional; set to null if absent
+  foodex2: foodex2_code             # optional for now, used later for facets
+  gift_group: gift_group          # reference grouping; switch to gift_group once the FAO GIFT mapping is in
+  gift_subgroup: gift_subgroup
+  nutrients:                        # macronutrients per 100 g (Livsmedelsverket codes)
+    - PROT_g                        # protein
+    - FAT_g                         # fat, total
+    - CHO_g                         # carbohydrates, available
+    - FIBT_g                        # fibre
+
+nutrients:
+  basis: per_100g                   # decided: per 100 g
+  max_missing: 0.3                  # drop a nutrient missing in more than 30% of foods
+  impute: group_median              # group_median | median
+  log1p: true
+  metric: cosine                    # cosine | correlation
+
+semantics:
+  enabled: false                    # needs sentence-transformers
+  model: paraphrase-multilingual-MiniLM-L12-v2
+
+graph:
+  k: 15                             # neighbours per food
+
+fusion:
+  method: weighted                  # weighted | snf
+  gift_in_fusion: false             # keep GIFT as the reference only; see README
+  snf_iterations: 20
+  weights:                          # used when method is weighted
+    gift: 0.0
+    nutrients: 1.0
+    fractions: 1.0
+    semantics: 1.0
+
+# The "what kind" layer, using Livsmedelsverket component codes.
+# Blocks whose columns are missing from the food table are skipped.
+fractions:
+  enabled: true
+  curated_table: data/curated/protein_fractions.csv
+  blocks:
+    fat_type:
+      parent: FAT_g
+      parts: [FASAT_g, FAMS_g, FAPU_g]          # saturated, monounsaturated, polyunsaturated
+      min_parent: 0.5               # g/100 g; below this the fat profile is not used
+    pufa_type:
+      parent: FAPU_g
+      parts: [n6_g, ala_g, lc_n3_g]       # omega-6, ALA, long-chain omega-3, as shares of their sum
+      # no "other PUFA" remainder: databases tally minor PUFA differently (Fineli ~18% of PUFA, Sweden ~0%)
+      min_parent: 0.1
+    sat_fat_type:
+      parent: FASAT_g
+      parts: [sc_mc_sfa_g, long_sfa_g]  # C4-C10 (milk fat only) vs longer-chain saturated
+      min_parent: 0.2
+    sugar_type:
+      parent: SUGAR_g
+      parts: [MNSAC_g, SUCS_g, other_disac_g]  # monosaccharides, sucrose, other disaccharides (mainly lactose, maltose)
+      min_parent: 0.5
+    carbohydrate_type:
+      parent: CHO_g
+      parts: [starch_est_g, SUGAR_g, FIBT_g]   # starch estimated as CHO - sugars
+      min_parent: 0.5
+    protein_type:
+      source: curated
+      key_col: protein_fraction_category   # column in the food table naming the curated category
+      scheme: common                # common = compare across food families by solubility class;
+                                    # or a single scheme: casein_whey | osborne | legume_storage | muscle
+      parent: PROT_g
+      min_parent: 2.0               # g/100 g; low-protein foods (most fruit, vegetables, fats) get no protein profile
+
+clustering:
+  resolution: 1.0
+  scan: [0.25, 0.5, 1.0, 1.5, 2.0]
+
+layout:
+  method: umap                      # umap | tsne

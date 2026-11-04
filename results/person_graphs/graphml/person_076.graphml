@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">76</data>
+<node id="f1106">
+  <data key="d1">Meat balls w/ pork beef fried homemade</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">2.1593</data>
+  <data key="d4">191.33</data>
+</node>
+<node id="f128">
+  <data key="d1">Fermented milk w/ acidophilus 3% fat e.g. A-fil</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3157</data>
+  <data key="d4">65.0</data>
+</node>
+<node id="f130">
+  <data key="d1">Fermented milk semi-skimmed 1.5% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">1.325</data>
+  <data key="d4">265.0</data>
+</node>
+<node id="f166">
+  <data key="d1">Crisp bread wholegrain rye 16% fibre e.g. Finn Crisp</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1589</data>
+  <data key="d4">8.0</data>
+</node>
+<node id="f2032">
+  <data key="d1">Breakfast cereal muesli wholegrain w/ fruit nuts</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3192</data>
+  <data key="d4">18.0</data>
+</node>
+<node id="f2061">
+  <data key="d1">Cereal bar w/ fibre oat wheat plain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.162</data>
+  <data key="d4">18.0</data>
+</node>
+<node id="f316">
+  <data key="d1">Beetroot boiled w/o salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.6583</data>
+  <data key="d4">52.67</data>
+</node>
+<node id="f3828">
+  <data key="d1">Pasta boiled w. salt wholegrain &gt;50%  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.9052</data>
+  <data key="d4">93.0</data>
+</node>
+<node id="f492">
+  <data key="d1">Globe artichoke boiled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.5458</data>
+  <data key="d4">43.67</data>
+</node>
+<node id="f554">
+  <data key="d1">Blackberries</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.3167</data>
+  <data key="d4">25.33</data>
+</node>
+<node id="f591">
+  <data key="d1">Blackberries frozen product</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.2833</data>
+  <data key="d4">22.67</data>
+</node>
+<node id="f721">
+  <data key="d1">Breakfast cereal musli wholegrain w/ fruit nuts sugar or honey</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2951</data>
+  <data key="d4">21.33</data>
+</node>
+<node id="uU0170">
+  <data key="d1">Extra crispy globe artichoke boiled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.2583</data>
+  <data key="d4">20.67</data>
+</node>
+<edge source="f1106" target="f166">
+  <data key="d5">0.1589</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1106" target="f316">
+  <data key="d5">0.6583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1106" target="f3828">
+  <data key="d5">0.9052</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1106" target="uU0170">
+  <data key="d5">0.2583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f128" target="f2032">
+  <data key="d5">0.3157</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f128" target="f591">
+  <data key="d5">0.2833</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f130" target="f2061">
+  <data key="d5">0.162</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f130" target="f554">
+  <data key="d5">0.3167</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f130" target="f721">
+  <data key="d5">0.2951</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f166" target="uU0170">
+  <data key="d5">0.1589</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2032" target="f591">
+  <data key="d5">0.2833</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2061" target="f554">
+  <data key="d5">0.162</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f316" target="f3828">
+  <data key="d5">0.6583</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,226 @@
+unique_food_id,name,base_food_id,base_name,true_gift_group,true_gift_subgroup,has_values,ENERC_kcal_per100,PROT_g_per100,CHO_g_per100,SUGAR_g_per100,FIBT_g_per100,FAT_g_per100,FASAT_g_per100,FAMS_g_per100,FAPU_g_per100,ALC_g_per100
+U0001,Homemade cheese sauce,1988,Cheese sauce,"Herbs, spices and condiments",Seasonings and condiments,True,157.63,7.7,7.36,4.5,0.09,11.12,4.93,4.93,1.52,0.0
+U0002,Clarified butter ghee,7269,Clarified butter ghee ,Fats and oils,Animal fats and oils,True,1005.73,0.0,1.57,0.0,0.0,104.71,64.64,24.58,3.38,0.0
+U0003,Store-brand low-fat margarine 39% fat,2192,Low-fat margarine 39% fat fortified e.g. Lätta,Fats and oils,Vegetable fats and oils,True,409.82,0.0,1.16,0.16,0.0,39.85,12.36,14.83,8.3,0.0
+U0004,Small-batch minced meat sauce pork,1121,Minced meat sauce pork,Composite dishes,Meat-based dishes,True,104.98,8.21,4.31,4.24,1.0,8.73,4.88,4.04,0.96,0.0
+U0005,Extra crispy breakfast cereal puffed wheat w/ honey,726,Breakfast cereal puffed wheat w/ honey fortified ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0006,Store-brand wafer w/ caramel milk puffed rice chocolate couverture,7169,Wafer w/ caramel milk puffed rice chocolate couverture e.g. Lion,Sweets and sugars,Other sweets,False,,,,,,,,,,
+U0007,Store-brand cheese hard parmesan 29% fat with pepper crust,7142,Cheese hard parmesan 29% fat e.g. Grana Padano,Milk and milk products,Cheese,True,457.36,33.21,3.6,0.0,0.0,28.49,10.07,5.33,1.07,0.0
+U0008,Farm-shop sundried tomato w/ oil drained,4938,Sundried tomato w/ oil drained,Vegetables and their products,Vegetables - all types: dried,False,,,,,,,,,,
+U0009,Homemade rice chinese asian boiled,814,Rice Chinese Asian boiled w/o salt from restaurant,Cereals and their products,Rice and rice-based products,True,156.61,2.94,27.72,0.0,0.0,1.22,0.21,0.27,0.4,0.0
+U0010,Reduced-sugar milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,58.07,4.31,3.32,3.4,0.0,3.03,1.97,0.57,0.1,0.0
+U0011,Family recipe plant-based nugget mycoprotein chilled or frozen product with feta,6273,Plant-based nugget mycoprotein chilled or frozen product,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,221.14,10.43,13.43,1.79,4.25,6.63,1.06,2.05,6.43,0.0
+U0012,Grandma's crisp bread wholegrain oat wheat rye w/ milk 8% fibre with seeds,178,Crisp bread wholegrain oat wheat rye w/ milk 8% fibre ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0013,Ice cream cone,1702,Ice cream cone app. 10% fat,Sweets and sugars,Dough-based sweets,False,,,,,,,,,,
+U0014,Artisan milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,65.9,2.98,6.01,5.08,0.0,3.81,1.95,0.7,0.09,0.0
+U0015,Lactose-free milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,69.67,3.1,4.81,5.28,0.0,4.0,1.69,0.57,0.09,0.0
+U0016,Organic pasta sauce diff. brands,2009,Pasta sauce diff. brands,"Herbs, spices and condiments",Seasonings and condiments,True,57.8,1.87,6.02,7.74,2.14,1.54,0.19,1.36,0.17,0.0
+U0017,Purple chokeberry,4588,Purple chokeberry,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,48.65,0.81,7.58,6.68,4.2,0.08,0.0,0.0,0.0,0.0
+U0018,Extra crispy milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,61.03,4.23,3.84,5.06,0.0,3.36,2.17,0.63,0.08,0.0
+U0019,Market stall plant-based nugget mycoprotein chilled or frozen product with chickpeas,6273,Plant-based nugget mycoprotein chilled or frozen product,Vegetables and their products,Vegetables - all types: processed (excluding dried),False,,,,,,,,,,
+U0020,Store-brand pasta boiled corn 100% gluten free,2522,Pasta boiled corn 100% gluten free,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,137.82,4.59,28.04,0.25,1.3,1.01,0.1,0.22,0.3,0.0
+U0021,Grandma's sausage w/ mashed potatoes ketchup mustard pickled cucumber mix,2508,Sausage w/ mashed potatoes ketchup mustard pickled cucumber mix,Composite dishes,"Starchy root-, tuber- and fruit-based dishes",True,94.36,3.16,13.01,2.4,1.47,3.83,2.12,1.97,0.5,0.0
+U0022,Store-brand mixed green leaf salad w/ vinaigrette with feta,440,Mixed green leaf salad w/ vinaigrette,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,105.98,0.81,2.21,1.62,0.67,12.68,1.05,6.42,3.49,0.0
+U0023,Organic pasta sauce w/ tomato herbs,2008,Pasta sauce w/ tomato herbs,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0024,Artisan grape juice,658,Grape juice RTD canned,Beverages,100% fruit and vegetable juices,True,58.68,0.47,13.03,10.91,0.55,0.0,0.0,0.0,0.0,0.0
+U0025,Homemade milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,52.37,3.86,4.55,3.47,0.0,2.27,1.65,0.86,0.13,0.0
+U0026,Artisan sausage w/ mashed potatoes ketchup mustard pickled cucumber mix with lingonberry sauce,2508,Sausage w/ mashed potatoes ketchup mustard pickled cucumber mix,Composite dishes,"Starchy root-, tuber- and fruit-based dishes",True,91.02,2.1,11.54,2.54,1.39,4.96,1.71,2.02,0.38,0.0
+U0027,Organic cheese sauce,1988,Cheese sauce,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0028,Store-brand apple drink,1841,Apple drink RTD fortified ,Beverages,Soft drinks,True,36.65,0.0,8.78,6.93,0.0,0.0,0.0,0.0,0.0,0.0
+U0029,Milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,53.29,4.17,3.54,5.44,0.0,2.84,1.99,0.83,0.09,0.0
+U0030,Organic nettles parboiled,349,Nettles parboiled,"Herbs, spices and condiments",Herbs: fresh,True,32.67,3.14,0.79,0.08,3.4,0.82,0.11,0.0,0.41,0.0
+U0031,Organic red currant sea-buckthorn mix,585,Red currant,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0032,Family recipe nettle soup with dumplings,450,Nettle soup,Composite dishes,Soups,True,36.02,1.35,2.01,0.19,0.6,2.83,0.29,1.37,0.77,0.0
+U0033,Family recipe low-fat margarine 30% fat,2472,Low-fat margarine 30% fat fortified e.g. Mini Latta,Fats and oils,Vegetable fats and oils,True,286.8,0.0,0.0,0.0,0.0,25.69,9.0,16.51,8.74,0.0
+U0034,Extra crispy greek salad w/ feta cheese olives,529,Greek salad w/ feta cheese olives,Composite dishes,Salad-based dishes,True,83.62,2.41,3.12,3.05,1.48,7.17,2.29,3.86,0.59,0.0
+U0035,Farm-shop milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,68.5,3.2,5.42,4.33,0.0,2.81,1.28,0.69,0.1,0.0
+U0036,Small-batch greek salad w/ feta cheese olives,529,Greek salad w/ feta cheese olives,Composite dishes,Salad-based dishes,True,87.96,2.71,2.73,2.59,1.04,6.58,2.2,3.59,0.36,0.0
+U0037,Market stall chocolate sponge cake,1672,Chocolate sponge cake,Sweets and sugars,Dough-based sweets,True,433.81,4.64,39.61,19.65,3.06,17.38,8.26,7.72,2.32,0.0
+U0038,Small-batch crisp bread wholegrain rye with sunflower seeds,169,Crisp bread wholegrain rye app. 13% fibre,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0039,Family recipe greek sallad w/ feta cheese,532,Greek sallad w/ feta cheese,Composite dishes,Salad-based dishes,True,77.19,3.59,2.26,2.25,1.86,5.49,3.54,0.99,0.48,0.0
+U0040,High-protein biscuits gluten free with saffron,7163,Biscuits gluten free,Sweets and sugars,Dough-based sweets,True,438.91,3.04,57.85,43.99,1.53,21.01,7.27,6.73,3.09,0.0
+U0041,Family recipe liquid margarine 70% fat,7165,Liquid margarine 70% fat,Fats and oils,Vegetable fats and oils,True,616.83,0.0,0.71,0.0,0.0,91.75,5.26,49.85,29.25,0.0
+U0042,Reduced-sugar white cabbage pan-fried or stir-fried,2617,White cabbage pan-fried or stir-fried,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0043,Organic tomato red cherry tomato,4937,Tomato red cherry tomato,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0044,Farm-shop blended spread 70% fat,7261,Blended spread 70% fat e.g. Flora & smör,Fats and oils,Vegetable fats and oils,True,679.2,0.0,0.56,0.14,0.0,57.71,18.96,33.82,13.88,0.0
+U0045,Artisan fruit yoghurt 2% fat blueberry,7087,Fruit yoghurt 2% fat fortified,Milk and milk products,Fermented milk products,True,90.96,2.91,11.26,10.26,0.46,1.36,1.23,0.5,0.0,0.0
+U0046,Market stall ice cream cone with sea salt,1702,Ice cream cone app. 10% fat,Sweets and sugars,Dough-based sweets,True,214.69,3.34,44.63,16.28,0.29,11.47,8.14,2.48,0.62,0.0
+U0047,Crisp bread wheat w/ poppy seeds 6% fibre with sunflower seeds,180,Crisp bread wheat w/ poppy seeds 6% fibre e.g. frukost,Cereals and their products,Wheat and wheat-based products,True,420.86,13.65,69.39,4.05,4.59,6.67,1.06,2.22,1.79,0.0
+U0048,Small-batch lasagna homemade with jalapeños,6463,Lasagna homemade,Composite dishes,Pasta- and noodle-based dishes,True,121.2,7.44,11.19,3.13,1.16,4.39,2.43,1.91,0.33,0.0
+U0049,Margarine,6837,Margarine w/o milk 80% fat fortified,Fats and oils,Vegetable fats and oils,True,851.72,0.0,0.0,0.0,0.0,80.14,41.01,43.04,9.17,0.0
+U0050,Farm-shop basil fresh,379,Basil fresh,"Herbs, spices and condiments",Herbs: fresh,True,27.01,2.09,0.31,0.4,3.54,0.59,0.0,0.11,0.52,0.0
+U0051,Store-brand orange salad,635,Orange salad,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0052,Small-batch currant sauce,1997,Currant sauce,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0053,Grandma's yoghurt plain skimmed 0.5% fat raspberry,135,Yoghurt plain skimmed 0.5% fat,Milk and milk products,Fermented milk products,False,,,,,,,,,,
+U0054,Crisp bread wholegrain rye 16% fibre,166,Crisp bread wholegrain rye 16% fibre e.g. Finn Crisp,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,334.57,11.98,61.12,4.12,16.19,1.88,0.28,0.17,0.98,0.0
+U0055,Family recipe crisp bread wholegrain rye with seeds,167,Crisp bread wholegrain rye app. 15% fibre e.g. flatbröd,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,369.92,8.51,65.2,3.96,19.66,2.01,0.31,0.19,0.9,0.0
+U0056,Organic new potato boiled w/ salt,4511,New potato boiled w/ salt,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,69.89,1.02,14.93,3.09,1.71,0.1,0.0,0.0,0.0,0.0
+U0057,Garlic sauce,6514,Garlic sauce app. 10% fat,"Herbs, spices and condiments",Seasonings and condiments,True,144.71,2.2,6.06,2.44,0.11,9.67,2.1,6.11,2.33,0.0
+U0058,Low-fat margarine 30% fat,2472,Low-fat margarine 30% fat fortified e.g. Mini Latta,Fats and oils,Vegetable fats and oils,True,347.35,0.0,0.0,0.0,0.0,23.52,6.69,17.83,6.42,0.0
+U0059,Store-brand crisp bread wholegrain rye 15.5% fibre,172,Crisp bread wholegrain rye 15.5% fibre e.g. Brungräddat,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,287.89,9.71,54.86,1.32,14.59,2.2,0.24,0.38,1.15,0.0
+U0060,Yoghurt drinkable flavoured 1% fat raspberry,6069,Yoghurt drinkable flavoured 1% fat  ,Milk and milk products,Fermented milk products,False,,,,,,,,,,
+U0061,Pork ham canned aspic-gelly smoked,7150,Pork ham canned aspic-gelly,Meat and meat products,Meat and offal - all types: processed (excluding dried),True,136.14,13.2,0.0,0.62,0.0,6.66,2.64,4.4,0.87,0.0
+U0062,Reduced-sugar oat ice cream non-diary caramel hazelnut,6803,Oat ice cream non-diary caramel hazelnut,Sweets and sugars,Other sweets,True,204.39,1.71,27.99,16.67,1.22,16.21,4.52,4.42,1.67,0.0
+U0063,Grandma's crisp bread wholegrain rye,3793,Crisp bread wholegrain rye app. 14% fiber ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,336.41,7.32,56.6,0.91,21.89,1.34,0.21,0.18,0.57,0.0
+U0064,Chives,378,Chives,"Herbs, spices and condiments",Herbs: fresh,True,34.17,2.65,1.52,1.64,1.76,0.65,0.09,0.0,0.43,0.0
+U0065,Reduced-sugar fruit yoghurt 0.5% fat blueberry,126,Fruit yoghurt 0.5% fat fortified,Milk and milk products,Fermented milk products,True,75.38,3.25,14.4,12.94,0.65,0.6,0.3,0.1,0.0,0.0
+U0066,Homemade milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,62.53,4.9,4.93,5.1,0.0,2.89,2.2,0.95,0.13,0.0
+U0067,Artisan sauce w/ yoghurt mayonnaise spinach,6370,Sauce w/ yoghurt mayonnaise spinach,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0068,Organic rice brown long-grain boiled w/ salt wholegrain,2517,Rice brown long-grain boiled w/ salt wholegrain,Cereals and their products,Rice and rice-based products,False,,,,,,,,,,
+U0069,Organic milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,55.81,3.44,4.15,5.26,0.0,2.58,1.81,0.89,0.12,0.0
+U0070,Cordial,1820,Cordial RTD,Beverages,Soft drinks,False,,,,,,,,,,
+U0071,Lactose-free crisp bread gluten free,182,Crisp bread gluten free app. 3% fibre,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0072,Crisp bread gluten free with sunflower seeds,182,Crisp bread gluten free app. 3% fibre,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0073,Wine red vol. % 14,1907,Wine red vol. % 14,Beverages,Alcoholic drinks,False,,,,,,,,,,
+U0074,High-protein swedish soft drink,5147,Swedish soft drink e.g. julmust Påskmust,Beverages,Soft drinks,True,45.83,0.0,9.04,9.46,0.0,0.0,0.0,0.0,0.0,0.0
+U0075,Store-brand tomato pulp canned w/ brine,422,Tomato pulp canned w/ brine,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,25.64,0.53,4.8,3.96,1.74,0.18,0.0,0.0,0.1,0.0
+U0076,Artisan pork ham canned aspic-gelly,7150,Pork ham canned aspic-gelly,Meat and meat products,Meat and offal - all types: processed (excluding dried),True,172.02,18.12,0.0,0.74,0.0,7.28,3.83,3.67,0.81,0.0
+U0077,Reduced-sugar fish gratin w/ mashed potatoes dill sauce heated frozen product with horseradish,1372,Fish gratin w/ mashed potatoes dill sauce heated frozen product,Composite dishes,Fish- and seafood-based dishes,True,148.19,5.76,12.22,3.26,1.38,3.62,2.32,1.18,0.59,0.0
+U0078,Small-batch cheese hard 10% fat smoked,77,Cheese hard 10% fat,Milk and milk products,Cheese,True,215.16,34.58,1.51,0.0,0.0,10.4,8.12,2.33,0.23,0.0
+U0079,Lactose-free shellfish salad w/ mussles shrimps button mushrooms dressing homemade,1413,Shellfish salad w/ mussles shrimps button mushrooms dressing homemade e.g. vastkustsallad,Composite dishes,Fish- and seafood-based dishes,True,120.79,5.33,2.29,1.93,1.21,7.96,1.38,3.98,1.23,0.0
+U0080,Corn cobs boiled,495,Corn cobs boiled,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,97.43,4.53,13.14,1.83,3.56,0.91,0.1,0.22,0.56,0.0
+U0081,Grandma's pasta dried boiled w/ salt,3756,Pasta dried boiled w/ salt,Cereals and their products,Wheat and wheat-based products,False,,,,,,,,,,
+U0082,Air-dried whitefish pickled in lye boiled,1298,Air-dried whitefish pickled in lye boiled e.g. lutfisk,"Fish, shellfish and their products",Fish and shellfish (including offal) - all types: dried,True,33.53,5.95,0.0,0.0,0.0,0.49,0.1,0.09,0.17,0.0
+U0083,Grandma's tomato sauce for pizza homemade,5726,Tomato sauce for pizza homemade,"Herbs, spices and condiments",Seasonings and condiments,True,81.03,1.29,7.89,8.05,2.19,8.87,0.92,5.38,0.56,0.0
+U0084,Small-batch milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,51.29,2.86,5.99,6.0,0.0,2.69,1.81,0.84,0.08,0.0
+U0085,Cheese hard parmesan 30% fat with pepper crust,103,Cheese hard parmesan 30% fat e.g. Parmiggiano Reggiano,Milk and milk products,Cheese,True,474.16,25.85,4.24,0.0,0.0,38.28,22.42,9.6,1.37,0.0
+U0086,Store-brand rice white short-grain for porridge pre-boiled dried unccoked,2479,Rice white short-grain for porridge pre-boiled dried unccoked,Cereals and their products,Rice and rice-based products,True,332.9,7.14,85.14,4.5,1.11,0.62,0.1,0.2,0.18,0.0
+U0087,Artisan pastry w/ soft almond macaroon buttercream chocolate,1652,Pastry w/ soft almond macaroon buttercream chocolate e.g. chokladbiskvi,Sweets and sugars,Dough-based sweets,True,411.91,5.27,46.25,41.31,5.73,19.46,14.02,8.88,2.77,0.0
+U0088,Family recipe shellfish salad w/ mussles shrimps button mushrooms homemade,1414,Shellfish salad w/ mussles shrimps button mushrooms homemade e.g. västkustsallad,Composite dishes,Fish- and seafood-based dishes,True,51.35,6.01,2.22,1.49,0.99,0.77,0.1,0.14,0.27,0.0
+U0089,Grandma's cheese sauce w/ turkey,6341,Cheese sauce w/ turkey ,"Herbs, spices and condiments",Seasonings and condiments,True,163.83,11.02,5.95,3.19,0.09,7.06,3.84,3.07,1.42,0.0
+U0090,Extra crispy porridge,2128,Porridge,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0091,Family recipe potato boiled w/ salt,4520,Potato boiled w/ salt e.g. King Edward ,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,88.28,1.93,24.66,0.52,1.5,0.12,0.0,0.0,0.0,0.0
+U0092,Grandma's milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,59.13,3.84,4.84,4.32,0.0,2.38,2.99,0.87,0.12,0.0
+U0093,Grandma's vegetarian sausage w/ soy protein heated chilled or frozen product,6893,Vegetarian sausage w/ soy protein heated chilled or frozen product,"Pulses, nuts and seeds and their products",Soybean and soy-based products,False,,,,,,,,,,
+U0094,Artisan crisp bread w/ sesame seeds gluten free sourdough,6880,Crisp bread w/ sesame seeds gluten free app. 9% fibre,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0095,Grandma's tomato canned w/ brine,407,Tomato canned w/ brine,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,23.88,1.05,3.93,3.96,0.85,0.09,0.0,0.0,0.0,0.0
+U0096,Store-brand breakfast cereal muesli wholegrain w/ sugar fruit berries,2031,Breakfast cereal muesli wholegrain w/ sugar fruit berries ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,561.91,8.25,49.94,17.84,6.05,18.31,7.05,9.18,3.05,0.0
+U0097,Grandma's gingerbread with almond paste,1624,Gingerbread,Sweets and sugars,Dough-based sweets,True,407.86,3.34,61.98,42.09,2.33,14.55,6.16,5.22,1.98,0.0
+U0098,Family recipe cashew nuts roasted,1557,Cashew nuts roasted w/o salt,"Pulses, nuts and seeds and their products","Nuts, seeds and their products",False,,,,,,,,,,
+U0099,Lactose-free new potato boiled w/ salt,4511,New potato boiled w/ salt,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,75.26,1.64,14.2,2.42,1.41,0.15,0.0,0.0,0.0,0.0
+U0100,Caesar salad or chicken salad w/ dressing,513,Caesar salad or chicken salad w/ dressing,Composite dishes,Salad-based dishes,True,279.52,11.45,13.19,1.07,1.09,23.69,4.58,13.04,2.44,0.0
+U0101,Globe artichoke,342,Globe artichoke,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0102,Family recipe pasta boiled w. salt wholegrain >50%,3828,Pasta boiled w. salt wholegrain >50%  ,Cereals and their products,Wheat and wheat-based products,False,,,,,,,,,,
+U0103,Artisan potato boiled w/ salt,4416,Potato boiled w/ salt e.g. Swift ,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,70.09,1.63,11.52,3.92,1.69,0.13,0.0,0.0,0.0,0.0
+U0104,Market stall mustard sauce w/ oil vinegar dill chilled product,24,Mustard sauce w/ oil vinegar dill chilled product e.g. gravlaxsås,"Herbs, spices and condiments",Seasonings and condiments,True,611.65,1.67,15.23,10.89,0.0,51.95,7.54,13.03,41.89,0.0
+U0105,Market stall onion red,4947,Onion red,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,39.21,1.41,9.34,4.83,2.07,0.11,0.0,0.0,0.0,0.0
+U0106,Store-brand liquid margarine 82% fat,10,Liquid margarine 82% fat fortified e.g. Milda culinesse ,Fats and oils,Vegetable fats and oils,True,660.83,0.0,0.0,0.0,0.0,95.92,7.21,46.46,32.26,0.0
+U0107,Milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,68.97,4.16,5.15,4.91,0.0,3.13,2.02,0.75,0.08,0.0
+U0108,Store-brand thin gravy,1992,Thin gravy,"Herbs, spices and condiments",Seasonings and condiments,True,28.69,1.06,0.0,0.21,0.0,2.98,0.47,1.66,0.6,0.0
+U0109,Bread wholegrain rye with sunflower seeds,187,Bread wholegrain rye app. 10% fibre e.g. pumpernickel,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0110,Salami sausage smoked 34-44% fat with pepper crust,1498,Salami sausage smoked 34-44% fat,Meat and meat products,Meat and offal - all types: processed (excluding dried),False,,,,,,,,,,
+U0111,Market stall potato boiled w/ salt,4416,Potato boiled w/ salt e.g. Swift ,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,64.16,1.5,12.64,3.29,2.31,0.09,0.0,0.0,0.0,0.0
+U0112,Grandma's liquid margarine 82% fat,10,Liquid margarine 82% fat fortified e.g. Milda culinesse ,Fats and oils,Vegetable fats and oils,True,861.99,0.0,0.0,0.0,0.0,79.44,5.36,46.25,32.81,0.0
+U0113,Store-brand fefferoni pickled canned,423,Fefferoni pickled canned,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,18.5,0.77,1.83,0.65,4.49,0.11,0.0,0.0,0.0,0.0
+U0114,Fefferoni pickled canned,423,Fefferoni pickled canned,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,20.85,0.62,1.43,0.62,4.05,0.09,0.0,0.0,0.0,0.0
+U0115,High-protein pasta dried boiled w/ salt,3756,Pasta dried boiled w/ salt,Cereals and their products,Wheat and wheat-based products,True,121.9,3.92,25.04,0.51,2.19,0.59,0.11,0.09,0.19,0.0
+U0116,Grandma's liquid margarine 76% fat,2474,Liquid margarine 76% fat e.g. Becel,Fats and oils,Vegetable fats and oils,True,635.72,0.0,0.0,0.0,0.0,62.52,7.0,61.12,20.22,0.0
+U0117,Homemade blueberries sweetened frozen product,557,Blueberries sweetened frozen product,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,108.12,0.29,21.89,14.5,3.7,0.07,0.0,0.0,0.11,0.0
+U0118,Organic minced meat patties w/ pickled beetroot cucumber fried frozen product with lingonberry sauce,1136,Minced meat patties w/ pickled beetroot cucumber fried frozen product e.g. biff à la Lindström,Meat and meat products,Meat - mixed and unspecified: fresh,True,203.99,15.04,6.78,3.3,2.54,15.0,4.49,8.58,0.74,0.0
+U0119,Organic blended spread 40% fat,4663,Blended spread 40% fat fortified e.g Bregott mindre,Fats and oils,Vegetable fats and oils,True,332.93,0.0,2.49,0.27,0.0,41.13,17.61,18.28,5.54,0.0
+U0120,Milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,59.76,3.32,5.32,3.91,0.0,2.23,1.98,0.7,0.09,0.0
+U0121,Market stall tomatoes green pickled,421,Tomatoes green pickled,Vegetables and their products,Vegetables - all types: processed (excluding dried),False,,,,,,,,,,
+U0122,Lactose-free blended spread 40% fat,4663,Blended spread 40% fat fortified e.g Bregott mindre,Fats and oils,Vegetable fats and oils,False,,,,,,,,,,
+U0123,Lactose-free breakfast cereals muesli wholegrain w/ fruit,2024,Breakfast cereals muesli wholegrain w/ fruit,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,357.89,7.29,57.34,13.59,8.51,4.94,1.57,0.87,0.74,0.0
+U0124,High-protein fruit w/ milk chocolate coating,7185,Fruit w/ milk chocolate coating,Sweets and sugars,Fruit- and nut-based sweets,True,567.07,5.52,70.03,52.6,2.91,26.68,20.16,6.89,1.04,0.0
+U0125,Market stall margarine spread 91% fat eg. breoliv,7271,Margarine spread 91% fat eg. BreOliv,Fats and oils,Vegetable fats and oils,True,583.86,0.0,0.0,0.0,0.0,93.85,21.67,65.98,8.09,0.0
+U0126,Grandma's potato boiled,5153,Potato boiled w/o salt,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,97.47,1.59,16.37,0.84,2.08,0.11,0.0,0.0,0.0,0.0
+U0127,Reduced-sugar lime juice freshly-squeezed,652,Lime juice freshly-squeezed,Beverages,100% fruit and vegetable juices,False,,,,,,,,,,
+U0128,Lactose-free milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,55.76,4.79,6.55,4.83,0.0,3.14,1.9,0.72,0.11,0.0
+U0129,High-protein milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,52.79,4.1,4.65,4.71,0.0,2.66,1.76,0.64,0.09,0.0
+U0130,Small-batch pasta sauce w/ chicken bell pepper,6457,Pasta sauce w/ chicken bell pepper,Composite dishes,Meat-based dishes,True,171.46,12.18,1.63,1.87,0.26,12.3,8.24,2.88,0.71,0.0
+U0131,Grandma's low-fat margarine 40% fat,7263,Low-fat margarine 40% fat fortified,Fats and oils,Vegetable fats and oils,True,368.3,0.0,0.55,0.34,0.91,43.1,10.45,19.98,7.55,0.0
+U0132,Market stall margarine for cooking/baking 80% fat,13,Margarine for cooking/baking 80% fat fortified e.g. Milda ,Fats and oils,Vegetable fats and oils,False,,,,,,,,,,
+U0133,Rye rusks sourdough,1595,Rye rusks,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,372.94,8.77,50.23,2.27,20.9,11.67,3.26,5.27,1.45,0.0
+U0134,Market stall bread white milk,3819,Bread white milk app. 4% fibre e.g. tekaka,Cereals and their products,Wheat and wheat-based products,True,255.23,8.68,51.15,5.16,4.02,3.39,0.95,1.51,0.75,0.0
+U0135,Extra crispy vegetable stew w/ curry with chickpeas,6433,Vegetable stew w/ curry ,Composite dishes,Vegetable-based dishes,False,,,,,,,,,,
+U0136,Farm-shop falafel chickpea croquettes ovenbaked with chickpeas,6284,Falafel chickpea croquettes ovenbaked,Composite dishes,Legume-based dishes,True,282.62,10.7,21.97,5.77,6.73,12.54,1.26,6.98,4.68,0.0
+U0137,Reduced-sugar crisp bread wheat w/ sugar cinnamon,181,Crisp bread wheat w/ sugar cinnamon app. 7% fibre,Cereals and their products,Wheat and wheat-based products,True,452.5,9.41,54.85,8.79,7.67,6.86,1.49,2.86,1.35,0.0
+U0138,Reduced-sugar margarine spread 91% fat eg. breoliv,7271,Margarine spread 91% fat eg. BreOliv,Fats and oils,Vegetable fats and oils,False,,,,,,,,,,
+U0139,Market stall gravy sauce w/ coffee cream,1996,Gravy sauce w/ coffee cream,"Herbs, spices and condiments",Seasonings and condiments,True,91.3,1.38,6.57,4.62,0.22,6.24,1.26,4.61,2.2,0.0
+U0140,Reduced-sugar butter 80% fat,29,Butter 80% fat,Fats and oils,Animal fats and oils,True,851.26,0.7,0.0,0.19,0.0,76.82,56.27,18.56,2.23,0.0
+U0141,High-protein pork belly smoked,1011,Pork belly smoked,Meat and meat products,Meat and offal - all types: processed (excluding dried),True,365.5,14.6,0.0,0.09,0.0,37.31,14.67,12.52,4.38,0.0
+U0142,Extra crispy bread white with seeds,6084,Bread white e.g. levain,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,269.49,9.58,41.87,2.13,2.88,1.36,0.09,0.42,0.25,0.0
+U0143,Organic pike breaded fried,1311,Pike breaded fried,"Fish, shellfish and their products",Freshwater fish (excluding offal): fresh,True,173.41,19.56,5.98,0.32,0.48,7.03,0.99,5.26,2.31,0.0
+U0144,Pastry w/ soft almond macaroon buttercream chocolate with cardamom,1652,Pastry w/ soft almond macaroon buttercream chocolate e.g. chokladbiskvi,Sweets and sugars,Dough-based sweets,True,441.28,5.11,44.38,44.36,6.5,22.8,16.15,8.09,3.29,0.0
+U0145,Reduced-sugar hungarian goulash w/ beans with chickpeas,6419,Hungarian goulash w/ beans  ,Composite dishes,Legume-based dishes,True,50.75,2.35,5.55,1.51,2.11,2.07,0.2,1.02,0.5,0.0
+U0146,Extra crispy almond cookie bittersweet with almond paste,1605,Almond cookie bittersweet e.g. mandelkubb,Sweets and sugars,Dough-based sweets,True,433.68,6.32,57.46,26.95,1.64,16.15,5.9,5.28,1.71,0.0
+U0147,Pork schnitzel fried,1066,Pork schnitzel fried,Composite dishes,Meat-based dishes,False,,,,,,,,,,
+U0148,Organic hollandaise sauce homemade,59,Hollandaise sauce homemade,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0149,Homemade cheese sauce w/ turkey,6341,Cheese sauce w/ turkey ,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0150,Reduced-sugar velouté sauce,1987,Velouté sauce,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0151,Farm-shop sweet potatoes boiled w/ salt,3772,Sweet potatoes boiled w/ salt,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,False,,,,,,,,,,
+U0152,Cordial reduced sugar,1818,Cordial reduced sugar e.g. måltidsdryck RTD,Beverages,Soft drinks,True,37.28,0.0,12.74,6.88,0.0,0.0,0.0,0.0,0.0,0.0
+U0153,Halibut breaded fried with horseradish,1313,Halibut breaded fried,"Fish, shellfish and their products",Marine fish (excluding offal): fresh,True,277.35,16.87,6.03,0.28,0.55,13.82,1.44,7.4,2.43,0.0
+U0154,Sesame sauce w/ cream,22,Sesame sauce w/ cream,"Herbs, spices and condiments",Seasonings and condiments,True,433.75,2.36,3.72,2.93,0.63,31.39,11.89,17.4,5.76,0.13
+U0155,Family recipe low-fat margarine 39% fat,2192,Low-fat margarine 39% fat fortified e.g. Lätta,Fats and oils,Vegetable fats and oils,True,313.36,0.0,1.45,0.19,0.0,33.9,12.64,14.44,9.51,0.0
+U0156,Homemade blended spread 75% fat,2190,Blended spread 75% fat fortified e.g. Bregott,Fats and oils,Vegetable fats and oils,True,670.3,0.0,0.0,0.18,0.0,66.06,38.23,27.4,9.28,0.0
+U0157,Market stall liver pâté spreadable with herbs,1474,Liver pâté spreadable app. 24% fat,Meat and meat products,Meat and offal - all types: processed (excluding dried),True,300.51,8.4,8.84,3.76,0.0,29.48,5.91,12.07,1.99,0.0
+U0158,Store-brand hungarian goulash w/ beef,1068,Hungarian goulash w/ beef,Composite dishes,Meat-based dishes,True,81.22,7.96,3.89,4.2,0.72,3.01,1.58,1.01,0.23,0.0
+U0159,Farm-shop sweet pepper pan-fried or stir-fried,2610,Sweet pepper pan-fried or stir-fried,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,66.79,0.72,5.27,5.7,1.66,5.5,0.79,3.01,1.68,0.0
+U0160,High-protein rice brown long-grain boiled w/ salt wholegrain,2517,Rice brown long-grain boiled w/ salt wholegrain,Cereals and their products,Rice and rice-based products,True,140.6,2.93,22.2,0.19,1.6,1.1,0.18,0.37,0.38,0.0
+U0161,Farm-shop sauce w/ yoghurt mayonnaise spinach,6370,Sauce w/ yoghurt mayonnaise spinach,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0162,Rice brown long-grain boiled w/ salt wholegrain,2517,Rice brown long-grain boiled w/ salt wholegrain,Cereals and their products,Rice and rice-based products,False,,,,,,,,,,
+U0163,Sauce w/ yoghurt mayonnaise spinach,6370,Sauce w/ yoghurt mayonnaise spinach,"Herbs, spices and condiments",Seasonings and condiments,True,172.66,3.3,4.21,3.64,0.32,15.64,2.23,13.07,4.96,0.0
+U0164,High-protein waldorf salad with chickpeas,6702,Waldorf salad,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,153.71,2.26,7.02,4.13,2.9,8.54,1.31,4.13,3.4,0.0
+U0165,Wine white or rhine wine vol. % 10,1909,Wine white or Rhine wine vol. % 10 ,Beverages,Alcoholic drinks,True,70.36,0.08,3.85,4.8,0.0,0.0,0.0,0.0,0.0,6.93
+U0166,Homemade blended spread sea salt 80% fat,5,Blended spread sea salt 80% fat fortified e.g. Bregott,Fats and oils,Vegetable fats and oils,False,,,,,,,,,,
+U0167,Gratin w/ cured salmon potatoes egg milk with dill,258,Gratin w/ cured salmon potatoes egg milk e.g. laxpudding,Composite dishes,Fish- and seafood-based dishes,True,109.53,8.26,9.51,2.86,1.21,5.76,1.12,1.8,0.76,0.0
+U0168,Farm-shop salad w/ lettuce cucumber tomato,390,Salad w/ lettuce cucumber tomato w/o dressing,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,15.18,0.84,2.64,1.77,0.99,0.11,0.0,0.0,0.09,0.0
+U0169,Store-brand romaine lettuce,2559,Romaine lettuce,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0170,Extra crispy globe artichoke boiled,492,Globe artichoke boiled,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,55.76,2.5,8.84,2.3,0.46,0.19,0.0,0.0,0.11,0.0
+U0171,Farm-shop cranberries sea-buckthorn mix,584,Cranberries,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,40.09,0.36,8.73,3.98,2.77,0.23,0.0,0.0,0.12,0.0
+U0172,Lactose-free broccoli,325,Broccoli,Vegetables and their products,Dark green leafy vegetables: fresh,True,35.06,3.33,3.94,2.52,2.76,0.71,0.21,0.08,0.27,0.0
+U0173,Grandma's grapes,587,Grapes,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,73.64,0.77,12.23,15.94,1.24,0.2,0.0,0.0,0.0,0.0
+U0174,Family recipe corn cobs boiled,495,Corn cobs boiled,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0175,Reduced-sugar cottage pie,6393,Cottage pie,Composite dishes,"Starchy root-, tuber- and fruit-based dishes",True,130.89,9.29,7.4,1.55,1.12,6.58,2.12,2.21,0.37,0.0
+U0176,Lactose-free gratin sauce w/ cheese homemade,2163,Gratin sauce w/ cheese homemade,"Herbs, spices and condiments",Seasonings and condiments,True,154.72,5.47,6.58,2.57,0.15,8.89,3.58,3.38,1.19,0.0
+U0177,High-protein pizza w/ mince meat frozen product,6120,Pizza w/ mince meat frozen product,Composite dishes,Bread-based dishes and finger foods,True,213.11,8.64,22.48,4.86,3.06,6.7,5.19,2.73,0.6,0.0
+U0178,Yoghurt drinkable flavoured vanilla-cardamom,6093,Yoghurt drinkable flavoured app. 1% fat app. 11% sugar,Milk and milk products,Fermented milk products,True,48.72,2.79,10.31,11.5,0.0,1.05,0.5,0.24,0.0,0.0
+U0179,Organic quenelles veal with lingonberry sauce,1113,Quenelles veal,Meat and meat products,Meat - mixed and unspecified: fresh,True,190.71,14.87,4.12,1.52,0.4,7.68,2.85,3.29,0.56,0.0
+U0180,Rice noodles boiled,4448,Rice noodles boiled,Cereals and their products,Rice and rice-based products,True,99.28,0.85,29.15,0.12,1.25,0.16,0.0,0.0,0.0,0.0
+U0181,Store-brand pasta dried boiled w/ salt,3756,Pasta dried boiled w/ salt,Cereals and their products,Wheat and wheat-based products,True,144.12,4.44,36.22,0.51,2.03,0.67,0.1,0.09,0.2,0.0
+U0182,Crisp bread wholegrain rye with caraway,171,Crisp bread wholegrain rye app. 14% fibre e.g. Råg-rut,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0183,High-protein milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,56.61,3.87,4.28,5.18,0.0,3.04,2.65,0.83,0.14,0.0
+U0184,Small beer vol. % 2.3,1900,Small beer vol. % 2.3,Beverages,Alcoholic drinks,True,36.6,0.24,4.82,0.51,0.0,0.0,0.0,0.0,0.0,1.6
+U0185,Farm-shop margarine spread 91% fat eg. breoliv,7271,Margarine spread 91% fat eg. BreOliv,Fats and oils,Vegetable fats and oils,True,831.69,0.0,0.0,0.0,0.0,81.18,20.46,76.47,6.89,0.0
+U0186,Family recipe tomato sauce for pizza canned,7232,Tomato sauce for pizza canned,"Herbs, spices and condiments",Seasonings and condiments,True,46.85,1.7,8.4,5.98,2.25,2.27,0.1,0.86,0.42,0.0
+U0187,Artisan salad w/ tuna potato beans tomato lettuce,1367,Salad w/ tuna potato beans tomato lettuce w/o dressing,Composite dishes,Fish- and seafood-based dishes,True,121.49,9.03,6.53,0.97,1.33,3.88,0.57,1.35,1.4,0.0
+U0188,Lactose-free lamb stew w/ cabbage with chanterelles,510,Lamb stew w/ cabbage e.g. får i kål,Composite dishes,Meat-based dishes,True,56.49,7.28,2.3,1.72,0.97,2.04,0.97,0.77,0.08,0.0
+U0189,Store-brand sautéed reindeer fried w/ edible fat salt with chanterelles,1080,Sautéed reindeer fried w/ edible fat salt ,Composite dishes,Meat-based dishes,False,,,,,,,,,,
+U0190,Artisan fruit toffee,1877,Fruit toffee,Sweets and sugars,Other sweets,False,,,,,,,,,,
+U0191,Homemade potato boiled w/ salt,4519,Potato boiled w/ salt e.g. Inova ,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,True,101.7,1.87,13.51,0.88,1.85,0.1,0.0,0.0,0.0,0.0
+U0192,High-protein raspberries frozen product sea-buckthorn mix,590,Raspberries frozen product,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,43.53,1.23,6.64,6.74,4.87,0.31,0.0,0.0,0.0,0.0
+U0193,Family recipe tropical juice,5859,Tropical juice RTD,Beverages,100% fruit and vegetable juices,True,50.88,0.16,11.43,7.72,0.0,0.0,0.0,0.0,0.0,0.0
+U0194,Market stall milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,64.19,3.08,5.81,3.89,0.0,2.82,1.93,0.8,0.11,0.0
+U0195,Market stall crisp bread wholegrain oat wheat rye w/ milk 8% fibre with sunflower seeds,178,Crisp bread wholegrain oat wheat rye w/ milk 8% fibre ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,286.33,11.01,60.78,2.81,7.64,6.91,0.89,1.85,1.84,0.0
+U0196,Pork ham sliced smoked 1-3% fat with pepper crust,1010,Pork ham sliced smoked 1-3% fat,Meat and meat products,Meat and offal - all types: processed (excluding dried),False,,,,,,,,,,
+U0197,Lactose-free margarine for cooking/baking 80% fat,12,Margarine for cooking/baking 80% fat fortified e.g. Melba,Fats and oils,Vegetable fats and oils,True,962.41,0.1,0.39,0.39,0.0,52.8,36.01,35.18,9.77,0.0
+U0198,Family recipe minced meat patties veal fried,1114,Minced meat patties veal fried e.g. Wallenbergare,Meat and meat products,Meat - mixed and unspecified: fresh,True,314.41,18.03,7.32,1.6,0.82,17.82,7.85,6.79,1.02,0.0
+U0199,Family recipe crisp bread wholegrain oat wheat rye w/ milk 8% fibre with sunflower seeds,178,Crisp bread wholegrain oat wheat rye w/ milk 8% fibre ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,459.4,11.91,63.52,2.92,6.71,7.26,0.91,1.59,1.19,0.0
+U0200,Carrot canned w/ brine,299,Carrot canned w/ brine,Vegetables and their products,Vegetables - all types: processed (excluding dried),True,24.08,0.51,5.39,2.78,1.21,0.17,0.0,0.0,0.11,0.0
+U0201,Family recipe broccoli sauce,6424,Broccoli sauce,"Herbs, spices and condiments",Seasonings and condiments,False,,,,,,,,,,
+U0202,Market stall yoghurt mild vanilla flavour 0.5% fat,147,Yoghurt mild vanilla flavour 0.5% fat fortified,Milk and milk products,Fermented milk products,True,60.98,3.97,11.23,7.57,0.19,0.39,0.33,0.0,0.0,0.0
+U0203,Store-brand cheese hard 31% fat with pepper crust,97,Cheese hard 31% fat,Milk and milk products,Cheese,False,,,,,,,,,,
+U0204,Organic salad w/ shellfish mayonnaise dressing,57,Salad w/ shellfish mayonnaise dressing,Composite dishes,Fish- and seafood-based dishes,False,,,,,,,,,,
+U0205,Artisan bread w/ sifted rye with seeds,6757,Bread w/ sifted rye app. 4% fibre e.g. rågkaka,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0206,Grandma's milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,66.73,3.04,4.28,4.57,0.0,2.29,1.64,0.7,0.09,0.0
+U0207,Grandma's milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,53.08,3.97,5.69,4.21,0.0,2.86,1.63,0.74,0.09,0.0
+U0208,Organic crisp bread wholegrain oat wheat rye w/ milk 8% fibre,178,Crisp bread wholegrain oat wheat rye w/ milk 8% fibre ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,431.16,10.42,63.28,3.11,9.3,5.92,0.89,1.46,1.56,0.0
+U0209,High-protein salad dressing w/ mayonnaise tomato homemade,60,Salad dressing w/ mayonnaise tomato homemade e.g. Rhode islandsas,"Herbs, spices and condiments",Seasonings and condiments,True,372.24,1.76,6.4,6.0,0.57,40.0,10.05,20.59,7.45,0.0
+U0210,Artisan cheese hard 31% fat,97,Cheese hard 31% fat,Milk and milk products,Cheese,True,389.22,20.59,2.96,0.0,0.0,34.79,18.53,4.9,0.85,0.0
+U0211,Homemade apple w/ skin dried mix,588,Apple w/ skin,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",True,48.18,0.0,10.86,12.22,2.37,0.0,0.0,0.0,0.0,0.0
+U0212,Store-brand pork ham dried cured italian prosciutto with pepper crust,1008,Pork ham dried cured Italian Prosciutto,Meat and meat products,Meat and offal - all types: processed (excluding dried),True,250.61,40.57,1.52,0.0,0.0,15.01,3.75,5.14,2.58,0.0
+U0213,Market stall crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre with sunflower seeds,183,Crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre ,Cereals and their products,Wheat and wheat-based products,True,338.63,12.13,70.3,9.69,12.67,8.53,2.77,1.99,0.96,0.0
+U0214,Store-brand rice long-grain parboiled boiled,2516,Rice long-grain parboiled boiled,Cereals and their products,Rice and rice-based products,True,106.26,3.02,32.64,0.19,0.49,0.38,0.1,0.11,0.1,0.0
+U0215,Market stall milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",False,,,,,,,,,,
+U0216,Small-batch avocado frozen product,5975,Avocado frozen product,Fruits and their products,"Fruit - other, mixed and unspecified: fresh",False,,,,,,,,,,
+U0217,Potato boiled w/ salt,4416,Potato boiled w/ salt e.g. Swift ,"Starchy roots and tubers, and fruits consumed as starchy staples and their products",Potato and sweet potato: fresh,False,,,,,,,,,,
+U0218,Homemade crisp bread wholegrain oat wheat rye w/ milk 8% fibre with caraway,178,Crisp bread wholegrain oat wheat rye w/ milk 8% fibre ,Cereals and their products,"Cereals and their products - other, mixed and unspecified",False,,,,,,,,,,
+U0219,Fruit yoghurt 2.5% fat blueberry,7088,Fruit yoghurt 2.5% fat fortified,Milk and milk products,Fermented milk products,False,,,,,,,,,,
+U0220,Farm-shop pizza w/ onion olives tomatoes cheese homemade,773,Pizza w/ onion olives tomatoes cheese homemade,Composite dishes,Bread-based dishes and finger foods,True,160.74,6.84,20.65,3.46,1.8,8.1,3.36,3.95,1.08,0.0
+U0221,Grandma's globe artichoke,342,Globe artichoke,Vegetables and their products,"Vegetables - other, mixed and unspecified: fresh",True,50.76,2.13,6.96,3.38,6.81,0.18,0.0,0.0,0.13,0.0
+U0222,Store-brand asparagus soup w/ roux rte canned heated,405,Asparagus soup w/ roux RTE canned heated,Composite dishes,Soups,True,39.55,1.09,3.43,1.46,0.55,1.81,0.4,0.36,0.88,0.0
+U0223,Farm-shop breakfast cereal puffed wheat w/ chocolate wholegrain,6763,Breakfast cereal puffed wheat w/ chocolate wholegrain,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,336.79,8.91,65.12,20.48,13.42,2.84,1.25,0.65,0.84,0.0
+U0224,Store-brand milk 3% fat,123,Milk 3% fat fortified,Milk and milk products,"Milk: fresh and processed (excluding fermented milk products, cream, whey, cheese and milk powders)",True,49.58,2.97,5.91,4.89,0.0,3.01,2.05,0.84,0.11,0.0
+U0225,Family recipe bread wheat rye w/ seeds 24% wholegrain,6759,Bread wheat rye w/ seeds 24% wholegrain,Cereals and their products,"Cereals and their products - other, mixed and unspecified",True,225.32,11.19,53.69,6.31,8.34,5.74,0.5,1.7,2.53,0.0
