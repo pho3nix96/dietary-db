@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">39</data>
+<node id="f120">
+  <data key="d1">Fermented milk 0.5% fat e.g. lättfil</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.675</data>
+  <data key="d4">135.0</data>
+</node>
+<node id="f1346">
+  <data key="d1">Salmon pâté lightly smoked</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">0.5286</data>
+  <data key="d4">61.67</data>
+</node>
+<node id="f135">
+  <data key="d1">Yoghurt plain skimmed 0.5% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.7097</data>
+  <data key="d4">138.0</data>
+</node>
+<node id="f2025">
+  <data key="d1">Breakfast cereal muesli wholegrain w/ berries</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2806</data>
+  <data key="d4">13.67</data>
+</node>
+<node id="f305">
+  <data key="d1">Carrot boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3625</data>
+  <data key="d4">29.0</data>
+</node>
+<node id="f5870">
+  <data key="d1">Apple red e.g. Ingrid Marie </data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.7125</data>
+  <data key="d4">57.0</data>
+</node>
+<node id="f592">
+  <data key="d1">Blackberries w/ sugar frozen product</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.1833</data>
+  <data key="d4">14.67</data>
+</node>
+<node id="f6009">
+  <data key="d1">Turkey smoked thin slices</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">1.2941</data>
+  <data key="d4">99.0</data>
+</node>
+<node id="f6765">
+  <data key="d1">Granola breakfast cereal w/ cocoa and raspberry</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1736</data>
+  <data key="d4">14.0</data>
+</node>
+<node id="f725">
+  <data key="d1">Breakfast cereal wholegrain e.g. Special flakes</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2708</data>
+  <data key="d4">12.0</data>
+</node>
+<edge source="f120" target="f2025">
+  <data key="d5">0.2806</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f120" target="f725">
+  <data key="d5">0.2708</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f135" target="f592">
+  <data key="d5">0.1833</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f135" target="f6765">
+  <data key="d5">0.1736</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f592" target="f6765">
+  <data key="d5">0.1736</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

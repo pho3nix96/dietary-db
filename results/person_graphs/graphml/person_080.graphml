@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">80</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.9103</data>
+  <data key="d4">177.0</data>
+</node>
+<node id="f208">
+  <data key="d1">Bread unsweetened sifted rye app. 3.5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.6981</data>
+  <data key="d4">46.33</data>
+</node>
+<node id="f2162">
+  <data key="d1">Parsnip boiled w/ salt</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.5667</data>
+  <data key="d4">45.33</data>
+</node>
+<node id="f2522">
+  <data key="d1">Pasta boiled corn 100% gluten free</data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.6568</data>
+  <data key="d4">152.0</data>
+</node>
+<node id="f3447">
+  <data key="d1">Oat crisp</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3813</data>
+  <data key="d4">21.67</data>
+</node>
+<node id="f348">
+  <data key="d1">Swiss chard</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3</data>
+  <data key="d4">24.0</data>
+</node>
+<node id="f3828">
+  <data key="d1">Pasta boiled w. salt wholegrain &gt;50%  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7008</data>
+  <data key="d4">72.0</data>
+</node>
+<node id="f5875">
+  <data key="d1">Pulled chicken cooked w/ marinade</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.7793</data>
+  <data key="d4">55.67</data>
+</node>
+<node id="f6303">
+  <data key="d1">Plant-based nugget soy- and wheat protein fried</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">2.2077</data>
+  <data key="d4">86.33</data>
+</node>
+<node id="f713">
+  <data key="d1">Breakfast cereal puffed rice w/ sugar fortified e.g. Rice Krispies</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.9655</data>
+  <data key="d4">37.67</data>
+</node>
+<node id="uU0178">
+  <data key="d1">Yoghurt drinkable flavoured vanilla-cardamom</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.275</data>
+  <data key="d4">69.0</data>
+</node>
+<edge source="f123" target="f3447">
+  <data key="d5">0.2949</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f713">
+  <data key="d5">0.6154</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f208" target="f2522">
+  <data key="d5">0.3315</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f208" target="f348">
+  <data key="d5">0.3</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f208" target="f3828">
+  <data key="d5">0.3666</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f208" target="f5875">
+  <data key="d5">0.3315</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2162" target="f2522">
+  <data key="d5">0.4978</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2162" target="f6303">
+  <data key="d5">0.5667</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2522" target="f5875">
+  <data key="d5">0.7793</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2522" target="f6303">
+  <data key="d5">0.4978</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f348" target="f3828">
+  <data key="d5">0.3</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

@@ -1,0 +1,19 @@
+name: food-space-map
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - pyyaml
+  - python-igraph
+  - leidenalg
+  - umap-learn
+  - snakemake-minimal
+  - pytest
+  - pip
+  - pip:
+      - sentence-transformers

@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">59</data>
+<node id="f1006">
+  <data key="d1">Pork loin kasseler smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.1479</data>
+  <data key="d4">10.0</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3309</data>
+  <data key="d4">64.33</data>
+</node>
+<node id="f1312">
+  <data key="d1">Halibut poached w/ salt</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">1.9382</data>
+  <data key="d4">144.33</data>
+</node>
+<node id="f1470">
+  <data key="d1">Goose liver paté canned smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0489</data>
+  <data key="d4">6.0</data>
+</node>
+<node id="f148">
+  <data key="d1">Mild yoghurt vanilla flavour 2% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2408</data>
+  <data key="d4">52.67</data>
+</node>
+<node id="f1604">
+  <data key="d1">Wheat rusks wholegrain unsweetened</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3599</data>
+  <data key="d4">18.33</data>
+</node>
+<node id="f172">
+  <data key="d1">Crisp bread wholegrain rye 15.5% fibre e.g. Brungräddat</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4002</data>
+  <data key="d4">19.33</data>
+</node>
+<node id="f202">
+  <data key="d1">Bread white 3.5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2533</data>
+  <data key="d4">19.0</data>
+</node>
+<node id="f2520">
+  <data key="d1">Pasta tagliatelle w/ egg dried boiled w/ salt gluten free </data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.4091</data>
+  <data key="d4">124.33</data>
+</node>
+<node id="f2609">
+  <data key="d1">Parsnip pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">1.0125</data>
+  <data key="d4">81.0</data>
+</node>
+<node id="f3790">
+  <data key="d1">Breat sifted rye app. 7% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.22</data>
+  <data key="d4">18.33</data>
+</node>
+<node id="f3794">
+  <data key="d1">Bread wholegrain wheat rye app. 6% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1505</data>
+  <data key="d4">14.33</data>
+</node>
+<node id="f3828">
+  <data key="d1">Pasta boiled w. salt wholegrain &gt;50%  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.009</data>
+  <data key="d4">103.67</data>
+</node>
+<node id="f440">
+  <data key="d1">Mixed green leaf salad w/ vinaigrette</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.55</data>
+  <data key="d4">44.0</data>
+</node>
+<node id="f445">
+  <data key="d1">Cucumber pickled homemade</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1625</data>
+  <data key="d4">13.0</data>
+</node>
+<node id="f714">
+  <data key="d1">Breakfast cereal wheat bran malt roasted All-bran plus</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2342</data>
+  <data key="d4">13.33</data>
+</node>
+<edge source="f1006" target="f3790">
+  <data key="d5">0.1479</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2609">
+  <data key="d5">0.3309</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f440">
+  <data key="d5">0.3309</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1312" target="f2520">
+  <data key="d5">1.0385</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1312" target="f2609">
+  <data key="d5">0.5167</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1312" target="f3828">
+  <data key="d5">0.8997</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1470" target="f202">
+  <data key="d5">0.0489</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1470" target="f445">
+  <data key="d5">0.0489</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f148" target="f714">
+  <data key="d5">0.2342</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f202" target="f445">
+  <data key="d5">0.1625</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2520" target="f2609">
+  <data key="d5">0.5167</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2609" target="f440">
+  <data key="d5">0.4958</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

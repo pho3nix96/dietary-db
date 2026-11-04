@@ -1,0 +1,621 @@
+<title>Food Space Tasks</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style id="page-style">
+/* Layout: one reading column; a progress header, then the six project phases in order, each a checklist. */
+:root{
+  --bg:#f1f4f1; --surface:#ffffff; --ink:#1b2724; --muted:#5a6964; --line:#d6ddd8;
+  --accent:#2c6b5a; --accent-soft:#dbeae3; --warn:#9a5b12;
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#111716; --surface:#192120; --ink:#e3eae6; --muted:#93a29c; --line:#2a3532;
+  --accent:#6fc3a7; --accent-soft:#1d3430; --warn:#e0a35a; color-scheme:dark;
+}}
+:root[data-theme="dark"]{
+  --bg:#111716; --surface:#192120; --ink:#e3eae6; --muted:#93a29c; --line:#2a3532;
+  --accent:#6fc3a7; --accent-soft:#1d3430; --warn:#e0a35a; color-scheme:dark;
+}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.5}
+.wrap{max-width:760px;margin:0 auto;padding-block:40px 64px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));padding-right:max(16px, env(safe-area-inset-right, 0px));
+  display:flex;flex-direction:column;gap:28px}
+header{display:flex;flex-direction:column;gap:10px}
+.eyebrow{font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:var(--f-display);font-weight:650;font-size:clamp(28px,5vw,40px);line-height:1.1;margin:0;text-wrap:balance;letter-spacing:-.01em}
+.lede{margin:0;color:var(--muted);max-width:62ch}
+.meter{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-top:6px}
+.bar{flex:1 1 220px;height:8px;border-radius:4px;background:var(--line);overflow:hidden}
+.bar span{display:block;height:100%;background:var(--accent);border-radius:4px;transition:width .3s ease}
+.count{font-family:var(--f-mono);font-size:13px;font-variant-numeric:tabular-nums;color:var(--muted)}
+.status{font-size:13px;color:var(--muted)}
+.status.warn{color:var(--warn)}
+.phases{display:flex;flex-direction:column;gap:18px}
+section.phase{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px 20px;display:flex;flex-direction:column;gap:10px}
+.ph-head{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:baseline}
+.num{font-family:var(--f-mono);font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums}
+h2{font-family:var(--f-display);font-weight:600;font-size:19px;margin:0;line-height:1.25;text-wrap:balance}
+.ph-count{font-family:var(--f-mono);font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.ph-count.full{color:var(--accent)}
+.note{margin:0;color:var(--muted);font-size:13.5px;max-width:65ch}
+ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+li{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:start;padding:7px 0;border-top:1px solid var(--line)}
+li:first-child{border-top:0}
+.check{appearance:none;-webkit-appearance:none;width:18px;height:18px;margin:2px 0 0;border:1.5px solid var(--muted);border-radius:4px;background:var(--surface);cursor:pointer;display:grid;place-content:center;flex:none}
+.check:checked{background:var(--accent);border-color:var(--accent)}
+.check:checked::after{content:"";width:9px;height:5px;border-left:2px solid var(--surface);border-bottom:2px solid var(--surface);transform:rotate(-45deg) translate(1px,-1px)}
+.check:focus-visible,.del:focus-visible,.add input:focus-visible,.add button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.txt{min-width:0;overflow-wrap:anywhere;cursor:pointer}
+li.done .txt{color:var(--muted);text-decoration:line-through;text-decoration-color:var(--line)}
+.del{border:0;background:none;color:var(--muted);font-size:16px;line-height:1;padding:2px 6px;border-radius:4px;cursor:pointer;opacity:.55}
+.del:hover{opacity:1;background:var(--accent-soft)}
+.add{display:flex;gap:8px;margin-top:4px}
+.add input{flex:1;min-width:0;font:inherit;font-size:14px;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:7px 10px}
+.add input::placeholder{color:var(--muted)}
+.add button{font:inherit;font-size:13px;font-weight:500;color:var(--accent);background:var(--accent-soft);border:0;border-radius:6px;padding:7px 12px;cursor:pointer}
+footer{font-size:12.5px;color:var(--muted)}
+.readonly .del,.readonly .add{display:none}
+@media (prefers-reduced-motion: reduce){.bar span{transition:none}}
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,650&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
+<main id="root" class="wrap"></main>
+<script type="application/json" id="state">{
+"updated": null,
+"phases": [
+{
+"id": "p1",
+"title": "Define scope",
+"note": "Decisions here change every cluster downstream, so settle them before touching data.",
+"tasks": [
+{
+"id": "t1",
+"text": "Pick the dietary databases: Swedish Food Agency and Fineli for composition; FAO/WHO GIFT survey microdata for co-intake",
+"done": true
+},
+{
+"id": "t2",
+"text": "Choose the nutrient set: macronutrients only for now (micronutrients and bioactives later)",
+"done": true
+},
+{
+"id": "t3",
+"text": "Choose the normalization basis: per 100 g",
+"done": true
+},
+{
+"id": "t4",
+"text": "Decide how to treat raw vs cooked and processed forms",
+"done": false
+},
+{
+"id": "t5",
+"text": "State the main goal: compare a co-intake food graph with a composition/semantics/GIFT graph (treelet trees on both)",
+"done": false
+},
+{
+"id": "t29",
+"text": "Choose the fraction blocks: fatty acids, individual sugars, starch and fibre types, amino acids, protein fractions",
+"done": false
+},
+{
+"id": "t30",
+"text": "Run a systematic literature search (Scopus or Web of Science) on grouping foods by nutrient fractions before claiming novelty",
+"done": false
+},
+{
+"id": "t62",
+"text": "Fix the 19 GIFT groups as the top level; cluster only within groups",
+"done": true
+}
+]
+},
+{
+"id": "p2",
+"title": "Prepare the data",
+"note": "Key every food on FoodEx2 so all four GIFT groupings come for free.",
+"tasks": [
+{
+"id": "t6",
+"text": "Export food names, descriptions and nutrient columns",
+"done": true
+},
+{
+"id": "t7",
+"text": "Map each food to a FoodEx2 base term (included in the Swedish data)",
+"done": true
+},
+{
+"id": "t8",
+"text": "Assign the GIFT nutrition-sensitive group and subgroup from the official FoodEx2 matching table (2,603 of 2,606 foods)",
+"done": true
+},
+{
+"id": "t9",
+"text": "Audit missing nutrient values and set an imputation or exclusion rule",
+"done": false
+},
+{
+"id": "t10",
+"text": "Log-transform skewed nutrients and check compositional constraints",
+"done": false
+},
+{
+"id": "t31",
+"text": "Run the Swedish download on your computer and share the CSVs (2,606 foods)",
+"done": true
+},
+{
+"id": "t32",
+"text": "Check coverage of fraction columns: all complete in the Swedish data",
+"done": true
+},
+{
+"id": "t33",
+"text": "Build a curated protein-fraction table with a source per row, organised by GIFT group: casein and whey (dairy), Osborne fractions (cereals, pulses), 11S/7S (soybean), myofibrillar, sarcoplasmic and stromal (meat, fish)",
+"done": true
+},
+{
+"id": "t34",
+"text": "Fill the curated table for dairy first: milk, cheese, yogurt and other fermented products (started: milk sourced, rennet cheese provisional, 6 categories to source)",
+"done": false
+},
+{
+"id": "t35",
+"text": "Map family-specific protein fractions onto a common solubility-based scheme",
+"done": true
+},
+{
+"id": "t42",
+"text": "Source the remaining protein fractions: pea, lentil, chickpea, beans, peanut, nuts, seeds; shellfish; processed meat, offal; egg; potato",
+"done": false
+},
+{
+"id": "t43",
+"text": "Replace provisional values with primary sources: rennet cheese (bovine), rice, oats, maize, rye, faba bean, meat (need a primary beef/pork study)",
+"done": false
+},
+{
+"id": "t44",
+"text": "Load the official FAO GIFT file (FoodEx2_MTX.xlsx) and build the FoodEx2 → GIFT mapping",
+"done": true
+},
+{
+"id": "t47",
+"text": "Cereal Osborne fractions: barley sourced; oats, maize, rice provisional; rye from a textbook table",
+"done": true
+},
+{
+"id": "t48",
+"text": "Download each food's raw-commodity recipe and build commodity-mix protein profiles",
+"done": true
+},
+{
+"id": "t49",
+"text": "Rye: replace textbook values with a modern primary source",
+"done": false
+},
+{
+"id": "t50",
+"text": "Separate bran and germ from whole grain in the profiles",
+"done": false
+},
+{
+"id": "t54",
+"text": "Fish muscle protein fractions sourced (Shimizu 1960, Hashimoto 1979); smoked and fried fish mapped",
+"done": true
+},
+{
+"id": "t55",
+"text": "Register on microdata.fao.org, pick a GIFT survey with MEAL_NAME filled in, download consumption + subject files and FoodEx2_MTX.xlsx",
+"done": false
+},
+{
+"id": "t67",
+"text": "Load Fineli (4,238 foods, 74 components) into the same table layout",
+"done": true
+},
+{
+"id": "t68",
+"text": "Map Fineli food-use classes to GIFT groups and subgroups (curated, 122 classes + name rules)",
+"done": true
+},
+{
+"id": "t69",
+"text": "Review the Fineli → GIFT map, especially fish, fruit and vegetable subgroups",
+"done": false
+},
+{
+"id": "t70",
+"text": "Recipe-expanded protein profiles for Fineli dishes (1,339 foods so far)",
+"done": true
+},
+{
+"id": "t71",
+"text": "Source yogurt, quark, cream, egg, processed meat, offal, potato, nut and pea protein fractions (they block many Fineli dish profiles)",
+"done": false
+},
+{
+"id": "t74",
+"text": "Recipe-based protein profiles for Swedish foods (1,026), same method as Fineli",
+"done": true
+},
+{
+"id": "t75",
+"text": "Combine Sweden and Finland into one table (6,841 foods) with harmonised fat and starch blocks",
+"done": true
+}
+]
+},
+{
+"id": "p3",
+"title": "Build the similarity views",
+"note": "Same foods, several distances: what a food is, how much it contains, what kind of nutrients it contains, how it is described.",
+"tasks": [
+{
+"id": "t11",
+"text": "Classification distance from the GIFT tree, with FoodEx2 facets for processing and part",
+"done": false
+},
+{
+"id": "t12",
+"text": "Nutrient distance (cosine or correlation) on normalized profiles",
+"done": true
+},
+{
+"id": "t13",
+"text": "Semantic embeddings of names and descriptions with a multilingual model",
+"done": false
+},
+{
+"id": "t14",
+"text": "Build a k-nearest-neighbour graph for each view",
+"done": true
+},
+{
+"id": "t36",
+"text": "Fraction-profile view: each fraction as a share of its parent total, log-ratio transformed, each block weighted equally (built, tested on synthetic foods)",
+"done": true
+},
+{
+"id": "t37",
+"text": "Check whether amino acid profiles reproduce the curated casein vs whey differences",
+"done": false
+},
+{
+"id": "t56",
+"text": "Omega-3/omega-6 and milk-fat (C4-C10) blocks added to the default fractions",
+"done": true
+},
+{
+"id": "t64",
+"text": "Try multilingual sentence embeddings for placing new foods (run locally)",
+"done": false
+},
+{
+"id": "t80",
+"text": "Placement of new foods: name → GIFT group (82–90% correct) and neighbours; nutrients → position and cluster",
+"done": true
+},
+{
+"id": "t81",
+"text": "Improve placement for flavour-dominated names (e.g. oat yoghurt with strawberry goes to sweets)",
+"done": false
+}
+]
+},
+{
+"id": "p4",
+"title": "Fuse and cluster",
+"note": "Disagreement between views is the signal worth reporting.",
+"tasks": [
+{
+"id": "t15",
+"text": "Weighted-sum fusion as a baseline",
+"done": true
+},
+{
+"id": "t16",
+"text": "Similarity network fusion (SNF)",
+"done": false
+},
+{
+"id": "t17",
+"text": "Leiden clustering across several resolutions",
+"done": true
+},
+{
+"id": "t18",
+"text": "Compare clusters with GIFT groups (ARI, NMI)",
+"done": true
+},
+{
+"id": "t19",
+"text": "List misfit foods whose cluster differs from their GIFT group",
+"done": true
+},
+{
+"id": "t20",
+"text": "Check robustness across normalization choices and bootstrap resamples",
+"done": false
+},
+{
+"id": "t38",
+"text": "Keep GIFT out of the fusion and use it only as the reference for comparison (now the default)",
+"done": true
+},
+{
+"id": "t39",
+"text": "Check that dairy separates: dairy foods' nearest neighbours are dairy 43% (totals) vs 72% (with fractions)",
+"done": true
+},
+{
+"id": "t40",
+"text": "Report a sweep of GIFT weights to show how much structure comes from the classification itself",
+"done": false
+},
+{
+"id": "t45",
+"text": "Review the auto-drafted protein category map (502 foods)",
+"done": false
+},
+{
+"id": "t46",
+"text": "Look into groups that lose cohesion with fractions (sauces, soups)",
+"done": false
+},
+{
+"id": "t51",
+"text": "Within-group mode for cereals: same-grain neighbours 60% (totals) vs 83% (with protein fractions), 250 foods",
+"done": true
+},
+{
+"id": "t52",
+"text": "Use commodity-mix profiles in the main pipeline instead of one category per food",
+"done": false
+},
+{
+"id": "t53",
+"text": "Repeat the within-group mode for dairy and pulses once their fractions are sourced",
+"done": false
+},
+{
+"id": "t57",
+"text": "Fish separates from meat with protein fractions: plain fish neighbours 99% fish, 0% pork",
+"done": true
+},
+{
+"id": "t58",
+"text": "Food tree with the treelet transform on composition (cereals: rice, maize, wheat bread, wheat cakes, oats, rye branches)",
+"done": true
+},
+{
+"id": "t59",
+"text": "Build the co-intake graph from GIFT microdata: nodes = foods as eaten, edges = same person + day + meal",
+"done": false
+},
+{
+"id": "t60",
+"text": "Compare co-intake and attribute graphs: edge overlap, assortativity by GIFT group and macros, community agreement, tree agreement across cut levels",
+"done": false
+},
+{
+"id": "t63",
+"text": "Within-group clustering for all GIFT groups (semantics, macros, fat/sugar/carbohydrate/protein fractions) compared with GIFT subgroups",
+"done": true
+},
+{
+"id": "t65",
+"text": "Decide cluster resolution per group (now one setting for all groups)",
+"done": false
+},
+{
+"id": "t72",
+"text": "Fineli within-group clustering; names compared on food name only to avoid leaking GIFT subgroups",
+"done": true
+},
+{
+"id": "t76",
+"text": "Country-mixing check and Sweden ↔ Finland crosswalk (887 mutual pairs, 81% in the same cluster)",
+"done": true
+},
+{
+"id": "t77",
+"text": "Names taken out of the space; used only to place new foods",
+"done": true
+},
+{
+"id": "t78",
+"text": "Review the Sweden ↔ Finland crosswalk by hand for a sample of groups",
+"done": false
+}
+]
+},
+{
+"id": "p5",
+"title": "Visualize",
+"note": "An interactive map of food space, also usable as a QA tool for the database.",
+"tasks": [
+{
+"id": "t21",
+"text": "2D layout with UMAP on the fused similarity",
+"done": true
+},
+{
+"id": "t22",
+"text": "Interactive map on real data with totals vs fractions switch",
+"done": true
+},
+{
+"id": "t23",
+"text": "Toggles for each view and sliders for fusion weights",
+"done": false
+},
+{
+"id": "t24",
+"text": "Highlight disagreements and nutrient outliers for data checking",
+"done": false
+},
+{
+"id": "t25",
+"text": "Optional: overlay consumption frequency from survey data",
+"done": false
+},
+{
+"id": "t61",
+"text": "Map updated with fish/cereal families and the cereal food tree",
+"done": true
+},
+{
+"id": "t66",
+"text": "Map rebuilt around GIFT groups: group selector, subgroup vs data-cluster colouring, per-group agreement",
+"done": true
+},
+{
+"id": "t73",
+"text": "Map: Sweden/Finland switch; renamed Nordic Food Space Map",
+"done": true
+},
+{
+"id": "t79",
+"text": "Map: Combined view with country colouring and country-mixing column",
+"done": true
+}
+]
+},
+{
+"id": "p6",
+"title": "Package and release",
+"note": "Built to keep working when you stop working on it.",
+"tasks": [
+{
+"id": "t26",
+"text": "Reproducible pipeline (Snakemake) in a GitHub repo",
+"done": false
+},
+{
+"id": "t27",
+"text": "Archive each release on Zenodo with a DOI",
+"done": false
+},
+{
+"id": "t28",
+"text": "Choose the outlet: data or methods paper, standalone tool, or layer of the multi-omics database",
+"done": false
+},
+{
+"id": "t41",
+"text": "Use the 1985 result where whole milk and cheese clustered together on totals (Windham et al.) as the motivating example",
+"done": false
+}
+]
+}
+]
+}</script>
+<script id="app">
+(function(){
+  var DOC_HEAD='<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,-apple-system,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style></head><body>';
+  var FONTS='<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,650&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">';
+  var state;
+  try{ state=JSON.parse(document.getElementById('state').textContent); }catch(e){ state={updated:null,phases:[]}; }
+  var styleText=document.getElementById('page-style').textContent;
+  var appText=document.getElementById('app').textContent;
+  var root=document.getElementById('root');
+  var ns=null, canSave=null, status='idle', timer=null, retried=false, dirty=false;
+
+  function esc(s){return String(s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function totals(){var d=0,t=0;state.phases.forEach(function(p){p.tasks.forEach(function(x){t++;if(x.done)d++;});});return {d:d,t:t};}
+  function fmtDate(iso){try{return new Date(iso).toLocaleString(undefined,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});}catch(e){return '';}}
+  function statusText(){
+    switch(status){
+      case 'pending': return ['Unsaved changes',false];
+      case 'saving': return ['Saving…',false];
+      case 'readonly': return ['View only: your changes are not saved',true];
+      case 'local': return ['Saving is not available in this view; ticks last until you reload',true];
+      case 'conflict': return ['Someone saved a newer version first. Loading it…',true];
+      case 'error': return ['Could not save. Your next change will try again',true];
+      default: return [state.updated?('Saved '+fmtDate(state.updated)):'Tick tasks as you finish them; changes save automatically',false];
+    }
+  }
+  function phaseHTML(p,i){
+    var d=p.tasks.filter(function(x){return x.done;}).length;
+    var items=p.tasks.map(function(x){
+      var cid='c-'+x.id;
+      return '<li class="'+(x.done?'done':'')+'" data-key="'+esc(x.id)+'"><input type="checkbox" class="check" id="'+cid+'" data-toggle="'+esc(x.id)+'"'+(x.done?' checked':'')+' aria-label="Mark done"><label class="txt" for="'+cid+'">'+esc(x.text)+'</label><button class="del" type="button" data-del="'+esc(x.id)+'" aria-label="Remove task" title="Remove task">×</button></li>';
+    }).join('');
+    return '<section class="phase"><div class="ph-head"><span class="num">'+String(i+1).padStart(2,'0')+'</span><h2>'+esc(p.title)+'</h2><span class="ph-count'+(p.tasks.length&&d===p.tasks.length?' full':'')+'">'+d+'/'+p.tasks.length+'</span></div>'+
+      (p.note?'<p class="note">'+esc(p.note)+'</p>':'')+
+      '<ul>'+items+'</ul>'+
+      '<form class="add" data-add="'+esc(p.id)+'"><input id="add-'+esc(p.id)+'" type="text" placeholder="Add a task" aria-label="Add a task to '+esc(p.title)+'" maxlength="300"><button type="submit">Add</button></form></section>';
+  }
+  function bodyHTML(){
+    var t=totals(), pct=t.t?Math.round(t.d/t.t*100):0, st=statusText();
+    return '<header><span class="eyebrow">Food space map · GIFT × nutrient fractions × semantics</span><h1>Food Space Tasks</h1>'+
+      '<p class="lede">Cluster and visualize a dietary database by GIFT group and subgroup, nutrient content, nutrient fractions such as casein vs whey, and food-name semantics.</p>'+
+      '<div class="meter"><div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+pct+'"><span style="width:'+pct+'%"></span></div><span class="count">'+t.d+' of '+t.t+' done</span></div>'+
+      '<span class="status'+(st[1]?' warn':'')+'" aria-live="polite">'+esc(st[0])+'</span></header>'+
+      '<div class="phases">'+state.phases.map(phaseHTML).join('')+'</div>'+
+      '<footer>Phases run in order, but scope decisions in phase 1 can be revisited at any point.</footer>';
+  }
+  function render(){
+    var a=document.activeElement, keep=a&&a.id?a.id:null, val=null;
+    if(keep&&a.tagName==='INPUT'&&a.type==='text') val=a.value;
+    root.innerHTML=bodyHTML();
+    root.classList.toggle('readonly',canSave===false&&status==='readonly');
+    if(keep){var el=document.getElementById(keep);if(el){el.focus();if(val!==null)el.value=val;}}
+  }
+  function buildDoc(){
+    var json=JSON.stringify(state).replace(/</g,'\\u003c');
+    var s=status; status='idle'; var body=bodyHTML(); status=s;
+    return DOC_HEAD+'<title>Food Space Tasks</title>\n<meta name="claude:viewport-fit-sides" content="cover">\n<style id="page-style">'+styleText+'</style>\n'+FONTS+'\n<main id="root" class="wrap">'+body+'</main>\n<script type="application/json" id="state">'+json+'<\/script>\n<script id="app">'+appText+'<\/script>\n</body></html>';
+  }
+  function setStatus(s){status=s;render();}
+  function schedule(){
+    dirty=true;
+    if(canSave===false){setStatus(status==='readonly'?'readonly':'local');return;}
+    setStatus('pending');
+    clearTimeout(timer);timer=setTimeout(save,1800);
+  }
+  function save(){
+    if(!dirty)return;
+    if(!ns){ if(canSave===false){setStatus('local');} return; }
+    var prev=state.updated;
+    state.updated=new Date().toISOString();
+    status='saving';render();
+    ns.publish(buildDoc()).then(function(){dirty=false;}).catch(function(e){
+      var c=e&&e.code;
+      state.updated=prev;
+      if(c==='conflict'){setStatus('conflict');return;}
+      if(['not_writer','not_granted','not_declared','consent_required','capability_disabled','capability_removed'].indexOf(c)>-1){canSave=false;setStatus('readonly');return;}
+      if(c==='upstream_error'&&!retried){retried=true;clearTimeout(timer);timer=setTimeout(save,800+Math.random()*1200);return;}
+      setStatus('error');
+    });
+  }
+  function find(id){for(var i=0;i<state.phases.length;i++){var p=state.phases[i];for(var j=0;j<p.tasks.length;j++){if(p.tasks[j].id===id)return {p:p,j:j};}}return null;}
+  function newId(){var n=0;state.phases.forEach(function(p){p.tasks.forEach(function(x){var m=/^t(\d+)$/.exec(x.id);if(m)n=Math.max(n,+m[1]);});});return 't'+(n+1);}
+
+  root.addEventListener('change',function(e){
+    var id=e.target.getAttribute&&e.target.getAttribute('data-toggle'); if(!id)return;
+    var f=find(id); if(!f)return; f.p.tasks[f.j].done=e.target.checked; schedule();
+  });
+  root.addEventListener('click',function(e){
+    var b=e.target.closest&&e.target.closest('[data-del]'); if(!b)return;
+    var f=find(b.getAttribute('data-del')); if(!f)return; f.p.tasks.splice(f.j,1); schedule();
+  });
+  root.addEventListener('submit',function(e){
+    var form=e.target.closest('[data-add]'); if(!form)return; e.preventDefault();
+    var input=form.querySelector('input'), text=(input.value||'').trim(); if(!text)return;
+    var pid=form.getAttribute('data-add');
+    state.phases.forEach(function(p){if(p.id===pid)p.tasks.push({id:newId(),text:text,done:false});});
+    input.value=''; schedule();
+  });
+
+  render();
+  if(window.claude&&typeof window.claude.use==='function'){
+    window.claude.use('artifact').then(function(x){
+      ns=x; if(!x){canSave=false; if(dirty)setStatus('local'); return;}
+      canSave=true; if(dirty){clearTimeout(timer);timer=setTimeout(save,600);}
+    },function(){canSave=false;if(dirty)setStatus('local');});
+  } else { canSave=false; }
+})();
+</script>

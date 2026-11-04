@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">86</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">1.3046</data>
+  <data key="d4">253.67</data>
+</node>
+<node id="f1357">
+  <data key="d1">Fish mince poached</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">0.5425</data>
+  <data key="d4">49.0</data>
+</node>
+<node id="f1474">
+  <data key="d1">Liver pâté spreadable app. 24% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0339</data>
+  <data key="d4">5.0</data>
+</node>
+<node id="f1476">
+  <data key="d1">Liver pâté slicable 14% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0629</data>
+  <data key="d4">7.33</data>
+</node>
+<node id="f202">
+  <data key="d1">Bread white 3.5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.9378</data>
+  <data key="d4">70.33</data>
+</node>
+<node id="f2123">
+  <data key="d1">Oatmeal porridge wholegrain fibre oats</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3777</data>
+  <data key="d4">103.0</data>
+</node>
+<node id="f2125">
+  <data key="d1">Glass noodles dried boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.8601</data>
+  <data key="d4">78.67</data>
+</node>
+<node id="f216">
+  <data key="d1">Crisp bread thin wholegrain wheat rye barley oat e.g. tunnbröd</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3315</data>
+  <data key="d4">15.0</data>
+</node>
+<node id="f2479">
+  <data key="d1">Rice white short-grain for porridge pre-boiled dried unccoked</data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.9141</data>
+  <data key="d4">74.0</data>
+</node>
+<node id="f2517">
+  <data key="d1">Rice brown long-grain boiled w/ salt wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5661</data>
+  <data key="d4">62.67</data>
+</node>
+<node id="f293">
+  <data key="d1">Radish</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3083</data>
+  <data key="d4">24.67</data>
+</node>
+<node id="f358">
+  <data key="d1">Napa cabbage</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.4417</data>
+  <data key="d4">35.33</data>
+</node>
+<node id="f3828">
+  <data key="d1">Pasta boiled w. salt wholegrain &gt;50%  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7527</data>
+  <data key="d4">77.33</data>
+</node>
+<node id="f444">
+  <data key="d1">Mixed green salad w/ cucumber tomato bell pepper w/o dressing</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3583</data>
+  <data key="d4">28.67</data>
+</node>
+<node id="f5872">
+  <data key="d1">Apple green e.g. Golden delicious Granny Smith </data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.525</data>
+  <data key="d4">42.0</data>
+</node>
+<node id="f590">
+  <data key="d1">Raspberries frozen product</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.4917</data>
+  <data key="d4">39.33</data>
+</node>
+<node id="f6311">
+  <data key="d1">Plant-based escalope soy- and wheat protein fried fortified</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">2.3088</data>
+  <data key="d4">130.33</data>
+</node>
+<node id="f678">
+  <data key="d1">Porridge graham flour w/ dried fruit flax seeds e.g. molinogröt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5522</data>
+  <data key="d4">233.33</data>
+</node>
+<node id="f804">
+  <data key="d1">Brown rice boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5131</data>
+  <data key="d4">74.0</data>
+</node>
+<node id="uU0189">
+  <data key="d1">Store-brand sautéed reindeer fried w/ edible fat salt with chanterelles</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.8265</data>
+  <data key="d4">57.0</data>
+</node>
+<edge source="f123" target="f2123">
+  <data key="d5">0.3777</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f590">
+  <data key="d5">0.3771</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f678">
+  <data key="d5">0.5522</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f1357" target="f293">
+  <data key="d5">0.3083</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1357" target="f804">
+  <data key="d5">0.5131</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1474" target="f202">
+  <data key="d5">0.0339</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1476" target="f202">
+  <data key="d5">0.0629</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f202" target="f2479">
+  <data key="d5">0.1911</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f202" target="f444">
+  <data key="d5">0.1911</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2125" target="f216">
+  <data key="d5">0.3315</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2479" target="f444">
+  <data key="d5">0.3583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2517" target="f6311">
+  <data key="d5">0.5661</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f293" target="f804">
+  <data key="d5">0.3083</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3828" target="uU0189">
+  <data key="d5">0.7527</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f590" target="f678">
+  <data key="d5">0.2745</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

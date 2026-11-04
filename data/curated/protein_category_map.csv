@@ -1,0 +1,525 @@
+food_id,name,main_group,protein_fraction_category,rule,status
+66,Whey cheese app. 30% fat,Whey products,cheese_whey,whey cheese and spread,auto_rule_review
+68,Whey spread 5% fat fortified,Whey products,cheese_whey,whey cheese and spread,auto_rule_review
+69,Whey spread 2% fat fortified,Whey products,cheese_whey,whey cheese and spread,auto_rule_review
+70,Cottage cheese plain 4% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+71,Cottage cheese w/ fruit 3% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+72,Cottage cheese w/ vegetables 3.5-5% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+75,Quark 1% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+76,Quark 10% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+77,Cheese hard 10% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+78,Cheese hard 23% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+79,Cheese hard 26% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+80,Cheese hard 38% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+81,Cheese camembert approx. 22% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+82,Blue cheese 30% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+92,Cheese Brie w/ rind 34% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+93,Blue cheese 17% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+95,Cheese hard 17% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+96,Cheese hard 28% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+97,Cheese hard 31% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+98,Cheese Brie w/ rind 30% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+100,Halloumi cheese 22% fat,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+102,Blue cheese 43% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+103,Cheese hard parmesan 30% fat e.g. Parmiggiano Reggiano,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+105,Cheese camembert 11% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+111,Cheese goat's milk chèvre 25% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+114,Fermented milk 3% fat fortified e.g. filmjölk,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+115,Condensed milk canned app. 8% fat,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+116,Condensed milk canned conc. w/ sugar app. 9% fat,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+118,Milk powder 1% fat,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+119,Fermented milk 3% fat e.g. långfil,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+120,Fermented milk 0.5% fat e.g. lättfil,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+123,Milk 3% fat fortified,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+124,Yoghurt plain 3% fat fortified,Natural fermented products,yogurt,natural fermented: yoghurt,auto_rule_review
+127,Milk non emulsified 4.2% fat e.g. lantmjölk,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+128,Fermented milk w/ acidophilus 3% fat e.g. A-fil,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+130,Fermented milk semi-skimmed 1.5% fat,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+133,Milk strawberry flavour 1.5% fat fortified,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+135,Yoghurt plain skimmed 0.5% fat,Natural fermented products,yogurt,natural fermented: yoghurt,auto_rule_review
+142,Fermented milk 3% fat e.g. Kefir,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+150,Semi-skimmed milk 1.5% fat fortified,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+151,Skimmed milk 0.5% fat fortified,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+152,Whey liquid,Whey products,whey_protein,whey liquid,auto_rule_review
+154,Fermented milk w/ cream top layer e.g. filbunke,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+230,Potato old raw,Potatoes,potato,main_group Potatoes,auto_rule_review
+231,Potato old boiled w/ salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+233,Potato w/ skin baked w/o salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+234,Potato w/ skin baked w/o salt in aluminium foil ,Potatoes,potato,main_group Potatoes,auto_rule_review
+235,Potato diced frozen product,Potatoes,potato,main_group Potatoes,auto_rule_review
+236,New potatoes unsalted boiled ,Potatoes,potato,main_group Potatoes,auto_rule_review
+237,Potato canned w/o brine,Potatoes,potato,main_group Potatoes,auto_rule_review
+324,Broad beans fresh boiled w/o salt,Leguminous plant,faba_bean,legumes: broad beans,auto_rule_review
+330,Soy bean sprouts,Leguminous plant,soybean,legumes: soy,auto_rule_review
+359,Mangetout peas,Leguminous plant,pea,legumes: peas,auto_rule_review
+374,Green peas frozen product,Leguminous plant,pea,legumes: peas,auto_rule_review
+384,Lentil sprouts,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+412,Green peas canned w/ brine,Leguminous plant,pea,legumes: peas,auto_rule_review
+413,Green peas canned w/o brine,Leguminous plant,pea,legumes: peas,auto_rule_review
+415,Soybean sprouts canned w/o brine,Leguminous plant,soybean,legumes: soy,auto_rule_review
+680,Rye coarse grounded grains or flakes steamed wholegrain,Flour starch bran,rye,flour: rye,auto_rule_review
+702,Rolled oats wholegrain,Flour starch bran,oats,flour: oats,auto_rule_review
+703,Rolled oats wholegrain w/ wheat bran,Flour starch bran,oats,flour: oats,auto_rule_review
+704,Oat bran,Flour starch bran,oats,flour: oats,auto_rule_review
+705,Rolled barley steamed wholegrain,Flour starch bran,barley,flour: barley,auto_rule_review
+707,Wheat coarse-ground or flakes steamed wholegrain,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+708,Wheat sprouts,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+709,Wheat bran,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+711,Wheat bran coarse wheat bran,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+804,Brown rice boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+810,Rice flour white,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+814,Rice Chinese Asian boiled w/o salt from restaurant,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+828,Semolina,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+874,Broad beans dried,Leguminous plant,faba_bean,legumes: broad beans,auto_rule_review
+875,Brown beans dried,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+877,Kidney beans dried,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+878,Red beans dried boiled w/o salt,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+879,White beans dried,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+880,White beans dried boiled w/o salt,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+881,Chick peas dried,Leguminous plant,chickpea,legumes: chick peas,auto_rule_review
+884,Lentils dried,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+887,Soy beans dried,Leguminous plant,soybean,legumes: soy,auto_rule_review
+888,Soybeans dried boiled w/o salt,Leguminous plant,soybean,legumes: soy,auto_rule_review
+889,Cowpeas black-eyed beans dried,Leguminous plant,pea,legumes: peas,auto_rule_review
+890,Cowpeas black-eyed beans dried boiled w/o salt,Leguminous plant,pea,legumes: peas,auto_rule_review
+891,Green or yellow peas dried,Leguminous plant,pea,legumes: peas,auto_rule_review
+906,Soy flour app. 20% fat,Flour starch bran,soybean,flour: soy,auto_rule_review
+920,Lamb shoulder brisket raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+921,Lamb chops raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+922,Lamb shank raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+923,Lamb scrag end raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+924,Lamb steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+925,Lamb minced meat raw 12% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+926,Lamb flank of lamb raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+927,Lamb chop raw trimmed,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+928,Hare meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+930,Venison fallow deer shoulder clod raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+931,Venison fallow deer steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+932,Venison sirloin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+933,Horse meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+934,Veal shoulder clod raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+935,Veal brisket raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+936,Veal tenderloin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+937,Veal knuckle raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+938,Veal top round raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+939,Veal chops raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+940,Veal shank raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+941,Veal silverside raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+942,Veal thin flank raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+943,Veal chuck raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+944,Rabbit meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+945,Beef sirloin raw w/ bone,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+946,Beef sirloin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+947,Beef brisket raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+949,Beef tender loin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+950,Beef knuckle raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+951,Beef minced meat raw 10% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+953,Beef chuck raw trimmed,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+954,Beef top round steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+955,Beef shank raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+956,Beef shoulder clod raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+957,Beef rump raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+959,Beef bonless beef outside raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+960,Beef cube roll raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+961,Beef stewing steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+962,Minced meat patties beef raw frozen product e.g. hackebiff,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+963,Beef mince meat raw 15% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+965,Reindeer steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+966,Reindeer shoulder clod raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+967,Sautéed reindeer raw frozen product,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+968,Roe deer meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+969,Pork shoulder raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+970,Pork tenderloin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+971,Pork chop raw w/ rind 5 mm,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+972,Pork spare ribs raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+973,Pork trotters raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+975,Pork knuckle raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+976,Pork picninc shoulder raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+977,Pork stewing steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+978,Pork collar raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+980,Pork minced meat raw 20% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+981,Pork shoulder blade roast raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+982,Pork chop raw w/o rind,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+983,Pork chop raw w/ rind 2 mm,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+984,Pork shank raw w/o rind,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+985,Pork belly whole piece raw w/ rind,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+986,Pork belly whole piece slice raw w/ rind,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+987,Pork ham slice raw w/ rind,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+988,Pork ham topside raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+989,Pork ham knuckle raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+990,Pork ham boneless outside raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+992,Pork minced meat raw 8% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+995,Sautéed moose raw frozen product,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+996,Beef tail raw trimmed,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+997,Pig rind raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1013,Beef flank steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1014,Beef sirloin fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1017,Beef cube roll fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1018,Pork shoulder fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1019,Pork meat boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1022,Pork knuckle boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1023,Pork tenderloin slice fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1024,Pork collar slice fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1025,Pork chop fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1027,Pork shank boiled w/ salt w/o rind ,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1028,Pork meat grilled,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1030,Pork trotters boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1031,Hare steak fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1032,Veal tenderloin fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1033,Veal chops fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1034,Veal meat boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1035,Veal roast roasted,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1036,Lamb chops fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1037,Lamb roast roasted,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1038,Beef chuck boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1039,Beef roast or pot roast boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1044,Beef rump roast in oven,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1045,Pork spare ribs roasted barbecued,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1047,Roe deer meat roast in oven,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1048,Reindeer meat boiled w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1049,Reindeer meat roast in oven,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1050,Moose steak roasted or grilled,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1055,Pork collar cooked w/o gravy,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1056,Pork ham roasted w/o gravy frozen product,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1057,Beef steak roasted w/o gravy frozen produkt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1058,Beef rump roast in oven w/o salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1059,Pork spare ribs cooked w/o gravy,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1101,Hamburger beef raw frozen product,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1110,Hamburger beef fried 10% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1111,Hamburger beef fried 15% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+1151,Duck breast raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1153,Duck raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1154,Pigeon raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1155,Pigeon raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1156,Pheasant raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1157,Pheasant raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1158,Goose raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1159,Goose raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1160,Hen raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1161,Hen raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1162,Turkey fillet raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1163,Turkey raw w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1164,Chicken meat raw w/o skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1165,Chicken meat raw w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1166,Chicken breast fillet raw w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1167,Chicken thigh raw w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1168,Chicken wing raw w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1169,Ptarmigan raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1170,Chicken breast fillet fresh meat fried w/o skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1171,Chicken drumstick raw w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1172,Chicken breast fillet shredded stir fried w/o skin w/ rapeseed oil,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1173,Chicken breast fillet raw w/o skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1174,Chicken thigh raw w/o skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1176,Ostrich fillet raw,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1177,Ostrich fillet fried,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1178,Turkey boiled,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1180,Pigeon w/ skin fried w/ salt,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1181,Chicken boiled w/ salt,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1182,Chicken grilled w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1183,Pheasant fried w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1184,Goose fried w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1185,Hen boiled w/ salt,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1186,Turkey fried w/ skin ,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1188,Chicken breast fillet fried w/ skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1189,Ptarmigan fried,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1190,Chicken hen boiled grilled fried,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+1200,Common bream raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1201,Rainbow trout raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1202,Saithe raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1203,Halibut wild raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1225,Egg raw,Egg,egg,main_group Egg,auto_rule_review
+1226,Egg yolk raw,Egg,egg,main_group Egg,auto_rule_review
+1227,Egg white raw,Egg,egg,main_group Egg,auto_rule_review
+1233,Egg fried,Egg,egg,main_group Egg,auto_rule_review
+1237,Haddock raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1238,Hake raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1240,Vendace raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1241,Herring raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1242,Flounder raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1243,Baltic herring raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1244,Arctic char raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1246,Cod raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1247,Whiting rå,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1248,Eel raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1249,Brown trout farmed raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1250,Pink salmon raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1251,Turbot raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1252,Whitefish gutted smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1253,Perch raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1255,Salmon farmed Nowegian fjords raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1256,Brown trout brook trout Sweden raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1257,Burbot raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1258,Plaice raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1259,Whitefish raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1260,Mackerel raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1261,Rainbow trout farmed raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1262,Pike raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1263,Pike-perch raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1266,Hot smoked herring,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1269,Salmon cold smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1273,Herring salted raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1274,Baltic herring raw w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1277,Eel gutted whole smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1279,Mackerel gutted smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1282,Anglerfish raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1284,Herring salted ready to use canned,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1287,Hot smoked herring butterfly fillet e.g. rospigg,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1288,Salmon gutted smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1289,Mackerel fillet smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1290,Rainbow trout cold-smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1291,Rainbow trout gutted smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1292,Arctic char gutted smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1293,Eel fillet smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1302,Eel cooked in brine homemade,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1303,Eel baked in oven homemade,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1304,Perch poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1308,Rainbow trout cooked in brine,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1310,Pike poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1312,Halibut poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1314,Haddock poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1316,Salmon fried w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1317,Salmon poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1318,Mackerel poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1320,Mackerel fried w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1321,Turbot poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1322,Plaice fillet poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1324,Plaice fillet fried w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1325,Whitefish poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1327,Herring salted poached,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1329,Baltic herring poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1333,Baltic herring fillet fried w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1334,Tuna fried w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1335,Cod fillet poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1337,Cod fried,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1338,Whiting poached w/ salt,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+1340,Fish smoked,Fish smoked,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+1434,Lamb sweetbread raw,Offals,offal,main_group Offals,auto_rule_review
+1435,Lamb heart raw,Offals,offal,main_group Offals,auto_rule_review
+1436,Lamb liver raw,Offals,offal,main_group Offals,auto_rule_review
+1437,Lamb kidney raw,Offals,offal,main_group Offals,auto_rule_review
+1438,Lamb tongue raw,Offals,offal,main_group Offals,auto_rule_review
+1439,Veal sweetbread raw,Offals,offal,main_group Offals,auto_rule_review
+1441,Veal liver raw,Offals,offal,main_group Offals,auto_rule_review
+1442,Veal kidney raw,Offals,offal,main_group Offals,auto_rule_review
+1443,Veal tongue raw,Offals,offal,main_group Offals,auto_rule_review
+1444,Beef veal heart,Offals,offal,main_group Offals,auto_rule_review
+1445,Beef liver raw,Offals,offal,main_group Offals,auto_rule_review
+1446,Beef kidney raw,Offals,offal,main_group Offals,auto_rule_review
+1447,Beef ox tongue raw,Offals,offal,main_group Offals,auto_rule_review
+1448,Pork heart raw,Offals,offal,main_group Offals,auto_rule_review
+1449,Pork liver raw,Offals,offal,main_group Offals,auto_rule_review
+1450,Pork kidney raw,Offals,offal,main_group Offals,auto_rule_review
+1451,Pork tongue raw,Offals,offal,main_group Offals,auto_rule_review
+1452,Chicken heart raw,Offals,offal,main_group Offals,auto_rule_review
+1453,Chicken liver raw,Offals,offal,main_group Offals,auto_rule_review
+1454,Chicken gizzard raw,Offals,offal,main_group Offals,auto_rule_review
+1455,Reindeer liver raw,Offals,offal,main_group Offals,auto_rule_review
+1457,Chicken liver fried,Offals,offal,main_group Offals,auto_rule_review
+1557,Cashew nuts roasted w/o salt,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1558,Hazelnuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1559,Peanut butter,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1560,Peanuts dried,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1561,Peanuts roasted,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1562,Peanuts roasted salted,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1563,Chestnuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1564,Shredded coconut dried,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1565,Coconut,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1567,Linseeds whole,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1568,Brazil nuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1569,Pecan nuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1570,Pistachio nuts w/o salt,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1571,Pumpkin seeds,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1572,Sesame seeds w/ husk,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1573,Sesame seeds w/o husk,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1574,Sunflower seeds ,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1575,Almond sweet,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1576,Walnuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1577,Chestnuts roasted,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+1713,Sour cream 12% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1714,Coffee cream 12% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1715,Whipping cream 40% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1716,Cream semi-skimmed 27% fat e.g. mellangrädde,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1717,Cooking cream 15% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1719,Crème fraiche 34% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+1932,Barley flour wholegrain,Flour starch bran,barley,flour: barley,auto_rule_review
+1933,Corn flour yellow refined or polenta,Flour starch bran,maize,flour: corn flour,auto_rule_review
+1934,Rye flour wholegrain ,Flour starch bran,rye,flour: rye,auto_rule_review
+1935,Wheat flour wholegrain graham flour,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+1938,Wheat flour bakers flour ,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+1941,Wheat flour ,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+2036,Cream substitute 15% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2037,Cream substitute appr. 5% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2039,Whipping cream milk and vegetable fat mixture 20% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2040,Coffee cream substitute milk oil 10% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2041,Vanilla custard cream whipped 12% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2043,Creme fraiche flavoured 13% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2044,Creme fraiche flavoured 28% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2046,Creme fraiche skimmed 5% fat e.g. mini fraiche ,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+2048,Fermented milk plain 4.2% fat e.g. filmjölk,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+2057,Risotto rice Avorio dried uncooked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2099,Hamburger beef and pork fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2101,Minced meat beef fried w/ salt 10% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2103,Beef or pork meat fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2205,Egg boiled,Egg,egg,main_group Egg,auto_rule_review
+2255,Mozzarella cheese 18% fat,Fresh cheese and quark,cheese_rennet,"fresh cheese: mozzarella, paneer",auto_rule_review
+2413,Lamb middle neck or scrag end boiled,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2468,Tilapia raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+2475,Rice Basmati dry,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2477,Rice Jasmine dry,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2478,Rice brown long-grain dry wholegrain,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2479,Rice white short-grain for porridge pre-boiled dried unccoked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2481,Rice long-grain dried uncooked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2482,Rice long-grain parboiled dried uncooked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2483,Rice white pre-boiled dried uncooked 1% salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2484,Rice white pre-boiled dried uncooked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2485,Rice white short-grain for porridge dried uncooked,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2492,Minced meat raw 70% beef 30% pork ,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2499,Minced meat raw 50% beef 50% pork,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2513,Rice Basmati boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2514,Rice Jasmine boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2515,Rice long-grained boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2516,Rice long-grain parboiled boiled,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2517,Rice brown long-grain boiled w/ salt wholegrain,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2518,Rice instant boiled w/ 1% salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2519,Rice instant boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+2547,Green peas boiled w/ salt frozen product,Leguminous plant,pea,legumes: peas,auto_rule_review
+2552,Moose chuck raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2555,Moose sirloin raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2826,Top round steak fried (thin slices),Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+2827,Elk meat fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3064,Almonds candied,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3071,Pine nuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3139,Mixed nuts w/ salt,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3140,Mixed nuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3243,Quark plain 0.2% fat,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+3258,Nuts and dried fruits berries,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3262,Mixed nuts candied,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3318,Tenderloin/fillet of beef pan-fried,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3323,Moose mince meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3324,Moose silverside,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3594,Chicken fillet boiled w/o skin,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+3602,Tahini sesame paste,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+3618,Beef and pork mince pan-fried w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3619,Minced meat pork 15% fat fried w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3620,Lamb minced meat fried w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3621,Moose mince meat fried w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3627,Skewer/burger  w/ minced pork salt homemade,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+3760,White beans dried boiled w/ salt,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+3761,Large white beans canned w/o brine,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+3762,Chickpeas dried boiled w/ salt,Leguminous plant,pea,legumes: peas,auto_rule_review
+3786,Spelt flour wholegrain,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+3800,Salmon farmed Norwegian fjord raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+3815,Chickpeas canned w/o brine,Leguminous plant,pea,legumes: peas,auto_rule_review
+3816,Kidney beans red beans canned w/o brine,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+3821,Green lentils dried boiled w/ salt,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+3822,Red lentils dried boiled w/ salt,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+3823,Red lentils canned w/o brine,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+3824,Green lentils canned w/o brine,Leguminous plant,lentil,legumes: lentils,auto_rule_review
+3840,Egg raw organic,Egg,egg,main_group Egg,auto_rule_review
+3841,Egg yolk raw organic,Egg,egg,main_group Egg,auto_rule_review
+4134,Egg fried organic,Egg,egg,main_group Egg,auto_rule_review
+4135,Egg boiled organic,Egg,egg,main_group Egg,auto_rule_review
+4183,Minced meat fried w/ salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+4226,Pangasius raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4385,Potato raw e.g. Solist ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4386,Potato raw e.g. Swift ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4415,Potato boiled w/ salt e.g. Solist ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4416,Potato boiled w/ salt e.g. Swift ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4445,Potato raw e.g. Asterix ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4447,Rice noodles dry,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+4448,Rice noodles boiled,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+4457,Potatoe raw,Potatoes,potato,main_group Potatoes,auto_rule_review
+4458,Potato boiled w/ salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+4511,New potato boiled w/ salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+4512,New potatoes raw,Potatoes,potato,main_group Potatoes,auto_rule_review
+4513,Potato raw e.g. Inova ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4514,Potato raw e.g. King Edward ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4515,Almond potato raw,Potatoes,potato,main_group Potatoes,auto_rule_review
+4516,Potato biled w/ salt commercial kitchen,Potatoes,potato,main_group Potatoes,auto_rule_review
+4518,Potato boiled w/ salt e.g. Asterix ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4519,Potato boiled w/ salt e.g. Inova ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4520,Potato boiled w/ salt e.g. King Edward ,Potatoes,potato,main_group Potatoes,auto_rule_review
+4521,Almond potato boiled w/ salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+4537,Milk powder whole milk,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+4583,Pork minced meat raw 15% fat,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+4586,Hoki raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4591,Rice white short-grain boiled w/ salt,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+4607,European sprat,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4611,Shallow-water Cape hake raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4612,Gilt-head sea bream raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4613,Sea bass raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4615,Alaska pollock raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+4616,Gilt-head sea bream grilled w/ salt,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+4617,Sea bass grilled,Fish fried,fish,"main_group in {Fish smoked, Fish fried}",auto_rule_review
+5043,Venison fallow deer meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5044,Venison fallow deer mince raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5046,Sautéed venison raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5048,Wild boar shoulder raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5049,Wild boar fillet raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5050,Roe deer steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5058,Wild boar steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5060,Wild boar meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5064,Roe deer shoulder clod raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5065,Reindeer meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5066,Beef meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5067,Lamb meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5068,Lamb stewing steak raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5136,Potato old boiled w/o salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+5153,Potato boiled w/o salt,Potatoes,potato,main_group Potatoes,auto_rule_review
+5447,Pork meat raw,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5727,Super-skimmed milk <0.1% fat fortified,Milk,milk_bovine,"main_group Milk, excluding breast milk",auto_rule_review
+5866,Brown beans boiled w/ salt,Leguminous plant,kidney_bean,legumes: common beans,auto_rule_review
+5867,Field peas boiled w/ salt ,Leguminous plant,pea,legumes: peas,auto_rule_review
+5868,Broad bean boiled w/ salt,Leguminous plant,faba_bean,legumes: broad beans,auto_rule_review
+5926,Halibut farmed Atlantic ocean raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+5978,Pork minced meat cooked w/o salt ,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+5999,Pork ham topside cooked,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+6002,Pork steak cooked w/o salt,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+6003,Pork medallions cooked,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+6004,Pork chop cooked,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+6005,Pork tenderloin cooked,Red meat fresh frozen cooked,meat_muscle,main_group Red meat fresh frozen cooked,auto_rule_review
+6006,Beef veal liver cooked,Offals,offal,main_group Offals,auto_rule_review
+6007,Chicken liver roast in oven,Offals,offal,main_group Offals,auto_rule_review
+6008,Pork liver cooked,Offals,offal,main_group Offals,auto_rule_review
+6053,Cashew nuts roasted w/ salt ,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6058,Chicken fillet cooked w/o skin frozen product,Poultry,meat_muscle,main_group Poultry,auto_rule_review
+6070,Cheese hard organic 28% fat ,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+6076,Yoghurt summer organic plain 3% fat fortified,Natural fermented products,yogurt,natural fermented: yoghurt,auto_rule_review
+6087,Almond flour,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6088,Fermented milk summer organic 3% fat fortified,Natural fermented products,kefir_fermented_milk,natural fermented: fermented milks,auto_rule_review
+6089,Drinking quark diff. flavours,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+6090,Quark flavoured artificial sweetener,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+6091,Quark flavoured w/ sugar,Fresh cheese and quark,quark_cottage,"fresh cheese: quark, cottage cheese",auto_rule_review
+6113,Yoghurt plain 10% fat ,Natural fermented products,yogurt,natural fermented: yoghurt,auto_rule_review
+6154,Psyllium husk,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6157,Chia seeds,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6158,Hemp seeds w/ husk,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6159,Hemp seeds w/o husk,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6160,Poppy seeds,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+6173,Salmon wild Sweden raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+6174,Salmon farmed Norwegian raw frozen,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+6225,Salmon farmed Norway raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+6468,Oat flour wholegrain,Flour starch bran,oats,flour: oats,auto_rule_review
+6478,Sea trout autumn raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+6480,Rolled barley flakes wholegrain steamed,Flour starch bran,barley,flour: barley,auto_rule_review
+6481,Rye flakes wholegrain steamed,Flour starch bran,rye,flour: rye,auto_rule_review
+6482,Wheat flakes wholegrain steamed,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+6494,Spelt flour refined,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+6542,Wheat flour durum,Flour starch bran,wheat,"flour: wheat, semolina, spelt",auto_rule_review
+6574,Flour mix wheat barley rye oat,Flour starch bran,oats,flour: oats,auto_rule_review
+6782,Sushi rice boiled,Rice rice noodles,rice,main_group Rice rice noodles,auto_rule_review
+7022,Ricotta cheese approx. 10% fat,Fresh cheese and quark,cheese_whey,fresh cheese: ricotta,auto_rule_review
+7024,Macadamia nuts,Nuts and seeds,tree_nuts,"main_group Nuts and seeds (refine: peanuts, oil seeds)",auto_rule_review
+7052,Rye bran,Flour starch bran,rye,flour: rye,auto_rule_review
+7137,Crème fraiche 32% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+7138,Crème fraiche lactose free 32-34% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+7139,Crème fraiche 13% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+7140,Crème fraiche lactose free 13% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+7141,Blue cheese approx.35% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+7142,Cheese hard parmesan 29% fat e.g. Grana Padano,Hard cheese,cheese_rennet,main_group Hard cheese,auto_rule_review
+7149,Yoghurt plain skimmed lactose free approx. 0.4% fat,Natural fermented products,yogurt,natural fermented: yoghurt,auto_rule_review
+7156,Tuna yellowfin raw,Fish fresh frozen cooked,fish,main_group Fish fresh frozen cooked,auto_rule_review
+7200,Paneer,Fresh cheese and quark,cheese_rennet,"fresh cheese: mozzarella, paneer",auto_rule_review
+7256,Cheese Brie w/ rind flavoured approx. 38% fat,Soft cheese,cheese_rennet,main_group Soft cheese,auto_rule_review
+7264,Whipping cream milk and vegetable mixture 30% fat,"Cream, creme fraiche",cream,"main_group Cream, creme fraiche",auto_rule_review
+7267,Egg white raw organic,Egg,egg,main_group Egg,auto_rule_review

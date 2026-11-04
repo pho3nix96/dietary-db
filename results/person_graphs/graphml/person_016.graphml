@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">16</data>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">1.9423</data>
+  <data key="d4">377.67</data>
+</node>
+<node id="f126">
+  <data key="d1">Fruit yoghurt 0.5% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2843</data>
+  <data key="d4">66.33</data>
+</node>
+<node id="f183">
+  <data key="d1">Crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1522</data>
+  <data key="d4">8.67</data>
+</node>
+<node id="f2024">
+  <data key="d1">Breakfast cereals muesli wholegrain w/ fruit</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.456</data>
+  <data key="d4">23.67</data>
+</node>
+<node id="f2514">
+  <data key="d1">Rice Jasmine boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">1.4802</data>
+  <data key="d4">178.33</data>
+</node>
+<node id="f335">
+  <data key="d1">Endive</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3333</data>
+  <data key="d4">26.67</data>
+</node>
+<node id="f4504">
+  <data key="d1">Kale salad</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.7208</data>
+  <data key="d4">57.67</data>
+</node>
+<node id="f557">
+  <data key="d1">Blueberries sweetened frozen product</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.1958</data>
+  <data key="d4">15.67</data>
+</node>
+<node id="f635">
+  <data key="d1">Orange salad</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.4333</data>
+  <data key="d4">34.67</data>
+</node>
+<node id="f677">
+  <data key="d1">Oatmeal porridge wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.6697</data>
+  <data key="d4">181.0</data>
+</node>
+<node id="f7149">
+  <data key="d1">Yoghurt plain skimmed lactose free approx. 0.4% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.3137</data>
+  <data key="d4">61.0</data>
+</node>
+<node id="f80">
+  <data key="d1">Cheese hard 38% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.192</data>
+  <data key="d4">7.0</data>
+</node>
+<node id="uU0035">
+  <data key="d1">Farm-shop milk 3% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.317</data>
+  <data key="d4">69.33</data>
+</node>
+<edge source="f123" target="f2024">
+  <data key="d5">0.36</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2514">
+  <data key="d5">0.7114</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f123" target="f557">
+  <data key="d5">0.1958</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f677">
+  <data key="d5">0.6697</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f183" target="f80">
+  <data key="d5">0.1522</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2514" target="f4504">
+  <data key="d5">0.3431</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2514" target="uU0035">
+  <data key="d5">0.317</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f4504" target="uU0035">
+  <data key="d5">0.317</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f557" target="f677">
+  <data key="d5">0.1958</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

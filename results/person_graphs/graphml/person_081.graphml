@@ -1,0 +1,124 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">81</data>
+<node id="f1008">
+  <data key="d1">Pork ham dried cured Italian Prosciutto</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.1291</data>
+  <data key="d4">5.67</data>
+</node>
+<node id="f1138">
+  <data key="d1">Hamburger beef fried frozen product</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.7133</data>
+  <data key="d4">71.33</data>
+</node>
+<node id="f1149">
+  <data key="d1">Minced meat patties fried frozen product</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.3433</data>
+  <data key="d4">34.33</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.9514</data>
+  <data key="d4">185.0</data>
+</node>
+<node id="f2027">
+  <data key="d1">Breakfast cereal muesli wholegrain w/ sugar fruit nuts </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1755</data>
+  <data key="d4">13.0</data>
+</node>
+<node id="f2029">
+  <data key="d1">Breakfast cereal w/ sugar coconut e.g. crunchy</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.0929</data>
+  <data key="d4">6.67</data>
+</node>
+<node id="f2520">
+  <data key="d1">Pasta tagliatelle w/ egg dried boiled w/ salt gluten free </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.306</data>
+  <data key="d4">27.0</data>
+</node>
+<node id="f4448">
+  <data key="d1">Rice noodles boiled</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4684</data>
+  <data key="d4">56.67</data>
+</node>
+<node id="f4947">
+  <data key="d1">Onion red</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1667</data>
+  <data key="d4">13.33</data>
+</node>
+<node id="f6084">
+  <data key="d1">Bread white e.g. levain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.0742</data>
+  <data key="d4">4.67</data>
+</node>
+<node id="f725">
+  <data key="d1">Breakfast cereal wholegrain e.g. Special flakes</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3159</data>
+  <data key="d4">14.0</data>
+</node>
+<node id="uU0180">
+  <data key="d1">Rice noodles boiled</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2774</data>
+  <data key="d4">28.67</data>
+</node>
+<node id="uU0181">
+  <data key="d1">Store-brand pasta dried boiled w/ salt</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.1501</data>
+  <data key="d4">23.67</data>
+</node>
+<edge source="f1008" target="f6084">
+  <data key="d5">0.0742</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1138" target="f2520">
+  <data key="d5">0.306</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1138" target="f4947">
+  <data key="d5">0.1667</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1138" target="uU0181">
+  <data key="d5">0.1501</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1149" target="f4448">
+  <data key="d5">0.3433</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2027">
+  <data key="d5">0.1755</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2029">
+  <data key="d5">0.0929</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f725">
+  <data key="d5">0.3137</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2520" target="f4947">
+  <data key="d5">0.1667</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

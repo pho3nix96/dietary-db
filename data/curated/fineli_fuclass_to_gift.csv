@@ -1,0 +1,123 @@
+fuclass,gift_subgroup_code,note
+ALCOTH,1401,
+BEER,1401,
+CIDER,1401,
+SPIRIT,1401,
+WINE,1401,
+BABFISHD,1501,
+BABFRUB,1501,
+BABMEATD,1501,
+BABVEGE,1501,
+COFFEE,1403,
+DRINKART,1404,
+DRINKOTH,1404,mead and alcohol-free beer/wine
+DRINKSO,1404,
+DRJUICE,1405,sweetened or diluted juice drinks
+DRSPORT,1503,
+DRWATER,1402,
+TEA,1403,
+BAKSALT,1810,Karelian pasties and savoury pies
+BAKSWEET,1201,
+BISCUSAV,106,rusks; refined by name rules (wheat)
+BISCUSWE,1201,
+BRMIX,106,
+BRRYE,106,rye has no own GIFT subgroup
+BRWHITE,103,
+BUN,1201,
+CERBAR,1201,
+CERBRKF,106,refined by name rules (corn -> maize; rice -> rice; wheat -> wheat)
+FLOUR,106,refined by name rules
+PANCAKE,1201,
+PASTAADD,103,pasta and noodles; refined by name rules (rice noodles -> rice)
+PIZZA,1807,
+PORR,106,refined by name rules
+RICEADD,101,
+SANDWICH,1807,
+EGGMIX,1803,
+EGGS,501,
+BUTTEHIG,1102,blended spreads (milk fat + vegetable oil)
+BUTTELOW,1102,blended spreads (milk fat + vegetable oil)
+BUTTER,1102,
+FATANIM,1102,
+FATCOOK,1101,
+OIL,1101,
+SALADDRE,1303,dressings and mayonnaise as condiments
+VEGFATHI,1101,
+VEGFATLO,1101,
+FISH,606,refined by name rules (freshwater / diadromous / marine)
+FISHDISH,1802,
+FISHPROD,607,
+FISHSAUC,1802,
+FISHSOUP,1811,
+SEAFDISH,1802,
+SEAFOOD,605,
+SEAFSAUC,1802,
+SEAFSOUP,1811,
+BERFRESH,1003,
+FRUBDISH,1004,
+FRUBJUIC,1406,
+FRUBSAL,1004,canned fruit
+FRUBSOUP,1004,kissels and fruit soups
+FRUFRESH,1003,refined by name rules (citrus / yellow-orange)
+LEGUDISH,1805,
+LEGUMES,301,refined by name rules (soy -> soybeans; green beans and peas -> vegetables)
+LEGUPROD,302,soy products
+LEGUSAUC,1805,
+LEGUSOUP,1811,
+MEATCUTS,707,
+MEATDISH,1801,
+MEATPROD,707,
+MEATSAUC,1801,
+MEATSOUP,1811,
+MSTEAK,701,
+OFFALDI,705,
+POULSAUC,1801,
+POULTDIS,1801,
+POULTRY,702,
+POULTSOU,1811,
+SAUSAGE,707,
+SAUSCUTS,707,
+CHEESCUR,404,
+CHEESPRO,404,
+CHEESUNC,404,
+CREAM,403,
+CURD,404,quark as fresh acid-curd cheese
+ICECREAM,1206,
+MILKCURL,402,
+MILKFF,401,
+MILKHF,401,
+MILKLF,401,
+MILKPUDD,1206,
+MILKSAUC,1303,white sauces
+SMILK,402,
+SOUCREAM,402,
+YOGHURT,402,
+DESSAUCE,1204,
+INGRMISC,1704,refined by name rules (cocoa -> 1403)
+SAVSAUCE,1303,
+SPICES,1302,
+SPISAUCE,1303,
+INFMILK,1501,
+POTACOOK,201,
+POTADISH,1804,
+POTAFRIE,207,
+SALADMAY,1812,
+SALADMIX,1812,
+SALADVEG,1812,
+SNACKSAV,1901,refined by name rules (nuts -> 303)
+SNACKVEG,303,refined by name rules (dried fruit -> 1005)
+MEALREP,1502,
+SPECSUPP,1601,
+SPORTFOO,1503,
+CHOCOL,1202,
+JAM,1203,
+SUGADD,1205,
+SWEET,1204,
+MUSHRDI,903,
+VEGCANN,904,
+VEGDISH,1806,
+VEGFRESH,903,refined by name rules (leafy / yellow-orange)
+VEGJUICE,1405,refined by name rules (oat/rice/soy drinks -> milk alternatives)
+VEGPOT,904,
+VEGSAUC,1806,
+VEGSOUP,1811,

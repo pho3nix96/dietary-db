@@ -1,0 +1,745 @@
+gift_group,food_id,name,match_food_id,match_name,distance,same_cluster
+Beverages,1001842,Cordial artificial sweeteners RTD fortified ,2035131,"Mineral water, novelle plus, added vitamin b and c, sweetened with fructose",0.0,True
+Beverages,1001914,Madeira wine vol. % 18,2000950,Gin tonic,0.0,True
+Beverages,1001915,Port wine white red vol. % 20,2029501,Tonic water,0.0002,True
+Beverages,1001920,Liqueur vol. % 38 e.g. Kaptenlöjtnant,2000908,"Liqueur, 20-30% volume",0.0009,True
+Beverages,1001828,Soft drink carbonated,2000948,Rum cola,0.0012,True
+Beverages,1000659,Apple juice RTD,2000905,"Wine, fortified, sweet, bitters, sherry, vermouth, madeira, fruit wine",0.0018,True
+Beverages,1000662,Juice,2000434,"Orange juice, unsweetened, vitamin c",0.0024,True
+Beverages,1001904,Wine white vol. % 1 ,2000952,Dry martini,0.0028,True
+Beverages,1001909,Wine white or Rhine wine vol. % 10 ,2034688,"Coconut water, unsweetened",0.0033,True
+Beverages,1002302,Energy drink w/ sugar fortified,2029070,Energy drink with added vitamins,0.0036,True
+Beverages,1001924,Liquor flavoured vol. % 40 e.g. brännvin,2000938,"Soft drink, partially artificially sweetened",0.0039,True
+Beverages,1002214,Aloe vera juice plain,2000463,"Berry juice, unsweetened, diluted, home-made",0.0086,True
+Beverages,1005147,Swedish soft drink e.g. julmust Påskmust,2035196,"Juice drink, fruit, berry, contains sugar, valio hörppy",0.0103,True
+Beverages,1007294,Latte Macchiato,2028993,"Cafe latte, unsweetened, whole milk",0.0105,True
+Beverages,1001821,Blackcurrant cordial conc. fortified,2000438,"Pineapple juice, unsweetened, vitamin c",0.0111,True
+Beverages,1005152,Soft drink w/ alcohol vol. % 4-5,2030639,"Punch, 7% volume",0.0134,True
+Beverages,1001929,Irish Coffee,2000944,"Irish coffee, 8% volume",0.0168,True
+Beverages,1000670,Prune drink canned RTD,2033472,"Smoothie, fruit/berry",0.0171,True
+Beverages,1001729,Stewed rhubarb,2011587,"Rose hip drink, contains oat and lactobacillus plantarum, pro viva",0.0177,True
+Beverages,1006991,Cocoa beans,2000020,"Cocoa powder, unsweetened",0.0189,True
+Beverages,1003855,Smoothie w/ fruits berries w/o dairy products,2035629,"Smoothie, marli smoothie, fruit +vitamins  d&c",0.0229,True
+Beverages,1000408,Tomato juice RTD canned,2000390,"Tomato juice, unsweetened",0.0269,True
+Beverages,1000643,Orange juice RTD,2000358,Vegetable juice,0.0271,True
+Beverages,1006902,Soy drink w/o sugar fortified,2033135,"Soya drink,  organic, rainbow",0.0396,True
+Beverages,1001927,Liqueur reduced sweetness vol. % 24,2033907,"Juice drink, whey drink, gefilus, vitamins, probiotics, low-lactose",0.0407,True
+Beverages,1001741,Apple compote,2033594,"Fruit drink, mehukatti fruit snack, average",0.0468,True
+Beverages,1006813,Oat drink 3% fat fortified,2034876,"Oat drink without milk, oatly ikaffe, calcium, vitamins",0.0561,True
+Beverages,1000700,Oat drink 1.5% fat fortified,2033901,"Oat drink without milk, oatly, calcium, vitamins",0.0605,True
+Beverages,1003733,"Nectar w/ spices ""gluhwein""",2029685,"Plum juice, unsweetened",0.0665,False
+Beverages,1007266, Coconut milk 18% fat,2029014,Coconut milk,0.0715,True
+Beverages,1006599,"Cocoa w/ milk substitute non-dairy app. 1,5% fat",2030208,"Oat drink without milk, with added calcium",0.0766,True
+Beverages,1005150,Almond drink fortified,2034844,"Almond drink, sweetened, alrpo",0.0849,True
+Beverages,1006903,Almond drink w/o sugar fortified,2035195,"Cashew nut drink, unsweetened, gogreen",0.092,True
+Beverages,1000160,Smoothie w/ berries yoghurt banana,2034546,"Smoothie, blueberry and coconut milk",0.0988,True
+Beverages,1001834,Cordial artificial sweeteners RTD,2032740,"Beer, alcohol-free, 0.0% volume",0.1075,True
+Beverages,1000427,Vegetable juice canned or pasteurised RTD,2032892,"Fruit drink, hyvää päivää, cranberry, partially artificially sweetened",0.1415,True
+Beverages,1001918,Liqueur purified or Vodka vol. % 40,2000906,"Spirit, vodka, gin",0.5,True
+Beverages,1001830,Soft drink carbonated w/ artificial sweeteners,2030636,"Cider, light, 4.7% volume",0.5001,True
+Beverages,1001959,Instant coffee decaffeinated RTD,2033428,"Coffee, instant, drink",0.5003,True
+Cereals and their products,1000827,Millet grains or coarsely-ground grains wholegrain,2000160,"Flour, millet, whole or crushed grains",0.0005,True
+Cereals and their products,1000708,Wheat sprouts,2000115,Wheat germ,0.0029,True
+Cereals and their products,1002518,Rice instant boiled w/ 1% salt,2030346,"Rice, long-grain, boiled without salt",0.0049,True
+Cereals and their products,1000680,Rye coarse grounded grains or flakes steamed wholegrain,2000176,"Rye grain, crushed",0.0086,True
+Cereals and their products,1006574,Flour mix wheat barley rye oat,2034248,"Flour, barley, whole grain barley flour",0.0095,True
+Cereals and their products,1002482,Rice long-grain parboiled dried uncooked,2000182,"Flour, rice flour, rice flake",0.0111,True
+Cereals and their products,1000724,Breakfast cereal wheat bran wholegrain fortified e.g. All-Bran ,2033715,"Breakfast cereal, wheat flakes, kellogg's all-bran apple & fig, vitamins",0.0113,True
+Cereals and their products,1006481,Rye flakes wholegrain steamed,2029814,"Rye bread, dried rye bread",0.0116,True
+Cereals and their products,1000173,Crisp bread wholegrain rye app. 16% fibre e.g. Sport,2000100,"Flour, rye, wholegrain rye flour",0.0121,True
+Cereals and their products,1002123,Oatmeal porridge wholegrain fibre oats,2001509,"Barley porridge, barley flakes, water, salt",0.0124,True
+Cereals and their products,1000826,Durra and other sorghum species wholegrain,2000154,"Flour mixture, talkkuna powder, roasted barley, rye, oat, pea",0.0135,True
+Cereals and their products,1000848,Pasta wholegrain dried uncooked,2011030,"Flour, rye, fine rye flour",0.0137,True
+Cereals and their products,1000710,Breakfast cereal wheat wholegrain e.g. Weetabix,2029776,"Breakfast cereal, weetabix original, vitamins",0.0141,True
+Cereals and their products,1000175,Crisp bread wholegrain rye 15.5% fibre e.g. Delikatess,2000103,Rye flakes,0.0145,True
+Cereals and their products,1001935,Wheat flour wholegrain graham flour,2029771,"Crispbread, rye, 17% fibre",0.0156,True
+Cereals and their products,1007052,Rye bran,2029237,Rye bran,0.0192,True
+Cereals and their products,1004448,Rice noodles boiled,2030348,"Rice, brown, boiled without salt",0.0202,True
+Cereals and their products,1002519,Rice instant boiled w/ salt,2001379,"Rice, boiled, salt",0.0211,True
+Cereals and their products,1001932,Barley flour wholegrain,2000150,"Flour, barley flour",0.0212,True
+Cereals and their products,1002025,Breakfast cereal muesli wholegrain w/ berries,2032075,"Breakfast cereal, rye cereal, quaker fras",0.0214,True
+Cereals and their products,1000713,Breakfast cereal puffed rice w/ sugar fortified e.g. Rice Krispies,2029783,"Breakfast cereal, rice krispies",0.0226,True
+Cereals and their products,1004591,Rice white short-grain boiled w/ salt,2029056,"Noodle, rice noodle, boiled without salt",0.0253,True
+Cereals and their products,1000682,Semolina porridge,2001277,"Semolina porridge, milk, salt",0.0254,True
+Cereals and their products,1000174,Crisp bread wholegrain rye w/ sesame seeds wheat bran wheat sprouts 24% fibre,2032950,"Crispbread, multigrain, sesame seeds, vaasan pieni pyöreä",0.0259,True
+Cereals and their products,1002520,Pasta tagliatelle w/ egg dried boiled w/ salt gluten free ,2031678,"Pasta, spaghetti, naturally gluten-free, contains egg, boiled without salt",0.027,True
+Cereals and their products,1006869,Teff flour,2031838,"White bread, wheat flour, wheat bran, reilu vehnäleseviipaleet, fazer",0.0272,True
+Cereals and their products,1000185,Bread wholegrain barley 3% fibre,2001301,"Multigrain bread, bread roll, low-fat milk, flour mix",0.0273,True
+Cereals and their products,1001425,Crisp bread w/ blood wholegrain e.g. blodbröd,2000161,"Flour, buckwheat, whole or crushed grains",0.0277,True
+Cereals and their products,1000725,Breakfast cereal wholegrain e.g. Special flakes,2032440,"Breakfast cereal, whole wheat flakes with berries, added vitamins, pirkka",0.0282,True
+Cereals and their products,1000217,Bread white soft thin w/ milk app. 4% fibre e.g. tunnbröd,2001297,"Multigrain bread, buttermilk bread, sour milk, wheat and dark wheat flour",0.0283,True
+Cereals and their products,1007006,Millet grains boiled w/ salt,2001284,"Semolina porridge, whole grain semolina, water",0.0283,False
+Cereals and their products,1000181,Crisp bread wheat w/ sugar cinnamon app. 7% fibre,2032979,"Toast, wheat toast, mcennedy sliced brown bread, lidl, high-sodium",0.0284,True
+Cereals and their products,1006677,Amaranth flour,2031237,Amaranth flakes,0.0293,True
+Cereals and their products,1000727,Breakfast cereal corn flakes w/ sugar,2032070,"Breakfast cereal, chocolate cereal, multigrain, pirkka viidakkomuro",0.0299,True
+Cereals and their products,1000870,Egg noodles dried,2001295,"White bread, dark wheat flour, water",0.0311,True
+Cereals and their products,1000183,Crisp bread wholegrain wheat oat bran w/ sugar herbs 10.5% fibre ,2032077,"Breakfast cereal, chocolate cereal, weetabix minis",0.0319,False
+Cereals and their products,1006763,Breakfast cereal puffed wheat w/ chocolate wholegrain,2032445,"Breakfast cereal, chocolate cereal, pirkka",0.0328,True
+Cereals and their products,1006767,Puffed lentil cracker flavoured,2034842,"Multigrain bread, wheat roll with broad bean flour, primula",0.0334,True
+Cereals and their products,1000695,Oat gruel homemade,2001516,"Prune kissel, prune soup, with oat flakes",0.0343,True
+Cereals and their products,1000726,Breakfast cereal puffed wheat w/ honey fortified ,2032095,"Breakfast cereal, cheerios, maize, oat, barley, wheat, rice, nestle",0.0344,True
+Cereals and their products,1000180,Crisp bread wheat w/ poppy seeds 6% fibre e.g. frukost,2029807,"Multigrain bread, bread roll",0.0354,True
+Cereals and their products,1002031,Breakfast cereal muesli wholegrain w/ sugar fruit berries ,2032087,"Breakfast cereal, chocolate cereal, nestle nesquik duo, vitamins",0.0365,True
+Cereals and their products,1001597,Wheat rusks unsweetened,2034701,Crouton,0.0368,True
+Cereals and their products,1000654,Rice pudding skimmed milk app. 1% fat,2001565,"Rice porridge, rice flakes, milk, without salt",0.0377,True
+Cereals and their products,1007026,Quinoa flour,2032730,"Toast, wholegrain toast, vaasan 100% täysjyväpaahto",0.0399,True
+Cereals and their products,1002027,Breakfast cereal muesli wholegrain w/ sugar fruit nuts ,2033011,"Breakfast cereal, wheat flakes, nuts, almond, nut flakers, lidl",0.0404,True
+Cereals and their products,1006864,Breakfast cereal corn gluten free fortified,2000163,"Breakfast cereal, corn flakes",0.0411,True
+Cereals and their products,1001945,Corn starch,2031677,"Pasta, spaghetti, naturally gluten-free, contains egg",0.0422,True
+Cereals and their products,1006764,Granola breakfast cereal w/ fruit nuts,2033677,"Multigrain bread, mixed seeds, alku jyväpala, fazer",0.0449,True
+Cereals and their products,1005974,Bread white tortilla,2031856,"Toast, wheat toast, vaasan arkipaahto",0.0457,True
+Cereals and their products,1006872,Polenta,2029822,"Flour, corn meal, coarsely ground",0.0462,False
+Cereals and their products,1006862,Breakfast cereal rice gluten free fortified e.g. Special flakes,2029775,"Breakfast cereal, sugar-coated corn flakes",0.0475,True
+Cereals and their products,1001938,Wheat flour bakers flour ,2034249,"Flour, coarse wheat flour",0.0477,False
+Cereals and their products,1002124,Oatmeal porridge boiled w/ milk,2001527,Talkkuna powder with sour milk,0.0491,True
+Cereals and their products,1000699,Gruel fortified,2001281,"Semolina chocolate porridge, milk, without salt",0.0492,True
+Cereals and their products,1002032,Breakfast cereal muesli wholegrain w/ fruit nuts,2032471,"Multigrain bread, lingonberry, limpukka, pågen",0.0497,True
+Cereals and their products,1000845,Pasta dried uncooked,2000121,"Pasta, spaghetti, macaroni",0.0506,False
+Cereals and their products,1006879,Crisp bread w/ chia seeds gluten free app. 10% fibre,2031540,"Crispbread, naturally gluten-free, with added vitamins, 7.5% fibre",0.0508,True
+Cereals and their products,1000819,Glass noodles dried,2000162,"Flour, potato starch, potato flour",0.0544,True
+Cereals and their products,1000810,Rice flour white,2000156,"Rice, white",0.058,True
+Cereals and their products,1006765,Granola breakfast cereal w/ cocoa and raspberry,2033730,"(arc)muesli with dried fruit, elovena plus",0.0583,True
+Cereals and their products,1002079,Egg noodles boiled w/ salt,2000186,"Pasta, spaghetti, spinach, boiled without salt",0.0584,True
+Cereals and their products,1000683,Porridge wholegrain w/ oat wheat bran raisins ,2001032,"Kruska porridge, crushed grains and raisins, water, salt",0.0587,True
+Cereals and their products,1006870,Waffle flour mix gluten free,2031550,"Flour mixture, gluten-free, contains wheat starch and milk powder",0.0597,True
+Cereals and their products,1001433,Bread w/ blood boiled w/ salt e.g. blodbröd ,2035153,"Whole grain semolina lingonberry porridge, whipped",0.0617,True
+Cereals and their products,1000675,Buckwheat porridge w/ raisins,2001279,"Semolina lingonberry porridge, whipped, salt, without sugar",0.0632,False
+Cereals and their products,1002227,Pasta corn dried uncooked 100% gluten free,2029823,"Flour, corn meal, finely ground",0.0646,True
+Cereals and their products,1000828,Semolina,2034242,"Flour, wheat flour, semi-coarse, v600",0.0684,False
+Cereals and their products,1004447,Rice noodles dry,2029055,"Noodle, rice noodle",0.0689,True
+Cereals and their products,1000227,Bread dk gluten free,2031685,"Multigrain bread, naturally gluten-free",0.0724,True
+Cereals and their products,1000678,Porridge graham flour w/ dried fruit flax seeds e.g. molinogröt,2034080,"Porridge with fibre, water, salt, nalle",0.0729,True
+Cereals and their products,1000716,Breakfast cereal puffed rice roasted w/ sugar cocoa powder e.g. Coco Pops,2032064,"Breakfast cereal, cocoa rice krispies, kellogg's coco pops",0.0732,True
+Cereals and their products,1006782,Sushi rice boiled,2033674,"Multigrain bread, potato flatbread, oululainen pikkurieska, fazer",0.078,False
+Cereals and their products,1006931,Semolina porridge w/ sugar e.g. Mamonia,2031945,"Pudding, rice pudding with berries, pirkka/rainbow",0.0864,True
+Cereals and their products,1000696,Semolina gruel homemade,2001548,"Maize gruel, milk, salt",0.0874,True
+Cereals and their products,1006084,Bread white e.g. levain,2001056,"White bread, pita bread",0.0894,True
+Composite dishes,1006452,Veggiestrone soup,2029037,"Root vegetable soup, pureed",0.0102,True
+Composite dishes,1000757,Pie w/ chicken bacon,2034501,"Couscous salad with halloumi cheese, oil-based dressing",0.013,True
+Composite dishes,1000430,Vegetable soup clear,2007013,Minestrone soup,0.0138,True
+Composite dishes,1001350,Hot smoked herring w/ egg ovenbaked,2008100,Baltic herring with cream cheese,0.0156,True
+Composite dishes,1002510,Hamburger double meat w/ bun cheese pickled cucumber from restaurant,2034395,"Hamburger, double cheese burger, mcdonald's",0.0172,True
+Composite dishes,1000302,Mashed swedes carrots and potatoes homemade,2028963,Vegetable potato stew,0.0179,True
+Composite dishes,1000763,Pizza Capricciosa w/ smoked ham button mushrooms from restaurant,2007093,"Lasagne, beef mince",0.0187,True
+Composite dishes,1006438,Vegetable stock base,2003360,"Salad, average mixture",0.0187,True
+Composite dishes,1001555,Pork brawn e.g. hushållssylta,2032501,"Pork beef mince gravy, no added fat",0.0196,True
+Composite dishes,1001233,Egg fried,2007603,Frankfurter-vegetable casserole,0.0197,True
+Composite dishes,1000773,Pizza w/ onion olives tomatoes cheese homemade,2032759,"Pizza, vegetarian pizza, mushroom, onion, sweet pepper, olive",0.0198,True
+Composite dishes,1001554,Pork and veal brawn e.g. pressylta,2007016,Pork beef mince gravy,0.0207,True
+Composite dishes,1000766,Pan pizza w/ smoked pork from restaurant,2034542,"Lasagne, beef steak mince, whole wheat pasta",0.0209,True
+Composite dishes,1006972,Kebab w/ lamb,2031490,"Beef mince, 17% fat, fried without fat and salt",0.0214,True
+Composite dishes,1001301,Cod fillet breaded fried homemade,2029247,"Fish loaf, no milk",0.0219,True
+Composite dishes,1002512,Cheese burger from restaurant,2032104,"Hamburger, cheese burger, mcdonald's",0.0225,True
+Composite dishes,1001465,Liver stew beef,2007026,"Meatball, minced elk, fried",0.0233,True
+Composite dishes,1000769,Pizza w/ shrimps mussels homemade,2033374,Kebab iskender,0.0234,True
+Composite dishes,1000497,Tomato soup RTE instant powder heated w/ water,2003017,"Rosolli salad, mixed beetroot salad, no dressing, no herring",0.0235,True
+Composite dishes,1000762,Pizza Capricciosa w/ smoked ham heated chilled product or frozen product,2032769,"Pizza, margherita pizza, tomato sauce and cheese",0.0235,True
+Composite dishes,1004736,Pasta sauce w/ tuna curry,2034477,"Fish shrimp casserole, saithe, vegetables, tomato",0.0235,True
+Composite dishes,1001332,Baltic herring baked w/ dill seeds tomato sauce,2008048,"Salad with smoked fish, lettuce and egg, without dressing",0.0236,True
+Composite dishes,1006951,Pirogue w/ meat ovenbaked e.g. Sambusa,2001033,"Wheat tortilla, burrito, wrap, pork beef mince filling",0.0244,True
+Composite dishes,1006387,Chicken stew w/ mushroom,2007017,Beef steak mince gravy,0.0246,True
+Composite dishes,1006952,Pirogue w/ spinach ovenbaked e.g. Sambusa,2033605,"Karelian pasty, rice filling, average of industrial products",0.0255,True
+Composite dishes,1006950,Pizza Lahmacun/Lahm Bel Ajin,2033274,"Pizza, three-cheese pizza, atria",0.0262,True
+Composite dishes,1006346,Lasagna beef meat,2032016,"Lasagne, beef mince (17%), meal mixture",0.0263,True
+Composite dishes,1006406,Chili sin carne w/ textured soy protein ,2003713,Bean stew,0.0265,True
+Composite dishes,1002506,Kebab meat w/ bread salad sauce,2035499,"Pizza, mozzarella pizza, tomato, pesto, gluten-free",0.0273,True
+Composite dishes,1000432,Cabbage in white roux sauce homemade,2034960,"Moussaka, beef mince",0.0275,True
+Composite dishes,1006955,Pirogue w/ vegetables deep-fried e.g. Sambusa,2031788,"Karelian pasty, rice filling, moilas",0.0278,True
+Composite dishes,1006948,Borek w/ vegetables,2035183,"Lasagne, härkis lasagne",0.0279,True
+Composite dishes,1000262,Potatosoup w/ leek ,2002009,Puréed potato leek soup,0.0284,False
+Composite dishes,1001467,Liver patties minced liver fried frozen product,2033609,"Minced meat hamburger patty, average of industrial products",0.0285,True
+Composite dishes,1000768,Pie w/ salmon spinach,2031778,"Fish and rice pie, shortcrust pastry",0.0292,True
+Composite dishes,1006506,Vegetable patties w/ chickpeas peanuts cooked,2034561,"Bean quinoa patty, fried",0.0307,True
+Composite dishes,1000435,Cauliflower in white roux sauce,2032875,"Vegetable soup with new potatoes, milk-based, summer soup",0.0308,True
+Composite dishes,1006956,Dolma w/ vegetables,2035507,Tabbouleh salad,0.0308,True
+Composite dishes,1000498,Tomato soup canned heated w/ water milk,2029036,"Root vegetable soup, pureed, cooking cream (veg. fat)",0.0311,True
+Composite dishes,1000453,Red cabbage cooked,2003285,"Salad, carrot and lingonberry, grated",0.0316,False
+Composite dishes,1006398,Vegetable burger fried,2034453,"Millet patty, fried",0.0317,False
+Composite dishes,1000464,White cabbage soup ,2003322,Vegetable gravy with tomato,0.0323,False
+Composite dishes,1001544,Sausage Stroganoff homemade in cast iron pan,2008515,"Omelette roll, ham filling",0.0324,True
+Composite dishes,1001080,Sautéed reindeer fried w/ edible fat salt ,2029183,"Beef gravy, vegetables, cooking cream",0.033,True
+Composite dishes,1002982,Fish soup seafood/shellfish soup w/o wine,2008023,"Russian fish soup, solyanka",0.033,True
+Composite dishes,1001360,Salmon mousse,2034485,"Tartar sauce, salmon tartar, sour cream",0.0335,True
+Composite dishes,1002093,Creole stew ,2033225,"Lindström's steak, minced meat patty with beetroot, horeca, findus",0.0338,True
+Composite dishes,1000257,Potato gratin w/ pickled sprats cream milk e.g. Jansson's frestelse,2032990,"Carrot rice pasty, whole milk",0.0344,True
+Composite dishes,1003011,Vegetable pie,2034517,"Reindeer and chanterelle pie, shortcrust pastry",0.0344,True
+Composite dishes,1002107,Shrimps in mayonnaise e.g. skagenröra homemade,2008503,"Omelette, plain, french omelette",0.0347,True
+Composite dishes,1000775,Chicken burger w/ bun dressed with accompaniments,2030169,"Chicken hamburger, wheat roll with crushed grain",0.0348,True
+Composite dishes,1002058,Crisp fried onion e.g. rostad lök,2001221,"Vegetarian pie, shortcrust pastry",0.0348,True
+Composite dishes,1003009,Pie w/ cheese,2031775,"Cheese pie, butter dough",0.0348,True
+Composite dishes,1000772,Pizza Marinara w/ shellfish from restaurant,2034383,"Pizza, kebab pizza, onion, feta, sour cream and tomato",0.0349,True
+Composite dishes,1006408,Bean stew provencale w/ potato celeriac white wine créme fraiche  ,2034565,"Sweet potato and feta salad, oil-based dressing",0.0351,False
+Composite dishes,1006410,Halloumi Stroganoff,2034419,"Vegetable gravy with tomato and farmer's cheese, shahi paneer",0.0351,True
+Composite dishes,1000306,Carrot in white roux sauce,2032884,"Beetroot gravy, whole milk",0.0353,True
+Composite dishes,1006437,Pasta gratin lasagna w/ vegetables,2001013,"Karelian pasty, rice filling",0.0354,True
+Composite dishes,1001413,Shellfish salad w/ mussles shrimps button mushrooms dressing homemade e.g. vastkustsallad,2008505,"Omelette, spinach omelette",0.0356,True
+Composite dishes,1000472,Peas carrot in white roux sauce,2003704,"Bean stew, milk, fresh beans",0.0357,True
+Composite dishes,1001199,Spanish omelette w/ potatoes meat onion e.g. bondomelett,2007540,"Chicken nuggets, deep-fried, lactose-free",0.0357,True
+Composite dishes,1000758,Pirogue filled w/ mince meat,2032799,"Chicken-bacon pasta casserole, kokkikartano snellman, ready meal",0.0362,True
+Composite dishes,1001359,Fish gratin w/ shrimps w/o mashed potatoes,2008077,"Fish loaf, cream",0.0364,True
+Composite dishes,1007203,Lentil soup w/ couscous,2029034,"Puréed vegetable soup, pea, carrot, sweetcorn, cooking cream (veg. fat)",0.0367,True
+Composite dishes,1000750,Spring roll heated frozen product,2032128,"Deep fried meat pastie, portti",0.0371,True
+Composite dishes,1001075,Lamb stew w/ onion tomato,2034578,"Chicken stew, chicken burgundy",0.0372,True
+Composite dishes,1000856,Pasta gratin macaroni pudding w/ pork,2031910,"Macaroni and meat casserole, saarioinen/pirkka, ready meal",0.0376,True
+Composite dishes,1006388,Meat stew w/ french mustard horseradish sour cream,2007249,Beef with red wine sauce,0.0376,True
+Composite dishes,1001305,Perch fillets breaded fried,2029262,"Meatball, minced elk, without cream, fried",0.0377,True
+Composite dishes,1006436,Lasagna w/ tomato lentils,2032914,"Couscous salad with goat cheese, oil-based dressing",0.0385,True
+Composite dishes,1002913,Beef and pork stew w/ cream/creme fraiche,2007161,Stroganoff,0.0398,True
+Composite dishes,1006357,Soup w/ pork root vegetables e.g. Fransk bondsoppa,2035469,"Vegetable soup, water, potato, mixed vegetables",0.0399,True
+Composite dishes,1000844,Noodle soup w/ rice noodles curry sesame oil,2033400,"Mashed potatoes, mashed potato powder, water, pirkka/felix",0.04,True
+Composite dishes,1000771,Pie w/ shellfish heated frozen product,2034577,"Chicken pie, shortcrust pastry",0.0401,True
+Composite dishes,1001479,Liver patties fried homemade,2033562,"Vegetable ball, hälsans kök, contains gluten",0.0405,True
+Composite dishes,1000508,White cabbage soup w/ meat quenelles,2003233,"Onion soup, gratinated with cheese",0.041,True
+Composite dishes,1001198,Cheese soufflé,2006028,"Cheese souffle, low-fat milk",0.0411,True
+Composite dishes,1000429,Pumpkin salad w/ bell pepper pickled sweetened w/o brine,2003292,"Salad, beetroot and apple",0.0412,True
+Composite dishes,1001537,Sausage w/ cheese tomato onion baked in oven e.g. falukorv,2007179,"Lindström's steak, beetroot and pork beef mince",0.0412,True
+Composite dishes,1001361,Herring patties w/ potatoes mince meat onion fried,2032752,"Pizza, anchovy and olive pizza",0.0413,True
+Composite dishes,1000751,Spring roll heated cooked at restaurant,2003331,"Onion pie, shortcrust pastry",0.0414,True
+Composite dishes,1006434,Pasta carbonara w/ soy beans,2033083,"Lasagne bolognese, saarioinen, ready meal",0.0414,False
+Composite dishes,1006971,Meat stew e.g. Suqaar,2032910,"Roasted beef salad with potato, oil-based sauce",0.0419,True
+Composite dishes,1006375,Vegetable patties Caribbean w/ carrot brown rice chickpeas broccoli fried,2035187,Härkis noodle wok,0.0423,False
+Composite dishes,1007191,Potato salad w/ mayonnaise w/o egg chilled product,2003337,"Salad, potato salad with mayonnaise",0.0424,True
+Composite dishes,1006381,White fish w/ breadcrumbs butter parsley baked in oven e.g. fisk Björkeby,2034849,"Fish pie, cold smoked salmon, shortcrust pastry",0.0431,True
+Composite dishes,1002063,Crisp bread sandwich wholegrain rye diff. fillings,2032777,"Pasta bolognese, kokkikartano snellman, ready meal",0.0432,True
+Composite dishes,1001121,Minced meat sauce pork,2032242,"Bolognese, pork beef mince",0.0434,True
+Composite dishes,1000529,Greek salad w/ feta cheese olives,2032874,"Creamy nettle soup, vegetable bouillon and cream",0.0435,True
+Composite dishes,1000304,Jerusalem artichoke soup,2003241,Creamy mushroom soup,0.0436,True
+Composite dishes,1003872,Potato salad w/ mayonnaise chilled product,2033603,"Salad, italian salad with mayonnaise, average of industrial products",0.0436,True
+Composite dishes,1006479,Taco tortilla w/ mince meat vegetables cheese,2032018,"Lasagne, pork-beef mince, meal mixture",0.0438,True
+Composite dishes,1000284,Potato gratin w/ cheese cream heated frozen product,2031774,Butter dough with potato puree,0.044,True
+Composite dishes,1002075,Coleslaw homemade,2034497,"Parsnip apple soup, pureed, cooking cream (veg. fat)",0.0441,True
+Composite dishes,1000824,Dolma wine leafs stuffed w/ rice canned,2029029,"Risotto, avocado and pesto risotto",0.0444,True
+Composite dishes,1006446,Lasagna w/ cottage cheese,2007048,"Cabbage casserole, beef steak mince, low-fat milk",0.0452,True
+Composite dishes,1000511,Cabbage roll fried homemade,2029269,Sliced baked potatoes with cream (15 % veg. fat),0.0454,True
+Composite dishes,1006953,Pirogue w/ cheese ovenbaked e.g. Sambusa,2033384,"Hamburger with sausage, without seasonings, grill",0.0454,True
+Composite dishes,1001207,Chicken nugget deep-fried from restaurant,2032696,"Sesame nuggets with soy, deep-fried, hälsans kök",0.0458,True
+Composite dishes,1006447,Pie w/ feta cheese sweet potato,2007051,"Stuffed cabbage rolls, pork beef mince",0.0459,True
+Composite dishes,1003681,Lasagna veg. w/ soy protein,2001031,"Wheat tortilla, burrito, wrap, vegetable filling",0.046,True
+Composite dishes,1000785,Wrap wheat tortilla w/ rice mince meat sweet corn cheese,2033460,"Sandwich, baguette, ham, subway",0.0461,False
+Composite dishes,1000795,Pizza topping w/ tomato sauce ham button mushrooms cheese,2032241,"Bolognese, pork beef mince, thickened",0.0464,False
+Composite dishes,1007157,Beetroot salad w/ mayonnaise creme fraiche,2033566,"Salad, beetroot salad, fresh, felix",0.0466,True
+Composite dishes,1001091,Nasi Goreng w/ pork from restaurant,2031799,"Deep-fried meat pasty, atria",0.0472,False
+Composite dishes,1006399,Vegetable patties w/ beetroot fried,2034576,Sweet potato chick pea curry,0.0472,True
+Composite dishes,1000740,Crêpe shrimp stuffing w/ semi-skimmed milk cream 44% stuffing homemade,2007074,"Canneloni, pork beef mince filling",0.0473,True
+Composite dishes,1001147,Cabbage rolls fried heated w/ gravy frozen product,2034582,"Asparagus soup, white wine, cream",0.0475,True
+Composite dishes,1001349,Fish gratin w/o mashed potatoes homemade,2008042,Pike à la homburg,0.0475,True
+Composite dishes,1002679,Lasagna w/ mycoprotein,2032792,"Lasagne bolognese, kokkikartano snellman, ready meal",0.0475,True
+Composite dishes,1001108,Minced meat sauce made in cast iron pan homemade,2032233,"Bolognese, beef steak mince, thickened",0.048,True
+Composite dishes,1000255,Swedish hash cooked frozen product,2028959,"Grape leaves, stuffed with rice, dolma",0.0489,True
+Composite dishes,1001461,Liver in white roux sauce w/ onion homemade ,2032504,"Beef steak mince gravy, milk-based",0.0491,False
+Composite dishes,1006456,Lasagna w/ ham,2032019,"Lasagne, lean steak mince (7%), meal mixture",0.0496,True
+Composite dishes,1006359,Soup w/ white cabbage minced beef carrot e.g. Hedvigsoppa,2007167,Cabbage soup with beef steak mince,0.0501,True
+Composite dishes,1006407,Mince sauce w/ textured fungal protein,2028961,Soy bolognese,0.0503,True
+Composite dishes,1002548,Moose stew e.g. kalops,2032160,Fruity chicken gravy,0.0511,True
+Composite dishes,1001073,Meat soup beef,2007606,Borsch with beef,0.0514,True
+Composite dishes,1006360,Soup w/ white cabbage minced beef e.g. Nikkaluoktasoppa,2033094,Ham gravy with tomato,0.0521,True
+Composite dishes,1001468,Liver stew w/ vegetables frozen product,2034488,"Beef steak mince soup, lentils",0.0522,True
+Composite dishes,1003871,Beetroot salad w/ mayonnaise chilled product,2032076,"Salad, italian salad with mayonnaise, saarioinen",0.0532,True
+Composite dishes,1000057,Salad w/ shellfish mayonnaise dressing,2034416,"Vegetable gravy with spinach and farmer's cheese, palak paneer",0.0534,True
+Composite dishes,1000867,Pasta gratin macaroni pudding ,2032812,"Rice pasty, riisipyörönen",0.0534,False
+Composite dishes,1006450,Sweet potato soup w/ lentils chili coconut milk  ,2034426,"Vegetable gravy, vegetable curry, coconut milk, chick pea",0.0538,False
+Composite dishes,1001366,Sushi roll w/ crabstick cucumber,2032129,"Spaghetti and minced meat casserole, saarioinen, ready meal",0.0546,True
+Composite dishes,1001363,Sushi nigiri w/ salmon,2032119,"Pizza, tuna pizza, saarioinen",0.055,True
+Composite dishes,1000494,Button mushroom soup heated w/ milk canned,2003215,Spinach soup,0.0553,True
+Composite dishes,1006423,Mushroom Stroganoff,2034583,"Funnel chanterelle soup, cream",0.0553,False
+Composite dishes,1001365,Sushi nigiri w/ tuna,2033063,"Risotto, chicken and vegetable risotto",0.0556,True
+Composite dishes,1001232,Crustless quiche fried e.g. äggakaka,2001247,"Egg sauce, low-fat milk, thickened with flour and fat",0.0557,True
+Composite dishes,1000900,Pea soup w/ pork canned heated w/ water,2007010,Pea soup with pork,0.0559,True
+Composite dishes,1000253,Potato dumpling barley flour stuffed w/ pork e.g pitepalt ,2032819,"Potato pastie, rye crust",0.0565,True
+Composite dishes,1000315,Root vegetable patties fried,2035254,"Cabbage, carrot and beef mince casserole, beef stock",0.0594,True
+Composite dishes,1001089,Chinese dish pork deep fried w/ vegetables ,2007039,Macaroni stew with pork beef mince,0.06,True
+Composite dishes,1006386,Fish stew Brasilian style w/ couconut milk tomato pulp bell pepper,2034423,"Fish gravy, fish curry, saithe, rainbow trout, coconut milk",0.0612,True
+Composite dishes,1002083,Ratatouille,2003301,"Salad, cabbage, apple and pickled cucumber",0.062,True
+Composite dishes,1000741,Crêpe w/ 37% shrimp stuffing heated frozen product,2029240,Spring roll with minced meat,0.0631,True
+Composite dishes,1000781,Sandwich w/ shrimps egg lettuce mayonnaise,2032513,"Chicken nuggets, breaded, cheese filling, hk/kariniemi",0.0631,False
+Composite dishes,1005804,Pasta carbonara,2001461,Cheese pasty,0.0636,True
+Composite dishes,1000530,Vegetable soufflé,2034437,Vegan frankfurter stroganoff,0.0644,True
+Composite dishes,1002092,Beef stew w/ potatoes onion beer e.g. sjömansbiff,2032041,"Meal mixture, soya and rice, cooked",0.065,False
+Composite dishes,1001462,Veal stew w/ veal heart vegetables,2034683,Cabbage stew with beef steak mince and carrot,0.0672,False
+Composite dishes,1006385,Gratin w/ kasseler pineapple cheese,2032506,"Bolognese, beef mince fat 7%, tomato,  powdered gravy mix",0.0673,False
+Composite dishes,1006380,Chili w/ chicken beans cocoa powder,2030225,"Chicken-vegetable wok, wok-vegetables",0.0692,True
+Composite dishes,1000279,Potato gratin w/ skimmed milk cheese homemade,2035645,"Macaroni and soya casserole, low-fat milk, gluten-free",0.0697,True
+Composite dishes,1006397,Textured fungal protein stew w/ mustard horseradish sour cream ,2035223,Peasoup with pork beef mince,0.0706,True
+Composite dishes,1007158,Beetroot salad w/ mayonnaise w/o egg chilled product,2032066,"Salad, beetroot salad with mayonnaise, atria",0.0715,True
+Composite dishes,1001081,Sautéed reindeer stew e.g. renskavsgryta,2032382,"Bolognese, beef mince, powdered gravy mix",0.072,True
+Composite dishes,1006705,Risotto w/ chicken spinach,2034977,Ham pasta,0.0734,False
+Composite dishes,1006420,Vegetables ovenbaked,2003299,"Salad, cabbage, cucumber and leek",0.0742,True
+Composite dishes,1006411,Halloumi stew w/ aubergine,2033493,"Bolognese, reindeer mince, crème fraiche",0.0743,True
+Composite dishes,1000248,Potato dumpling filled w/ pork belly e.g. kroppkakor,2007184,"Risotto, beef mince and vegetable risotto",0.075,True
+Composite dishes,1004037,Sausage casserole w/ vegetables,2031470,Potato cauliflower curry,0.0754,True
+Composite dishes,1002809,Rice pudding w/ jam w/o sugar w/ artificial sweeteners,2032125,"Ham and mashed potato casserole, saarioinen, ready meal",0.0807,True
+Composite dishes,1001235,Gratin w/ potato ham milk cheese e.g. skinklada,2031451,Spaghetti and minced meat casserole,0.0811,False
+Composite dishes,1000607,Rosehip soup instant powder fortified,2033203,"Stuffed cabbage rolls, minced meat, atria",0.0829,True
+Composite dishes,1006342,Lasagna w. zucchini aubergine beef mince meat,2034559,"Pizza, tomato and mozzarella pizza, cauliflower crust",0.0841,False
+Composite dishes,1001418,Shrimp soup RTE instant powder heated w/ water milk,2031444,"Rainbow trout soup, industrial, ready meal",0.0869,True
+Composite dishes,1000840,Rice pudding RTE w/ fruit sauce 6% fat,2033804,"Reindeer and potato casserole, saarioinen, ready meal",0.0897,False
+Composite dishes,1000458,Button mushroom in white roux sauce,2003242,"Mushroom stew, low-fat milk, cream",0.0914,True
+Composite dishes,1003852,Chicken in sour cream based sauce homemade,2032904,"Turkey salad with fruits, sour cream dressing",0.0977,True
+Composite dishes,1006449,Soup w/ coconut milk cauliflower potato spinach,2034465,Beetroot pesto sauce,0.1092,False
+Eggs and their products,1001225,Egg raw,2032937,"Egg, fried, without fat and salt",0.0548,True
+Eggs and their products,1003840,Egg raw organic,2034651,"Egg, without shell, organic",0.0842,True
+Eggs and their products,1001230,French omelette w/ water,2008500,"Egg, fried",0.1214,False
+Eggs and their products,1001227,Egg white raw,2033550,"Egg white powder, for food industry",0.1744,True
+Eggs and their products,1001229,French omelette w/ cream,2000855,"Egg, quail, raw",0.2015,False
+Eggs and their products,1003841,Egg yolk raw organic,2034693,"Egg, omega, fried, without fat and salt",0.2022,True
+Fats and oils,1000039,Soybean oil,2000542,Soybean oil,0.004,True
+Fats and oils,1000034,Corn oil,2000543,"Corn oil, maize oil",0.0051,True
+Fats and oils,1002474,Liquid margarine 76% fat e.g. Becel,2032431,"Margarine 80%, sunnuntai, fluid, rapeseed oil",0.0084,True
+Fats and oils,1004661,Rapeseed oil cold pressed,2011695,"Rapeseed oil, cold pressed",0.0084,True
+Fats and oils,1002403,Margarine spread non-diary 70% fat fortified e.g. Carlshamn,2030617,"Vegetable fat spread 70%, keiju lactose free, 20 ug vitamin d",0.0086,True
+Fats and oils,1000005,Blended spread sea salt 80% fat fortified e.g. Bregott,2032672,"Blended spread 82%, ingmariini sea salt, low-lactose",0.0096,True
+Fats and oils,1006837,Margarine w/o milk 80% fat fortified,2035566,Margarine used in cakes raisa 5,0.0097,True
+Fats and oils,1003433,Flaxseed oil,2031495,"Linseed oil, flaxseed oil",0.0104,True
+Fats and oils,1002192,Low-fat margarine 39% fat fortified e.g. Lätta,2034927,"Vegetable fat spread 39 %, lätta original",0.0116,True
+Fats and oils,1000003,Pork leaf lard 100% fat,2005907,"(arc)oil for deep fat frying, industrial",0.0119,True
+Fats and oils,1004131,Palmoil,2011014,Palm oil,0.0128,True
+Fats and oils,1000010,Liquid margarine 82% fat fortified e.g. Milda culinesse ,2032553,"Margarine 80%, fluid, average",0.0129,True
+Fats and oils,1000033,Grapeseed oil,2000540,Sunflower oil,0.016,True
+Fats and oils,1000020,Low-fat margarine 40% fat fortified e.g. Latt & Lagom,2000572,"(arc)margarine 40%, lätta",0.0196,True
+Fats and oils,1002472,Low-fat margarine 30% fat fortified e.g. Mini Latta,2030616,"Margarine 40%, rainbow",0.023,True
+Fats and oils,1000029,Butter 80% fat,2000598,"Butter oil 100%, milkfat",0.0231,True
+Fats and oils,1000035,Olive oil,2000536,Olive oil,0.0231,True
+Fats and oils,1005087,Fat blend liquid 80% fat fortified e.g. Ica raps- och smörolja,2000531,"Catering oil, 70% rapeseed oil, 30% palm oil",0.0243,True
+Fats and oils,1005085,Margarine spread 60% fat fortified e.g. Flora orginal,2032308,"Margarine 60%, flora, lactose-free",0.0291,True
+Fats and oils,1000001,Beef tallow,2029155,Cocoa butter,0.0423,True
+Fats and oils,1006328,Liquid margarine w/ butter 80% fat ,2031508,"Fat blend 80%, cooking liquid, average",0.0432,False
+Fats and oils,1000017,Low-fat margarine 38% fat fortified e.g. Becel ,2032350,"Vegetable fat spread 38%, becel light olive",0.0553,True
+Fats and oils,1002490,Margarine spread 75% fat fortified e.g. Becel Gold,2034970,"(arc)blend 40%, valio better rahkariini, low-lactose",0.0619,True
+Fats and oils,1000997,Pig rind raw,2011287,"Vegetable fat spread 28%, mini lätta",0.0799,True
+Fats and oils,1006165,Coconut oil,2034140,Coconut oil,0.1013,True
+"Fish, shellfish and their products",1001202,Saithe raw,2000813,Pike,0.0,True
+"Fish, shellfish and their products",1001238,Hake raw,2033171,"Hake, hoki, raw",0.0001,True
+"Fish, shellfish and their products",1007166,Crab white meat boiled,2033308,"Hake, oven-baked",0.0005,True
+"Fish, shellfish and their products",1001252,Whitefish gutted smoked,2033408,"Powan, warm smoked",0.0039,True
+"Fish, shellfish and their products",1001290,Rainbow trout cold-smoked,2033409,"Rainbow trout fillet, cold smoked",0.0041,True
+"Fish, shellfish and their products",1001291,Rainbow trout gutted smoked,2033414,"Rainbow trout, fillet, hot smoked",0.0054,True
+"Fish, shellfish and their products",1004607,European sprat,2034848,European sprat,0.0057,True
+"Fish, shellfish and their products",1001288,Salmon gutted smoked,2033382,"Salmon, warm smoked",0.0073,True
+"Fish, shellfish and their products",1001340,Fish smoked,2034255,"Salmon, farmed",0.0078,True
+"Fish, shellfish and their products",1001249,Brown trout farmed raw,2032204,"Rainbow trout, boiled, without salt",0.0082,True
+"Fish, shellfish and their products",1001318,Mackerel poached w/ salt,2033424,"Mackerel, smoked",0.0085,True
+"Fish, shellfish and their products",1001293,Eel fillet smoked,2000825,"Lamprey, smoked",0.0106,True
+"Fish, shellfish and their products",1004613,Sea bass raw,2034252,"Powan, whitefish, pollan, lavaret, farmed",0.011,True
+"Fish, shellfish and their products",1001286,Salmon cured,2033587,"Fish, weighted average",0.0116,True
+"Fish, shellfish and their products",1004616,Gilt-head sea bream grilled w/ salt,2033590,"Fish, weighted average, fried",0.0121,True
+"Fish, shellfish and their products",1004617,Sea bass grilled,2030201,"Fish, oven-baked",0.0124,True
+"Fish, shellfish and their products",1001400,Shrimp canned w/o brine,2000864,Snail,0.0133,True
+"Fish, shellfish and their products",1001258,Plaice raw,2000835,Shrimp,0.0147,True
+"Fish, shellfish and their products",1001274,Baltic herring raw w/ salt,2030605,"Tuna, fried",0.0147,True
+"Fish, shellfish and their products",1001244,Arctic char raw,2033415,"Fish, warm smoked, average",0.0167,True
+"Fish, shellfish and their products",1001271,Sardines in oil canned,2000831,"Sardine, average, in oil and tomato sauce",0.0188,True
+"Fish, shellfish and their products",1001287,Hot smoked herring butterfly fillet e.g. rospigg,2032237,"Rainbow trout, fried",0.0207,False
+"Fish, shellfish and their products",1001319,Mackerel breaded fried,2008012,"Salmon fillet, breaded, fried",0.0213,True
+"Fish, shellfish and their products",1001312,Halibut poached w/ salt,2000807,"Halibut, smoked",0.026,False
+"Fish, shellfish and their products",1002943,White fish breaded and pan-fried,2008010,"Pike, breaded, fried",0.029,True
+"Fish, shellfish and their products",1004187,Salmon breaded fried w/ salt,2008006,"Fish, average, breaded, fried",0.0294,True
+"Fish, shellfish and their products",1001328,Herring breaded fried w/ salt,2008007,"Baltic herring, breaded, fried",0.0308,True
+"Fish, shellfish and their products",1001313,Halibut breaded fried,2008096,"Fish, average, deep-fried",0.035,True
+"Fish, shellfish and their products",1001336,Cod breaded fried,2008011,"Powan, breaded, fried",0.0392,True
+"Fish, shellfish and their products",1001256,Brown trout brook trout Sweden raw,2000862,Tuna,0.0465,False
+"Fish, shellfish and their products",1001386,Oyster,2032850,Baltic herring jelly,0.0579,True
+"Fish, shellfish and their products",1004610,Herring pickled mustard sauce w/o sauce,2000833,Roe paste,0.0582,True
+"Fish, shellfish and their products",1001275,Tuna in oil canned drained,2000828,"Tuna, in oil, canned",0.0661,True
+"Fish, shellfish and their products",1001297,Baltic herring fermented,2000822,"Rainbow trout, whole, average",0.0669,True
+"Fish, shellfish and their products",1001373,Salmon paté,2029011,"Perch, baked in foil with butter",0.1481,True
+Food additives,1001899,Sorbitol w/ saccharin,2033521,"Sweetener, stevia, canderel green stick",0.0001,True
+Food additives,1001981,Baking powder,2000074,Baking powder,0.0821,True
+Food additives,1000537,Agar dried,2000026,"Baking yeast, fresh",0.142,False
+Food additives,1001980,Baker's yeast dried granualted,2031487,"Milk powder, fat-free milk, low-lactose, 5 ug added vitamin d",0.2444,True
+Food additives,1001979,Baker's yeast fresh compressed,2033357,"Instant coffee, powder",0.2535,False
+Food additives,1001219,Gelatine sheet or powder,2000025,Gelatin,0.5001,True
+Foods for particular nutritional uses,1001891,Meal replacement powder chocolate flavour fortified,2032640,"Meal replacement, smoothie, drink powder, allevo",0.0162,True
+Foods for particular nutritional uses,1006247,Childrens food canned potatoe w/ meat stew,2011472,"Beef-vegetable puree, average, industrial babyfood",0.047,True
+Foods for particular nutritional uses,1006249,Childrens food canned fish stew,2011476,"Minced meat and spaghetti, average, industrial babyfood",0.0512,True
+Foods for particular nutritional uses,1006259,Gruel for children RTD oat unsweetened fortified,2033338,"Sport beverage, carbohydrate drink, leader carbo energy",0.0583,False
+Foods for particular nutritional uses,1006261,Gruel for children RTD oat unsweetened fortified milk protein free,2011514,"Potato puree, homemade babyfood, without salt",0.0647,False
+Foods for particular nutritional uses,1006256,Fruit pouch w/ porridge  pear mango oat,2032650,"Meal replacement, hunger control, drink, nutrilett",0.0754,False
+Foods for particular nutritional uses,1006239,Porridge for children powder w oat banana apple unsweetened milkfree fortified,2035492,"Meal replacement, soup powder, cambridge",0.0775,True
+Foods for particular nutritional uses,1003499,Fruit pouch w/ yoghurt banana strawberry canned,2011470,"Berry puree, average, industrial babyfood",0.0849,True
+Foods for particular nutritional uses,1006553,Follow-up formula from 6 months,2029413,"Infant formula, ready-to-feed, average",0.0849,True
+Foods for particular nutritional uses,1005192,Childrens porridge RTE w/ wholegrain fruit muesli fortified,2035493,"Meal replacement, soup powder and water, cambridge",0.0894,False
+Foods for particular nutritional uses,1006552,Infant formula,2033872,Breast milk,0.0936,True
+Foods for particular nutritional uses,1006248,Childrens food canned pasta gratin w/ pork ,2011518,"Pork-potato puree, home-made babyfood, without salt",0.1616,False
+Fruits and their products,1000566,Gooseberries,2000446,Gooseberry,0.0039,True
+Fruits and their products,1000614,Pineapple canned w/ juice,2000411,"Peach, canned, in syrup",0.0105,True
+Fruits and their products,1000551,Orange,2028934,"Banana, with skin",0.0143,True
+Fruits and their products,1005135,Mango frozen product,2004012,"Mixed fruit kissel, mixed fruit soup",0.0179,False
+Fruits and their products,1000617,Pineapple canned w/ sugar syrup,2000432,"Fruit cocktail, in syrup",0.0206,True
+Fruits and their products,1002185,Galia melon,2011047,"Grapefruit, without skin",0.0209,True
+Fruits and their products,1000593,Strawberries frozen product,2034694,"Papaya, without skin",0.0215,True
+Fruits and their products,1000638,Fruit salad,2004017,"Fruit salad, unsweetened, orange, banana, apple, grape",0.0217,True
+Fruits and their products,1000527,Strawberries w/ sugar frozen product,2004006,"Prune rice kissel, prune rice soup",0.0218,True
+Fruits and their products,1000576,Nectarine,2033896,"Fruit puree, unsweetened, 100 % fruit",0.0231,True
+Fruits and their products,1000550,Pineapple,2000471,"Pineapple, canned, in own juice",0.0255,True
+Fruits and their products,1000580,Peach,2032455,"Grapefruit pink/red, without skin",0.0263,True
+Fruits and their products,1000632,Fruit cocktail canned w/ sugar syrup,2033038,"Sharon, kaki, persimon",0.0287,True
+Fruits and their products,1000589,Apple w/o peel,2004001,"Apple kissel, apple soup, dried apples",0.0295,True
+Fruits and their products,1000522,Guava,2000454,"Berry, average",0.0333,True
+Fruits and their products,1000586,Black currant,2000444,Blackcurrant,0.0368,True
+Fruits and their products,1000624,Cherries sour canned w/ sugar syrup,2004018,Fruit jelly,0.0444,True
+Fruits and their products,1000608,Peach dried,2033070,"Fig, dried",0.0445,True
+Fruits and their products,1000583,Pear,2011062,"Pear, without skin",0.0449,False
+Fruits and their products,1000320,Avocado,2028933,Avocado  with skin and stone,0.0454,True
+Fruits and their products,1001790,Banana deep fried ,2004019,"Banana, deep-fried",0.0456,True
+Fruits and their products,1000600,Banana dried,2033060,"Papaya, dried",0.0459,True
+Fruits and their products,1000588,Apple w/ skin,2011061,"Apple, imported, without skin",0.0468,True
+Fruits and their products,1000587,Grapes,2000423,"Grape, average, green or red, seedless",0.0472,True
+Fruits and their products,1006996,Wolfberry/Gojiberry dried,2011063,"Prune, without stone",0.0489,True
+Fruits and their products,1000553,Banana,2011049,"Banana, without skin",0.0507,True
+Fruits and their products,1000525,Cloudberries,2000457,"Rowanberry, sorbus",0.0528,True
+Fruits and their products,1000557,Blueberries sweetened frozen product,2004014,"Raisin kissel, raisin soup",0.0546,False
+Fruits and their products,1000055,Mimosa sallad,2004011,Orange rice dessert,0.0575,True
+Fruits and their products,1001791,Baked apples w/ oil or liquid margarine sugar almond paste walnuts,2004002,"Apple crisp delight, apple, oat flakes",0.0584,True
+Fruits and their products,1007042,Highbush blueberry (American blueberries),2035596,Blueberry,0.0601,False
+Fruits and their products,1007047,Bog Bilberry,2035591,"Bog bilberry, bog whortleberry",0.0648,True
+Fruits and their products,1000570,Sour cherries,2011052,Cherry without stone,0.0777,True
+Fruits and their products,1002570,Carambola (star fruit),2000441,Cranberry,0.0784,True
+Fruits and their products,1007051,Chokeberry dried powder,2032182,"Bilberry or blueberry, dried, bilberry powder",0.0818,True
+Fruits and their products,1000520,Pomegranate,2011007,Rose hip,0.0945,True
+Fruits and their products,1007050,Black chokeberry,2035592,Chokeberry,0.1009,True
+"Herbs, spices and condiments",1001222,Beef stock cube RTE,2000929,"Vinegar, wine vinegar",0.0012,True
+"Herbs, spices and condiments",1007199,Cumin seeds dried,2011194,"Thyme, dried",0.0058,True
+"Herbs, spices and condiments",1000685,White roux sauce,2029045,"White sauce, low-fat milk, thickened with flour and oil",0.0187,True
+"Herbs, spices and condiments",1000021,Mayonnaise 90% fat homemade,2005001,"Mayonnaise, home-made",0.0226,True
+"Herbs, spices and condiments",1000026,Vinaigrette 45% fat,2005005,"Salad dressing, french dressing, oil, vinegar",0.0229,True
+"Herbs, spices and condiments",1000462,Salsa taco sauce cold,2001448,Tomato salsa,0.024,True
+"Herbs, spices and condiments",1000500,Red cabbage canned,2000353,Tomato ketchup,0.0305,True
+"Herbs, spices and condiments",1000908,Miso fermented soy bean paste,2034666,"Hummus, chick pea paste",0.034,True
+"Herbs, spices and condiments",1002002,Egg sauce w/ parsley,2006027,"Cheese soup, vegetable bouillon, wheat flour",0.0341,True
+"Herbs, spices and condiments",1000909,Soy sauce,2000031,Soy sauce,0.0377,True
+"Herbs, spices and condiments",1007198,Turmeric dried,2011177,"Pepper, black pepper",0.0379,True
+"Herbs, spices and condiments",1006958,Green chilisauce e.g. Basbaas cagaar,2033207,"Tomato salsa, industrial",0.038,True
+"Herbs, spices and condiments",1001970,HP sauce brown sauce,2011197,"Hp-sauce, brown sauce",0.0383,True
+"Herbs, spices and condiments",1006384,Mango chutney,2031545,"Tomato ketchup, reduced salt and sugar",0.0394,True
+"Herbs, spices and condiments",1001989,Cheese sauce w/ blue cheese,2006040,"Blue cheese sauce, thickened with flour and fat",0.0406,True
+"Herbs, spices and condiments",1005759,Guacamole,2003328,"Avocado sauce, guacamole",0.0414,True
+"Herbs, spices and condiments",1006338,Sauce mango curry w/ mayonnaise chilled product,2032480,"Salad dressing, rapeseed oil, 39% fat, kartanon, saarioinen",0.0421,True
+"Herbs, spices and condiments",1001987,Velouté sauce,2033640,"Sauce, water and sauce powder, average of industrial products",0.0449,True
+"Herbs, spices and condiments",1002163,Gratin sauce w/ cheese homemade,2006050,"Gratinating sauce for vegetables, prepared with milk and cheese",0.0498,True
+"Herbs, spices and condiments",1006336,Hamburger dressing 28% fat,2032483,"Salad dressing, rapeseed oil, 25% fat, greek, felix",0.0501,True
+"Herbs, spices and condiments",1000488,Relish w/ pickled gherkins e.g. bostongurka,2034523,Pineapple salsa,0.0522,True
+"Herbs, spices and condiments",1006431,Sauce w/ cream sundried tomatoes basil garlic,2032405,"Sour cream sauce, dipping sauce, 10-12% fat",0.0536,True
+"Herbs, spices and condiments",1000051,Relish w/ pickled gherkins mayonnaise fast food,2032179,"Salad dressing, rapeseed oil, 23% fat, light, kartanon, saarioinen",0.0538,True
+"Herbs, spices and condiments",1007023,Wasabi root,2011196,"Aromatic salt, 71% salt content",0.0553,False
+"Herbs, spices and condiments",1002011,Oriental sauce w/ vegetables canned e.g. Uncle Bens orientalisk sås,2032386,"Tikka masala, uncle ben's",0.0559,True
+"Herbs, spices and condiments",1001993,Gravy sauce w/ stock cube cream,2032168,"Bearnaise sauce made of bearnaise sauce mix, average",0.0581,True
+"Herbs, spices and condiments",1000059,Hollandaise sauce homemade,2032872,Creamy lemon sauce,0.0627,True
+"Herbs, spices and condiments",1004025,Wasabi paste,2033022,"Spice paste, ginger paste",0.0702,False
+"Herbs, spices and condiments",1002003,Pesto sauce w/ basil parmesan cheese walnuts homemade,2003323,"Pesto sauce, herb sauce",0.0726,True
+"Herbs, spices and condiments",1002010,Sweet & sour sauce w/ vegetables canned,2032618,"Bbq-sauce for meat, home-made",0.0728,True
+"Herbs, spices and condiments",1002173,Sauce w/ low fat creme fraiche curry homemade,2001450,Red wine sauce,0.0777,True
+"Herbs, spices and condiments",1006369,Sauce w/ yoghurt ajvar,2034519,"Tartar sauce, cold smoked reindeer",0.081,True
+"Herbs, spices and condiments",1001728,Sour cream sauce w/ crème fraîche,2006025,"Salad dressing, creamy",0.0857,True
+"Herbs, spices and condiments",1002073,Peanut sauce,2033112,"Red pesto sauce, pesto rosso, without parmesan",0.0867,True
+"Herbs, spices and condiments",1001992,Thin gravy,2029026,"Vegetable bouillon, dissolved",0.0973,True
+"Herbs, spices and condiments",1002104,Carbonara sauce,2034404,"Tzatziki, feta sauce, yoghurt sauce",0.0984,True
+"Herbs, spices and condiments",1006377,Cream sauce w/ parsley,2032176,Hollandaise sauce made of hollandaise sauce mix,0.0996,False
+"Herbs, spices and condiments",1001966,Vinegar acetic acid 7%,2000029,Meat bouillon,0.105,True
+"Herbs, spices and condiments",1001978,Herbal salt,2033455,"Brown gravy, no added fat",0.1129,False
+"Herbs, spices and condiments",1000417,Ajvar relish,2035615,Juniper berry,0.1164,True
+"Herbs, spices and condiments",1001975,Table salt w/ iodine,2000079,"Salt, rock salt, without iodine",0.5,True
+"Herbs, spices and condiments",1001224,Chicken stock RTE,2000036,"Salt, low sodium",0.5003,True
+"Herbs, spices and condiments",1001218,Beef stock canned RTE,2000075,Fish stock broth,0.5016,True
+Meat and meat products,1001163,Turkey raw w/ skin,2000736,Hare,0.0005,True
+Meat and meat products,1000962,Minced meat patties beef raw frozen product e.g. hackebiff,2000737,Rabbit,0.0024,False
+Meat and meat products,1000958,Beef eye round cured raw,2000718,Beef round,0.0107,False
+Meat and meat products,1001059,Pork spare ribs cooked w/o gravy,2000711,Pork beef mince,0.0108,True
+Meat and meat products,1001182,Chicken grilled w/ skin,2007005,"Pork knuckle, ham hock, simmered",0.0117,True
+Meat and meat products,1001165,Chicken meat raw w/ skin ,2000709,"Pork knuckle, ham hock",0.0139,True
+Meat and meat products,1001167,Chicken thigh raw w/ skin ,2000713,"Pork, average",0.015,True
+Meat and meat products,1000963,Beef mince meat raw 15% fat,2000723,Beef flank,0.0165,True
+Meat and meat products,1001535,Sausage fried e.g. varmkrov,2000743,"Pork and beef, canned",0.0219,True
+Meat and meat products,1001388,Frog leg raw frozen product,2011565,Chicken breast strips without skin,0.0227,True
+Meat and meat products,1001111,Hamburger beef fried 15% fat,2029175,"Beef mince, 17% fat, fried without fat",0.0228,True
+Meat and meat products,1001175,Chicken meat marinated w/ skin ,2030265,Chicken wing with skin,0.0236,True
+Meat and meat products,1001110,Hamburger beef fried 10% fat,2007086,"Lean steak mince, 9% fat, fried without fat",0.0247,True
+Meat and meat products,1006009,Turkey smoked thin slices,2000788,"Liver, chicken",0.0248,False
+Meat and meat products,1001065,Pork chop breaded fried,2033561,"Pork nuggets, deep-fried, rapeseed pork, hk",0.0257,True
+Meat and meat products,1001025,Pork chop fried,2033175,"Pork beef mince, 10% fat, fried",0.0274,True
+Meat and meat products,1001022,Pork knuckle boiled w/ salt,2007302,"Mutton and pork, boiled mixture",0.0307,True
+Meat and meat products,1001011,Pork belly smoked,2034851,"Barbeque sausage, bratwurst, fried without fat",0.0346,True
+Meat and meat products,1000991,Pork belly w/ rind sliced cured raw,2033097,Sausage bratwurst,0.0367,True
+Meat and meat products,1001458,Beef liver breaded fried,2007531,"Chicken schnitzel, breaded, fried",0.0391,True
+Meat and meat products,1001159,Goose raw w/ skin,2000701,"Pork, medium fat",0.0443,False
+Meat and meat products,1001449,Pork liver raw,2000787,"Liver, pork",0.0459,True
+Meat and meat products,1001436,Lamb liver raw,2000786,"Liver, beef",0.048,True
+Meat and meat products,1004124,Lamb liver fried w/ salt,2007851,Roasted liver,0.0483,True
+Meat and meat products,1005968,Black pudding cooked,2007871,Blood pancake,0.0501,True
+Meat and meat products,1003609,Taco-flavoured pork mince MVU,2007299,"Lamb, filled with leek and parsley",0.0503,True
+Meat and meat products,1001487,Sausage 19% fat 58% meat e.g. falukorv,2034856,"Barbeque sausage, light, fried without fat",0.0509,False
+Meat and meat products,1001486,Chicken sausage halal,2007610,"Groat sausage, fried",0.0537,True
+Meat and meat products,1001473,Liver patties minced liver raw frozen product,2030322,"Groat sausage, average of industrial products",0.0563,True
+Meat and meat products,1001443,Veal tongue raw,2000714,"Beef, average",0.0626,False
+Meat and meat products,1001109,Minced meat patties pork fried,2033046,Liver pate,0.0632,True
+Meat and meat products,1001503,Vienna sausage 73% meat,2030274,"Slicing sausage, balkan, 21.5% fat",0.0641,False
+Meat and meat products,1001483,Pâté w/ green pepper e.g. grönpepparpaté,2032191,"Frankfurter, chicken, 15% fat",0.0653,True
+Meat and meat products,1001522,Sausage boiled 45% meat e.g. värmlandskorv,2030572,"Barbeque sausage, average",0.0657,False
+Meat and meat products,1001010,Pork ham sliced smoked 1-3% fat,2033927,Turkey cold cuts,0.0752,False
+Meat and meat products,1001478,Liver pâté spreadable 3-3.5% fat ,2033534,"Frankfurter, turkey, light, boiled",0.0947,True
+Meat and meat products,1005875,Pulled chicken cooked w/ marinade,2028984,Steak tartare,0.1194,True
+Meat and meat products,1001100,Chicken meat balls fried 12% fat frozen product,2000741,"Beef, canned",0.1262,True
+Milk and milk products,1005727,Super-skimmed milk <0.1% fat fortified,2011572,"(arc)milk, 0% fat, with added calcium and 0.5 ug vitamin d",0.0004,True
+Milk and milk products,1000151,Skimmed milk 0.5% fat fortified,2000606,"Milk, 0% fat, i ug added vitamin d",0.0011,True
+Milk and milk products,1000127,Milk non emulsified 4.2% fat e.g. lantmjölk,2028992,"Milk, whole milk, 3.5% fat, boiled",0.0074,True
+Milk and milk products,1000101,Cream cheese 33% fat,2000645,"Cheese, hard cheese, goat cheese, 20-25% fat",0.0075,True
+Milk and milk products,1001715,Whipping cream 40% fat,2029066,"Whipping cream, 35% fat",0.0103,True
+Milk and milk products,1000093,Blue cheese 17% fat,2030429,"Cheese, white mould cheese, camembert/brie, 16% fat",0.0104,True
+Milk and milk products,1000123,Milk 3% fat fortified,2034638,"Yoghurt, plain, organic, 3% fat",0.0108,True
+Milk and milk products,1000084,Cheese processed 10% fat,2000640,"Cheese, white mould cheese, camembert/brie, 26-30% fat",0.0112,True
+Milk and milk products,1001717,Cooking cream 15% fat,2000632,"Cooking cream, 19% fat",0.0113,True
+Milk and milk products,1000086,Processed cheese spread app. 16% fat,2000642,"Cheese, emmental, 27-30% fat, red-label",0.0117,True
+Milk and milk products,1000105,Cheese camembert 11% fat,2000654,"Cheese, gouda, average, 28-30% fat",0.0123,True
+Milk and milk products,1000152,Whey liquid,2000684,"Milk, 1.5% fat, 1 ug added vitamin d",0.0131,True
+Milk and milk products,1000080,Cheese hard 38% fat,2000655,"Cheese, semi-hard cheese, lappi/småland/billinge/rustholli, 25-35% fat",0.0133,True
+Milk and milk products,1007022,Ricotta cheese approx. 10% fat,2000698,"Cheese, cheddar type, 34% fat",0.0135,True
+Milk and milk products,1000082,Blue cheese 30% fat,2000691,"Cheese, emmental, 27-30% fat, blue-label",0.0144,True
+Milk and milk products,1000107,Cream cheese 27% fat,2034752,"Cream cheese, mascarpone, 38% fat",0.0156,False
+Milk and milk products,1007088,Fruit yoghurt 2.5% fat fortified,2034547,"Smoothie, mango smoothie, yoghurt, pineapple juice",0.03,True
+Milk and milk products,1001713,Sour cream 12% fat,2000699,"Cooking cream, vegetable fat, 15% fat",0.0391,True
+Milk and milk products,1007152,Fruit yoghurt w/ sugar 0.1% fat fortified,2033703,"Yoghurt, drinkable, 0.9% fat, probiotics",0.0395,True
+Milk and milk products,1000070,Cottage cheese plain 4% fat,2033116,"Cheese, feta type salad cheese in brine, fat 2-5%",0.0447,True
+Milk and milk products,1002044,Creme fraiche flavoured 28% fat,2031966,"Cream, vegetable fat, 26% fat, flora",0.0531,True
+Milk and milk products,1000073,Fresh cheese w/ fermented milk app. 8% fat,2032925,"Cheese, goat cheese, chèvre, 30% fat",0.0543,False
+Milk and milk products,1007257,Fruit yoghurt diff. flavours 3.6% fat fortified,2033903,"(arc)yoghurt, flavoured, kidius gefilus, 2% fat, low-lactose, 1.5% vitamin d",0.0647,True
+Milk and milk products,1006093,Yoghurt drinkable flavoured app. 1% fat app. 11% sugar,2030608,"Yoghurt with jam, fat-free",0.0653,True
+Milk and milk products,1000133,Milk strawberry flavour 1.5% fat fortified,2006007,"Cocoa, hot chocolate, low-fat milk, sweetened",0.0701,False
+Milk and milk products,1000148,Mild yoghurt vanilla flavour 2% fat fortified,2032062,"Yoghurt, flavoured, 2% fat, 0.5 ug vitamin d",0.0784,True
+Milk and milk products,1002048,Fermented milk plain 4.2% fat e.g. filmjölk,2030455,"Sour cream, 3.5% fat, low-lactose",0.0794,True
+Milk and milk products,1006113,Yoghurt plain 10% fat ,2031959,"Cooking cream, cheese flavour, 10% fat, low-lactose",0.0804,True
+Milk and milk products,1007140,Crème fraiche lactose free 13% fat,2034635,"Yoghurt, turkish/greek, 10% fat, lactose-free",0.0822,True
+Milk and milk products,1002040,Coffee cream substitute milk oil 10% fat,2032721,"Cooking cream, vegetable fat, 7% fat, low-lactose",0.0824,True
+Milk and milk products,1006091,Quark flavoured w/ sugar,2033671,"Profeel protein drink, valio, 1 ug vitamin d",0.0827,False
+Milk and milk products,1000147,Yoghurt mild vanilla flavour 0.5% fat fortified,2034589,"Skyr, sweetened with sugar and stevia, <0.5% fat",0.0889,True
+Milk and milk products,1000068,Whey spread 5% fat fortified,2033404,"Quark, flavoured, 3% fat, danio",0.0905,True
+Milk and milk products,1002036,Cream substitute 15% fat,2031231,"Soya product, non-dairy cream substitute, 17.5% fat",0.091,True
+Milk and milk products,1002037,Cream substitute appr. 5% fat,2032004,"Soy product, non-dairy cream substitute,5.2% fat",0.0921,True
+Milk and milk products,1007149,Yoghurt plain skimmed lactose free approx. 0.4% fat,2030423,"Milk, 0% fat, lactose-free, 1 ug added vitamin d",0.1011,True
+Milk and milk products,1000116,Condensed milk canned conc. w/ sugar app. 9% fat,2030673,"Quark, flavoured, 3.5% fat",0.1028,True
+Milk and milk products,1000126,Fruit yoghurt 0.5% fat fortified,2034652,"Yoghurt, flavoured, activia light, fat-free, partially artific. sweetened, prob.",0.1029,True
+Milk and milk products,1007200,Paneer,2034595,"Quark, flavoured, 7% fat, low-lactose",0.1118,True
+Milk and milk products,1004537,Milk powder whole milk,2032541,"(arc)quark, flavoured, 7% fat, valio",0.1123,True
+Milk and milk products,1000066,Whey cheese app. 30% fat,2033190,"(arc)quark, flavoured, 8.5% fat, low-lactose, white chocolate-lime, valio",0.1132,True
+Milk and milk products,1007264,Whipping cream milk and vegetable mixture 30% fat,2034765,"Cream cheese, low-fat, 20% fat, plain",0.1245,True
+Milk and milk products,1006089,Drinking quark diff. flavours,2033692,"(arc)yoghurt, drinkable, flavoured, fat-free, vitalinea",0.1318,True
+Milk and milk products,1000110,Cheese camembert deep-fried,2033298,"Yoghurt with muesli, a+, fat 3.5%, lactose-free",0.1461,True
+"Pulses, nuts and seeds and their products",1006157,Chia seeds,2034847,Chia seed,0.0015,True
+"Pulses, nuts and seeds and their products",1001570,Pistachio nuts w/o salt,2033131,"Nut, pistachio nut, salt",0.0073,True
+"Pulses, nuts and seeds and their products",1006160,Poppy seeds,2035221,Poppy seed,0.0089,True
+"Pulses, nuts and seeds and their products",1007024,Macadamia nuts,2032895,"Nut, macadamia nut",0.0097,True
+"Pulses, nuts and seeds and their products",1000875,Brown beans dried,2034380,"Bean, white bean, navy bean",0.0134,True
+"Pulses, nuts and seeds and their products",1003817,Black turtle beans canned w/o brine,2031214,"Bean, kidney bean, boiled",0.0139,True
+"Pulses, nuts and seeds and their products",1001571,Pumpkin seeds,2031211,Pumpkin seed,0.0172,True
+"Pulses, nuts and seeds and their products",1000883,Mung beans dried boiled w/o salt,2031217,"Bean, adzuki bean, boiled without salt",0.0236,True
+"Pulses, nuts and seeds and their products",1000891,Green or yellow peas dried,2000399,"Lentils, green/brown, dried",0.0281,True
+"Pulses, nuts and seeds and their products",1003140,Mixed nuts,2033579,"Nut mix, salted",0.0283,True
+"Pulses, nuts and seeds and their products",1001568,Brazil nuts,2032464,"Nut, brazil nut",0.0293,True
+"Pulses, nuts and seeds and their products",1001560,Peanuts dried,2000378,"Nut, peanut",0.0304,True
+"Pulses, nuts and seeds and their products",1001563,Chestnuts,2000377,Chestnut,0.031,True
+"Pulses, nuts and seeds and their products",1000906,Soy flour app. 20% fat,2000380,"Flour, soya flour, full fat",0.0338,True
+"Pulses, nuts and seeds and their products",1002067,Plant-based balls soy- and wheat protein chilled or frozen product,2034909,Pulled oats,0.0387,True
+"Pulses, nuts and seeds and their products",1003602,Tahini sesame paste,2000385,"Sesame seed, with hull",0.0415,True
+"Pulses, nuts and seeds and their products",1003071,Pine nuts,2030968,"Pine nut, pine kernel",0.0439,False
+"Pulses, nuts and seeds and their products",1005860,Edamame beans fresh parbolied w/o pod ,2035619,"Tofu, firm, soya product",0.0445,True
+"Pulses, nuts and seeds and their products",1000887,Soy beans dried,2000391,"Soya beans, dried",0.0453,True
+"Pulses, nuts and seeds and their products",1001558,Hazelnuts,2000375,"Nut, hazelnut",0.0468,False
+"Pulses, nuts and seeds and their products",1000905,Tofu bean curd,2033501,"Tofu, soft, soya product",0.0491,True
+"Pulses, nuts and seeds and their products",1006292,Plant-based mince soy- and wheat protein fried,2000381,"Flour, soya flour, low-fat",0.0528,True
+"Pulses, nuts and seeds and their products",1000881,Chick peas dried,2034743,"Bean, broad bean, fava bean, dry, broad bean groats",0.0607,True
+"Pulses, nuts and seeds and their products",1007030,Hemp seed flour defatted,2033121,"Hemp seed, whole",0.0618,True
+"Pulses, nuts and seeds and their products",1006159,Hemp seeds w/o husk,2035220,"Hemp seed, without hull",0.0628,False
+"Pulses, nuts and seeds and their products",1003822,Red lentils dried boiled w/ salt,2031216,"Bean, adzuki bean, dried",0.0735,False
+"Pulses, nuts and seeds and their products",1001559,Peanut butter,2033102,"Nut, peanut, honey-roasted",0.0744,True
+"Pulses, nuts and seeds and their products",1006172,Seaweed caviar spread,2011505,Banana chip,0.0752,True
+"Pulses, nuts and seeds and their products",1006268,Plant-based mince soy- and wheat protein frozen product,2033026,"Soya mince, white or dark, boiled without salt",0.0755,True
+"Pulses, nuts and seeds and their products",1000412,Green peas canned w/ brine,2031225,"Lentils, red, cooked",0.077,True
+"Pulses, nuts and seeds and their products",1003710,Soyghurt flavoured organic fortified,2032147,"Peas, boiled without salt",0.079,False
+"Pulses, nuts and seeds and their products",1007144,Soyghurt plain fortified Ca vitD B12 folic acid riboflavin,2034244,"Sugar snap peas, fresh",0.0841,True
+"Pulses, nuts and seeds and their products",1006301,Plant-based nugget soy protein fried,2033128,"Nut, chili nut",0.0857,True
+"Pulses, nuts and seeds and their products",1007027,Tempeh,2028927,"Vegetarian sausage, contains soya",0.0962,True
+"Pulses, nuts and seeds and their products",1001564,Shredded coconut dried,2000382,Coconut flake,0.1125,True
+"Pulses, nuts and seeds and their products",1006703,Peanuts in chocolate,2033265,"Nut, cashew nut coated with chocolate",0.114,True
+Savoury snacks,1001585,Mini pretzel rods e.g. salta pinnar ,2033105,"(arc)pretzel, hard",0.1147,True
+Savoury snacks,1001580,Peanut rings,2032713,"Popcorn, microwave popcorn",0.1745,True
+Savoury snacks,1007190,Prawn crackers deep fried,2000184,"Tortilla chips, taco shell",0.1895,True
+Savoury snacks,1001587,Potato crisps flavoured app. 34% fat,2000203,"Potato crisps, potato chips, potato snack",0.1947,True
+Savoury snacks,1006858,Lentil puffs 28% fat,2032194,Mozzarella cheddar sticks,0.207,True
+Savoury snacks,1004011,Childrens food corn puffs,2030187,"Corn snack, puffed, corn puffs without added salt",0.2102,True
+Savoury snacks,1006857,Lentil crisps flavoured 17% fat,2001552,"Popcorn, cooking oil",0.2113,True
+Savoury snacks,1001630,Crackers salted w/ milk,2001554,Cheese puffs,0.262,True
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",1000235,Potato diced frozen product,2030259,"Frozen vegetable mix, potato-onion",0.0434,False
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",1000245,Potato chips deep-fried app. 11% fat frozen product,2032711,"French fries, deep-fried",0.1179,False
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",1004521,Almond potato boiled w/ salt,2000202,"Potato, dried",0.1429,False
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",1000271,Potato pancake homemade e.g. raggmunk,2029139,"Potato, fried in butter",0.1546,True
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",1000278,Mashed potatoes w/ skimmed milk,2030599,"Frozen vegetable mix, potato-onion, fried",0.1848,True
+Sweets and sugars,1001892,Sugar,2000001,Sugar,0.0,True
+Sweets and sugars,1001898,Fructose,2000002,Fructose,0.0001,True
+Sweets and sugars,1001894,Golden syrup,2000003,Syrup,0.0037,True
+Sweets and sugars,1007234,Raspberry and blueberry jam reduced sugar,2004401,"Lingonberry, mashed, sugar",0.0137,True
+Sweets and sugars,1001810,Apple puree reduced sugar,2000456,Berry marmalade,0.0155,True
+Sweets and sugars,1001640,Puff pastry dough baked,2034710,"Shortbread biscut, spoon cookie without filling",0.0181,True
+Sweets and sugars,1001770,Vanilla custard pudding,2000663,"Ice cream, cream based",0.0181,True
+Sweets and sugars,1001877,Fruit toffee,2000005,"Sweet, candy",0.0186,True
+Sweets and sugars,1001619,Cookies different varieties,2028971,"Doughnut, chocolate coated",0.0188,True
+Sweets and sugars,1007163,Biscuits gluten free,2031634,"Chocolate chip cookie, naturally gluten-free",0.0196,True
+Sweets and sugars,1003056,Chocolate muffin homemade,2032998,"Oat biscuit with egg, industrial, lidl",0.0201,True
+Sweets and sugars,1003008,Vanilla pudding Panna cotta homemade ,2032888,Caramel sauce,0.0204,True
+Sweets and sugars,1001668,Sweet wheat bun filled w/ whipped cream almond paste homemade e.g. semla,2032511,"Bun, quark filling, dallas bun, fazer",0.0206,True
+Sweets and sugars,1001776,Vanilla custard sauce oat based non-dairy 11% fat,2030799,Vanilla sauce without milk,0.0206,True
+Sweets and sugars,1001851,Wafers w/ milk chocolate couverture ,2030440,Rice chocolate,0.0208,True
+Sweets and sugars,1001855,Chocolate praline chocolate truffle,2029156,"Chocolate, white chocolate",0.021,True
+Sweets and sugars,1001806,Gooseberry jam,2000450,Mixed berry jam,0.0211,True
+Sweets and sugars,1001769,Butterscotch sauce,2032837,"Caramel sauce, toffee sauce",0.0212,True
+Sweets and sugars,1007235,Raspberry and blueberry jam,2031457,Lingonberry jam,0.0212,True
+Sweets and sugars,1000754,Pirogue w/o filling baked,2031672,"Butter dough, oven-baked",0.0219,True
+Sweets and sugars,1001620,Cookie w/ shortcrust and meringue,2031693,"Shortbread pie crust, sweet",0.0236,True
+Sweets and sugars,1002055,Milk chocolate,2000014,"Chocolate bar, average",0.0237,True
+Sweets and sugars,1001605,Almond cookie bittersweet e.g. mandelkubb,2034976,"Doughnut with jam, bakery",0.0247,True
+Sweets and sugars,1001664,Sponge cake w/ frosting orange e.g. ambrosiakaka,2029761,Wafer biscuit,0.025,True
+Sweets and sugars,1002060,Ice cream stick 10% fat,2032705,"Ice cream, vegetable fat",0.0251,True
+Sweets and sugars,1001687,Fruit cake,2031585,Date cake,0.0258,False
+Sweets and sugars,1001764,Chocolate pudding,2006002,"Chocolate soup, low-fat milk",0.026,True
+Sweets and sugars,1001606,Doughnut w/o filling,2033867,"Bun, raspberry and apple filling, pormestarinpitko, vaasan",0.0261,True
+Sweets and sugars,1006907,Dark chocolate 70% cocoa,2033542,"Chocolate, plain, dark chocolate, 80%",0.0261,True
+Sweets and sugars,1001614,Marie biscuits ,2032700,Cereal bar with chocolate,0.0281,True
+Sweets and sugars,1001602,Sweet wheat bread w/ filling,2031605,Gingerbread cake made with sourmilk,0.0284,True
+Sweets and sugars,1003848,Muffin w/ fruit or berries,2034711,"Shortbread biscut, spoon cookie",0.0288,True
+Sweets and sugars,1001617,Biscuit w/ nougat filling,2032530,"Oat and chocolate biscuit, industrial",0.0298,True
+Sweets and sugars,1001624,Gingerbread,2032555,"Biscuit, bastogne, lu",0.0299,True
+Sweets and sugars,1001848,Milk chocolate w/ chopped hazelnuts,2031651,"Biscuit covered with chocolate, industrial, average",0.03,True
+Sweets and sugars,1000755,Crumble pie crust baked,2031650,"Chocolate sandwich cookie, average",0.0303,True
+Sweets and sugars,1001653,Pastry w/ shortcrust almond dough frosting e.g. mazarin,2030222,Runeberg's cake,0.0305,True
+Sweets and sugars,1001654,Chocolate Swiss roll w/ butter cream e.g. drömtårta,2033613,"Digestive biscuit, average of industrial products",0.0305,True
+Sweets and sugars,1001609,Sweet wheat bread w/ baking powder,2032490,"Bun, cinnamon bun, gifflar cinnamon bun, pågen",0.0311,True
+Sweets and sugars,1006993,Jelly sweets w/o gelatine,2000009,"Jelly candy, fruit jelly",0.0315,True
+Sweets and sugars,1007204,Pancake w/water pan-fried,2034555,"Thin pancake, soya drink, rice flour, gluten-free, dairy-free, egg-free",0.032,True
+Sweets and sugars,1001655,Swiss roll w/ jam,2033637,"Biscuit, gluten-free, average of industrial products",0.0325,True
+Sweets and sugars,1001761,Eton mess w/ meringues whipped cream chocolate sauce ,2000032,"Chocolate, plain, dark chocolate",0.0327,True
+Sweets and sugars,1001777,Vanilla custard sauce RTE instant powder heated w/ milk,2031904,"Pudding, milk pudding, power cow/kidius",0.0327,True
+Sweets and sugars,1006979,Semolina cake Basbousa,2031648,Shortbread biscuit without egg,0.0327,True
+Sweets and sugars,1001608,Danish pastry w/ vanilla custard jam powdered sugar,2030206,"Danish pastry, vanilla custard and jam filling, water, bakery",0.0333,True
+Sweets and sugars,1001610,Sweet wheat bread w/ saffron,2032450,"Cereal bar, wholegrain muesli bar",0.0336,True
+Sweets and sugars,1001702,Ice cream cone app. 10% fat,2011173,"Ice cream cornet, vegetable fat",0.0341,True
+Sweets and sugars,1000733,Pancake thin w/ skimmed milk,2001228,"Blin with low-fat milk, barley flour",0.0347,True
+Sweets and sugars,1007161,Muffin gluten free,2031594,"Cake, tosca cake",0.0362,True
+Sweets and sugars,1002129,Carrot cake,2031607,"Sponge cake, caramel cake with butter icing, bakery",0.0367,True
+Sweets and sugars,1001663,Sponge cake w/ chocolate frosting grated coconut e.g. chokladruta,2032986,Biscuit covered with dark chocolate,0.0371,True
+Sweets and sugars,1001692,Ice cream cone app. 15% fat,2000665,"Ice cream cornet, cream based",0.0371,True
+Sweets and sugars,1000736,Waffle w/ egg,2032836,"Waffle, cream",0.0383,True
+Sweets and sugars,1006924,Donuts deep fried w/ sugar e.g. Somali Bur saliid ,2001307,"Bun, cinnamon bun, high-fat, low-fat milk",0.0398,True
+Sweets and sugars,1006937,Sesame biscuit w/ sugar oil e.g. Somali Sisin,2000034,Halva made with sesame seeds and sugar,0.0405,True
+Sweets and sugars,1000735,Batter pudding w/ semi-skimmed milk,2003219,"Thin spinach pancake, spinach crepes, low-fat milk",0.0421,True
+Sweets and sugars,1001632,Gingerbread w/o sugar,2031645,"Biscuit, sweetened with fructose",0.0432,True
+Sweets and sugars,1007181,Nuts w/ chocolate coating,2033586,"Ice cream, snickers",0.0439,False
+Sweets and sugars,1006802,Oat ice cream non-diary chocolate fudge ,2031989,"Apple pie, shortbread crust, gluten-free, contains wheat starch",0.0442,True
+Sweets and sugars,1001786,Apple crumble,2032053,"Apple pie, shortbread crust, naturally gluten-free",0.0445,True
+Sweets and sugars,1000739,Batter pudding w/ pork belly,2032857,Blin with whole milk 3.5%,0.0453,True
+Sweets and sugars,1002059,Ice cream stick w/ fruit milk 5.5% fat,2031949,"Pudding, caramel pudding, less sugar, jacky",0.0456,True
+Sweets and sugars,1001685,Sponge cake w/ milk,2031485,"Doughnut, jam and icing, bakery",0.0467,True
+Sweets and sugars,1001888,Chocolate ball homemade,2031747,"Shortbread pie crust, naturally gluten-free",0.047,True
+Sweets and sugars,1001667,Cream puffs w/o filling,2031674,"Profiterole, without filling",0.0476,True
+Sweets and sugars,1001845,Ice lolly e.g Saftis,2011142,"Ice lolly, average",0.0476,False
+Sweets and sugars,1001633,Wafers plain,2032547,"Biscuit, jyväshyvä cracotte, whole wheat",0.0493,True
+Sweets and sugars,1001858,Chocolate praline,2032733,Kinder chocolate egg,0.05,True
+Sweets and sugars,1006750,Pancake w/o milk eggs vegan,2029219,"Thin spinach pancake, spinach crepes, without milk",0.0501,True
+Sweets and sugars,1001765,Chocolate pudding w/ whipped cream 40% fat,2000661,Soft ice cream with wafer,0.0514,True
+Sweets and sugars,1001783,Cheese cake w/ berries crust made of digestive biscuits frozen,2034454,"Blueberries with talkkuna powder, cream and quark",0.0521,True
+Sweets and sugars,1001618,Meringue w/ chocolate,2028977,Meringue,0.0523,True
+Sweets and sugars,1006833,Sweet wheat bread w/ saffron raisins e.g. lussebulle,2031703,"Sweet yeast dough for pies, fat-free milk, sweetened with fructose",0.0523,True
+Sweets and sugars,1001599,Sweet wheat bread plain,2031705,"Sweet yeast dough for pies, whole milk, sweetened with fructose",0.0528,True
+Sweets and sugars,1001600,Sweet wheat bread sweetened w/ fructose,2031704,"Basic sweet dough for pies, low-fat milk, sweetened with fructose",0.0532,True
+Sweets and sugars,1002133,Pancake w/ soy drink oats drink,2030189,"Thin spinach pancake, spinach crepes, industrial",0.0538,True
+Sweets and sugars,1001781,Rhubarb pie,2031986,"Berry pie, shortbread crust, naturally gluten-free",0.0544,True
+Sweets and sugars,1002219,Cake frosting w/ almond butter sugar e.g. toscaglasyr,2034528,"Cake, raw chocolate cake",0.0544,True
+Sweets and sugars,1002222,Gingerbread gluten free ,2032800,"Rice ice cream, vanilla-chocolate, r-ice, ingman",0.0544,False
+Sweets and sugars,1001811,Apple purée unsweetened or artificial sweeteners,2034554,"Parfait, strawberry ice cream, home-made",0.0555,True
+Sweets and sugars,1001652,Pastry w/ soft almond macaroon buttercream chocolate e.g. chokladbiskvi,2000063,"Chocolate bar, low-fat",0.0558,True
+Sweets and sugars,1001601,Wheat bread unsweetened,2031706,"Sweet yeast dough for pies, fat-free milk, sweetened with aspartame",0.0559,True
+Sweets and sugars,1001642,Filo dough chilled product or frozen product,2033108,"(arc)pretzel, soft",0.0573,True
+Sweets and sugars,1007000,Liquorice candies,2000008,"Liquorice, licorice",0.0574,True
+Sweets and sugars,1007187,Nuts w/ milk chocolate coating,2033889,"Chocolate, milk chocolate with hazelnuts",0.0576,True
+Sweets and sugars,1001645,Sponge layer cake w/ whipped cream fruit berries e.g. gräddtårta,2034306,"Mille-feuille, napoleon pastry",0.0586,False
+Sweets and sugars,1001625,Conical meringue cake w/ frosting,2032561,Sponge cake,0.0589,True
+Sweets and sugars,1002223,Bisquits wholegrain gluten free e.g. digestive,2032335,"Rhubarb pie, shortbread crust with sour milk",0.059,True
+Sweets and sugars,1001658,Sponge layer cake w/ whipped cream strawberries banana homemade e.g. gräddtårta,2001180,"Berry pie with sour milk, shortbread crust",0.0591,True
+Sweets and sugars,1001647,Sponge layer cake w/ berries whipped cream vanilla custard jam jelly e.g. bärtårta,2001179,"Berry pie, shortbread crust",0.06,False
+Sweets and sugars,1001880,Italian meringue w/ biscuit base milk chocolate couverture e.g. Mums-mums,2033159,"Cereal bar with rice, kellogg´s rice krispies cereal & milk bar, fortified",0.0601,True
+Sweets and sugars,1007179,Dark chocolate <70% cocoa w/ nuts fruit,2031558,Chocolate marble cake,0.0601,True
+Sweets and sugars,1000122,Milkshake chocolate strawberry,2033915,"Milkshake, vanilla, mcdonald's",0.0609,True
+Sweets and sugars,1001785,Semolina pudding ovenbaked,2006011,"Banana milkshake, low-fat milk, ice cream",0.061,True
+Sweets and sugars,1001865,Toffee fudge,2000007,Chocolate confection filled with marmalade,0.0624,False
+Sweets and sugars,1000186,Bread white wholegrain graham flour e.g. scones ,2032325,"Berry pie, basic sweet dough, whole milk, artificially sweetened",0.0631,True
+Sweets and sugars,1003262,Mixed nuts candied,2034532,"Cake, raw carrot cake",0.0649,True
+Sweets and sugars,1006079,Pancake thin RTE,2032827,"Oven-baked pancake, sour milk",0.0684,True
+Sweets and sugars,1006804,Oat ice cream non-diary caramel vanilla,2031996,Rice ice cream,0.0689,True
+Sweets and sugars,1000071,Cottage cheese w/ fruit 3% fat,2030671,"Quark, fruit quark, dessert quark, low-fat milk, home-made",0.0692,True
+Sweets and sugars,1002053,Dark chocolate cocoa < 70% ,2031636,"Cake, muffin, naturally gluten-free",0.0701,True
+Sweets and sugars,1000793,Savoury muffin coarse wholegrain flour w/ goat's cheese sheep's cheese broccoli spinach sundried tomatoes,2001344,"Berry pie, sweetened with fructose, soft",0.0709,True
+Sweets and sugars,1006936,Semolina cookies filled w/ dates nuts e.g. Mamoul ,2001183,"Apple pie, shortbread crust",0.072,False
+Sweets and sugars,1003069,Chili peanuts,2031809,"Bun, pirkka/x-tra, frozen",0.0747,False
+Sweets and sugars,1001766,Chocolate mousse,2031589,"Sponge cake, strawberry and cream filling, bakery",0.0766,True
+Sweets and sugars,1006925,Corn dessert w/ sugar e.g. Somali Xalwo,2032802,"Rice ice cream, vanilla, r-ice, ingman",0.0786,False
+Sweets and sugars,1001759,Milk pudding w/ milk powder egg e.g. kalvdans,2031749,Quark filling for pies,0.0809,True
+Sweets and sugars,1002769, Pancakes thin pan-fried,2006003,"Chocolate soup, without sugar",0.0912,True
+Sweets and sugars,1001768,Chocolate sauce homemade,2000012,Salty liqourice pastille,0.0953,False
+Vegetables and their products,1007035,Oyster mushroom,2011735,Oyster mushroom,0.0002,True
+Vegetables and their products,1000418,Mushrooms canned w/o brine,2011064,"Champignon, canned",0.0057,True
+Vegetables and their products,1003938,"Lettuce, butterhead, raw",2000331,Iceberg lettuce,0.0068,True
+Vegetables and their products,1000293,Radish,2000347,"Cucumber, pickled cucumber, without added sugar",0.007,True
+Vegetables and their products,1000334,Curly endive,2011135,"Bamboo shoots, canned",0.0071,True
+Vegetables and their products,1000444,Mixed green salad w/ cucumber tomato bell pepper w/o dressing,2000389,"Zucchini, summer squash",0.0078,True
+Vegetables and their products,1004937,Tomato red cherry tomato,2000388,"Sweet pepper, yellow",0.008,True
+Vegetables and their products,1000364,Tomato,2000346,Cucumber,0.0086,True
+Vegetables and their products,1000392,Bell pepper green yellow red,2000386,"Sweet pepper, red",0.0117,True
+Vegetables and their products,1000489,Cucumber fermented w/o brine,2000343,"Mushroom, milk caps, salted",0.0119,True
+Vegetables and their products,1000331,Green beans,2011734,Shiitake mushroom,0.0121,True
+Vegetables and their products,1000319,Beetroot pickled w/o brine,2003237,Pickled onion,0.0127,True
+Vegetables and their products,1000300,Carrot canned w/o brine,2000348,"Pickled cucumber, sweet, flavoured",0.0152,True
+Vegetables and their products,1002561,Arugula rocket salad,2034159,"Rocket, arugula",0.0153,True
+Vegetables and their products,1000376,Alfalfa sprouts,2011074,"Sprout, alfalfa",0.0195,True
+Vegetables and their products,1002608,Carrot pan-fried or stir-fried,2034460,"Carrot, baked",0.0211,True
+Vegetables and their products,1000395,Green beans canned w/o brine,2003246,Chopped mushroom and onion,0.0232,True
+Vegetables and their products,1000287,Jerusalem artichoke,2033023,"Ginger root, raw",0.0242,True
+Vegetables and their products,1002610,Sweet pepper pan-fried or stir-fried,2034466,"Sweet pepper, baked",0.0265,True
+Vegetables and their products,1000467,White cabbage salad e.g. Swedish pizza salad,2033477,"Vegetables, fresh, fried, onion, sweet pepper, zucchini, tomato, carrot",0.0298,True
+Vegetables and their products,1000442,Mixed green leaf salad w/ sour cream dressing,2029073,"Mushroom vegetable stew, cooking cream (vegetable fat)",0.0324,True
+Vegetables and their products,1000446,Onion fried w/ oil or liquid margarine salt,2003254,"Mushroom root vegetable stew, potato",0.0332,True
+Vegetables and their products,1000397,Button mushroom canned w/ brine,2034241,Woolly milkcap,0.0348,True
+Vegetables and their products,1000543,Vegetable stir fry mix w/ noodles,2029100,"Wok-vegetables, fried, green bean-carrot-sweet pepper-sweet corn-parsnip",0.0364,True
+Vegetables and their products,1000365,Sundried tomatoes w/ oil,2035608,"Horn of plenty, dried",0.0391,False
+Vegetables and their products,1007053,Pea sprouts,2011134,"Basil, fresh",0.0394,False
+Vegetables and their products,1000531,Gratin w/ vegetables,2003209,"Cauliflower gratin, low-fat milk",0.0403,True
+Vegetables and their products,1003661,Plant-based mince mycoprotein fried w/ taco spices,2033925,"Quorn, fillet, pieces, mince",0.0412,True
+Vegetables and their products,1000420,Pearl onions pickled,2032166,"Frozen vegetable mix, potato and vegetables",0.0416,True
+Vegetables and their products,1000548,Rhubarb cooked w/o sugar,2030914,Florence fennel,0.0416,True
+Vegetables and their products,1000357,Savoy cabbage,2032870,"Leek, boiled without salt",0.0432,True
+Vegetables and their products,1002605,Cauliflower pan-fried or stir-fried,2029099,"Wok-vegetables, fried, carrot-champignon-onion-sweet pepper-pea",0.0434,True
+Vegetables and their products,1000336,Fennel,2032456,Artichoke,0.0445,True
+Vegetables and their products,1002672,Vegetables and root vegetables ovenbaked,2034461,"Root vegetables, baked, salt and oil",0.0451,True
+Vegetables and their products,1002160,Red cabbage salad w/ apple,2000351,"Salad, pickled pumpkin",0.0454,True
+Vegetables and their products,1002617,White cabbage pan-fried or stir-fried,2030219,"Wok-vegetables, fried, swede-carrot-broccoli-water chestnut-corn-pea-mushroom",0.0473,True
+Vegetables and their products,1000289,Carrot,2032146,"Onion, boiled without salt",0.0476,True
+Vegetables and their products,1007029,Grape leaves,2033583,"Artichoke, boiled",0.0486,True
+Vegetables and their products,1004947,Onion red,2032162,"Frozen vegetable mix, broccoli-carrot-water chestnut",0.0491,False
+Vegetables and their products,1000411,Wax beans canned w/o brine,2000350,Pumpkin,0.0512,True
+Vegetables and their products,1000479,Gratin w/ vegetables root vegetables,2034541,"Lasagne, mushroom feta cheese lasagne",0.0512,True
+Vegetables and their products,1000343,Kohlrabi,2035611,"Pine bolete, frozen",0.0517,True
+Vegetables and their products,1000455,Spinach fried w/ oil or liquid margarine salt,2035243,Spinach boiled without salt,0.0523,True
+Vegetables and their products,1003858,Vegetable salad w/ carrot apple sweet pepper,2032165,"Frozen vegetable mix, root vegetables, carrot-swede-onion",0.0558,False
+Vegetables and their products,1000393,Bamboo shoots canned w/o brine,2000342,"Mushroom, boletus, russula",0.0566,True
+Vegetables and their products,1006313,Plant-based escalope mycoprotein baked,2033044,Mushroom patty without meat,0.0568,True
+Vegetables and their products,1006429,Tikka masala w/ potatoes vegetables  ,2033143,"Vegetable, deep-fried",0.0597,True
+Vegetables and their products,1000439,Vegetable patties fried,2029098,"Wok-vegetables, fried, sweet pepper-onion-sweet corn-beans",0.0601,False
+Vegetables and their products,1000423,Fefferoni pickled canned,2035582,"Forest lamb mushroom, sheep polypore",0.0613,False
+Vegetables and their products,1000344,Onion yellow,2000313,"Frozen vegetable mix, root vegetables, carrot-swede-celeriac-leek",0.0619,True
+Vegetables and their products,1000471,Peas carrot boiled w/ salt,2030213,"Wok-vegetables, corn-carrot-pea-broccoli-sweet pepper-mushroom-leek, frozen",0.0744,True
+Vegetables and their products,1000400,Corn kernels canned w/o brine,2003040,"Sweet corn, boiled",0.0797,True
+Vegetables and their products,1002565,Okra boiled w/o salt,2032159,"Frozen vegetable mix, broccoli-carrot-cauliflower, kruunusekoitus",0.0823,False
+Vegetables and their products,1000327,Brussels sprouts,2035606,Angelica,0.0834,True
+Vegetables and their products,1000325,Broccoli,2003347,"Broccoli, boiled, salt",0.0845,False
+Vegetables and their products,1002162,Parsnip boiled w/ salt,2011589,Horseradish,0.0858,True
+Vegetables and their products,1002775,Vegetable mix peas carrots frozen product boiled w/ salt,2000393,Garlic,0.0935,True
+Vegetables and their products,1002774,Vegetable mix w/ peas beans carrot cauliflower frozen product boiled w/ salt,2032171,"Frozen vegetable mix, carrot-bean-pea-cauliflower",0.0936,True
+Vegetables and their products,1000374,Green peas frozen product,2000370,"Pea, green",0.0944,True
+Vegetables and their products,1000291,Horseradish,2000312,Black salsify,0.0949,True
+Vegetables and their products,1000495,Corn cobs boiled,2032156,"Frozen vegetable mix, pea-sweet corn-carrot",0.0953,True
+Vegetables and their products,1005865,Yellow split pea boiled w/ salt,2035607,Yarrow,0.12,True

@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">37</data>
+<node id="f1001">
+  <data key="d1">Reindeer steak smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.077</data>
+  <data key="d4">4.67</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.4869</data>
+  <data key="d4">94.67</data>
+</node>
+<node id="f1474">
+  <data key="d1">Liver pâté spreadable app. 24% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0385</data>
+  <data key="d4">5.67</data>
+</node>
+<node id="f1497">
+  <data key="d1">Mettwurst sausage smoked 35% fat </data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0372</data>
+  <data key="d4">3.67</data>
+</node>
+<node id="f1498">
+  <data key="d1">Salami sausage smoked 34-44% fat</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.069</data>
+  <data key="d4">6.0</data>
+</node>
+<node id="f170">
+  <data key="d1">Crisp bread wholegrain rye bran app. 15% fibre </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7833</data>
+  <data key="d4">38.33</data>
+</node>
+<node id="f175">
+  <data key="d1">Crisp bread wholegrain rye 15.5% fibre e.g. Delikatess</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2004</data>
+  <data key="d4">9.67</data>
+</node>
+<node id="f210">
+  <data key="d1">Bread wholegrain graham flour w/ milk app. 5% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2161</data>
+  <data key="d4">14.67</data>
+</node>
+<node id="f366">
+  <data key="d1">Garden cress</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.5917</data>
+  <data key="d4">47.33</data>
+</node>
+<node id="f3791">
+  <data key="d1">Bread white app. 5% fibre e.g. formfranska</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.264</data>
+  <data key="d4">20.0</data>
+</node>
+<node id="f421">
+  <data key="d1">Tomatoes green pickled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.0792</data>
+  <data key="d4">6.33</data>
+</node>
+<node id="f5863">
+  <data key="d1">Brussel sprouts boiled</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1583</data>
+  <data key="d4">12.67</data>
+</node>
+<node id="f598">
+  <data key="d1">Orange zest</data>
+  <data key="d2">Fruits</data>
+  <data key="d3">0.4208</data>
+  <data key="d4">33.67</data>
+</node>
+<node id="f7142">
+  <data key="d1">Cheese hard parmesan 29% fat e.g. Grana Padano</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.1363</data>
+  <data key="d4">3.0</data>
+</node>
+<node id="f7149">
+  <data key="d1">Yoghurt plain skimmed lactose free approx. 0.4% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.2074</data>
+  <data key="d4">40.33</data>
+</node>
+<node id="f846">
+  <data key="d1">Pasta dried boiled w/o salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2828</data>
+  <data key="d4">33.67</data>
+</node>
+<node id="f97">
+  <data key="d1">Cheese hard 31% fat</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.108</data>
+  <data key="d4">3.0</data>
+</node>
+<edge source="f1001" target="f170">
+  <data key="d5">0.077</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f366">
+  <data key="d5">0.2349</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f5863">
+  <data key="d5">0.1583</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1474" target="f170">
+  <data key="d5">0.0385</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1497" target="f3791">
+  <data key="d5">0.0372</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1498" target="f170">
+  <data key="d5">0.069</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1498" target="f421">
+  <data key="d5">0.069</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1498" target="f97">
+  <data key="d5">0.069</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f170" target="f421">
+  <data key="d5">0.0792</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f170" target="f97">
+  <data key="d5">0.108</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f366" target="f846">
+  <data key="d5">0.2828</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3791" target="f7142">
+  <data key="d5">0.1363</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f421" target="f97">
+  <data key="d5">0.0792</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

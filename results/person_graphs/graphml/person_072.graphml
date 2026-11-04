@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">72</data>
+<node id="f1008">
+  <data key="d1">Pork ham dried cured Italian Prosciutto</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.4101</data>
+  <data key="d4">18.0</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.7166</data>
+  <data key="d4">139.33</data>
+</node>
+<node id="f182">
+  <data key="d1">Crisp bread gluten free app. 3% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.8054</data>
+  <data key="d4">37.0</data>
+</node>
+<node id="f2027">
+  <data key="d1">Breakfast cereal muesli wholegrain w/ sugar fruit nuts </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.189</data>
+  <data key="d4">14.0</data>
+</node>
+<node id="f204">
+  <data key="d1">Bread white milk app. 3% fibre e.g. Hönökaka</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2898</data>
+  <data key="d4">18.0</data>
+</node>
+<node id="f2521">
+  <data key="d1">Pasta macaroni spaghetti dried boiled w/ salt gluten free  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.7692</data>
+  <data key="d4">71.0</data>
+</node>
+<node id="f2610">
+  <data key="d1">Sweet pepper pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3</data>
+  <data key="d4">24.0</data>
+</node>
+<node id="f289">
+  <data key="d1">Carrot</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.4042</data>
+  <data key="d4">32.33</data>
+</node>
+<node id="f2931">
+  <data key="d1">Lamb minced meat flavoured w/ taco spices</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.6287</data>
+  <data key="d4">54.67</data>
+</node>
+<node id="f342">
+  <data key="d1">Globe artichoke</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3333</data>
+  <data key="d4">26.67</data>
+</node>
+<node id="f344">
+  <data key="d1">Onion yellow</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.3917</data>
+  <data key="d4">31.33</data>
+</node>
+<node id="f3825">
+  <data key="d1">Hamburger bun coarse</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.219</data>
+  <data key="d4">17.33</data>
+</node>
+<node id="f6093">
+  <data key="d1">Yoghurt drinkable flavoured app. 1% fat app. 11% sugar</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.4507</data>
+  <data key="d4">112.67</data>
+</node>
+<node id="f6285">
+  <data key="d1">Plant-based balls soy- and wheat protein fried</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">1.339</data>
+  <data key="d4">49.33</data>
+</node>
+<node id="f6764">
+  <data key="d1">Granola breakfast cereal w/ fruit nuts</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2074</data>
+  <data key="d4">17.33</data>
+</node>
+<node id="f679">
+  <data key="d1">Breakfast cereal puffed rice roasted unsweetened</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3904</data>
+  <data key="d4">13.67</data>
+</node>
+<node id="uU0160">
+  <data key="d1">High-protein rice brown long-grain boiled w/ salt wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.538</data>
+  <data key="d4">73.33</data>
+</node>
+<node id="uU0162">
+  <data key="d1">Rice brown long-grain boiled w/ salt wholegrain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.554</data>
+  <data key="d4">61.33</data>
+</node>
+<node id="uU0164">
+  <data key="d1">High-protein waldorf salad with chickpeas</data>
+  <data key="d2">Legumes</data>
+  <data key="d3">0.1603</data>
+  <data key="d4">49.67</data>
+</node>
+<edge source="f1008" target="f182">
+  <data key="d5">0.4101</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f123" target="f2027">
+  <data key="d5">0.1886</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f6764">
+  <data key="d5">0.1577</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f679">
+  <data key="d5">0.3703</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="f289">
+  <data key="d5">0.4042</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="uU0164">
+  <data key="d5">0.1603</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2610" target="uU0160">
+  <data key="d5">0.3</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f289" target="uU0164">
+  <data key="d5">0.1603</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2931" target="f342">
+  <data key="d5">0.3333</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2931" target="uU0162">
+  <data key="d5">0.554</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f342" target="uU0162">
+  <data key="d5">0.3333</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f344" target="f3825">
+  <data key="d5">0.219</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f344" target="f6285">
+  <data key="d5">0.3917</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f3825" target="f6285">
+  <data key="d5">0.219</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

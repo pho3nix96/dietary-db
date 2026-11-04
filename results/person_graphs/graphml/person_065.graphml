@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d6" for="edge" attr.name="meals" attr.type="long"/>
+<key id="d5" for="edge" attr.name="weight" attr.type="double"/>
+<key id="d4" for="node" attr.name="grams_per_day" attr.type="double"/>
+<key id="d3" for="node" attr.name="servings_per_day" attr.type="double"/>
+<key id="d2" for="node" attr.name="rec_group" attr.type="string"/>
+<key id="d1" for="node" attr.name="name" attr.type="string"/>
+<key id="d0" for="graph" attr.name="subject" attr.type="long"/>
+<graph edgedefault="undirected"><data key="d0">65</data>
+<node id="f1011">
+  <data key="d1">Pork belly smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.3923</data>
+  <data key="d4">35.67</data>
+</node>
+<node id="f103">
+  <data key="d1">Cheese hard parmesan 30% fat e.g. Parmiggiano Reggiano</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.4147</data>
+  <data key="d4">9.33</data>
+</node>
+<node id="f123">
+  <data key="d1">Milk 3% fat fortified</data>
+  <data key="d2">Milk products</data>
+  <data key="d3">0.444</data>
+  <data key="d4">86.33</data>
+</node>
+<node id="f175">
+  <data key="d1">Crisp bread wholegrain rye 15.5% fibre e.g. Delikatess</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.47</data>
+  <data key="d4">22.67</data>
+</node>
+<node id="f182">
+  <data key="d1">Crisp bread gluten free app. 3% fibre</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.4571</data>
+  <data key="d4">21.0</data>
+</node>
+<node id="f201">
+  <data key="d1">Bread white wholegrain sour dough 4.4% fibre bake off e.g. coarse baguette </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2156</data>
+  <data key="d4">14.0</data>
+</node>
+<node id="f2515">
+  <data key="d1">Rice long-grained boiled w/ salt</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.6587</data>
+  <data key="d4">80.33</data>
+</node>
+<node id="f2521">
+  <data key="d1">Pasta macaroni spaghetti dried boiled w/ salt gluten free  </data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.5706</data>
+  <data key="d4">52.67</data>
+</node>
+<node id="f2561">
+  <data key="d1">Arugula rocket salad</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.5</data>
+  <data key="d4">40.0</data>
+</node>
+<node id="f2610">
+  <data key="d1">Sweet pepper pan-fried or stir-fried</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.1417</data>
+  <data key="d4">11.33</data>
+</node>
+<node id="f346">
+  <data key="d1">Corn cobs frozen product</data>
+  <data key="d2">Vegetables</data>
+  <data key="d3">0.4417</data>
+  <data key="d4">35.33</data>
+</node>
+<node id="f3825">
+  <data key="d1">Hamburger bun coarse</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.1137</data>
+  <data key="d4">9.0</data>
+</node>
+<node id="f6081">
+  <data key="d1">Crisp bread wholegrain rye app. 20% fiber e.g sport</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.3559</data>
+  <data key="d4">17.0</data>
+</node>
+<node id="f6084">
+  <data key="d1">Bread white e.g. levain</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2438</data>
+  <data key="d4">15.33</data>
+</node>
+<node id="uU0141">
+  <data key="d1">High-protein pork belly smoked</data>
+  <data key="d2">Meat and eggs</data>
+  <data key="d3">0.0521</data>
+  <data key="d4">5.0</data>
+</node>
+<node id="uU0142">
+  <data key="d1">Extra crispy bread white with seeds</data>
+  <data key="d2">Grains</data>
+  <data key="d3">0.2031</data>
+  <data key="d4">15.33</data>
+</node>
+<node id="uU0143">
+  <data key="d1">Organic pike breaded fried</data>
+  <data key="d2">Seafood</data>
+  <data key="d3">0.8755</data>
+  <data key="d4">62.67</data>
+</node>
+<edge source="f1011" target="f175">
+  <data key="d5">0.2127</data>
+  <data key="d6">2</data>
+</edge>
+<edge source="f1011" target="f201">
+  <data key="d5">0.0587</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1011" target="f2610">
+  <data key="d5">0.0587</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1011" target="f3825">
+  <data key="d5">0.1137</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1011" target="f6081">
+  <data key="d5">0.0807</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f1011" target="uU0141">
+  <data key="d5">0.0521</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f103" target="f6084">
+  <data key="d5">0.2438</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2515">
+  <data key="d5">0.444</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="f2561">
+  <data key="d5">0.444</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f123" target="uU0142">
+  <data key="d5">0.2031</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f175" target="f6081">
+  <data key="d5">0.2972</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f175" target="uU0141">
+  <data key="d5">0.0521</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f201" target="f2610">
+  <data key="d5">0.1417</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2515" target="f2561">
+  <data key="d5">0.5</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2515" target="uU0142">
+  <data key="d5">0.2031</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="f346">
+  <data key="d5">0.4417</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2521" target="uU0143">
+  <data key="d5">0.5706</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f2561" target="uU0142">
+  <data key="d5">0.2031</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f346" target="uU0143">
+  <data key="d5">0.4417</data>
+  <data key="d6">1</data>
+</edge>
+<edge source="f6081" target="uU0141">
+  <data key="d5">0.0521</data>
+  <data key="d6">1</data>
+</edge>
+</graph></graphml>

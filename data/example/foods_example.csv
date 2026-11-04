@@ -1,0 +1,59 @@
+food_id,name,gift_group,gift_subgroup,energy_kcal,protein_g,fat_g,carbohydrate_g,sugars_g,fibre_g
+white_bread,White bread,Cereals,Bread,265,9,3.2,49,5,2.7
+wholemeal_bread,Wholemeal bread,Cereals,Bread,247,13,3.4,41,6,7
+rye_crispbread,Rye crispbread,Cereals,Bread,334,9,1.7,70,2,16.5
+rice_cooked,Rice (cooked),Cereals,Grains,130,2.7,0.3,28,0.1,0.4
+pasta_cooked,Pasta (cooked),Cereals,Grains,158,5.8,0.9,31,0.6,1.8
+oats,Oat flakes,Cereals,Breakfast cereals,389,17,6.9,66,1,10.6
+cornflakes,Cornflakes,Cereals,Breakfast cereals,357,7.5,0.4,84,10,3
+potato_boiled,Potato (boiled),Roots and tubers,Potatoes,87,1.9,0.1,20,0.9,1.8
+sweet_potato,Sweet potato (baked),Roots and tubers,Other roots,90,2,0.2,21,6.5,3.3
+cassava,Cassava,Roots and tubers,Other roots,160,1.4,0.3,38,1.7,1.8
+lentils,Lentils (cooked),Pulses,Beans and lentils,116,9,0.4,20,1.8,7.9
+chickpeas,Chickpeas (cooked),Pulses,Beans and lentils,164,8.9,2.6,27,4.8,7.6
+kidney_beans,Kidney beans (cooked),Pulses,Beans and lentils,127,8.7,0.5,22.8,0.3,6.4
+soybeans,Soybeans (cooked),Pulses,Soy,173,16.6,9,9.9,3,6
+tofu,Tofu,Pulses,Soy,76,8,4.8,1.9,0.6,0.3
+almonds,Almonds,Nuts and seeds,Nuts,579,21,50,22,4.4,12.5
+walnuts,Walnuts,Nuts and seeds,Nuts,654,15,65,14,2.6,6.7
+peanuts,Peanuts,Nuts and seeds,Nuts,567,25.8,49,16,4,8.5
+sunflower_seeds,Sunflower seeds,Nuts and seeds,Seeds,584,21,51,20,2.6,8.6
+broccoli,Broccoli,Vegetables,Cabbages,34,2.8,0.4,6.6,1.7,2.6
+cabbage,White cabbage,Vegetables,Cabbages,25,1.3,0.1,5.8,3.2,2.5
+spinach,Spinach,Vegetables,Leafy vegetables,23,2.9,0.4,3.6,0.4,2.2
+tomato,Tomato,Vegetables,Fruiting vegetables,18,0.9,0.2,3.9,2.6,1.2
+cucumber,Cucumber,Vegetables,Fruiting vegetables,15,0.7,0.1,3.6,1.7,0.5
+carrot,Carrot,Vegetables,Root vegetables,41,0.9,0.2,9.6,4.7,2.8
+green_peas,Green peas,Vegetables,Legume vegetables,81,5.4,0.4,14.5,5.7,5.1
+apple,Apple,Fruits,Temperate fruits,52,0.3,0.2,14,10,2.4
+strawberries,Strawberries,Fruits,Temperate fruits,32,0.7,0.3,7.7,4.9,2
+grapes,Grapes,Fruits,Temperate fruits,69,0.7,0.2,18,15.5,0.9
+banana,Banana,Fruits,Tropical fruits,89,1.1,0.3,23,12,2.6
+orange,Orange,Fruits,Citrus fruits,47,0.9,0.1,12,9.4,2.4
+avocado,Avocado,Fruits,Tropical fruits,160,2,14.7,8.5,0.7,6.7
+coconut,Coconut flesh,Fruits,Tropical fruits,354,3.3,33.5,15,6.2,9
+olives,Olives,Fruits,Other fruits,115,0.8,10.7,6.3,0,3.2
+dates,Dates (dried),Fruits,Dried fruits,282,2.5,0.4,75,63,8
+milk,Whole milk,Milk and dairy,Milk and yogurt,61,3.2,3.3,4.8,5,0
+yogurt,Plain yogurt,Milk and dairy,Milk and yogurt,61,3.5,3.3,4.7,4.7,0
+cottage_cheese,Cottage cheese,Milk and dairy,Cheese,98,11,4.3,3.4,2.7,0
+cheddar,Cheddar cheese,Milk and dairy,Cheese,403,25,33,1.3,0.5,0
+chicken,Chicken breast (cooked),Meat,Fresh meat,165,31,3.6,0,0,0
+beef,Beef steak (cooked),Meat,Fresh meat,271,25,19,0,0,0
+pork,Pork chop (cooked),Meat,Fresh meat,231,26,13,0,0,0
+ham,Ham,Meat,Processed meat,145,21,6,1.5,1.3,0
+salami,Salami,Meat,Processed meat,407,22,34,1.2,1,0
+salmon,Salmon (cooked),Fish,Oily fish,206,22,12,0,0,0
+herring,Herring,Fish,Oily fish,158,18,9,0,0,0
+cod,Cod (cooked),Fish,Lean fish,105,23,0.9,0,0,0
+tuna_canned,Tuna (canned in water),Fish,Lean fish,116,26,0.8,0,0,0
+egg,Egg (boiled),Eggs,Eggs,155,12.6,10.6,1.1,1.1,0
+olive_oil,Olive oil,Fats and oils,Vegetable oils,884,0,100,0,0,0
+sunflower_oil,Sunflower oil,Fats and oils,Vegetable oils,884,0,100,0,0,0
+butter,Butter,Fats and oils,Animal fats and spreads,717,0.9,81,0.1,0.1,0
+margarine,Margarine,Fats and oils,Animal fats and spreads,717,0.2,80,0.7,0,0
+sugar,Sugar,Sweets,Sugars and honey,387,0,0,100,100,0
+honey,Honey,Sweets,Sugars and honey,304,0.3,0,82,82,0.2
+jam,Jam,Sweets,Sugars and honey,278,0.4,0.1,69,49,1.1
+milk_chocolate,Milk chocolate,Sweets,Chocolate,535,7.7,30,59,52,3.4
+dark_chocolate,Dark chocolate (70%),Sweets,Chocolate,598,7.8,43,46,24,10.9
