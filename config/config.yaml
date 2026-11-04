@@ -22,7 +22,8 @@ columns:
 nutrients:
   basis: per_100g                   # decided: per 100 g
   max_missing: 0.3                  # drop a nutrient missing in more than 30% of foods
-  impute: group_median              # group_median | median
+  impute: median                    # median | group_median. group_median uses GIFT labels, so it leaks the
+                                    # reference into the comparison; use it only for exploration
   log1p: true
   metric: cosine                    # cosine | correlation
 

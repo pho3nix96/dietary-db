@@ -68,14 +68,19 @@ def list_foods(lang: int, page: int = 500) -> list[dict]:
 
 def fetch_food_details(nr: int, cache: Path) -> dict:
     f = cache / f"{nr}.json"
-    d = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    try:
+        d = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    except (json.JSONDecodeError, UnicodeDecodeError):  # truncated by an interrupted run: fetch again
+        d = {}
     changed = False
     for key, ep in (("nutrients", "naringsvarden"), ("classifications", "klassificeringar"), ("raw_commodities", "ravaror")):
         if key not in d:  # older caches lack raw_commodities: fetch only what is missing
             d[key] = get_json(f"{BASE}/livsmedel/{nr}/{ep}?sprak={ENGLISH}")
             changed = True
     if changed:
-        f.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+        tmp = f.with_suffix(".json.tmp")  # write then rename, so a killed run never leaves a half file
+        tmp.write_text(json.dumps(d, ensure_ascii=False), encoding="utf-8")
+        tmp.replace(f)
     return d
 
 

@@ -73,16 +73,21 @@ def clr(S: pd.DataFrame, delta: float = 1e-3) -> pd.DataFrame:
 def aitchison_distance(S: pd.DataFrame) -> np.ndarray:
     """Pairwise Aitchison distance; NaN where either food lacks the block."""
     C = clr(S).to_numpy()
-    diff = C[:, None, :] - C[None, :, :]
-    return np.sqrt((diff**2).sum(axis=2))
+    acc = np.zeros((C.shape[0], C.shape[0]))
+    for j in range(C.shape[1]):  # one part at a time: n x n memory instead of n x n x p
+        d = C[:, j][:, None] - C[:, j][None, :]
+        acc += d * d
+    return np.sqrt(acc)
 
 
-def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0) -> tuple[np.ndarray, dict]:
+def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0, min_shared: int = 1) -> tuple[np.ndarray, dict]:
     """Combine block distances with equal weight.
 
     Each block's distances are scaled to [0, 1] by that block's largest value.
     For each pair, the result is the mean over blocks both foods have. Pairs
-    that share no block get `fill` (1 = treated as unlike).
+    that share fewer than `min_shared` blocks get `fill` (1 = treated as unlike);
+    raise `min_shared` so pairs compared on a single block are not mixed with
+    pairs compared on many.
 
     Returns the distance matrix and a coverage report per block.
     """
@@ -103,9 +108,9 @@ def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0) -> tup
             "parts": list(S.columns),
         }
     with np.errstate(invalid="ignore"):
-        F = np.where(count > 0, total / np.maximum(count, 1), fill)
+        F = np.where(count >= max(min_shared, 1), total / np.maximum(count, 1), fill)
     np.fill_diagonal(F, 0)
-    report["pairs_without_shared_block"] = int(((count == 0) & ~np.eye(n, dtype=bool)).sum() // 2)
+    report["pairs_without_shared_block"] = int(((count < max(min_shared, 1)) & ~np.eye(n, dtype=bool)).sum() // 2)
     return F, report
 
 
@@ -129,7 +134,7 @@ def curated_block(
     """
     t = table[table["share"].notna()]
     if scheme == "common":
-        wide =t.pivot_table(index="category", columns="common_class", values="share", aggfunc="sum").fillna(0.0)
+        wide = t.pivot_table(index="category", columns="common_class", values="share", aggfunc="sum").fillna(0.0)
     else:
         t = t[t["scheme"] == scheme]
         wide = t.pivot_table(index="category", columns="fraction", values="share", aggfunc="first")
@@ -138,7 +143,7 @@ def curated_block(
     keys = df[key_col] if key_col in df.columns else pd.Series([None] * len(df))
     out = wide.reindex(keys.to_numpy())
     out.index = df.index
-    return out.fillna(np.nan) if not out.empty else pd.DataFrame(index=df.index)
+    return out if not out.empty else pd.DataFrame(index=df.index)
 
 
 def build_blocks(df: pd.DataFrame, cfg: dict, curated: pd.DataFrame | None = None) -> dict[str, pd.DataFrame]:

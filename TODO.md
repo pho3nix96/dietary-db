@@ -79,7 +79,7 @@ Disagreement between views is the signal worth reporting.
 An interactive map of food space, also usable as a QA tool for the database.
 
 - [x] 2D layout from the fused similarity (`layout.embed_2d`)
-- [x] Interactive map on real data: highlight a food family, hover and click for nutrients and nearest foods, switch totals vs fractions (`docs/swedish-food-space-map.html`)
+- [x] Interactive map on real data: highlight a food family, hover and click for nutrients and nearest foods, switch totals vs fractions (`docs/nordic-food-space-map.html`)
 - [ ] Toggles for each view and sliders for fusion weights
 - [ ] Highlight disagreements and nutrient outliers for data checking
 - [ ] Optional: overlay consumption frequency from survey data
@@ -88,7 +88,7 @@ An interactive map of food space, also usable as a QA tool for the database.
 Built to keep working when you stop working on it.
 
 - [x] Reproducible pipeline (Snakemake) with config and tests
-- [ ] Push to a GitHub repository
+- [x] Push to a GitHub repository
 - [ ] Choose licences (code and data)
 - [ ] Archive each release on Zenodo with a DOI
 - [ ] Choose the outlet: data or methods paper, standalone tool, or layer of the multi-omics database

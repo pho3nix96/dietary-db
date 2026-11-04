@@ -17,8 +17,10 @@ nutrient content part ways, and they often expose coding or matching errors.
 
 ## Status
 
-Early stage. The pipeline runs end to end on synthetic data (`tests/`). Next step is
-loading a real food table — see `TODO.md`.
+Early stage. The pipeline runs end to end on synthetic data (`tests/`) and has been
+applied to the Swedish and Finnish food tables (`data/processed/`, `results/`). Results
+from simulated food records (`data/simulated/`, `results/person_graphs/`, `results/cointake/`)
+are illustrations, not findings. See `TODO.md` for open work.
 
 ## Input format
 

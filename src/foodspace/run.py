@@ -58,9 +58,13 @@ def main(config_path: str) -> None:
     k = cfg["graph"]["k"]
     if cfg["fusion"]["method"] == "snf":
         W = fuse.snf([fuse.affinity(D, k) for D in dists.values()], k=k, t=cfg["fusion"]["snf_iterations"])
+        D_layout = layout.similarity_to_distance(W)
     else:
         Dw = fuse.weighted_fusion(dists, cfg["fusion"]["weights"])
-        W = fuse.knn_sparsify(fuse.affinity(Dw, k), k)
+        W = fuse.affinity(Dw, k)
+        # the layout uses the dense fused distance: a sparse kNN graph would make
+        # every non-neighbour pair equally distant (distance 1)
+        D_layout = Dw
     W_graph = fuse.knn_sparsify(W, k)
     n_comp = fuse.n_components(W_graph)
     if n_comp > 1:
@@ -83,7 +87,7 @@ def main(config_path: str) -> None:
     mis = evaluate.misfits(df, clusters, cols["gift_group"], cols["id"], cols["name"])
 
     # Layout
-    xy = layout.embed_2d(layout.similarity_to_distance(W), cfg["layout"]["method"], seed)
+    xy = layout.embed_2d(D_layout, cfg["layout"]["method"], seed)
 
     table = pd.DataFrame({
         "id": df[cols["id"]], "name": df[cols["name"]],
