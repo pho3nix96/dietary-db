@@ -1,0 +1,22 @@
+{
+  "people": 100,
+  "weight": "ENERGY_kcal",
+  "k": 10,
+  "resolution": 1.0,
+  "n_clusters": 5,
+  "views": [
+    "food_tree",
+    "nutrients"
+  ],
+  "dish_shares": false,
+  "vs_hidden_pattern": {
+    "ARI": 0.13574891587825638,
+    "NMI": 0.21488984818841433,
+    "n_clusters": 5,
+    "n_reference_groups": 4
+  },
+  "view_ARI": {
+    "food_tree": 0.135,
+    "nutrients": 0.098
+  }
+}

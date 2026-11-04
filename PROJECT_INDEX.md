@@ -20,7 +20,9 @@ Snapshot of the whole project (code, data, results, published pages), 2026-11-04
 - data/simulated/     simulated 3-day food records (100 people) incl. 225 unique products
 - results/            within-GIFT-group clusters and trees (SE, FI, Nordic), recommendation-group trees,
                       co-intake graph, per-person graphs in servings (CSV + GraphML)
-- tests/              22 tests (pytest, PYTHONPATH=src)
+- src/foodspace/diet.py + scripts/compare_diets.py   match records to the reference, diet profiles on the food tree, person-to-person distance
+- results/diet_similarity/   person distance matrix, clusters, matching report (simulated records)
+- tests/              pytest (PYTHONPATH=src)
 
 ## Decisions so far
 - GIFT groups are fixed; clustering only within a group. Names never shape clustering; they only place new foods.

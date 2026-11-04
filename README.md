@@ -22,6 +22,30 @@ applied to the Swedish and Finnish food tables (`data/processed/`, `results/`). 
 from simulated food records (`data/simulated/`, `results/person_graphs/`, `results/cointake/`)
 are illustrations, not findings. See `TODO.md` for open work.
 
+## Comparing people's diets
+
+The reference can be used to compare dietary records (`src/foodspace/diet.py`,
+`scripts/compare_diets.py`):
+
+1. each record line is linked to a reference food (food id, then FoodEx2 code, then name; unique
+   products keep their placed GIFT group); unmatched lines are reported, not guessed;
+2. each person becomes a profile of intake shares (energy by default) over the food tree
+   GIFT group -> subgroup -> food, so under-reporting by a constant factor does not change it;
+3. the distance between two people is the earth mover's distance on that tree: swapping whole
+   milk for semi-skimmed milk is small, swapping milk for cereals is large. A secondary
+   macro-nutrient (Aitchison) view can be added with a weight.
+4. composite dishes count as one food of their group until a table of ingredient shares is
+   supplied with `--dish-shares` (food_id, leaf, share).
+
+```bash
+python scripts/compare_diets.py --records data/simulated/food_records --out results/diet_similarity
+```
+
+On the simulated records the people are only weakly separable by their hidden dietary pattern
+(5 nearest neighbours share the pattern 49-51% of the time, against about 28% by chance; Leiden
+ARI about 0.14). The food-tree view carried the signal and the nutrient view diluted it, so the
+nutrient view defaults to a weight of 0.25. This is one simulated dataset: re-check on real records.
+
 ## Input format
 
 One CSV (or TSV) row per food. Column names are set in `config/config.yaml`.
