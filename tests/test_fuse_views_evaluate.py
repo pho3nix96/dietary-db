@@ -37,7 +37,7 @@ def test_weighted_fusion_weights_and_errors():
 def test_leiden_recovers_blobs_and_components():
     D, truth = two_blobs()
     W = fuse.knn_sparsify(fuse.affinity(D, 5), 5)
-    labels = fuse.leiden(W, 1.0, 0)
+    labels = fuse.leiden(W, 0.1, 0)
     assert evaluate.agreement(labels, truth)["ARI"] > 0.9
     assert fuse.n_components(W) >= 1
 
