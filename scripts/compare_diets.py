@@ -3,7 +3,7 @@
 
     python scripts/compare_diets.py [--records data/simulated/food_records]
         [--foods data/processed/foods_lv.csv] [--out results/diet_similarity]
-        [--weight ENERGY_kcal] [--dish-shares PATH] [--ignore-ids]
+        [--weight ENERGY_kcal] [--tree gift|subgroup-composition|composition] [--dish-shares PATH] [--ignore-ids]
 
 Record lines are matched to the reference (food id, FoodEx2 code, name), lines without
 nutrient values take them from their reference food, and each person becomes a profile
@@ -45,6 +45,13 @@ def main(argv=None):
     ap.add_argument("--resolution", type=float, default=1.0)
     ap.add_argument("--nutrient-weight", type=float, default=0.25,
                     help="weight of the nutrient view (food-tree view = 1); on the simulated records the food-tree view alone recovered patterns best")
+    ap.add_argument("--tree", choices=["gift", "subgroup-composition", "composition"], default="gift",
+                    help="food tree for the person distance: GIFT group -> subgroup -> food (default); the same "
+                         "with the composition tree inside each subgroup; or the composition tree instead of "
+                         "subgroups. On the simulated records gift and subgroup-composition tie and composition "
+                         "is worse (scripts/compare_diet_trees.py)")
+    ap.add_argument("--trees", default="results/within_gift/trees.json",
+                    help="composition trees of the --foods table (from within_gift_groups.py)")
     ap.add_argument("--ignore-ids", action="store_true",
                     help="match on FoodEx2 code and name only: use when the records' food_id values are not ids of --foods "
                          "(real records), or to test that path on the simulated ones")
@@ -66,7 +73,17 @@ def main(argv=None):
     (out / "matching_report.json").write_text(json.dumps(report, indent=2))
     print("Matching:", json.dumps(report["by_match"]), "| nutrients:", json.dumps(report["nutrients_from"]))
 
-    leaf_index, parent, length, _ = diet.food_tree(foods, matched)
+    if args.tree == "gift":
+        leaf_index, parent, length, _ = diet.food_tree(foods, matched)
+    else:
+        trees = json.loads(Path(args.trees).read_text())
+        in_trees = {int(i) for v in trees.values() for i in v["food_ids"]}
+        cover = foods["food_id"].isin(in_trees).mean()
+        print(f"Composition trees cover {cover:.0%} of the reference foods")
+        if cover < 0.5:
+            print("Warning: most reference foods are not in --trees; were the trees built from another table?")
+        within = "subgroup" if args.tree == "subgroup-composition" else "group"
+        leaf_index, parent, length, _ = diet.composition_tree(foods, matched, trees, placements, within=within)
     dish = pd.read_csv(args.dish_shares) if args.dish_shares else None
     P = diet.diet_profiles(matched, leaf_index, args.weight, dish_shares=dish)
     people = P.index.to_numpy()
@@ -83,7 +100,7 @@ def main(argv=None):
     pd.DataFrame({"SUBJECT": people, "cluster": clusters}).to_csv(out / "person_clusters.csv", index=False)
 
     summary = {"people": int(len(people)), "weight": args.weight, "k": args.k, "resolution": args.resolution,
-               "nutrient_weight": args.nutrient_weight, "ignore_ids": bool(args.ignore_ids),
+               "tree": args.tree, "nutrient_weight": args.nutrient_weight, "ignore_ids": bool(args.ignore_ids),
                "n_clusters": int(len(set(clusters))), "views": list(views), "dish_shares": bool(dish is not None)}
     truth_path = rec_dir / "truth.csv"
     if truth_path.exists():  # simulated records only: how well do the distances recover the hidden patterns?

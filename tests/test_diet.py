@@ -152,3 +152,50 @@ def test_unknown_dish_share_leaves_are_reported(capsys):
     shares = pd.DataFrame({"food_id": [3, 3], "leaf": ["f1", "f999"], "share": [0.5, 0.5]})
     P = diet.diet_profiles(m, li, dish_shares=shares)
     assert "f999" in capsys.readouterr().out and P.loc[1, "f1"] == pytest.approx(1.0)
+
+
+def group_tree_case(inverted=False):
+    """One GIFT group of 4 foods: 1, 2, 3 in subgroup A (1 and 2 most alike), 4 alone in B."""
+    foods = pd.DataFrame({"food_id": [1, 2, 3, 4, 5], "name": ["Food one", "Food two", "Food three", "Food four", "Other"],
+                          "gift_group": ["G", "G", "G", "G", "H"], "gift_subgroup": ["A", "A", "A", "B", "C"]})
+    second = 0.05 if inverted else 0.5  # inverted: the later merge is "more similar" than the first
+    trees = {"G": {"food_ids": [1, 2, 3, 4], "linkage": [[0, 1, 0.1, 2], [4, 2, second, 3], [5, 3, 0.8, 4]]}}
+    recs = pd.DataFrame({"SUBJECT": [1, 2, 3, 4, 5, 6], "food_id": [1, 2, 3, 4, 5, np.nan],
+                         "unique_food_id": [np.nan] * 5 + ["U1"], "ENERGY_kcal": [100.0] * 6})
+    plc = pd.DataFrame({"unique_food_id": ["U1"], "gift_group": ["G"], "gift_subgroup": ["A"], "nearest_foods": ["Food one | Food two"]})
+    m = diet.match_records(recs, foods, plc)
+    return foods, trees, m, plc
+
+
+def person_distances(tree, m):
+    li, par, ln, _ = tree
+    assert (ln >= 0).all()
+    return diet.tree_distance(diet.diet_profiles(m, li), li, par, ln)
+
+
+def test_composition_inside_subgroups():
+    foods, trees, m, plc = group_tree_case()
+    D = person_distances(diet.composition_tree(foods, m, trees, plc, within="subgroup"), m)
+    G = person_distances(diet.food_tree(foods, m), m)
+    # people 1..4 ate foods 1..4, person 5 a food of another group, person 6 a product placed next to food 1
+    assert D[0, 1] < D[0, 2] == pytest.approx(G[0, 2])   # within A: 1 and 2 alike, 3 as far as food_tree puts it
+    assert D[0, 3] == pytest.approx(G[0, 3])              # different subgroups: unchanged
+    assert D[0, 4] == pytest.approx(1.0) and G[0, 4] == pytest.approx(1.0)
+    assert D[5, 0] == pytest.approx(D[0, 1])              # the placed product is food 1's sibling
+    assert D[5, 2] == pytest.approx(D[0, 2])
+
+
+def test_composition_instead_of_subgroups_and_inversions():
+    foods, trees, m, plc = group_tree_case()
+    D = person_distances(diet.composition_tree(foods, m, trees, plc, within="group"), m)
+    assert D[0, 1] < D[0, 2] < D[0, 3] < D[0, 4] == pytest.approx(1.0)
+    foods, trees, m, plc = group_tree_case(inverted=True)
+    D = person_distances(diet.composition_tree(foods, m, trees, plc, within="subgroup"), m)
+    assert D[0, 1] == pytest.approx(D[0, 2])              # merge heights made monotonic: no negative branch
+
+
+def test_flat_tree_counts_only_identical_foods():
+    foods, trees, m, plc = group_tree_case()
+    D = person_distances(diet.flat_tree(foods, m), m)
+    off = D[~np.eye(len(D), dtype=bool)]
+    assert np.allclose(off, 1.0)
