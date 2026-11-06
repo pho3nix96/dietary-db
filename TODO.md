@@ -107,4 +107,4 @@ The reference as a tool for dietary records: people are compared by what they ea
       subgroups ties; composition instead of subgroups is worse; flat and group-only are worst
 - [ ] Test whether composition inside subgroups helps on real records, against an outside criterion (e.g. biomarkers)
 - [ ] Compare with servings per recommendation group as the person profile
-- [ ] Enable GitHub Pages so the explorer site deploys
+- [x] Enable GitHub Pages so the explorer site deploys (live at https://pho3nix96.github.io/dietary-db/)

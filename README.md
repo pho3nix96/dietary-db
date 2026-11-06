@@ -25,12 +25,12 @@ people runs on **simulated** food records only: no real records have been analys
 | Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
 | Diet comparison between people | Runs on the simulated records; weak but real signal; GIFT subgroup tree is the best tested food tree | `scripts/compare_diets.py`, `results/diet_similarity/` |
 | Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
-| Explorer website | Built but **never deployed**: GitHub Pages is not enabled for the repository | `.github/workflows/pages.yml` |
+| Explorer website | Live at https://pho3nix96.github.io/dietary-db/ (first deployed 2026-11-06) | `.github/workflows/pages.yml` |
 | Licence | Not chosen | |
 
-The explorer pages (`artifacts/`) are meant to be served at https://pho3nix96.github.io/dietary-db/.
-The only deploy run failed with "Get Pages site failed", so the address does not work yet.
-To fix it, the repository owner sets Settings -> Pages -> Source: GitHub Actions and re-runs the workflow.
+The explorer pages (`artifacts/`) are published at https://pho3nix96.github.io/dietary-db/ by the pages
+workflow, on every push to `main` that changes `artifacts/`, `site/` or the workflow itself. They show the
+composition data and the simulated records only.
 
 ## How it fits together
 
@@ -262,8 +262,8 @@ A recorded day is a `SURVEY_DAY` within a `ROUND`; an eating occasion is a `MEAL
     changes 6 of its 9 trees (servings are unchanged).
   - The commodity protein rules (whole-word matching, so buttermilk and salted or fatty fish are no
     longer dropped) affect only tables prepared again from the raw downloads.
-- **Website.** Enable GitHub Pages (see the status section). The CDN scripts in the pages have no
-  integrity hashes.
+- **Website.** The CDN scripts in the pages have no integrity hashes, and the deploy workflow's
+  actions target the deprecated Node 20.
 - **Robustness.** Bootstrap stability of branches and clusters; compare treelet trees with average
   linkage; a sweep of the GIFT weight.
 - **Licences** for code and data, and a check of the FAO matching table's terms.
