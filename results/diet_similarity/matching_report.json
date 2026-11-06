@@ -1,0 +1,16 @@
+{
+  "lines": 4280,
+  "by_match": {
+    "id": 4055,
+    "placed": 225
+  },
+  "weight_share_by_match": {
+    "id": 0.945,
+    "placed": 0.055
+  },
+  "id_matches_with_same_name": 1.0,
+  "nutrients_from": {
+    "record": 4220,
+    "reference": 60
+  }
+}

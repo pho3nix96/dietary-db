@@ -26,7 +26,7 @@ from scipy.linalg import orthogonal_procrustes
 sys.path.insert(0, str(Path(__file__).parent))
 from compare_totals_vs_fractions import distances  # noqa: E402
 
-from foodspace import layout  # noqa: E402
+from foodspace import evaluate, layout  # noqa: E402
 
 FAMILIES = {
     "Dairy": ["Milk", "Hard cheese", "Soft cheese", "Fresh cheese and quark", "Natural fermented products",
@@ -65,7 +65,7 @@ def main(argv=None):
     R, _ = orthogonal_procrustes(xy_f, xy_t)
     xy_f = scaled(xy_f @ R)
 
-    nn = {v: np.argsort(Ds[v], axis=1)[:, 1:4] for v in ("totals", "all_fractions")}
+    nn = {v: evaluate.nearest(Ds[v], 3) for v in ("totals", "all_fractions")}
     vals = df[PANEL].apply(pd.to_numeric, errors="coerce").round(1)
     pc = df.get("protein_fraction_category", pd.Series([None] * len(df)))
     foods = []
@@ -80,7 +80,7 @@ def main(argv=None):
     grp = df["main_group"].to_numpy()
     rows = []
     for v, D in Ds.items():
-        idx = np.argsort(D, axis=1)[:, 1 : args.k + 1]
+        idx = evaluate.nearest(D, args.k)
         same = grp[idx] == grp[:, None]
         for g in pd.unique(grp):
             m = grp == g

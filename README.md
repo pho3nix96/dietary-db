@@ -1,278 +1,277 @@
-# Food space map
+# Nordic food reference (food space map)
 
-**Explorer pages:** https://pho3nix96.github.io/dietary-db/ (built from `artifacts/` by `.github/workflows/pages.yml`). See `PROJECT_INDEX.md` for a project overview.
+A reference of Swedish and Finnish foods for analysing dietary records. Every food has its
+FAO/WHO GIFT food group, its composition and its "fraction" profile (what kind of fat,
+sugar, carbohydrate and protein it carries). The reference is used to:
 
-Cluster and visualize a dietary database by three views of each food:
+1. group and map foods within each GIFT group, and check the official grouping;
+2. place foods that are not in the tables (unique products in food records);
+3. compare people's diets from food records, using food similarity rather than exact food matches.
 
-| View | What it captures | Source |
+The composition side runs on the real Swedish and Finnish tables. Everything involving
+people runs on **simulated** food records only: no real records have been analysed yet.
+
+## Status (2026-11-06)
+
+| Part | State | Where |
 |---|---|---|
-| Classification | What the food officially *is* | FAO/WHO GIFT nutrition-sensitive grouping (19 groups, 95 subgroups), via FoodEx2 |
-| Nutrients | What it *contains* | Food composition table |
-| Semantics | How it is *described* | Embeddings of food names and descriptions |
+| Swedish table (Livsmedelsverket) | Done: 2,606 foods, 60 components, 2,603 with a GIFT group | `data/processed/foods_lv.csv` |
+| Finnish table (Fineli) | Done: 4,238 foods, all with a GIFT group (food-use class map, plus name rules for 349) | `data/processed/foods_fi.csv` |
+| Combined Nordic table | Done: 6,841 foods; SE-FI crosswalk of 744 mutual best matches | `data/processed/foods_nordic.csv`, `docs/se_fi_crosswalk_mutual.csv` |
+| Protein fractions | Partly provisional: 13 of 30 food categories have values, and 9 of those 13 use provisional or textbook numbers | `data/curated/protein_fractions.csv` |
+| Clustering and trees within GIFT groups | Results committed for SE, FI and Nordic | `results/within_gift*/` |
+| Clustering all foods (main pipeline) | Runs; agrees weakly with GIFT (ARI 0.21) | `python -m foodspace.run` |
+| Placing new foods | Works: the name alone finds the GIFT group for 82-89% of foods | `src/foodspace/placement.py` |
+| Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
+| Diet comparison between people | Runs on the simulated records; weak but real signal | `scripts/compare_diets.py`, `results/diet_similarity/` |
+| Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
+| Explorer website | Built but **never deployed**: GitHub Pages is not enabled for the repository | `.github/workflows/pages.yml` |
+| Licence | Not chosen | |
 
-The views are fused into one food graph, clustered with Leiden, compared with the
-GIFT grouping, and laid out in 2D for an interactive map. Foods where the views
-disagree ("misfits") are the main result: they show where official groupings and
-nutrient content part ways, and they often expose coding or matching errors.
+The explorer pages (`artifacts/`) are meant to be served at https://pho3nix96.github.io/dietary-db/.
+The only deploy run failed with "Get Pages site failed", so the address does not work yet.
+To fix it, the repository owner sets Settings -> Pages -> Source: GitHub Actions and re-runs the workflow.
 
-## Status
+## How it fits together
 
-Early stage. The pipeline runs end to end on synthetic data (`tests/`). Next step is
-loading a real food table — see `TODO.md`.
+```
+raw downloads (not in git)            curated tables (in git)
+  Livsmedelsverket API                  GIFT map for FoodEx2 and Fineli classes
+  Fineli open-data package              protein fractions with sources
+  GIFT FoodEx2 matching table           protein category per Swedish food
+        |                                      |
+        +------------- prepare_* ------------- +
+                          |
+             data/processed/ food tables (in git)
+               |                    |                       |
+   within-group structure    placement of new foods    food records (simulated)
+   (clusters, trees, maps)   (names + nutrients)       -> matching -> diet profiles
+                                                        -> person-to-person distance
+```
 
-## Input format
+## Data
 
-One CSV (or TSV) row per food. Column names are set in `config/config.yaml`.
-
-| Column | Required | Notes |
+| Source | Licence | In git |
 |---|---|---|
-| `food_id` | yes | Unique |
-| `name` | yes | Any language if using a multilingual model |
-| `description` | no | Improves the semantic view |
-| `foodex2_code` | no | Recommended; links all four GIFT groupings |
-| `gift_group`, `gift_subgroup` | yes | Nutrition-sensitive grouping |
-| nutrient columns | yes | Same basis for all foods (e.g. per 100 g) |
+| Swedish Food Agency, Livsmedelsdatabasen (API, via `scripts/fetch_livsmedelsverket.py`) | CC BY 4.0, "Source: Swedish Food Agency" | Processed table only |
+| Fineli Release 20, basic package 2 (THL; manual download from fineli.fi, "Open data") | CC BY 4.0 | Processed table only |
+| FAO/WHO GIFT FoodEx2 matching table (FoodEx2_MTX.xlsx, matrix 16.2) | **Not checked** | Derived `data/curated/foodex2_to_gift.csv` only |
 
-## Data source
+The raw downloads, including the Swedish recipes (`raw_commodities.csv`), stay in `data/raw/`
+and are not committed; the scripts re-create them. Check the FAO licence before releasing the
+derived GIFT table.
 
-Current source: the **Swedish Food Agency food composition database
-(Livsmedelsdatabasen)**, about 2,600 foods with 59 components each, FoodEx2 and
-LanguaL codes, licensed CC BY 4.0 ("Source: Swedish Food Agency"). Fineli is
-the intended Finnish alternative but is currently not reachable from outside
-Finland.
+The GIFT nutrition-sensitive grouping has 19 groups and 95 subgroups. The Swedish table uses
+18 of the groups (none of its foods is in "Insects, grubs and their products"); 3 Swedish foods
+have no group ("unassigned"). The largest group is Composite dishes (470 Swedish foods).
 
-Useful components for the fraction layer: saturated, mono- and polyunsaturated
-fatty acid totals and 15 individual fatty acids; total sugars, monosaccharides,
-disaccharides and sucrose. Two fractions are derived in the prepare step:
-starch (available carbohydrate minus sugars) and other disaccharides
-(disaccharides minus sucrose, mainly lactose and maltose). Not available:
-measured starch, lactose, and amino acids.
+## Methods in brief
+
+**Views of a food.** Similarity between two foods combines:
+- *composition*: protein, fat, available carbohydrate and fibre per 100 g (log1p, z-scored, cosine distance);
+- *fractions*: each macronutrient split into its parts and turned into shares, so milk and milk
+  powder get the same profile. The blocks are fat classes (SFA/MUFA/PUFA), omega-6 / ALA / long-chain
+  omega-3, C4-C10 vs longer saturated fat (Swedish table only), mono- / sucrose / other disaccharides,
+  starch / sugars / fibre, and protein fractions. Shares are compared with the Aitchison distance
+  (zero replacement, centred log-ratio, Euclidean). Each block is scaled to [0, 1] and blocks
+  are averaged with equal weight. A block counts for a pair of foods only when both have it, and
+  foods with less than `min_parent` g/100 g of the parent nutrient have no profile for that block.
+
+Composition and fractions are fused with equal weight. GIFT is the reference the results are
+checked against, not an input (`fusion.gift_in_fusion: false`). Food names never shape the
+clusters; they are used only to place new foods. Every choice is in `config/config.yaml`.
+
+**Protein fractions** are not in composition tables. `data/curated/protein_fractions.csv` gives
+shares per food category from the literature (casein/whey for dairy, Osborne fractions for
+cereals and pulses, 11S/7S for soy, myofibrillar/sarcoplasmic/stromal for meat and fish), each
+with a status and a DOI. To compare across families, fractions are summed into solubility-based
+`common_class` values; that mapping is approximate. A food's profile is the protein-weighted mix
+of its recipe ingredients' profiles (`src/foodspace/commodities.py` for Sweden, recipe expansion in
+`scripts/prepare_fineli.py` for Finland). This gives profiles for 1,026 Swedish and 1,339 Finnish
+foods. The main pipeline instead uses one curated category per food
+(`data/curated/protein_category_map.csv`, 524 Swedish foods).
+
+**Clustering and trees.** Leiden communities on a k-nearest-neighbour graph of the fused
+similarity; treelet trees (Lee, Nadler & Wasserman 2008) on 1 - fused distance; UMAP layouts.
+Treelet merges are not monotonic: a later merge can be more similar than an earlier one, so cut
+the trees by merge order (`treelet.cut`), not by height.
+
+**Comparing diets** (`src/foodspace/diet.py`):
+1. *Matching.* Each record line is linked to a reference food. The steps, in order: by food id,
+   only when the records use the reference's own ids; by FoodEx2 code (base term, facets used
+   when they match exactly); by name among the foods sharing that base term; or by name alone.
+   Unique products keep the GIFT group placement gave them. Unmatched lines are reported, not guessed.
+2. *Nutrients.* Lines without nutrient values take them from their reference food.
+3. *Profiles.* Each person becomes intake shares (energy by default) over the tree
+   GIFT group -> subgroup -> food, so constant under-reporting does not change the profile.
+4. *Distance.* The earth mover's distance on that tree: swapping whole milk for semi-skimmed
+   milk costs little, swapping milk for cereals costs the most. A macro-nutrient (Aitchison) view is
+   added with weight 0.25 by default. Composite dishes count as one food of their group unless a
+   table of ingredient shares is passed (`--dish-shares`).
+
+## Results so far
+
+All foods, Swedish table (`python -m foodspace.run`, outputs not committed):
+- Leiden finds 16 clusters. Agreement with the GIFT groups is low: ARI 0.21, NMI 0.40. 1,300 of
+  the 2,606 foods sit in a cluster dominated by another group, so the GIFT groups are not
+  compact in composition space. Read that list as disagreements to inspect, not as coding errors.
+- Fractions keep food families together (`docs/comparison_by_group.csv`). The share of a food's
+  5 nearest neighbours that are in its Livsmedelsverket food group rises from 0.32 on totals
+  alone to 0.44 with fractions; for dairy (neighbours that are dairy) from 0.43 to 0.72, and for
+  hard cheese from 0.31 to 0.84. Sauces (0.48 -> 0.31) and soups (0.37 -> 0.34) lose cohesion.
+- 524 Swedish foods have a curated protein category, but only 355 of those categories have values
+  yet. Of the 355 foods, 109 rest on sourced values alone and 246 on provisional or textbook values
+  (`metrics.json`, `protein_values_by_status`).
+
+Within GIFT groups (`results/within_gift*/groups.csv`; medians over the groups with at least 8 foods):
+
+| Table | ARI vs subgroup | 5 nearest in same subgroup: fused | composition | fractions | names (not used) |
+|---|---|---|---|---|---|
+| Sweden | 0.12 | 0.71 | 0.62 | 0.59 | 0.77 |
+| Finland | 0.16 | 0.76 | 0.71 | 0.67 | 0.82 |
+| Nordic | 0.11 | 0.74 | 0.68 | 0.65 | 0.84 |
+
+In the Nordic table, a food's nearest neighbours come from the other country at 0.64 of the rate
+expected if the country did not matter (median over groups). The two databases still differ in
+method (measured vs estimated starch, summed vs total omega-3), and part of that shows.
+
+Cereals by protein fractions: 250 cereal foods form 6 clusters (`docs/cereal_cluster_summary.csv`).
+Wheat, barley and maize foods are prolamin-rich, rice is glutelin-rich, rye is albumin-rich.
+The profile is computed from the grain mix, so agreement with the dominant grain is partly built in.
+
+Placing new foods (leave-one-out over 600 foods): the name alone recovers the GIFT group for
+82% (Sweden), 89% (Finland) and 88% (Nordic) of foods, and the subgroup for 70-78%. The
+TF-IDF index includes the held-out name, so these figures are slightly optimistic.
+
+Simulated food records (`data/simulated/food_records/`, see its README): 100 people, 3 days,
+4,280 record lines, with 225 unique products (60 of them name only). Placement recovers the
+true GIFT group of 95% (name only) and 96% (name + values) of the unique products.
+
+Diet comparison on the simulated records (`results/diet_similarity/summary.json`):
+- all 4,280 lines are matched, and 60 lines get their nutrients from the reference;
+- a person's 5 most similar people share their hidden dietary pattern 50% of the time, against
+  28% by chance; the food-tree view alone gives 51%, the nutrient view alone 34%;
+- Leiden clusters of people agree weakly with the 4 patterns (ARI 0.13);
+- ignoring the food ids, as with real records, gives the same results; the matcher then finds
+  the right food for 99.4% of lines. That is an upper bound, because the simulated names are
+  copied from the reference.
+
+The simulation gives each person strong habitual favourites, which may be part of why patterns
+separate weakly. Re-check on real records.
 
 ## Running
 
 ```bash
-conda env create -f environment.yml
+conda env create -f environment.yml        # or: pip install -e ".[dev,scripts]"
 conda activate food-space-map
 pip install -e .
-
-# 1. download (about 5,000 small requests; resumable; standard library only)
-python scripts/fetch_livsmedelsverket.py
-# 2. build the pipeline's food table (adds derived fractions, GIFT groups when mapped)
-python scripts/prepare_livsmedelsverket.py
-# 3. run the analysis
-python -m foodspace.run config/config.yaml
-# 4. cluster cereal foods among themselves by protein fractions
-python scripts/within_group_cereals.py
-# or steps 2-4 with
-snakemake --cores 1
+pytest -q                                  # 62 tests
 ```
 
-Outputs in `results/`:
-
-- `food_map.csv` — each food with its cluster and 2D coordinates
-- `misfits.csv` — foods whose cluster is dominated by a different GIFT group
-- `resolution_scan.csv` — agreement with GIFT and seed stability across resolutions
-- `metrics.json` — ARI/NMI vs GIFT group and subgroup, plus every nutrient-preparation choice made
-
-## Design notes
-
-- **Every analytical choice is in the config** (nutrient set, basis, missing-value rule,
-  log transform, distance, fusion method, k, resolution) and is echoed into `metrics.json`.
-- **GIFT is the reference, not an input, by default** (`fusion.gift_in_fusion: false`).
-  The GIFT view is discrete: foods in the same subgroup have distance 0, so even a small
-  GIFT weight makes each food's nearest neighbours its subgroup mates, splits the graph
-  along subgroups, and pulls misfit foods back into their official group. It also makes
-  agreement with GIFT partly circular. Turn it on only for a weight sweep.
-- **Fusion**: `weighted` (adjustable baseline) or `snf` (similarity network fusion,
-  Wang et al. 2014).
-- **Semantic view** needs `sentence-transformers`; the default model is multilingual.
-
-## Nutrient fractions (the "what kind" layer)
-
-Totals say how much protein, fat or carbohydrate a food has; fractions say what
-kind. Each block describes one macronutrient by its parts (fatty acid classes,
-individual sugars, starch vs sugars vs fibre, casein vs whey), turned into shares
-of the block so that concentration does not matter (milk and milk powder get the
-same profile). Shares are compared with the Aitchison distance (zero replacement,
-centred log-ratio, Euclidean), each block is scaled to [0, 1], and blocks are
-averaged with equal weight. A block counts for a pair only when both foods have
-it; foods with less than `min_parent` g/100 g of the parent nutrient have no
-profile for that block.
-
-Blocks are set in `config/config.yaml` under `fractions`. Column names there are
-placeholders until the Fineli files are loaded; blocks with missing columns are
-skipped with a message.
-
-**Protein fractions** are not in composition tables, so they come from
-`data/curated/protein_fractions.csv`, organised by GIFT food group. One row per
-category, scheme and fraction, with the share, its status (`sourced`,
-`provisional`, `by_definition`, `to_source`), the source DOI and a note. Only
-rows with a share are used. The food table links to it through a
-`protein_fraction_category` column.
-
-Each food family has its own fraction scheme: casein/whey for dairy, Osborne
-fractions for cereals and pulses, 11S/7S storage globulins for soybean,
-myofibrillar/sarcoplasmic/stromal for meat and fish. To compare across families,
-every fraction also has a `common_class` based on solubility (water_soluble,
-salt_soluble, alcohol_soluble, insoluble_storage, casein, structural_insoluble,
-or mixed where a source pools fractions). `scheme: common` in the config sums
-shares by class. The mapping is approximate (e.g. myofibrillar proteins are
-salt-soluble like globulins but are not storage proteins) and should be stated
-as such in a paper.
-
-Low-protein foods (below `min_parent`, 2 g/100 g by default) get no protein
-profile, so most fruit, vegetables and fats are unaffected. The `gift_subgroup`
-column is empty until the official FAO grouping file (FoodEx2_MTX.xlsx) is
-loaded; group names should be checked against it too.
-
-On the synthetic test foods (`tests/test_fractions.py`), totals put Gouda next to
-salami (distance 0.13) and far from milk (0.97); with fractions Gouda moves next
-to milk (0.14) and away from salami (1.00), and whey protein is set apart from
-cheese by protein type.
-
-## Within a group: cereals by protein fractions
-
-Across all foods, fractions mostly help separate food groups. Within a group
-the question changes: which breads, flakes and pastas are alike in the kind
-of protein they carry (gliadin-type prolamins vs glutenins vs albumins and
-globulins)?
-
-The database gives each food's recipe in raw commodities
-(`data/raw/livsmedelsverket/raw_commodities.csv`, from the `/ravaror`
-endpoint). `src/foodspace/commodities.py` turns that into a protein profile:
-
-1. protein of each raw commodity, from the single-commodity foods in the same
-   database (rolled oats, rye flour, ...), with a few fallbacks;
-2. grain protein in a product = raw-commodity grams x commodity protein;
-3. Osborne profile = protein-weighted mix of each grain's curated shares
-   (`data/curated/protein_fractions.csv`, scheme `osborne`).
-
-`scripts/within_group_cereals.py` keeps foods where grain is at least half of
-the recipe and supplies 50-200 % of the protein (above 100 % happens when grain
-was refined to starch), then compares totals, measured fractions, and
-measured + protein fractions, scored against the dominant grain and the food
-group. First run (250 foods, 5 nearest neighbours):
-
-| view | same dominant grain | same food group |
-|---|---|---|
-| totals | 0.60 | 0.39 |
-| + fat/sugar/carb fractions | 0.63 | 0.48 |
-| + protein fractions | 0.83 | 0.54 |
-
-The protein profile is computed from the grain mix, so the jump in "same
-dominant grain" is partly built in. What it adds is a chemical scale: wheat,
-barley and maize sit together (prolamin-rich), rice is glutelin-rich, rye is
-albumin-rich, oat-wheat blends fall in between. Cereal values are partly
-provisional (see the `status` column); rye in particular uses textbook Osborne
-values that likely underestimate secalins.
-
-## Within GIFT groups (default view)
-
-The 19 FAO/WHO GIFT nutrition-sensitive groups are the fixed top level: foods
-from different groups are never clustered together. `scripts/map_gift.py`
-builds `data/curated/foodex2_to_gift.csv` from the official FoodEx2 matching
-table (FoodEx2_MTX.xlsx, matrix 16.2; nutrition-sensitive columns saved in
-`data/raw/gift/foodex2_gift_nut.csv`), and 2,603 of 2,606 Swedish foods get a
-group from their FoodEx2 base term. `scripts/within_gift_groups.py` then works
-inside each group on macros and fraction blocks (names only place new foods, see below): (fat classes,
-omega-6/ALA/long-chain omega-3, C4-C10 milk-fat marker, sugars, starch/sugar/
-fibre, protein fractions), with Leiden clusters, a treelet tree per group and
-agreement with GIFT subgroups. Results: `results/within_gift/groups.csv`.
-The raw matrix extract stays out of git; the derived `foodex2_to_gift.csv` is kept.
-Check the FAO licence of the matching file before redistributing it.
-
-## Placing new foods (the only use of names)
-
-Food names do not shape the space: clusters, trees and layouts use
-composition and fractions only. Names are used to place a new food:
+Without any downloads (from a fresh clone), these run on the committed tables:
 
 ```bash
+python -m foodspace.run config/config.yaml                     # all foods (writes results/food_map.csv, misfits.csv, metrics.json)
+python scripts/within_gift_groups.py --out results/within_gift # within GIFT groups (the website's map data also needs the GIFT matrix)
 python scripts/place_food.py "Skyr, plain" --db nordic --set PROT_g=11 FAT_g=0.2 CHO_g=3.8 FIBT_g=0 SUGAR_g=3.8
-python scripts/place_food.py --evaluate --db se     # how often names alone find the GIFT group
+python scripts/compare_diets.py                                # diet comparison on the simulated records
+python scripts/person_graphs.py && python scripts/build_cointake_graph.py && python scripts/recommendation_groups.py
 ```
 
-`src/foodspace/placement.py`: the name (TF-IDF, word and character n-grams)
-picks the GIFT group and subgroup by a weighted vote of the 10 most similar
-names (pass `--group` to override; a warning is given below 0.6 confidence);
-detail the new food lacks (fat and sugar parts, protein-fraction profile) is
-filled from its name neighbours and listed as imputed; its position and
-cluster come from comparing its nutrients with the group's foods, as the
-foods are compared with each other. With no nutrients, the name neighbours
-place it. Leave-one-out, names find the GIFT group for 82% (Sweden), 90%
-(Finland) and 86% (combined) of foods, and the subgroup for 71-78%.
+These need the raw downloads:
 
-## Fineli (Finland)
+| Step | Needs |
+|---|---|
+| `fetch_livsmedelsverket.py`, then `prepare_livsmedelsverket.py` | Livsmedelsverket API (about 5,000 small requests, resumable) |
+| `within_group_cereals.py`, `food_tree.py` | `data/raw/livsmedelsverket/raw_commodities.csv` |
+| `prepare_fineli.py` | Fineli package unzipped into `data/raw/fineli/unz/` |
+| `map_gift.py`, `build_gift_map_data.py` | `data/raw/gift/foodex2_gift_nut.csv` |
 
-`scripts/prepare_fineli.py` reads the Fineli open-data package (release 20,
-basic package 2: 4,232 foods, 74 components; THL, CC BY 4.0; download from
-fineli.fi "Open data" and unzip into `data/raw/fineli/unz/`) into the same table
-layout as the Swedish data, so the same config and scripts run:
+`snakemake --cores 1` runs the whole chain, but only once the raw files are in place. In a fresh
+clone it stops at the first step that needs them. The records rules (`recommendation_groups`,
+`person_graphs`, `cointake_graph`, `diet_similarity`) need no raw data.
 
-```bash
-python scripts/prepare_fineli.py
-python scripts/within_gift_groups.py --input data/processed/foods_fi.csv --out results/within_gift_fi
-```
+Install `umap-learn` for UMAP layouts like the committed ones. Without it the layouts fall back to
+t-SNE, with a warning.
 
-Differences from the Swedish table: starch, lactose and individual sugars are
-measured; omega-3 and omega-6 totals are given; there are no C4-C10 fatty
-acids (milk-fat block skipped) and no FoodEx2 codes. GIFT groups come from
-`data/curated/fineli_fuclass_to_gift.csv` (122 food-use classes, curated) plus
-name rules. Protein profiles are recipe-based: every dish is expanded through
-`contribfood.csv` to raw ingredients, each ingredient class points to a
-curated protein category, and the profile is the protein-weighted mix.
+## Using real dietary records
 
-## Combined Nordic table
+Records are expected in the FAO/WHO GIFT microdata layout: `SUBJECT`, `ROUND` (optional),
+`SURVEY_DAY`, `MEAL_NAME`, `FOODEX2_INGR_CODE`, `INGREDIENT_ENG`, `FOOD_AMOUNT_CONS` (g) and
+nutrient columns (`ENERGY_kcal`, `PROTEIN_g`, `FAT_g`, `CARBOH_g`, `SUGAR_g`, `FIBTG_g`, ...).
+A recorded day is a `SURVEY_DAY` within a `ROUND`; an eating occasion is a `MEAL_NAME` on that day.
 
-`scripts/combine_databases.py` pools both tables (6,841 foods; `source` = SE/FI)
-on the columns that mean the same in both, and prints matched food types from
-each database side by side. Protein profiles are recipe-based in both (Swedish
-raw-commodity recipes via `commodities.recipe_protein_profiles`; Fineli
-recipes). Harmonisation choices: the C4-C10 block is dropped (Fineli lacks it);
-the omega-6/ALA/long-chain omega-3 block has no "other PUFA" remainder (the
-databases tally minor PUFA differently); Swedish estimated starch under 0.5 g
-is treated as 0 (rounding noise).
+- **Keep them out of git.** Individual records (with age, sex and weight) are personal data,
+  and probably health data under GDPR. Put them in `data/private/` and write results to
+  `results/private/`; both are ignored by git. Do not rebuild the public explorer pages from them.
+- **Match on code and name.** Their food ids are not ids of the reference, so run
+  `python scripts/compare_diets.py --records data/private/<set> --out results/private/<set> --ignore-ids`.
+  Check `matching_report.json` (match types, unmatched lines, where nutrients came from).
+- **Unique products.** `place_unique_foods.py` needs an `in_database` column marking lines
+  whose food is not in the table; the unmatched lines of the matcher are the candidates.
+- **Ingredient-level rows.** GIFT's column names (`FOODEX2_INGR_CODE`, `INGREDIENT_ENG`) suggest
+  many datasets already split recipes into ingredients. Check this first: if so, composite dishes
+  arrive pre-split, and the recipe-based split matters only for dishes recorded as one line.
 
-`within_gift_groups.py --input data/processed/foods_nordic.csv` then reports
-country mixing per view (observed share of other-country nearest neighbours /
-expected share) and writes `crosswalk.csv`: each food's closest food from the
-other country within its GIFT group, with `mutual` marking pairs that are each
-other's best match (887 pairs; 81% fall in the same cluster).
-`docs/se_fi_crosswalk_mutual.csv` lists them.
+## Open work
 
-## Food tree (treelet transform)
+- **Composite dishes.** Split them into ingredient groups using the Swedish recipes
+  (`raw_commodities.csv`) and map each ingredient's FoodEx2 code to a GIFT group. This needs the
+  recipe download. `diet_profiles` already accepts the resulting shares (`--dish-shares`).
+- **Real records**, e.g. INRAN-SCAI 2005-06 via FAO/WHO GIFT, under your own access agreement.
+- **Protein fractions.** Replace provisional values with primary sources: meat, rennet cheese,
+  rice, rye, oats, maize, soybean, faba bean, whey protein. Then source the 17 categories with no
+  values yet: yogurt (plain and strained), quark and cottage cheese, cream, kefir and fermented milk,
+  cheese whey, egg, processed meat, offal, potato, pea, lentil, chickpea, kidney bean, peanut, tree
+  nuts, oil seeds. To use only sourced categories, set `statuses: [sourced, by_definition]` under
+  `protein_type` in the config.
+- **Committed results predate some fixes.** Re-running changes them:
+  - Within-group neighbour scores: a food could count as its own neighbour when another food had
+    distance 0. Regenerated Swedish scores fall slightly (fraction view -0.012 on average, at most
+    -0.06 in one group). Clusters and ARI do not change.
+  - The servings page (`results/recommendation_groups/groups.json`) was built with curated protein
+    categories. The script now uses the same recipe-based profiles as the within-group trees, which
+    changes 6 of its 9 trees (servings are unchanged).
+  - The commodity protein rules (whole-word matching, so buttermilk and salted or fatty fish are no
+    longer dropped) affect only tables prepared again from the raw downloads.
+- **Website.** Enable GitHub Pages (see the status section). The CDN scripts in the pages have no
+  integrity hashes.
+- **Robustness.** Bootstrap stability of branches and clusters; compare treelet trees with average
+  linkage; a sweep of the GIFT weight.
+- **Licences** for code and data, and a check of the FAO matching table's terms.
+- Dependencies have only minimal version bounds. Most scripts are covered only by smoke runs;
+  unit tests cover the library and the helpers the scripts share.
 
-`scripts/food_tree.py` builds a binary food tree with the treelet transform
-(Lee, Nadler & Wasserman 2008; `src/foodspace/treelet.py`), the method used for
-dietary patterns by Gorst-Rasmussen et al. 2011 and reviewed by Zhao et al.
-2021 (Nutr J 20:37, Fig. 4).
+`TODO.md` has the full task list; `PROJECT_INDEX.md` is a dated snapshot.
 
-In dietary-pattern work the variables are food groups and the observations
-are people, so the tree joins foods that are eaten together. Here the tree is
-built from composition instead: foods are the variables and their
-standardized profiles (log macros plus centred log-ratios of the fat, sugar,
-carbohydrate and protein-fraction blocks, equal weight per block) are the
-observations. At each level the two most correlated foods or branches are
-rotated into a sum variable (the branch prototype, written to `nodes.csv` with
-its loading-weighted Osborne profile) and a difference variable.
-
-On the 250 cereal foods, cutting at 8 branches gives a pure rice branch
-(glutelin ~0.68), a maize branch, soft wheat breads, wheat buns and cakes,
-oat-based foods, and a rye + wholegrain flour branch. The same cut on intake
-data would give dietary patterns; the two trees could later be compared.
-
-## Layout
+## Repository layout
 
 ```
-config/          analysis choices
-data/raw/        input tables (not committed)
-data/processed/  intermediate files (not committed)
-results/         outputs (not committed)
-src/foodspace/   pipeline code
-tests/           synthetic-data tests
-notebooks/       exploration
-TODO.md          project plan
+config/config.yaml        every analysis choice
+data/raw/                 downloads (not in git)
+data/curated/             hand-made tables: GIFT maps, protein fractions, protein category per food
+data/processed/           Swedish, Finnish and Nordic food tables (in git)
+data/simulated/           simulated food records (in git; not real people)
+data/private/             real records (ignored by git)
+results/                  committed snapshots: within-group results, servings, person graphs,
+                          co-intake graph, diet similarity (main-pipeline outputs are not committed)
+results/private/          results from real records (ignored by git)
+src/foodspace/            library: views, fractions, fuse, evaluate, layout, treelet, commodities,
+                          placement, diet, records, io, run
+scripts/                  data: fetch_livsmedelsverket, prepare_livsmedelsverket, prepare_fineli,
+                            combine_databases, map_gift
+                          food structure: within_gift_groups, build_gift_map_data, within_group_cereals,
+                            food_tree, recommendation_groups, compare_totals_vs_fractions, build_map_data
+                          placement: place_food, place_unique_foods
+                          records: simulate_food_records, person_graphs, build_cointake_graph, compare_diets
+tests/                    pytest on synthetic data
+artifacts/                explorer pages (three are published by the pages workflow; the task
+                          checklist is a claude.ai page)
+site/index.html           landing page of the website
+docs/                     figures and tables used in write-ups
 ```
 
 ## Licence
 
-Not chosen yet. Suggested: MIT for code, CC-BY 4.0 for released data.
+Not chosen yet. Suggested: MIT for the code, CC BY 4.0 for released data, with attribution to
+the Swedish Food Agency and THL (Fineli).

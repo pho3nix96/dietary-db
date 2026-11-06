@@ -23,6 +23,10 @@ def embed(D: np.ndarray, method: str = "umap", seed: int = 0, dim: int = 2, min_
             n_neighbors = max(2, min(15, D.shape[0] - 1))
             return umap.UMAP(n_components=dim, metric="precomputed", n_neighbors=n_neighbors, min_dist=min_dist, spread=max(1.0, min_dist * 1.5), random_state=seed).fit_transform(D)
         except ImportError:
+            import warnings
+
+            warnings.warn("umap-learn is not installed; using t-SNE instead, so layouts differ from UMAP ones "
+                          "(pip install umap-learn)", stacklevel=2)
             method = "tsne"
     from sklearn.manifold import TSNE
 

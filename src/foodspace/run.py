@@ -49,7 +49,12 @@ def main(config_path: str) -> None:
             curated = pd.read_csv(fcfg["curated_table"])
         blocks = fractions.build_blocks(df, fcfg, curated)
         if blocks:
-            dists["fractions"], fraction_report = fractions.fraction_distance(blocks)
+            dists["fractions"], fraction_report = fractions.fraction_distance(blocks, min_shared=fcfg.get("min_shared_blocks", 1))
+            pcfg = fcfg.get("blocks", {}).get("protein_type", {})
+            if curated is not None and pcfg.get("key_col") in df.columns:
+                # how many foods' protein profile rests on sourced vs provisional values
+                st = df[pcfg["key_col"]].map(fractions.category_status(curated))
+                fraction_report["protein_values_by_status"] = {k: int(v) for k, v in st.fillna("no category").value_counts().items()}
             print(f"Fraction view built from blocks: {', '.join(blocks)}")
         else:
             print("Fraction view skipped; no usable blocks.")
@@ -58,9 +63,13 @@ def main(config_path: str) -> None:
     k = cfg["graph"]["k"]
     if cfg["fusion"]["method"] == "snf":
         W = fuse.snf([fuse.affinity(D, k) for D in dists.values()], k=k, t=cfg["fusion"]["snf_iterations"])
+        D_layout = layout.similarity_to_distance(W)
     else:
         Dw = fuse.weighted_fusion(dists, cfg["fusion"]["weights"])
-        W = fuse.knn_sparsify(fuse.affinity(Dw, k), k)
+        W = fuse.affinity(Dw, k)
+        # the layout uses the dense fused distance: a sparse kNN graph would make
+        # every non-neighbour pair equally distant (distance 1)
+        D_layout = Dw
     W_graph = fuse.knn_sparsify(W, k)
     n_comp = fuse.n_components(W_graph)
     if n_comp > 1:
@@ -83,7 +92,7 @@ def main(config_path: str) -> None:
     mis = evaluate.misfits(df, clusters, cols["gift_group"], cols["id"], cols["name"])
 
     # Layout
-    xy = layout.embed_2d(layout.similarity_to_distance(W), cfg["layout"]["method"], seed)
+    xy = layout.embed_2d(D_layout, cfg["layout"]["method"], seed)
 
     table = pd.DataFrame({
         "id": df[cols["id"]], "name": df[cols["name"]],

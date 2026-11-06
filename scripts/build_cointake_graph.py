@@ -27,9 +27,15 @@ import numpy as np
 import pandas as pd
 from scipy.cluster.hierarchy import to_tree
 
+from foodspace.records import day_keys, meal_keys
+
 
 def pruned_tree(linkage, food_ids, keep):
-    """Nested dict of the treelet tree with only leaves in `keep`; one-child nodes collapsed."""
+    """Nested dict of the treelet tree with only leaves in `keep`; one-child nodes collapsed.
+
+    Treelet merges are not monotonic (a later merge can have a higher similarity than an
+    earlier one), so each node's height `h` is raised to at least its children's heights:
+    drawn trees then never have a parent below its child."""
     root = to_tree(np.asarray(linkage, float))
 
     def walk(n):
@@ -41,7 +47,8 @@ def pruned_tree(linkage, food_ids, keep):
             return None
         if len(kids) == 1:
             return kids[0]
-        return {"h": round(float(n.dist), 3), "children": kids}
+        h = max([float(n.dist)] + [k.get("h", 0.0) for k in kids])
+        return {"h": round(h, 3), "children": kids}
 
     return walk(root)
 
@@ -75,7 +82,7 @@ def main(argv=None):
     uq = ~c["in_database"]
     c.loc[uq, "gift_group"] = c.loc[uq, "unique_food_id"].map(placed["gift_group"])
     c.loc[uq, "gift_subgroup"] = c.loc[uq, "unique_food_id"].map(placed["gift_subgroup"])
-    person_days = c.groupby(["SUBJECT", "SURVEY_DAY"]).ngroups
+    person_days = c.groupby(day_keys(c)).ngroups
     people = c["SUBJECT"].nunique()
 
     g = c.groupby("node")
@@ -87,9 +94,10 @@ def main(argv=None):
                           "unique": ~g["in_database"].first()})
 
     # edges: same person, day and eating occasion; one row per food per meal (amounts summed)
-    m = c.groupby(["SUBJECT", "SURVEY_DAY", "MEAL_NAME", "node"])[["FOOD_AMOUNT_CONS", "ENERGY_kcal"]].sum().reset_index()
+    mk = meal_keys(c)
+    m = c.groupby(mk + ["node"])[["FOOD_AMOUNT_CONS", "ENERGY_kcal"]].sum().reset_index()
     w, e, k = defaultdict(float), defaultdict(float), defaultdict(int)
-    for _, meal in m.groupby(["SUBJECT", "SURVEY_DAY", "MEAL_NAME"]):
+    for _, meal in m.groupby(mk):
         items = sorted(zip(meal["node"], meal["FOOD_AMOUNT_CONS"], meal["ENERGY_kcal"].fillna(0)))
         for (a, ga, ea), (b, gb, eb) in itertools.combinations(items, 2):
             w[(a, b)] += min(ga, gb)
@@ -133,7 +141,7 @@ def main(argv=None):
     nd["g"] = nd["g"].round(2)
     nd["kcal"] = nd["kcal"].round(1)
     payload = {"meta": {"people": int(people), "person_days": int(person_days),
-                        "meals": int(m.groupby(["SUBJECT", "SURVEY_DAY", "MEAL_NAME"]).ngroups),
+                        "meals": int(m.groupby(mk).ngroups),
                         "foods": int((~nodes["unique"]).sum()), "unique": int(nodes["unique"].sum()),
                         "edges": len(edges)},
                "tree": {"name": "all foods", "children": groups},

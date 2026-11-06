@@ -73,16 +73,21 @@ def clr(S: pd.DataFrame, delta: float = 1e-3) -> pd.DataFrame:
 def aitchison_distance(S: pd.DataFrame) -> np.ndarray:
     """Pairwise Aitchison distance; NaN where either food lacks the block."""
     C = clr(S).to_numpy()
-    diff = C[:, None, :] - C[None, :, :]
-    return np.sqrt((diff**2).sum(axis=2))
+    acc = np.zeros((C.shape[0], C.shape[0]))
+    for j in range(C.shape[1]):  # one part at a time: n x n memory instead of n x n x p
+        d = C[:, j][:, None] - C[:, j][None, :]
+        acc += d * d
+    return np.sqrt(acc)
 
 
-def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0) -> tuple[np.ndarray, dict]:
+def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0, min_shared: int = 1) -> tuple[np.ndarray, dict]:
     """Combine block distances with equal weight.
 
     Each block's distances are scaled to [0, 1] by that block's largest value.
     For each pair, the result is the mean over blocks both foods have. Pairs
-    that share no block get `fill` (1 = treated as unlike).
+    that share fewer than `min_shared` blocks get `fill` (1 = treated as unlike);
+    raise `min_shared` so pairs compared on a single block are not mixed with
+    pairs compared on many.
 
     Returns the distance matrix and a coverage report per block.
     """
@@ -103,10 +108,24 @@ def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0) -> tup
             "parts": list(S.columns),
         }
     with np.errstate(invalid="ignore"):
-        F = np.where(count > 0, total / np.maximum(count, 1), fill)
+        F = np.where(count >= max(min_shared, 1), total / np.maximum(count, 1), fill)
     np.fill_diagonal(F, 0)
-    report["pairs_without_shared_block"] = int(((count == 0) & ~np.eye(n, dtype=bool)).sum() // 2)
+    report["pairs_without_shared_block"] = int(((count < max(min_shared, 1)) & ~np.eye(n, dtype=bool)).sum() // 2)
     return F, report
+
+
+STATUS_ORDER = ["sourced", "by_definition", "provisional", "provisional_textbook"]
+
+
+def category_status(table: pd.DataFrame) -> pd.Series:
+    """Weakest evidence status among each category's values (category -> status).
+
+    "sourced" and "by_definition" count as sourced; a category with any provisional value
+    is "provisional" (or "provisional_textbook"); unknown statuses are reported as-is."""
+    t = table[table["share"].notna()]
+    rank = {s: i for i, s in enumerate(STATUS_ORDER)}
+    worst = t.groupby("category")["status"].agg(lambda s: max(s, key=lambda x: rank.get(x, len(rank))))
+    return worst.replace({"by_definition": "sourced"})
 
 
 def curated_block(
@@ -114,6 +133,7 @@ def curated_block(
     table: pd.DataFrame,
     key_col: str,
     scheme: str,
+    statuses: list[str] | None = None,
 ) -> pd.DataFrame:
     """Shares from the curated table (long format) for one fraction scheme.
 
@@ -126,10 +146,16 @@ def curated_block(
     salt_soluble, alcohol_soluble, insoluble_storage, casein,
     structural_insoluble, mixed), so wheat, soybean, meat and milk land on one
     set of axes.
+
+    statuses: keep only categories whose values all have one of these statuses
+    (e.g. ["sourced", "by_definition"]); default: every value with a share is used.
     """
     t = table[table["share"].notna()]
+    if statuses:
+        ok = t.groupby("category")["status"].agg(lambda s: s.isin(statuses).all())
+        t = t[t["category"].isin(ok[ok].index)]
     if scheme == "common":
-        wide =t.pivot_table(index="category", columns="common_class", values="share", aggfunc="sum").fillna(0.0)
+        wide = t.pivot_table(index="category", columns="common_class", values="share", aggfunc="sum").fillna(0.0)
     else:
         t = t[t["scheme"] == scheme]
         wide = t.pivot_table(index="category", columns="fraction", values="share", aggfunc="first")
@@ -138,7 +164,7 @@ def curated_block(
     keys = df[key_col] if key_col in df.columns else pd.Series([None] * len(df))
     out = wide.reindex(keys.to_numpy())
     out.index = df.index
-    return out.fillna(np.nan) if not out.empty else pd.DataFrame(index=df.index)
+    return out if not out.empty else pd.DataFrame(index=df.index)
 
 
 def build_blocks(df: pd.DataFrame, cfg: dict, curated: pd.DataFrame | None = None) -> dict[str, pd.DataFrame]:
@@ -148,7 +174,7 @@ def build_blocks(df: pd.DataFrame, cfg: dict, curated: pd.DataFrame | None = Non
         if b.get("source") == "curated":
             if curated is None:
                 continue
-            S = curated_block(df, curated, b["key_col"], b["scheme"])
+            S = curated_block(df, curated, b["key_col"], b["scheme"], b.get("statuses"))
             if b.get("parent") and b["parent"] in df.columns:
                 low = pd.to_numeric(df[b["parent"]], errors="coerce").fillna(0) < b.get("min_parent", 0.5)
                 S[low.to_numpy()] = np.nan

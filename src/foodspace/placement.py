@@ -82,7 +82,18 @@ class FoodSpace:
         df = pd.read_csv(table)
         self.df = df[df["gift_group"].notna() & (df["gift_group"] != "unassigned")].reset_index(drop=True)
         pos = pd.read_csv(Path(results) / "foods.csv")[["food_id", "cluster", "x", "y"]]
+        if pos["food_id"].duplicated().any():
+            raise ValueError(f"Duplicate food_id in {Path(results) / 'foods.csv'}")
+        if self.df["food_id"].duplicated().any():
+            raise ValueError(f"Duplicate food_id in {table}")
+        n = len(self.df)
         self.df = self.df.merge(pos, on="food_id", how="left")
+        # rows must stay aligned with the name index built below
+        assert len(self.df) == n, "merge changed the number of foods"
+        unplaced = int(self.df["x"].isna().sum())
+        if unplaced:
+            print(f"Warning: {unplaced} foods have no position in {results}/foods.csv and are ignored as neighbours.")
+            self.df = self.df[self.df["x"].notna()].reset_index(drop=True)
         self.names = NameIndex(self.df["name"].fillna(""))
         self.nutrients = self.cfg["columns"]["nutrients"]
         self.blocks = {k: v for k, v in self.cfg["fractions"]["blocks"].items() if v.get("source") != "curated"}

@@ -45,13 +45,13 @@ import pandas as pd
 import yaml
 
 from foodspace import commodities as cm
-from foodspace import fractions, fuse, layout, views
+from foodspace import evaluate, fractions, fuse, layout, views
 
 OSBORNE = cm.OSBORNE
 
 
 def knn_share(D, labels, k):
-    idx = np.argsort(D, axis=1)[:, 1 : k + 1]
+    idx = evaluate.nearest(D, k)
     return (labels[idx] == labels[:, None]).mean(), idx
 
 
@@ -116,7 +116,7 @@ def main(argv=None):
         g_all, _ = knn_share(D, grain, args.k)
         m_all, _ = knn_share(D, group, args.k)
         rows.append({"view": v, "same_dominant_grain": g_all, "same_food_group": m_all})
-        idx = np.argsort(D, axis=1)[:, 1 : args.k + 1]
+        idx = evaluate.nearest(D, args.k)
         for gname in pd.unique(grain):
             m = grain == gname
             rows.append({"view": v, "subset": f"grain={gname}", "n": int(m.sum()),
@@ -130,8 +130,8 @@ def main(argv=None):
     # clusters on the protein view
     D = Ds["protein_fractions"]
     W = fuse.knn_sparsify(fuse.affinity(D, k=min(15, len(sel) - 1)), min(15, len(sel) - 1))
-    cl = fuse.leiden(W, resolution=args.resolution, seed=0)
-    xy = layout.embed_2d(D, method="umap")
+    cl = fuse.leiden(W, resolution=args.resolution, seed=cfg.get("seed", 0))
+    xy = layout.embed_2d(D, method="umap", seed=cfg.get("seed", 0))
     res = sel.assign(cluster=cl, x=xy[:, 0], y=xy[:, 1])
     res.round(4).to_csv(out / "clusters.csv", index=False)
 

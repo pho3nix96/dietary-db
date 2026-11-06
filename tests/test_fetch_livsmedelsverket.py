@@ -49,6 +49,20 @@ def fake_get_json(url, retries=4, pause=1.5):
     raise AssertionError(url)
 
 
+def test_corrupt_cache_is_refetched(tmp_path, monkeypatch):
+    import importlib.util
+    from pathlib import Path
+
+    spec = importlib.util.spec_from_file_location("fetch", Path(__file__).parents[1] / "scripts" / "fetch_livsmedelsverket.py")
+    m = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(m)
+    (tmp_path / "7.json").write_text('{"nutrients": [')  # truncated by an interrupted run
+    monkeypatch.setattr(m, "get_json", lambda url, *a, **k: [{"url": url}])
+    d = m.fetch_food_details(7, tmp_path)
+    assert set(d) == {"nutrients", "classifications", "raw_commodities"}
+    assert not list(tmp_path.glob("*.tmp"))
+
+
 def test_download_writes_tidy_tables(tmp_path, monkeypatch):
     monkeypatch.setattr(lv, "get_json", fake_get_json)
     lv.main(["--out", str(tmp_path), "--workers", "2"])

@@ -21,6 +21,7 @@ fish gratin with breadcrumbs gets a low coverage and can be left out.
 
 from __future__ import annotations
 
+import re
 from pathlib import Path
 
 import numpy as np
@@ -163,7 +164,8 @@ COMMODITY_RULES = [
     (r"whey protein|milk protein", "whey_protein", 80.0),
     (r"whey powdered|whey and whey", "whey_protein", 12.0),
     (r"milk powder|dairy concentrate", "milk_bovine", 35.0),
-    (r"cow milk|milk, goat|^milk\b|buttermilk|human milk", "milk_bovine", 3.4),
+    (r"cow milk|milk, goat|^milk\b|buttermilk|human milk|\b(?:skimmed|semi-skimmed|whole|fat[- ]free|low[- ]fat) milk\b",
+     "milk_bovine", 3.4),
     (r"cream|créme fraiche|creme fraiche|sour cream", "cream", 2.5),
     (r"yoghurt", "yogurt", 3.6),
     (r"filmjölk|fermented milk", "kefir_fermented_milk", 3.2),
@@ -176,7 +178,7 @@ COMMODITY_RULES = [
     (r"salmon|cod|herring|pollack|plaice|catfish|fish|tuna|mackerel|flounder|haddock|sprat|halibut|trout|perch|pike|whitefish|eel|whiting|tilapia|turbot|bass|bream|char|sardine|ling|monkfish|stockfish|hake", "fish", 19.0),
     (r"egg  yolk|egg yolk", "egg", 16.0),
     (r"egg  white|egg white", "egg", 11.0),
-    (r"hen egg|eggs", "egg", 12.5),
+    (r"hen egg|\beggs?\b", "egg", 12.5),
     (r"soya bean|soy", "soybean", 36.0),
     (r"peas \(dry\)", "pea", 22.0),
     (r"lentil", "lentil", 24.0),
@@ -188,15 +190,22 @@ COMMODITY_RULES = [
 ]
 
 
+# commodities with (almost) no protein; whole words only, so buttermilk, salted fish,
+# fatty fish and boiled eggs are not caught
+NO_PROTEIN = re.compile(r"\b(oils?|fats?|butter|starch|sugars?|syrups?|honey|salt|water|vinegar|juices?|wine|beer|"
+                        r"spirits?|liqueur)\b")
+# fat-content wording on protein foods ("milk, low fat", "fat-free yoghurt", "milk 3% fat") is not a fat product
+FAT_WORDING = re.compile(r"\b(?:low|reduced|non|full|half)[- ]fat\b|\bfat[- ]free\b|\d+(?:[.,]\d+)?\s?%\s?fat\b")
+NUT_BUTTER = re.compile(r"\b(?:peanut|nut|almond|cashew|hazelnut|seed|sesame)s? butter\b")
+
+
 def commodity_category(code: str, name: str):
     """Curated protein category and typical protein (g/100 g raw) for a raw commodity."""
-    import re
-
     g = GRAIN_OF.get(code)
     if g is not None:
         return g, PROTEIN_FALLBACK.get(code, 10.0)
     n = str(name).lower()
-    if re.search(r"oil|fat|butter|starch|sugar|syrup|honey|salt|water|vinegar|juice|wine|beer|spirit|liqueur", n):
+    if not NUT_BUTTER.search(n) and NO_PROTEIN.search(FAT_WORDING.sub(" ", n)):
         return None, 0.0
     for rx, cat, p in COMMODITY_RULES:
         if re.search(rx, n):

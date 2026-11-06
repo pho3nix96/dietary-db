@@ -1,0 +1,30 @@
+{
+  "people": 100,
+  "weight": "ENERGY_kcal",
+  "k": 10,
+  "resolution": 1.0,
+  "nutrient_weight": 0.25,
+  "ignore_ids": false,
+  "n_clusters": 5,
+  "views": [
+    "food_tree",
+    "nutrients"
+  ],
+  "dish_shares": false,
+  "vs_hidden_pattern": {
+    "ARI": 0.13225969878528504,
+    "NMI": 0.21872709339289895,
+    "n_clusters": 5,
+    "n_reference_groups": 4
+  },
+  "same_pattern_5nn": {
+    "fused": 0.496,
+    "chance": 0.277,
+    "food_tree": 0.512,
+    "nutrients": 0.336
+  },
+  "view_ARI": {
+    "food_tree": 0.158,
+    "nutrients": 0.05
+  }
+}

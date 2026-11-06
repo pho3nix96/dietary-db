@@ -6,3 +6,8 @@ __pycache__/
 .snakemake/
 .ipynb_checkpoints/
 *.npy
+
+# Real dietary records and anything derived from them per person (personal data):
+# keep them here, never in data/simulated/ or the tracked results/ folders.
+data/private/
+results/private/

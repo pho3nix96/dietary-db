@@ -79,7 +79,7 @@ Disagreement between views is the signal worth reporting.
 An interactive map of food space, also usable as a QA tool for the database.
 
 - [x] 2D layout from the fused similarity (`layout.embed_2d`)
-- [x] Interactive map on real data: highlight a food family, hover and click for nutrients and nearest foods, switch totals vs fractions (`docs/swedish-food-space-map.html`)
+- [x] Interactive map on real data: highlight a food family, hover and click for nutrients and nearest foods, switch totals vs fractions (`docs/nordic-food-space-map.html`)
 - [ ] Toggles for each view and sliders for fusion weights
 - [ ] Highlight disagreements and nutrient outliers for data checking
 - [ ] Optional: overlay consumption frequency from survey data
@@ -88,8 +88,20 @@ An interactive map of food space, also usable as a QA tool for the database.
 Built to keep working when you stop working on it.
 
 - [x] Reproducible pipeline (Snakemake) with config and tests
-- [ ] Push to a GitHub repository
+- [x] Push to a GitHub repository
 - [ ] Choose licences (code and data)
 - [ ] Archive each release on Zenodo with a DOI
 - [ ] Choose the outlet: data or methods paper, standalone tool, or layer of the multi-omics database
 - [ ] Use the 1985 result where whole milk and cheese clustered together on totals (Windham et al.) as the motivating example
+
+## 7. Compare diets (food records)
+The reference as a tool for dietary records: people are compared by what they eat, using food similarity.
+
+- [x] Match record lines to reference foods: food id, FoodEx2 base term (+ facets), name (`diet.match_records`)
+- [x] Fill missing nutrient values from the matched or placed reference food (`diet.fill_nutrients`)
+- [x] Diet profiles on the GIFT food tree and a tree-aware person distance (earth mover's distance) plus a nutrient view
+- [x] Check on the simulated records: 5 nearest people share the hidden pattern 50% of the time (chance 28%)
+- [ ] Split composite dishes into ingredient groups from the Swedish recipes (needs `raw_commodities.csv`)
+- [ ] Get real records (GIFT layout) into `data/private/`; check whether they are already at ingredient level
+- [ ] Compare the tree distance with simpler profiles (GIFT-group shares, servings per recommendation group)
+- [ ] Enable GitHub Pages so the explorer site deploys
