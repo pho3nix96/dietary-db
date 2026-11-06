@@ -16,6 +16,31 @@ def agreement(clusters, reference) -> dict:
     }
 
 
+def nearest(D, k: int) -> np.ndarray:
+    """Indices of each row's k nearest other items (rows x k).
+
+    The item itself is never among them, even when another item is at distance 0;
+    `np.argsort(D)[:, 1:k+1]` would assume the item sorts first, which ties break."""
+    D = np.array(D, dtype=float, copy=True)
+    np.fill_diagonal(D, np.inf)
+    k = max(0, min(k, D.shape[0] - 1))
+    return np.argsort(D, axis=1, kind="stable")[:, :k]
+
+
+def knn_agreement(D, labels, k: int = 5) -> float:
+    """Share of each item's k nearest neighbours that carry the item's own label."""
+    labels = np.asarray(labels)
+    idx = nearest(D, k)
+    return float((labels[idx] == labels[:, None]).mean())
+
+
+def chance_agreement(labels) -> float:
+    """knn_agreement expected if neighbours were drawn at random (without the item itself)."""
+    counts = pd.Series(np.asarray(labels)).value_counts().to_numpy(dtype=float)
+    n = counts.sum()
+    return float((counts * (counts - 1)).sum() / (n * (n - 1))) if n > 1 else float("nan")
+
+
 def misfits(df: pd.DataFrame, clusters, group_col: str, id_col: str, name_col: str) -> pd.DataFrame:
     """Foods whose cluster is dominated by a different GIFT group.
 

@@ -37,7 +37,7 @@ import pandas as pd
 import yaml
 from sklearn.metrics import adjusted_rand_score, normalized_mutual_info_score
 
-from foodspace import fractions, fuse, layout, treelet as tl, views
+from foodspace import evaluate, fractions, fuse, layout, treelet as tl, views
 
 OSBORNE_TO_COMMON = {"albumin_globulin": "mixed", "prolamin": "alcohol_soluble", "glutelin": "insoluble_storage"}
 MIN_FOODS = 8
@@ -45,7 +45,7 @@ MIN_FOODS = 8
 
 def protein_block(df, cfg, curated, cereal_profiles):
     b = cfg["fractions"]["blocks"]["protein_type"]
-    S = fractions.curated_block(df, curated, b["key_col"], b["scheme"])
+    S = fractions.curated_block(df, curated, b["key_col"], b["scheme"], b.get("statuses"))
     for c in OSBORNE_TO_COMMON.values():
         if c not in S:
             S[c] = 0.0
@@ -71,10 +71,27 @@ def cereal_profiles_ok(path):
     return t[ok][["food_id", "albumin_globulin", "prolamin", "glutelin"]]
 
 
+def protein_type_block(df, cfg, curated, cereal_profiles_path=None):
+    """The protein-fraction block and a note saying where it came from.
+
+    The recipe-based protfrac_* columns when the table has them (the Swedish, Finnish and
+    Nordic tables all do); otherwise curated categories, with cereal Osborne profiles from
+    within_group_cereals.py when that file exists."""
+    b = cfg["fractions"]["blocks"]["protein_type"]
+    pf = [c for c in df.columns if c.startswith("protfrac_")]
+    if pf:
+        P = df[pf].rename(columns=lambda c: c[len("protfrac_"):]).astype(float)
+        low = pd.to_numeric(df[b["parent"]], errors="coerce").fillna(0) < b.get("min_parent", 2.0)
+        P[low.to_numpy()] = np.nan
+        return P, "recipe-based protfrac_* columns"
+    cp = cereal_profiles_ok(cereal_profiles_path) if cereal_profiles_path else None
+    note = "curated categories" + (" + cereal Osborne profiles" if cp is not None
+                                   else f" only (no cereal profiles at {cereal_profiles_path})")
+    return protein_block(df, cfg, curated, cp), note
+
+
 def knn_same(D, labels, k=5):
-    k = min(k, len(labels) - 1)
-    idx = np.argsort(D, axis=1)[:, 1 : k + 1]
-    return float((labels[idx] == labels[:, None]).mean())
+    return evaluate.knn_agreement(D, labels, k)
 
 
 def main(argv=None):
@@ -97,15 +114,10 @@ def main(argv=None):
 
     measured = {k: v for k, v in cfg["fractions"]["blocks"].items() if v.get("source") != "curated"}
     blocks_all = fractions.build_blocks(df, {"blocks": measured}, None)
-    pf = [c for c in df.columns if c.startswith("protfrac_")]
-    if pf:  # recipe-expanded profiles already in the table (Fineli)
-        P = df[pf].rename(columns=lambda c: c[len("protfrac_"):]).astype(float)
-        low = pd.to_numeric(df["PROT_g"], errors="coerce").fillna(0) < cfg["fractions"]["blocks"]["protein_type"].get("min_parent", 2.0)
-        P[low.to_numpy()] = np.nan
-        blocks_all["protein_type"] = P
-    else:
-        blocks_all["protein_type"] = protein_block(df, cfg, curated, cereal_profiles_ok(args.cereal_profiles))
+    blocks_all["protein_type"], protein_source = protein_type_block(df, cfg, curated, args.cereal_profiles)
+    print("protein block:", protein_source)
     print("fraction blocks:", {k: int(B.notna().all(axis=1).sum()) for k, B in blocks_all.items()})
+    seed = cfg.get("seed", 0)
     cols = cfg["columns"]["nutrients"]
 
     food_rows, group_rows, trees, groups_out = [], [], {}, []
@@ -122,14 +134,15 @@ def main(argv=None):
         else:
             Xp, _ = views.prepare_nutrients(sub[cols].reset_index(drop=True))
             Dn = views.nutrient_distance(Xp, cfg["nutrients"]["metric"])
-            Fd, frep = fractions.fraction_distance({k: B.iloc[ix].reset_index(drop=True) for k, B in blocks_all.items()})
+            Fd, frep = fractions.fraction_distance({k: B.iloc[ix].reset_index(drop=True) for k, B in blocks_all.items()},
+                                                   min_shared=cfg["fractions"].get("min_shared_blocks", 1))
             Ds = views.embedding_distance(E[ix])
             # names do not shape the space; they are used only to place new foods (foodspace.placement)
             D = fuse.weighted_fusion({"comp": Dn, "frac": Fd}, {"comp": 1, "frac": 1})
             k = min(10, n - 1)
             W = fuse.knn_sparsify(fuse.affinity(D, k=k), k)
-            labels = np.asarray(fuse.leiden(W, resolution=args.resolution, seed=0))
-            xy = layout.embed_2d(D, "umap" if n >= 15 else "tsne")
+            labels = np.asarray(fuse.leiden(W, resolution=args.resolution, seed=seed))
+            xy = layout.embed_2d(D, "umap" if n >= 15 else "tsne", seed)
             xy = (xy - xy.mean(0)) / (np.abs(xy - xy.mean(0)).max() or 1)
             Dv = {"semantics": Ds, "composition": Dn, "fractions": Fd, "fused": D}
             res = tl.treelet(1.0 - D)
@@ -141,14 +154,14 @@ def main(argv=None):
             if len(set(src)) > 1:
                 D = Dv["fused"]
                 k = min(5, n - 1)
-                idx = np.argsort(D, axis=1)[:, 1 : k + 1]
+                idx = evaluate.nearest(D, k)
                 other = (src[idx] != src[:, None]).mean()
                 # expected share of other-country neighbours if country did not matter
                 exp = np.mean([(src != s_).sum() / (n - 1) for s_ in src])
                 row.update({"other_country_5nn": float(other), "other_country_expected": float(exp),
                             "country_mixing": float(other / exp) if exp > 0 else np.nan})
                 for v, Dm in Dv.items():
-                    ix5 = np.argsort(Dm, axis=1)[:, 1 : k + 1]
+                    ix5 = evaluate.nearest(Dm, k)
                     row[f"country_mixing_{v}"] = float((src[ix5] != src[:, None]).mean() / exp) if exp > 0 else np.nan
                 ids = sub["food_id"].to_numpy()
                 names = sub["name"].to_numpy()

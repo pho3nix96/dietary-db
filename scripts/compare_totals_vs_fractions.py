@@ -23,7 +23,7 @@ import numpy as np
 import pandas as pd
 import yaml
 
-from foodspace import fractions, fuse, views
+from foodspace import evaluate, fractions, fuse, views
 
 DAIRY = ["Milk", "Hard cheese", "Soft cheese", "Fresh cheese and quark", "Natural fermented products",
          "Whey products", "Cream, creme fraiche", "Flavoured fermented milk", "Processed cheese", "Butter"]
@@ -59,7 +59,7 @@ def main(argv=None):
 
     rows, nn = [], {}
     for name, D in Ds.items():
-        idx = np.argsort(D, axis=1)[:, 1 : args.k + 1]
+        idx = evaluate.nearest(D, args.k)
         nn[name] = idx
         same = grp[idx] == grp[:, None]
         for g in pd.unique(grp):

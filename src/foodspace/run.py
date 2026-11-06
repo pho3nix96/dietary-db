@@ -49,7 +49,12 @@ def main(config_path: str) -> None:
             curated = pd.read_csv(fcfg["curated_table"])
         blocks = fractions.build_blocks(df, fcfg, curated)
         if blocks:
-            dists["fractions"], fraction_report = fractions.fraction_distance(blocks)
+            dists["fractions"], fraction_report = fractions.fraction_distance(blocks, min_shared=fcfg.get("min_shared_blocks", 1))
+            pcfg = fcfg.get("blocks", {}).get("protein_type", {})
+            if curated is not None and pcfg.get("key_col") in df.columns:
+                # how many foods' protein profile rests on sourced vs provisional values
+                st = df[pcfg["key_col"]].map(fractions.category_status(curated))
+                fraction_report["protein_values_by_status"] = {k: int(v) for k, v in st.fillna("no category").value_counts().items()}
             print(f"Fraction view built from blocks: {', '.join(blocks)}")
         else:
             print("Fraction view skipped; no usable blocks.")

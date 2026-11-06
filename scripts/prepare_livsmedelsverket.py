@@ -16,7 +16,9 @@ Adds derived fraction columns that the database does not report directly:
     sc_mc_sfa_g, long_sfa_g
                         C4-C10 saturated fatty acids (milk-fat marker) and the
                         rest of the saturated fat
-Negative differences from rounding are set to 0.
+Negative differences from rounding are set to 0. A missing input value gives a missing
+derived value (never a 0), so fraction blocks are skipped for that food instead of
+being built on an invented zero.
 
 Joins two optional curated tables when present:
     data/curated/foodex2_to_gift.csv          foodex2_code, gift_group, gift_subgroup
@@ -42,13 +44,13 @@ def derive(df: pd.DataFrame) -> pd.DataFrame:
     s = diff("CHO_g", "SUGAR_g")
     if s is not None:
         # differences under 0.5 g are rounding noise (e.g. milk), not starch
-        df["starch_est_g"] = s.where(s >= 0.5, 0.0).round(3)
+        df["starch_est_g"] = s.where(s.isna() | (s >= 0.5), 0.0).round(3)
     s = diff("DISAC_g", "SUCS_g")
     if s is not None:
         df["other_disac_g"] = s.round(3)
 
     def num(c):
-        return pd.to_numeric(df[c], errors="coerce").fillna(0) if c in df else None
+        return pd.to_numeric(df[c], errors="coerce") if c in df else None
 
     # polyunsaturated fat by family; the remainder (other PUFA) is added by the block itself
     if all(c in df for c in ("F18:2_g", "F20:4_g", "F18:3_g", "F20:5_g", "F22:5_g", "F22:6_g")):

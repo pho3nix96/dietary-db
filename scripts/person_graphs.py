@@ -38,7 +38,7 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-MEAL = ["SUBJECT", "SURVEY_DAY", "MEAL_NAME"]
+from foodspace.records import day_keys, days_per_subject, meal_keys
 
 
 def load_rg():
@@ -94,27 +94,31 @@ def main(argv=None):
     c["rec_group"] = c.rename(columns={"INGREDIENT_ENG": "name"}).apply(rg.rec_group, axis=1)
     c = c[c["rec_group"].notna()].copy()
     c["servings"] = servings(c, rg)
-    days = pd.read_csv(rec / "consumption.csv").groupby("SUBJECT")["SURVEY_DAY"].nunique()
+    days = days_per_subject(pd.read_csv(rec / "consumption.csv"))
 
     # nodes
+    c["day_id"] = c[day_keys(c)[1:]].astype(str).agg("-".join, axis=1)  # round-day within a subject
     g = c.groupby(["SUBJECT", "node"])
     nodes = g.agg(name=("INGREDIENT_ENG", "first"), rec_group=("rec_group", "first"),
                   food_id=("food_id", "first"), unique_food_id=("unique_food_id", "first"),
                   servings=("servings", "sum"), grams=("FOOD_AMOUNT_CONS", "sum"),
-                  meals=("MEAL_NAME", "size"), days_eaten=("SURVEY_DAY", "nunique"),
+                  meals=("MEAL_NAME", "size"), days_eaten=("day_id", "nunique"),
                   values_from=("values_from", "first")).reset_index()
     nodes["days_recorded"] = nodes["SUBJECT"].map(days)
     nodes["servings_per_day"] = (nodes["servings"] / nodes["days_recorded"]).round(4)
     nodes["grams_per_day"] = (nodes["grams"] / nodes["days_recorded"]).round(2)
     nodes = nodes.drop(columns=["servings", "grams"])
 
-    # edges: same person, day and eating occasion
-    meal = c.groupby(MEAL + ["node"], as_index=False)["servings"].sum()
+    # edges: same person, day (and round) and eating occasion
+    mk = meal_keys(c)
+    meal = c.groupby(mk + ["node"], as_index=False)["servings"].sum()
     rows = []
-    for (s, d, m), grp in meal.groupby(MEAL):
+    for key, grp in meal.groupby(mk):
+        s = key[0]
         items = sorted(zip(grp["node"], grp["servings"]))
         for (a, sa), (b, sb) in itertools.combinations(items, 2):
-            rows.append((s, a, b, min(sa, sb)))
+            # min() with a missing serving count would depend on argument order; keep it missing
+            rows.append((s, a, b, min(sa, sb) if pd.notna(sa) and pd.notna(sb) else np.nan))
     e = pd.DataFrame(rows, columns=["SUBJECT", "source", "target", "w"])
     edges = e.groupby(["SUBJECT", "source", "target"]).agg(servings_together=("w", "sum"), meals_together=("w", "size")).reset_index()
     edges["servings_together_per_day"] = (edges["servings_together"] / edges["SUBJECT"].map(days)).round(4)

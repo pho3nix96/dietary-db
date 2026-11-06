@@ -7,10 +7,12 @@ name = "foodspace"
 version = "0.1.0"
 description = "Cluster and visualize a dietary database by GIFT group, nutrient content and semantics"
 requires-python = ">=3.10"
-dependencies = ["numpy", "pandas", "scipy", "scikit-learn", "pyyaml", "igraph", "leidenalg"]
+dependencies = ["numpy", "pandas>=2.2", "scipy", "scikit-learn", "pyyaml", "igraph", "leidenalg"]
 
 [project.optional-dependencies]
 umap = ["umap-learn"]
+# used by some scripts: food_tree.py (dendrogram), person_graphs.py --graphml
+scripts = ["umap-learn", "matplotlib", "networkx"]
 semantics = ["sentence-transformers"]
 dev = ["pytest"]
 

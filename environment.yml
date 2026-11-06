@@ -5,13 +5,15 @@ channels:
 dependencies:
   - python=3.11
   - numpy
-  - pandas
+  - pandas>=2.2
   - scipy
   - scikit-learn
   - pyyaml
   - python-igraph
   - leidenalg
   - umap-learn
+  - matplotlib
+  - networkx
   - snakemake-minimal
   - pytest
   - pip

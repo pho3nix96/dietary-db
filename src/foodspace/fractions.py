@@ -114,11 +114,26 @@ def fraction_distance(blocks: dict[str, pd.DataFrame], fill: float = 1.0, min_sh
     return F, report
 
 
+STATUS_ORDER = ["sourced", "by_definition", "provisional", "provisional_textbook"]
+
+
+def category_status(table: pd.DataFrame) -> pd.Series:
+    """Weakest evidence status among each category's values (category -> status).
+
+    "sourced" and "by_definition" count as sourced; a category with any provisional value
+    is "provisional" (or "provisional_textbook"); unknown statuses are reported as-is."""
+    t = table[table["share"].notna()]
+    rank = {s: i for i, s in enumerate(STATUS_ORDER)}
+    worst = t.groupby("category")["status"].agg(lambda s: max(s, key=lambda x: rank.get(x, len(rank))))
+    return worst.replace({"by_definition": "sourced"})
+
+
 def curated_block(
     df: pd.DataFrame,
     table: pd.DataFrame,
     key_col: str,
     scheme: str,
+    statuses: list[str] | None = None,
 ) -> pd.DataFrame:
     """Shares from the curated table (long format) for one fraction scheme.
 
@@ -131,8 +146,14 @@ def curated_block(
     salt_soluble, alcohol_soluble, insoluble_storage, casein,
     structural_insoluble, mixed), so wheat, soybean, meat and milk land on one
     set of axes.
+
+    statuses: keep only categories whose values all have one of these statuses
+    (e.g. ["sourced", "by_definition"]); default: every value with a share is used.
     """
     t = table[table["share"].notna()]
+    if statuses:
+        ok = t.groupby("category")["status"].agg(lambda s: s.isin(statuses).all())
+        t = t[t["category"].isin(ok[ok].index)]
     if scheme == "common":
         wide = t.pivot_table(index="category", columns="common_class", values="share", aggfunc="sum").fillna(0.0)
     else:
@@ -153,7 +174,7 @@ def build_blocks(df: pd.DataFrame, cfg: dict, curated: pd.DataFrame | None = Non
         if b.get("source") == "curated":
             if curated is None:
                 continue
-            S = curated_block(df, curated, b["key_col"], b["scheme"])
+            S = curated_block(df, curated, b["key_col"], b["scheme"], b.get("statuses"))
             if b.get("parent") and b["parent"] in df.columns:
                 low = pd.to_numeric(df[b["parent"]], errors="coerce").fillna(0) < b.get("min_parent", 0.5)
                 S[low.to_numpy()] = np.nan

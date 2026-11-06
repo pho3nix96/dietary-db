@@ -91,3 +91,64 @@ def test_nutrient_distance_and_person_distance():
     assert np.allclose(D, Dn / 4)
     with pytest.raises(ValueError):
         diet.person_distance({"a": Dn}, {"a": 0})
+
+
+def faceted_reference():
+    return pd.DataFrame({
+        "food_id": [10, 11, 12, 13],
+        "name": ["Rye bread", "Wheat bread white", "Wheat bread wholegrain", "Apple raw"],
+        "gift_group": ["Cereals", "Cereals", "Cereals", "Fruit"],
+        "gift_subgroup": ["Bread", "Bread", "Bread", "Pome fruit"],
+        # 11 and 12 share the base term A004V; 12 is coded with facets, 11 with the bare term
+        "foodex2_code": ["A004Y#F04.A001K", "A004V", "A004V#F01.A0F2S", "A01DJ#F28.A07JS"],
+    })
+
+
+def test_match_uses_base_terms_and_names_among_shared_codes():
+    recs = pd.DataFrame({
+        "SUBJECT": [1, 1, 1, 1, 1, 1],
+        "food_id": [99, 99, 99, 99, 99, 99],  # ids from another database: must be ignored
+        "FOODEX2_INGR_CODE": ["A004Y", "A004V", "A004V", "A004V#F01.A0F2S", "A01DJ", "XXXXX"],
+        "INGREDIENT_ENG": ["rye bread", "wholegrain wheat bread", None, "bread", "apple", "zzzz"],
+        "ENERGY_kcal": [100.0] * 6,
+    })
+    m = diet.match_records(recs, faceted_reference(), id_col=None)
+    assert m["match"].tolist() == ["code", "code+name", "code_ambiguous", "code", "code", "unmatched"]
+    assert m["leaf"].tolist()[:5] == ["f10", "f12", "f11", "f12", "f13"]  # no name: the bare-coded food
+
+
+def test_id_mismatch_is_reported():
+    foods = faceted_reference()
+    recs = pd.DataFrame({"SUBJECT": [1, 2], "food_id": [10, 13], "INGREDIENT_ENG": ["Milk", "Cheese"],
+                         "ENERGY_kcal": [1.0, 1.0]})
+    rep = diet.match_report(diet.match_records(recs, foods), "ENERGY_kcal", foods)
+    assert rep["id_matches_with_same_name"] == 0.0
+
+
+def test_fill_nutrients_from_reference_and_placement():
+    foods = reference().assign(ENERC_kcal=[64, 46, 70, 250, 52], PROT_g=[3.4, 3.5, 2.5, 8.5, 0.3],
+                               FAT_g=[3.0, 1.5, 1.4, 1.2, 0.2], CHO_g=[4.7, 4.8, 12.0, 45.0, 12.0],
+                               SUGAR_g=[4.7, 4.8, 0.5, 3.0, 10.0], FIBT_g=[0, 0, 1.5, 6.0, 2.0])
+    recs = pd.DataFrame({"SUBJECT": [1, 1, 2], "food_id": [1, np.nan, np.nan], "unique_food_id": [np.nan, "U1", "U9"],
+                         "INGREDIENT_ENG": ["x", "homemade apple thing", "qqqq"], "FOOD_AMOUNT_CONS": [200.0, 50.0, 10.0]})
+    plc = placed().assign(nearest_foods=["Apple | Rye bread"])
+    m = diet.fill_nutrients(diet.match_records(recs, foods, plc), foods, plc)
+    assert m["nutrients_from"].tolist() == ["reference", "reference", "missing"]
+    assert m.loc[0, "ENERGY_kcal"] == pytest.approx(128.0) and m.loc[1, "PROTEIN_g"] == pytest.approx(0.15)
+
+
+def test_nutrient_distance_self_is_zero_without_data():
+    m, *_ = profiles()
+    m.loc[m["SUBJECT"] == 3, ["PROTEIN_g", "FAT_g", "CARBOH_g", "SUGAR_g", "FIBTG_g"]] = np.nan
+    D = diet.nutrient_distance(m, people=[1, 2, 3])
+    assert np.allclose(np.diag(D), 0) and D[0, 2] == 1.0
+
+
+def test_unknown_dish_share_leaves_are_reported(capsys):
+    foods = reference()
+    recs = pd.DataFrame({"SUBJECT": [1], "food_id": [3], "ENERGY_kcal": [100.0]})
+    m = diet.match_records(recs, foods)
+    li, *_ = diet.food_tree(foods, m)
+    shares = pd.DataFrame({"food_id": [3, 3], "leaf": ["f1", "f999"], "share": [0.5, 0.5]})
+    P = diet.diet_profiles(m, li, dish_shares=shares)
+    assert "f999" in capsys.readouterr().out and P.loc[1, "f1"] == pytest.approx(1.0)

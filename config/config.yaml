@@ -49,6 +49,7 @@ fusion:
 fractions:
   enabled: true
   curated_table: data/curated/protein_fractions.csv
+  min_shared_blocks: 1              # pairs of foods sharing fewer blocks are treated as unlike (distance 1)
   blocks:
     fat_type:
       parent: FAT_g
@@ -78,6 +79,8 @@ fractions:
                                     # or a single scheme: casein_whey | osborne | legume_storage | muscle
       parent: PROT_g
       min_parent: 2.0               # g/100 g; low-protein foods (most fruit, vegetables, fats) get no protein profile
+      # statuses: [sourced, by_definition]   # uncomment to use only categories with no provisional values
+      #                                        (metrics.json reports how many foods rest on each status)
 
 clustering:
   resolution: 1.0

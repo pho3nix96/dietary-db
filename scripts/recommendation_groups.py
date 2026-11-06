@@ -39,7 +39,8 @@ import numpy as np
 import pandas as pd
 import yaml
 
-from foodspace import fractions, fuse, layout, treelet as tl, views
+from foodspace import evaluate, fractions, fuse, layout, treelet as tl, views
+from foodspace.records import day_keys
 
 SEEDS = re.compile(r"\b(seed|seeds|sesame|tahini|sunflower|pumpkin|linseeds?|flax(?:seeds?)?|chia|hemp|poppy|psyllium)\b", re.I)
 REC = {  # (GIFT group, GIFT subgroup or None for all) -> recommendation group
@@ -79,7 +80,7 @@ def rec_group(row):
 
 
 def knn(D, k):
-    idx = np.argsort(D, axis=1)[:, 1 : k + 1]
+    idx = evaluate.nearest(D, k)
     return [[[int(j), round(float(D[i, j]), 4)] for j in idx[i]] for i in range(len(D))]
 
 
@@ -88,6 +89,8 @@ def main(argv=None):
     ap.add_argument("--config", default="config/config.yaml")
     ap.add_argument("--records", default="data/simulated/food_records")
     ap.add_argument("--k", type=int, default=8, help="nearest neighbours exported per food")
+    ap.add_argument("--cereal-profiles", default="results/cereals/cereal_profiles.csv",
+                    help="used only when the food table has no recipe-based protfrac_* columns")
     ap.add_argument("--out", default="results/recommendation_groups/groups.json")
     args = ap.parse_args(argv)
 
@@ -102,12 +105,15 @@ def main(argv=None):
     curated = pd.read_csv(cfg["fractions"]["curated_table"])
     measured = {k: v for k, v in cfg["fractions"]["blocks"].items() if v.get("source") != "curated"}
     blocks = fractions.build_blocks(df, {"blocks": measured}, None)
-    blocks["protein_type"] = wgg.protein_block(df, cfg, curated, wgg.cereal_profiles_ok("results/cereals/cereal_profiles.csv"))
+    # same protein block as within_gift_groups.py (recipe-based profiles when the table has them)
+    blocks["protein_type"], protein_source = wgg.protein_type_block(df, cfg, curated, args.cereal_profiles)
+    print("protein block:", protein_source)
     cols = cfg["columns"]["nutrients"]
+    seed = cfg.get("seed", 0)
 
     c = pd.read_csv(Path(args.records) / "consumption.csv")
+    pdays = c.groupby(day_keys(c)).ngroups  # all recorded days, before unique products are set aside
     c = c[c["in_database"]]
-    pdays = c.groupby(["SUBJECT", "SURVEY_DAY"]).ngroups
     ig = c.groupby("food_id")
     intake = pd.DataFrame({"g": ig["FOOD_AMOUNT_CONS"].sum() / pdays, "people": ig["SUBJECT"].nunique()})
     intake.index = intake.index.astype(int)
@@ -121,12 +127,13 @@ def main(argv=None):
             continue
         Xp, _ = views.prepare_nutrients(sub[cols].reset_index(drop=True))
         Dn = views.nutrient_distance(Xp, cfg["nutrients"]["metric"])
-        Fd, _ = fractions.fraction_distance({k: B.iloc[ix].reset_index(drop=True) for k, B in blocks.items()})
+        Fd, _ = fractions.fraction_distance({k: B.iloc[ix].reset_index(drop=True) for k, B in blocks.items()},
+                                            min_shared=cfg["fractions"].get("min_shared_blocks", 1))
         D = fuse.weighted_fusion({"comp": Dn, "frac": Fd}, {"comp": 1, "frac": 1})
         res = tl.treelet(1.0 - D)
-        xy = layout.embed_2d(D, "umap" if n >= 15 else "tsne")
+        xy = layout.embed_2d(D, "umap" if n >= 15 else "tsne", seed)
         xy = (xy - xy.mean(0)) / (np.abs(xy - xy.mean(0)).max() or 1)
-        xyz = layout.embed(D, "umap" if n >= 15 else "tsne", dim=3, min_dist=0.25)
+        xyz = layout.embed(D, "umap" if n >= 15 else "tsne", seed, dim=3, min_dist=0.25)
         # robust scaling per axis so a few far-out foods do not squash the rest; clipped at 1.15
         xyz = xyz - np.median(xyz, 0)
         xyz = np.clip(xyz / np.maximum(np.percentile(np.abs(xyz), 95, axis=0), 1e-9), -1.15, 1.15)
