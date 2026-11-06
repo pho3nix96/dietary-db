@@ -103,5 +103,8 @@ The reference as a tool for dietary records: people are compared by what they ea
 - [x] Check on the simulated records: 5 nearest people share the hidden pattern 50% of the time (chance 28%)
 - [ ] Split composite dishes into ingredient groups from the Swedish recipes (needs `raw_commodities.csv`)
 - [ ] Get real records (GIFT layout) into `data/private/`; check whether they are already at ingredient level
-- [ ] Compare the tree distance with simpler profiles (GIFT-group shares, servings per recommendation group)
+- [x] Compare food trees on 6 simulated record sets (`compare_diet_trees.py`): GIFT subgroups best; composition inside
+      subgroups ties; composition instead of subgroups is worse; flat and group-only are worst
+- [ ] Test whether composition inside subgroups helps on real records, against an outside criterion (e.g. biomarkers)
+- [ ] Compare with servings per recommendation group as the person profile
 - [ ] Enable GitHub Pages so the explorer site deploys

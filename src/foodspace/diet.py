@@ -178,14 +178,7 @@ def fill_nutrients(matched: pd.DataFrame, foods: pd.DataFrame, placements: pd.Da
     if "ENERC_kcal" not in ref and "ENERC_kJ" in ref:
         ref["ENERC_kcal"] = pd.to_numeric(ref["ENERC_kJ"], errors="coerce") / 4.184
     per100 = ref.set_index("food_id")
-    key = ref["name"].astype(str).str.strip().str.lower()
-    by_name = pd.Series(ref["food_id"].to_numpy(), index=key).groupby(level=0).first()
-    near = {}
-    if placements is not None and "nearest_foods" in placements:
-        for uid, s in zip(placements["unique_food_id"], placements["nearest_foods"]):
-            first = str(s).split(" | ")[0].strip().lower()
-            if first in by_name.index:
-                near[f"u{uid}"] = by_name[first]
+    near = nearest_food_of_products(placements, ref)
     for c in columns:
         if c not in out:
             out[c] = np.nan
@@ -211,6 +204,38 @@ def fill_nutrients(matched: pd.DataFrame, foods: pd.DataFrame, placements: pd.Da
 
 # -- 2. profiles -----------------------------------------------------------------------------
 
+def _label(x) -> str:
+    return "unassigned" if x is None or (isinstance(x, float) and np.isnan(x)) else str(x)
+
+
+class _Tree:
+    """Rooted tree as parent/length arrays; node 0 is the root."""
+
+    def __init__(self):
+        self.ids, self.parent, self.length = {"root": 0}, [-1], [0.0]
+
+    def add(self, key, parent_key, length: float) -> int:
+        if key not in self.ids:
+            self.ids[key] = len(self.parent)
+            self.parent.append(self.ids[parent_key])
+            self.length.append(float(length))
+        return self.ids[key]
+
+    def result(self, leaf_keys):
+        leaf_index = {k: self.ids[("l", k)] for k in leaf_keys}
+        return leaf_index, np.array(self.parent), np.array(self.length), len(self.parent)
+
+
+def _leaves(foods: pd.DataFrame, matched: pd.DataFrame) -> dict:
+    """leaf key -> (GIFT group, subgroup): every reference food plus matched unique products."""
+    leaves = {f"f{int(i)}": (_label(g), _label(s))
+              for i, g, s in zip(foods["food_id"], foods["gift_group"], foods["gift_subgroup"])}
+    extra = matched[matched["leaf"].notna()].drop_duplicates("leaf")
+    for k, g, s in zip(extra["leaf"], extra["gift_group"], extra["gift_subgroup"]):
+        leaves.setdefault(k, (_label(g), _label(s)))
+    return leaves
+
+
 def food_tree(foods: pd.DataFrame, matched: pd.DataFrame, lengths=DEFAULT_LENGTHS):
     """Tree GIFT group -> subgroup -> leaf, with leaves from the reference and from
     matched unique products. Returns (leaf_index, parent, length, n_nodes).
@@ -218,29 +243,138 @@ def food_tree(foods: pd.DataFrame, matched: pd.DataFrame, lengths=DEFAULT_LENGTH
     Nodes are numbered with the root as 0. `parent[i]` is the parent of node i.
     Missing groups and subgroups are labelled "unassigned"."""
     lg, ls, lf = lengths
-
-    def label(x):
-        return "unassigned" if x is None or (isinstance(x, float) and np.isnan(x)) else str(x)
-
-    leaves = {f"f{int(i)}": (label(g), label(s)) for i, g, s in zip(foods["food_id"], foods["gift_group"], foods["gift_subgroup"])}
-    extra = matched[matched["leaf"].notna()].drop_duplicates("leaf")
-    for k, g, s in zip(extra["leaf"], extra["gift_group"], extra["gift_subgroup"]):
-        leaves.setdefault(k, (label(g), label(s)))
-    nodes = {"root": 0}
-    parent, length = [-1], [0.0]
-
-    def add(key, par, ln):
-        if key not in nodes:
-            nodes[key] = len(parent)
-            parent.append(nodes[par]); length.append(ln)
-        return key
-
+    leaves = _leaves(foods, matched)
+    t = _Tree()
     for k, (g, s) in leaves.items():
-        gk = add(("g", g), "root", lg)
-        sk = add(("s", g, s), gk, ls)
-        add(("l", k), sk, lf)
-    leaf_index = {k: nodes[("l", k)] for k in leaves}
-    return leaf_index, np.array(parent), np.array(length), len(nodes)
+        t.add(("g", g), "root", lg)
+        t.add(("s", g, s), ("g", g), ls)
+        t.add(("l", k), ("s", g, s), lf)
+    return t.result(leaves)
+
+
+def flat_tree(foods: pd.DataFrame, matched: pd.DataFrame):
+    """Every food directly under the root: no similarity between different foods (a baseline).
+    The tree distance is then half the summed absolute difference in food shares."""
+    leaves = _leaves(foods, matched)
+    t = _Tree()
+    for k in leaves:
+        t.add(("l", k), "root", 1.0)
+    return t.result(leaves)
+
+
+def nearest_food_of_products(placements: pd.DataFrame | None, foods: pd.DataFrame) -> dict:
+    """Leaf of each placed unique product ("u<id>") -> food_id of the first of its nearest foods."""
+    if placements is None or "nearest_foods" not in placements:
+        return {}
+    key = foods["name"].astype(str).str.strip().str.lower()
+    by_name = pd.Series(foods["food_id"].to_numpy(), index=key).groupby(level=0).first()
+    out = {}
+    for uid, s in zip(placements["unique_food_id"], placements["nearest_foods"]):
+        first = str(s).split(" | ")[0].strip().lower()
+        if first in by_name.index:
+            out[f"u{uid}"] = int(by_name[first])
+    return out
+
+
+def _treelet_parts(info: dict):
+    """(food ids, n leaves, monotonic node heights, children of each merge, root) of one trees.json entry."""
+    ids = [int(i) for i in info["food_ids"]]
+    Z = np.asarray(info["linkage"], dtype=float).reshape(-1, 4)
+    n = len(ids)
+    H = np.zeros(n + len(Z))
+    kids = {}
+    for k, (a, b, h, _) in enumerate(Z):  # children are always merged before their parent
+        H[n + k] = max(h, H[int(a)], H[int(b)])  # treelet merges are not monotonic
+        kids[n + k] = (int(a), int(b))
+    return ids, n, H, kids, n + len(Z) - 1
+
+
+def _hang(t: _Tree, anchor, parts, keep: set, depth: float, tag: tuple, leaf_parent: dict) -> None:
+    """Hang a treelet tree, pruned to the leaf positions in `keep`, under node `anchor`.
+
+    Nodes left with one child are dropped, the pruned root becomes `anchor`, and heights are
+    scaled so every kept leaf sits `depth` below the anchor. Records each kept leaf's
+    (parent key, edge length) in `leaf_parent`; leaves are added to the tree later."""
+    ids, n, H, kids, top = parts
+    rep = {i: (("leaf", i) if i in keep else None) for i in range(n)}
+    children = {}
+    for v in range(n, top + 1):
+        c = [rep[x] for x in kids[v] if rep[x] is not None]
+        rep[v] = None if not c else (c[0] if len(c) == 1 else ("node", v))
+        if len(c) == 2:
+            children[v] = c
+    r = rep.get(top)
+    if r is None:
+        return
+    if r[0] == "leaf" or H[r[1]] <= 0:  # one food, or identical foods: all at full depth
+        for i in keep:
+            leaf_parent[f"f{ids[i]}"] = (anchor, depth)
+        return
+    scale = depth / H[r[1]]
+    stack = [(r[1], anchor)]
+    while stack:  # iterative: large groups give deep trees
+        v, key_v = stack.pop()
+        for c in children[v]:
+            if c[0] == "leaf":
+                leaf_parent[f"f{ids[c[1]]}"] = (key_v, H[v] * scale)
+            else:
+                key_c = (*tag, c[1])
+                t.add(key_c, key_v, (H[v] - H[c[1]]) * scale)
+                stack.append((c[1], key_c))
+
+
+def composition_tree(foods: pd.DataFrame, matched: pd.DataFrame, trees: dict,
+                     placements: pd.DataFrame | None = None, lengths=DEFAULT_LENGTHS, within: str = "subgroup"):
+    """Food tree that uses the reference's composition similarity inside GIFT groups.
+
+    `trees` is the trees.json written by scripts/within_gift_groups.py for the same food table:
+    per GIFT group, the food ids and the treelet linkage on composition and fraction similarity.
+    Branch lengths come from the merge distances (1 - similarity), made monotonic and scaled so
+    the depths match food_tree's `lengths` (group, subgroup, food); so does the largest distance.
+
+    within="subgroup": GIFT group -> subgroup -> the group's composition tree pruned to that
+        subgroup's foods. Foods of one subgroup are as close as their composition allows;
+        foods of different subgroups are as far apart as in food_tree.
+    within="group": GIFT group -> composition tree -> food; the subgroups are not used.
+
+    Groups without a tree (fewer than 8 foods) and foods missing from their group's tree keep
+    the subgroup structure of food_tree. A placed unique product hangs next to its nearest
+    reference food (the first of `nearest_foods` in the placements table), at the same height.
+    Returns (leaf_index, parent, length, n_nodes) like food_tree."""
+    if within not in ("subgroup", "group"):
+        raise ValueError("within must be 'subgroup' or 'group'")
+    lg, ls, lf = lengths
+    leaves = _leaves(foods, matched)
+    t = _Tree()
+    leaf_parent: dict = {}
+    for g in sorted({g for g, _ in leaves.values()}):
+        t.add(("g", g), "root", lg)
+        info = trees.get(g)
+        if not info or len(info.get("food_ids", [])) < 2 or not info.get("linkage"):
+            continue
+        parts = _treelet_parts(info)
+        ids = parts[0]
+        if within == "group":
+            keep = {i for i, fid in enumerate(ids) if f"f{fid}" in leaves}
+            _hang(t, ("g", g), parts, keep, ls + lf, ("t", g), leaf_parent)
+            continue
+        by_sub: dict = {}
+        for i, fid in enumerate(ids):
+            if f"f{fid}" in leaves:
+                by_sub.setdefault(leaves[f"f{fid}"][1], set()).add(i)
+        for s, keep in by_sub.items():
+            t.add(("s", g, s), ("g", g), ls)
+            _hang(t, ("s", g, s), parts, keep, lf, ("t", g, s), leaf_parent)
+    near = nearest_food_of_products(placements, foods)
+    for k, (g, s) in leaves.items():
+        if k not in leaf_parent and k.startswith("u") and f"f{near.get(k, -1)}" in leaf_parent:
+            leaf_parent[k] = leaf_parent[f"f{near[k]}"]  # sibling of its nearest food, same height
+        if k in leaf_parent:
+            t.add(("l", k), *leaf_parent[k])
+        else:
+            t.add(("s", g, s), ("g", g), ls)
+            t.add(("l", k), ("s", g, s), lf)
+    return t.result(leaves)
 
 
 def diet_profiles(matched: pd.DataFrame, leaf_index: dict, weight: str = "ENERGY_kcal", subject: str = "SUBJECT",

@@ -23,7 +23,7 @@ people runs on **simulated** food records only: no real records have been analys
 | Clustering all foods (main pipeline) | Runs; agrees weakly with GIFT (ARI 0.21) | `python -m foodspace.run` |
 | Placing new foods | Works: the name alone finds the GIFT group for 82-89% of foods | `src/foodspace/placement.py` |
 | Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
-| Diet comparison between people | Runs on the simulated records; weak but real signal | `scripts/compare_diets.py`, `results/diet_similarity/` |
+| Diet comparison between people | Runs on the simulated records; weak but real signal; GIFT subgroup tree is the best tested food tree | `scripts/compare_diets.py`, `results/diet_similarity/` |
 | Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
 | Explorer website | Built but **never deployed**: GitHub Pages is not enabled for the repository | `.github/workflows/pages.yml` |
 | Licence | Not chosen | |
@@ -108,6 +108,12 @@ the trees by merge order (`treelet.cut`), not by height.
    milk costs little, swapping milk for cereals costs the most. A macro-nutrient (Aitchison) view is
    added with weight 0.25 by default. Composite dishes count as one food of their group unless a
    table of ingredient shares is passed (`--dish-shares`).
+5. *Food tree* (`--tree`). The default is GIFT group -> subgroup -> food. `subgroup-composition`
+   keeps the subgroups and, inside each, uses the composition tree of the reference
+   (`results/within_gift/trees.json`), so foods of one subgroup are as close as their composition
+   allows. `composition` uses the composition tree instead of the subgroups. Branch lengths come
+   from the treelet merge distances, made monotonic and scaled to the same depths, so the largest
+   distance and the cost of crossing GIFT groups are the same in every tree.
 
 ## Results so far
 
@@ -156,8 +162,29 @@ Diet comparison on the simulated records (`results/diet_similarity/summary.json`
   the right food for 99.4% of lines. That is an upper bound, because the simulated names are
   copied from the reference.
 
-The simulation gives each person strong habitual favourites, which may be part of why patterns
-separate weakly. Re-check on real records.
+Which food tree works best (`scripts/compare_diet_trees.py`, `results/diet_similarity/tree_comparison.csv`):
+the committed records plus 5 more record sets simulated with other seeds, 100 people each. The
+value is the share of a person's 5 most similar people with the same hidden pattern, mean over the
+6 sets (chance: 0.28):
+
+| Food tree | Tree alone | Tree + nutrients | Tree alone vs default, range over sets |
+|---|---|---|---|
+| Flat (no similarity between different foods) | 0.43 | 0.44 | -0.12 to -0.04 |
+| GIFT groups only | 0.47 | 0.47 | -0.06 to -0.01 |
+| **GIFT subgroups (default)** | **0.52** | **0.52** | |
+| Subgroups + composition inside them | 0.52 | 0.51 | -0.01 to +0.02 |
+| Composition instead of subgroups | 0.50 | 0.49 | -0.04 to -0.01 |
+
+Food similarity clearly helps: every tree beats treating each food on its own. Replacing the
+subgroups with the composition trees is worse in every record set. Inside Composite dishes, for
+example, the subgroups separate meat, fish and vegetable dishes, which is what tells a vegetarian
+from a traditional eater, while composition mixes dishes with similar macros. Using composition
+inside the subgroups ties with the default. The simulated patterns are built from which kinds of
+food people pick, so they cannot show whether composition matters in real diets; that needs real
+records and an outside criterion (for example biomarkers).
+
+The simulation also gives each person strong habitual favourites, which may be part of why
+patterns separate weakly. Re-check on real records.
 
 ## Running
 
@@ -165,7 +192,7 @@ separate weakly. Re-check on real records.
 conda env create -f environment.yml        # or: pip install -e ".[dev,scripts]"
 conda activate food-space-map
 pip install -e .
-pytest -q                                  # 62 tests
+pytest -q                                  # 65 tests
 ```
 
 Without any downloads (from a fresh clone), these run on the committed tables:
@@ -175,6 +202,7 @@ python -m foodspace.run config/config.yaml                     # all foods (writ
 python scripts/within_gift_groups.py --out results/within_gift # within GIFT groups (the website's map data also needs the GIFT matrix)
 python scripts/place_food.py "Skyr, plain" --db nordic --set PROT_g=11 FAT_g=0.2 CHO_g=3.8 FIBT_g=0 SUGAR_g=3.8
 python scripts/compare_diets.py                                # diet comparison on the simulated records
+python scripts/compare_diet_trees.py                           # which food tree works best (simulates 5 more record sets)
 python scripts/person_graphs.py && python scripts/build_cointake_graph.py && python scripts/recommendation_groups.py
 ```
 
@@ -189,7 +217,7 @@ These need the raw downloads:
 
 `snakemake --cores 1` runs the whole chain, but only once the raw files are in place. In a fresh
 clone it stops at the first step that needs them. The records rules (`recommendation_groups`,
-`person_graphs`, `cointake_graph`, `diet_similarity`) need no raw data.
+`person_graphs`, `cointake_graph`, `diet_similarity`, `diet_tree_comparison`) need no raw data.
 
 Install `umap-learn` for UMAP layouts like the committed ones. Without it the layouts fall back to
 t-SNE, with a warning.
@@ -263,7 +291,8 @@ scripts/                  data: fetch_livsmedelsverket, prepare_livsmedelsverket
                           food structure: within_gift_groups, build_gift_map_data, within_group_cereals,
                             food_tree, recommendation_groups, compare_totals_vs_fractions, build_map_data
                           placement: place_food, place_unique_foods
-                          records: simulate_food_records, person_graphs, build_cointake_graph, compare_diets
+                          records: simulate_food_records, person_graphs, build_cointake_graph, compare_diets,
+                            compare_diet_trees
 tests/                    pytest on synthetic data
 artifacts/                explorer pages (three are published by the pages workflow; the task
                           checklist is a claude.ai page)

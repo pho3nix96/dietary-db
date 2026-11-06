@@ -19,6 +19,7 @@ rule all:
         f"{OUT}/person_graphs/person_summary.csv",
         f"{OUT}/cointake/graph.json",
         f"{OUT}/diet_similarity/summary.json",
+        f"{OUT}/diet_similarity/tree_comparison.csv",
 
 rule prepare_foods:
     input:
@@ -156,3 +157,13 @@ rule diet_similarity:
         f"{OUT}/diet_similarity/summary.json",
     shell:
         "python scripts/compare_diets.py --records {REC} --foods {input[0]} --out {OUT}/diet_similarity"
+
+rule diet_tree_comparison:
+    input:
+        config["input"],
+        f"{REC}/consumption.csv",
+        f"{OUT}/within_gift/groups.csv",
+    output:
+        f"{OUT}/diet_similarity/tree_comparison.csv",
+    shell:
+        "python scripts/compare_diet_trees.py --records {REC} --foods {input[0]} --trees {OUT}/within_gift/trees.json --out {output}"
