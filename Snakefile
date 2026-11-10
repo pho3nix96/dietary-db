@@ -20,6 +20,7 @@ rule all:
         f"{OUT}/cointake/graph.json",
         f"{OUT}/diet_similarity/summary.json",
         f"{OUT}/diet_similarity/tree_comparison.csv",
+        f"{OUT}/similarity_power/power.csv",
 
 rule prepare_foods:
     input:
@@ -167,3 +168,12 @@ rule diet_tree_comparison:
         f"{OUT}/diet_similarity/tree_comparison.csv",
     shell:
         "python scripts/compare_diet_trees.py --records {REC} --foods {input[0]} --trees {OUT}/within_gift/trees.json --out {output}"
+
+rule similarity_power:
+    input:
+        config["input"],
+        f"{OUT}/within_gift/groups.csv",
+    output:
+        f"{OUT}/similarity_power/power.csv",
+    shell:
+        "python scripts/similarity_power.py --foods {input[0]} --trees {OUT}/within_gift/trees.json --r2 0.02 0.05 0.1 --out {OUT}/similarity_power"

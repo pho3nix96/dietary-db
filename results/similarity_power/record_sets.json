@@ -1,0 +1,85 @@
+{
+  "settings": {
+    "foods": "data/processed/foods_lv.csv",
+    "trees": "results/within_gift/trees.json",
+    "sets": 5,
+    "subjects": 300,
+    "reps": 100,
+    "r2": [
+      0.02,
+      0.05,
+      0.1
+    ],
+    "min_exposed": 0.15,
+    "alpha": 0.05,
+    "out": "results/similarity_power",
+    "save_pvalues": false
+  },
+  "record_sets": [
+    {
+      "seed": 1,
+      "people": 300,
+      "foods_eaten": 1240,
+      "candidate_subgroups": 32,
+      "candidate_clades": 385,
+      "candidate_single_foods": 7,
+      "nodes_tested_flat": 138,
+      "nodes_tested_gift_groups": 200,
+      "nodes_tested_gift_subgroups": 200,
+      "nodes_tested_subgroup_composition": 1087,
+      "nodes_tested_composition": 1193
+    },
+    {
+      "seed": 2,
+      "people": 300,
+      "foods_eaten": 1241,
+      "candidate_subgroups": 33,
+      "candidate_clades": 386,
+      "candidate_single_foods": 7,
+      "nodes_tested_flat": 137,
+      "nodes_tested_gift_groups": 198,
+      "nodes_tested_gift_subgroups": 198,
+      "nodes_tested_subgroup_composition": 1094,
+      "nodes_tested_composition": 1219
+    },
+    {
+      "seed": 3,
+      "people": 300,
+      "foods_eaten": 1249,
+      "candidate_subgroups": 33,
+      "candidate_clades": 364,
+      "candidate_single_foods": 7,
+      "nodes_tested_flat": 139,
+      "nodes_tested_gift_groups": 201,
+      "nodes_tested_gift_subgroups": 201,
+      "nodes_tested_subgroup_composition": 1106,
+      "nodes_tested_composition": 1223
+    },
+    {
+      "seed": 4,
+      "people": 300,
+      "foods_eaten": 1250,
+      "candidate_subgroups": 33,
+      "candidate_clades": 367,
+      "candidate_single_foods": 7,
+      "nodes_tested_flat": 133,
+      "nodes_tested_gift_groups": 198,
+      "nodes_tested_gift_subgroups": 198,
+      "nodes_tested_subgroup_composition": 1095,
+      "nodes_tested_composition": 1196
+    },
+    {
+      "seed": 5,
+      "people": 300,
+      "foods_eaten": 1235,
+      "candidate_subgroups": 34,
+      "candidate_clades": 381,
+      "candidate_single_foods": 7,
+      "nodes_tested_flat": 143,
+      "nodes_tested_gift_groups": 206,
+      "nodes_tested_gift_subgroups": 206,
+      "nodes_tested_subgroup_composition": 1112,
+      "nodes_tested_composition": 1236
+    }
+  ]
+}

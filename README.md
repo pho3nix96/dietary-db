@@ -24,6 +24,7 @@ people runs on **simulated** food records only: no real records have been analys
 | Placing new foods | Works: the name alone finds the GIFT group for 82-89% of foods | `src/foodspace/placement.py` |
 | Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
 | Diet comparison between people | Runs on the simulated records; weak but real signal; GIFT subgroup tree is the best tested food tree | `scripts/compare_diets.py`, `results/diet_similarity/` |
+| Does food similarity help find diet-outcome links? | Simulation: tree-aware tests find effects spread over related foods far more often than testing each food alone | `scripts/similarity_power.py`, `results/similarity_power/` |
 | Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
 | Explorer website | Live at https://pho3nix96.github.io/dietary-db/ (first deployed 2026-11-06) | `.github/workflows/pages.yml` |
 | Licence | Not chosen | |
@@ -183,6 +184,35 @@ inside the subgroups ties with the default. The simulated patterns are built fro
 food people pick, so they cannot show whether composition matters in real diets; that needs real
 records and an outside criterion (for example biomarkers).
 
+**Does food similarity help find a diet-outcome link?** (`scripts/similarity_power.py`,
+`results/similarity_power/power.csv`). The aim of the reference is that closely related foods
+stop being treated as unrelated variables. To test that, 5 record sets of 300 simulated people
+get a synthetic outcome driven by one exposure, which explains a share R2 of its variance, and
+two kinds of test look for it:
+- *nodes*: correlate the outcome with the intake share below every node of a food tree and take
+  the strongest; with the flat tree this is the usual "test every food" analysis;
+- *kernel*: one whole-diet test (as MiRKAT in microbiome work) on the tree distance between people.
+
+Share of 500 replicates with p < 0.05 at R2 = 0.05 (oracle: a test on the true exposure; the
+false-positive rate with no effect is 0.04-0.06 for every test):
+
+| Outcome driven by | Oracle | Nodes, flat | Nodes, GIFT subgroups | Nodes, composition | Kernel, flat | Kernel, GIFT subgroups |
+|---|---|---|---|---|---|---|
+| One GIFT subgroup | 0.98 | 0.12 | **0.66** | 0.28 | 0.16 | 0.29 |
+| One composition branch (3-40 foods) | 0.96 | 0.13 | 0.22 | **0.55** | 0.16 | 0.14 |
+| One food | 0.97 | **0.68** | 0.67 | 0.51 | 0.17 | 0.12 |
+| Saturated fat energy share | 0.98 | 0.05 | 0.11 | 0.12 | 0.13 | **0.40** |
+| Long-chain omega-3 | 0.99 | 0.05 | **0.31** | 0.21 | 0.10 | 0.27 |
+
+When the effect is carried by a set of related foods, testing each food alone almost never finds
+it, and a food tree finds it several times more often; when one food carries it, the tree costs
+little. Each tree wins where the outcome was built from that tree, so the subgroup and branch
+rows are partly circular; the nutrient rows, which cross food groups, are the fairer comparison,
+and there the trees are close to each other and all beat the flat analysis. Effects of a nutrient
+spread thinly over many foods are found best by the whole-diet kernel. In real data the tree that
+matches the biology is unknown, so testing on more than one tree (with a correction) is safer than
+picking one. `power_range_over_sets.csv` gives the spread over the 5 record sets.
+
 The simulation also gives each person strong habitual favourites, which may be part of why
 patterns separate weakly. Re-check on real records.
 
@@ -192,7 +222,7 @@ patterns separate weakly. Re-check on real records.
 conda env create -f environment.yml        # or: pip install -e ".[dev,scripts]"
 conda activate food-space-map
 pip install -e .
-pytest -q                                  # 65 tests
+pytest -q                                  # 68 tests
 ```
 
 Without any downloads (from a fresh clone), these run on the committed tables:
@@ -203,6 +233,7 @@ python scripts/within_gift_groups.py --out results/within_gift # within GIFT gro
 python scripts/place_food.py "Skyr, plain" --db nordic --set PROT_g=11 FAT_g=0.2 CHO_g=3.8 FIBT_g=0 SUGAR_g=3.8
 python scripts/compare_diets.py                                # diet comparison on the simulated records
 python scripts/compare_diet_trees.py                           # which food tree works best (simulates 5 more record sets)
+python scripts/similarity_power.py --r2 0.02 0.05 0.1          # does food similarity help find diet-outcome links (about 2 min)
 python scripts/person_graphs.py && python scripts/build_cointake_graph.py && python scripts/recommendation_groups.py
 ```
 
