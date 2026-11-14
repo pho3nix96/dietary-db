@@ -8,6 +8,7 @@ dependencies:
   - pandas>=2.2
   - scipy
   - scikit-learn
+  - statsmodels
   - pyyaml
   - python-igraph
   - leidenalg

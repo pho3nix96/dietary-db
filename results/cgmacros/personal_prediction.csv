@@ -1,0 +1,25 @@
+meals,method,coverage,r,RMSE
+all,population (macros + group),1.0,0.325270444508067,26.674117200456845
+all,population + person offset,0.999288256227758,0.4951553015223395,24.485808934483806
+all,"exact same meal, same person",0.2683274021352313,0.7271817605373349,20.517559450756252
+all,"similar meals, same person (kNN)",0.999288256227758,0.5479643395024387,23.7714772559696
+all,"population + similar meals' residuals, same person",0.999288256227758,0.5658870741813702,23.761943749276238
+all,"similar meals, same subgroup (kNN, other people)",1.0,0.4730731199336935,24.770163904439283
+standardised,population (macros + group),1.0,0.45613874440176266,26.50203747218326
+standardised,population + person offset,0.9987951807228915,0.5837050770431604,24.12871736894957
+standardised,"exact same meal, same person",0.4072289156626506,0.755761685754355,19.14465276062761
+standardised,"similar meals, same person (kNN)",0.9987951807228915,0.5834843033294654,23.921934667263635
+standardised,"population + similar meals' residuals, same person",0.9987951807228915,0.6513633864003995,22.3334096484683
+standardised,"similar meals, same subgroup (kNN, other people)",1.0,0.5376518030266422,24.73833399456589
+free-living,population (macros + group),1.0,0.15030001536849402,26.92057078626078
+free-living,population + person offset,1.0,0.36448599619546806,24.99166252807567
+free-living,"exact same meal, same person",0.06782608695652174,0.3875823545070958,29.88129942619649
+free-living,"similar meals, same person (kNN)",1.0,0.4356190977584291,23.552865216963284
+free-living,"population + similar meals' residuals, same person",1.0,0.39341694054873994,25.682031454728275
+free-living,"similar meals, same subgroup (kNN, other people)",1.0,0.21399354252907035,24.816037688384494
+meals with an exact repeat (all methods on the same meals),population (macros + group),1.0,0.5011200395796724,25.938558256790504
+meals with an exact repeat (all methods on the same meals),population + person offset,1.0,0.7097096799558814,22.00518903270577
+meals with an exact repeat (all methods on the same meals),"exact same meal, same person",1.0,0.7271817605373349,20.517559450756252
+meals with an exact repeat (all methods on the same meals),"similar meals, same person (kNN)",1.0,0.7577018556785227,18.315242028954735
+meals with an exact repeat (all methods on the same meals),"population + similar meals' residuals, same person",1.0,0.7984379051728493,16.840527970148507
+meals with an exact repeat (all methods on the same meals),"similar meals, same subgroup (kNN, other people)",1.0,0.5645724023307634,23.029626950953272
