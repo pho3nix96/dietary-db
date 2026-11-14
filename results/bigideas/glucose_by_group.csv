@@ -1,0 +1,16 @@
+main_group,meals,people,median_carb_g,median_sugar_share,median_iauc,median_iauc_per_g_carb
+unmatched,76,15,36.0,0.37,1169.47,32.51
+Cereals and their products,75,15,55.5,0.43,2509.83,45.22
+Sweets and sugars,41,13,57.6,0.54,1987.78,36.68
+Beverages,40,8,71.0,0.77,1413.02,28.23
+Composite dishes,27,14,45.0,0.35,766.57,21.3
+Fruits and their products,25,10,23.9,0.78,1057.55,45.75
+Foods for particular nutritional uses,12,11,76.4,0.52,2559.82,32.52
+Milk and milk products,12,5,19.0,0.99,1374.41,72.34
+"Starchy roots and tubers, and fruits consumed as starchy staples and their products",11,6,37.2,0.12,2360.38,44.0
+Savoury snacks,8,5,56.35,0.14,2405.23,50.15
+Meat and meat products,7,3,41.4,0.07,3842.53,100.67
+Vegetables and their products,5,3,18.0,0.29,631.25,39.29
+"Pulses, nuts and seeds and their products",4,3,16.95,0.43,412.33,37.78
+"Herbs, spices and condiments",1,1,17.8,0.55,943.41,53.0
+"Fish, shellfish and their products",1,1,21.1,0.05,665.34,31.53

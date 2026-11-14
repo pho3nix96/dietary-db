@@ -9,7 +9,7 @@ sugar, carbohydrate and protein it carries). The reference is used to:
 3. compare people's diets from food records, using food similarity rather than exact food matches.
 
 The composition side runs on the real Swedish and Finnish tables. Everything involving
-people runs on **simulated** food records only: no real records have been analysed yet.
+people runs on **simulated** food records, apart from a first mapping test on the public BIG IDEAs food logs (docs/bigideas_mapping.md).
 
 ## Status (2026-11-06)
 
@@ -24,6 +24,7 @@ people runs on **simulated** food records only: no real records have been analys
 | Placing new foods | Works: the name alone finds the GIFT group for 82-89% of foods | `src/foodspace/placement.py` |
 | Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
 | Diet comparison between people | Runs on the simulated records; weak but real signal; GIFT subgroup tree is the best tested food tree | `scripts/compare_diets.py`, `results/diet_similarity/` |
+| Real free-text records (BIG IDEAs, US) | First test: 78% of logged energy maps automatically; about 83% right food and 92% right GIFT group among accepted items (hand review) | `scripts/map_bigideas.py`, `docs/bigideas_mapping.md`, `results/bigideas/` |
 | Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
 | Explorer website | Live at https://pho3nix96.github.io/dietary-db/ (first deployed 2026-11-06) | `.github/workflows/pages.yml` |
 | Licence | Not chosen | |

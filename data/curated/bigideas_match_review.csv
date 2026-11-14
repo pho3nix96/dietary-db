@@ -1,0 +1,251 @@
+review_set,matcher_version,label,hybrid_food_id,hybrid_name,hybrid_verdict,name_only_food_id,name_only_name,name_only_verdict,failure_type
+holdout_1,v1,(Birds Eye) Sweet Potatoes with Brown Sugar,1003772.0,Sweet potatoes boiled w/ salt,C,1003772.0,Sweet potatoes boiled w/ salt,C,
+holdout_1,v1,"(Blue Diamond) Almonds, Lightly Salted",1003064.0,Almonds candied,G,1003064.0,Almonds candied,G,near_variant
+holdout_1,v1,(Dove) Promises Dark Chocolate,2000032.0,"Chocolate, plain, dark chocolate",C,2000032.0,"Chocolate, plain, dark chocolate",C,
+holdout_1,v1,"(GT's) Organic and Raw Kombucha, Cosmic Cranberry",2000441.0,Cranberry,W,2000441.0,Cranberry,W,us_food
+holdout_1,v1,(Garrett's) Caramel Popcorn Cheddar,2032194.0,Mozzarella cheddar sticks,W,2032194.0,Mozzarella cheddar sticks,W,us_product
+holdout_1,v1,(Graeter's Ice Cream) Black Raspberry Chocolate Chip Ice Cream,2000663.0,"Ice cream, cream based",C,2031996.0,Rice ice cream,G,
+holdout_1,v1,(Hamburger Helper) Deluxe Cheeseburger Macaroni,2029496.0,"Macaroni, gluten-free",W,2029496.0,"Macaroni, gluten-free",W,us_product
+holdout_1,v1,"(Jimmy Dean) Sandwiches, Biscuit Southern Style Chicken",1000205.0,Scone,W,1000205.0,Scone,W,dish
+holdout_1,v1,"(Johnny Carino's) House Side Salad, with Ranch Dressing",2008047.0,"Tuna salad with potato, without dressing",G,1000049.0,Salad dressing 0% fat,W,dish
+holdout_1,v1,(Kashi) Go Lean Crunch,1007207.0,Toffee with almond crunch,W,1007207.0,Toffee with almond crunch,W,us_product
+holdout_1,v1,"(Lance) Toast Chee Crackers, Cheddar Cheese",1001628.0,Cheese crackers,C,1001628.0,Cheese crackers,C,
+holdout_1,v1,(Mike's Restaurants) French Toast & Maple Syrup,1000732.0,French toast,C,1000732.0,French toast,C,
+holdout_1,v1,(Natrel) Lactose Free 2% Partly Skimmed Milk,1000150.0,Semi-skimmed milk 1.5% fat fortified,C,1000150.0,Semi-skimmed milk 1.5% fat fortified,C,
+holdout_1,v1,(Near East) Multigrain Chips,1001581.0,Corn crisps,C,1001581.0,Corn crisps,C,
+holdout_1,v1,(Outback Steakhouse) Honey Wheat Bread with Butter,1001598.0,Sweet wheat bread,C,1001598.0,Sweet wheat bread,C,
+holdout_1,v1,1 snack size baby ruth,2035005.0,"Snack bar, date bar with nuts, bare bar",G,2033263.0,Rye bread snack,W,us_product
+holdout_1,v1,"12"" Italian BMT Subway whole wheat mayo",2005001.0,"Mayonnaise, home-made",W,2005001.0,"Mayonnaise, home-made",W,dish
+holdout_1,v1,2 fried eggs,1004134.0,Egg fried organic,C,1004134.0,Egg fried organic,C,
+holdout_1,v1,2% Cottage Cheese,1000070.0,Cottage cheese plain 4% fat,C,2032385.0,"Cottage cheese, 1.5% fat",C,
+holdout_1,v1,4 small pizza slices everything,2033457.0,"Pizza, ham pizza",C,1006009.0,Turkey smoked thin slices,W,
+holdout_1,v1,Anchovies,2000829.0,Anchovy,C,2000829.0,Anchovy,C,
+holdout_1,v1,Angel Food Candy,1001863.0,Jelly sweets,G,1001863.0,Jelly sweets,G,us_food
+holdout_1,v1,Apple,1001743.0,Apple soup,W,1001782.0,Apple pie,W,generic_name
+holdout_1,v1,Atlantic Salmon,1001316.0,Salmon fried w/ salt,C,2000871.0,Salmon fillet,C,
+holdout_1,v1,Avocado,1000320.0,Avocado,C,1000320.0,Avocado,C,
+holdout_1,v1,Bacon,1001003.0,Pork bacon raw,C,1001003.0,Pork bacon raw,C,
+holdout_1,v1,Barbecue Sauce,2032845.0,Chocolate sauce,W,1002965.0,Cream sauce,W,vocabulary
+holdout_1,v1,Bean,2034380.0,"Bean, white bean, navy bean",C,2003713.0,Bean stew,G,
+holdout_1,v1,Black Beans,1000879.0,White beans dried,C,1005155.0,Lasagna w/ black beans,W,
+holdout_1,v1,Blue Cheese dressing,2034700.0,"Salad dressing, caesar dressing",C,2034700.0,"Salad dressing, caesar dressing",C,
+holdout_1,v1,Brownie,1005833.0,Brownie,C,1005833.0,Brownie,C,
+holdout_1,v1,Brownies,1005833.0,Brownie,C,1005833.0,Brownie,C,
+holdout_1,v1,Butter Lettuce,2000330.0,Lettuce,C,2000330.0,Lettuce,C,
+holdout_1,v1,Butter Toast,2031682.0,"Toast, gluten-free",C,2031682.0,"Toast, gluten-free",C,
+holdout_1,v1,Cake,2032561.0,Sponge cake,C,2031252.0,Rice cake,W,
+holdout_1,v1,Chai tea,1001962.0,Tea brewed,C,1001962.0,Tea brewed,C,
+holdout_1,v1,Cheese,1001988.0,Cheese sauce,G,1001988.0,Cheese sauce,G,generic_name
+holdout_1,v1,Cheese Balls,1001351.0,Fish balls breaded fried,W,1001119.0,Meat balls beef fried,W,vocabulary
+holdout_1,v1,Cheese Curd,1000905.0,Tofu bean curd,W,2000680.0,"Curd milk, plain, 1% fat",G,us_food
+holdout_1,v1,Cheese Steak,2007078.0,Beef steak mince soup,G,1000924.0,Lamb steak raw,W,dish
+holdout_1,v1,Cheese Stick,2029239.0,"Cheese, mozzarella cheese, 20% fat",C,2029239.0,"Cheese, mozzarella cheese, 20% fat",C,
+holdout_1,v1,Cheese and Crackers,1001628.0,Cheese crackers,C,1001628.0,Cheese crackers,C,
+holdout_1,v1,Cheesecake,1001773.0,Swedish cheesecake unsweetened 3% fat,G,1001773.0,Swedish cheesecake unsweetened 3% fat,G,us_food
+holdout_1,v1,Chex Mix,2034907.0,Rice and rye mix,G,2034907.0,Rice and rye mix,G,us_product
+holdout_1,v1,Chicken Chorizo,1002238.0,Sausage chorizo 9% fat,C,1002238.0,Sausage chorizo 9% fat,C,
+holdout_1,v1,Chicken Gyro,2000750.0,Chicken,G,2000750.0,Chicken,G,dish
+holdout_1,v1,Chicken Parmesan with Tomato Sauce,1007142.0,Cheese hard parmesan 29% fat e.g. Grana Padano,W,1002003.0,Pesto sauce w/ basil parmesan cheese walnuts homemade,W,dish
+holdout_1,v1,Chicken Salad,2007518.0,"Chicken salad, without dressing",C,2033853.0,"Chicken salad, saarioinen",C,
+holdout_1,v1,Chickpeas,1003762.0,Chickpeas dried boiled w/ salt,C,1000478.0,Vegetable stew w/ chickpeas,W,
+holdout_1,v1,Chili,1003069.0,Chili peanuts,W,1002007.0,Sweet chili sauce,W,vocabulary
+holdout_1,v1,Chocolate Pudding,1001764.0,Chocolate pudding,C,1001764.0,Chocolate pudding,C,
+holdout_1,v1,Clam Chowder,2000074.0,Baking powder,W,1000118.0,Milk powder 1% fat,W,us_food
+holdout_1,v1,Coca Cola,2000928.0,"Soft drink, cola, average",C,2000928.0,"Soft drink, cola, average",C,
+holdout_1,v1,Coconut Shrimp,2000835.0,Shrimp,C,2000835.0,Shrimp,C,
+holdout_1,v1,Coffee + skim milk,1000151.0,Skimmed milk 0.5% fat fortified,G,1000151.0,Skimmed milk 0.5% fat fortified,G,dish
+holdout_1,v1,Coleslaw,2034566.0,"Salad, coleslaw, home-made",C,2033862.0,"Salad, coleslaw, industrial",C,
+holdout_1,v1,Corn Chips,1001581.0,Corn crisps,C,1001581.0,Corn crisps,C,
+holdout_1,v1,Corn on the Cobb,2028962.0,"Sweet corn, corn on the cob",C,2028962.0,"Sweet corn, corn on the cob",C,
+holdout_1,v1,Crab Cakes,1001398.0,Crab canned,G,2031608.0,Fat used in cakes,W,dish
+holdout_1,v1,Creamers,1001611.0,Cream Crackers,W,1001611.0,Cream Crackers,W,vocabulary
+holdout_1,v1,"Crostinis (slice of French bread, swiss, tomato)",1003247.0,"Croutons, plain",G,1001625.0,Conical meringue cake w/ frosting,W,dish
+holdout_1,v1,Cup Slices Beet,2000305.0,"Beetroot, red beet",C,2000305.0,"Beetroot, red beet",C,
+holdout_1,v1,Cup Slices Cucumber,1000339.0,Cucumber,C,2000346.0,Cucumber,C,
+holdout_1,v1,Dark Chocolate Chip,2034573.0,"Chocolate chip cookie, home-made",W,2031620.0,Chocolate chip cookie,W,vocabulary
+holdout_1,v1,Egg,1003840.0,Egg raw organic,C,1003840.0,Egg raw organic,C,
+holdout_1,v1,Faro,2028909.0,Rye macaroni,G,2034255.0,"Salmon, farmed",W,vocabulary
+holdout_1,v1,"Fast foods, onion rings, breaded and fried",1004947.0,Onion red,W,2000335.0,Onion,W,us_food
+holdout_1,v1,Fresh Apple Juice,1000659.0,Apple juice RTD,C,1000659.0,Apple juice RTD,C,
+holdout_1,v1,Fun size snickers bar,2032509.0,"Chocolate bar, caramel and cookie, twix",C,2032509.0,"Chocolate bar, caramel and cookie, twix",C,
+holdout_1,v1,Ghiradelli Peppermint Bark Square,1001869.0,Peppermint sweet e.g. polkagris,G,1001869.0,Peppermint sweet e.g. polkagris,G,us_food
+holdout_1,v1,Ginger Bread Cookie,2029753.0,Biscuit,C,2029753.0,Biscuit,C,
+holdout_1,v1,Green Bean,2000372.0,"Bean, green bean, string bean",C,2000372.0,"Bean, green bean, string bean",C,
+holdout_1,v1,Green Seedless Grape,2000423.0,"Grape, average, green or red, seedless",C,2000423.0,"Grape, average, green or red, seedless",C,
+holdout_1,v1,Grilled Cheese,1003009.0,Pie w/ cheese,G,1001988.0,Cheese sauce,W,dish
+holdout_1,v1,Ham and Turkey Pesto Sandwich,2031464.0,"Sandwich, ham",C,2031464.0,"Sandwich, ham",C,
+holdout_1,v1,Ham and cheese sandwhich,1000796.0,Pie w/ cheese ham,G,1002142.0,Cheese sauce w/ ham homemade,G,dish
+holdout_1,v1,Herbal Tea,1001962.0,Tea brewed,C,1001962.0,Tea brewed,C,
+holdout_1,v1,"Homemade Beef and Barley Soup with onion, celery, kale, (Simple Truth) fat free organic beef stock, and (Pacific) low sodium organic vegetable broth",1001223.0,Beef stock RTE,G,1001223.0,Beef stock RTE,G,dish
+holdout_1,v1,Homemade Potato Chips,1001584.0,Potato crisps w/ sea salt ,C,1001588.0,Potato crisps 25% fat,C,
+holdout_1,v1,Honey,2000004.0,Honey,C,1001896.0,Honey,C,
+holdout_1,v1,Hot Chocolate,1000158.0,Hot chocolate w/ milk 0.5% fat,C,1000156.0,Hot chocolate w/ milk 3% fat,C,
+holdout_1,v1,Ice Cream,2031996.0,Rice ice cream,G,2031996.0,Rice ice cream,G,generic_name
+holdout_1,v1,Kale Salad,1004504.0,Kale salad,C,1004504.0,Kale salad,C,
+holdout_1,v1,Kraft Mac and Cheese,1000867.0,Pasta gratin macaroni pudding ,C,2029496.0,"Macaroni, gluten-free",W,
+holdout_1,v1,Large Beef Jerky,2035506.0,"Dried meat, average",C,2035506.0,"Dried meat, average",C,
+holdout_1,v1,Large Eggs Scrambled (nothing added),1002197.0,Scrambled eggs,C,1002197.0,Scrambled eggs,C,
+holdout_1,v1,Lemon risotto,2032865.0,"Risotto, fish risotto",G,2032865.0,"Risotto, fish risotto",G,dish
+holdout_1,v1,Lemonade,2000910.0,"Soft drink, lemonade",C,2000910.0,"Soft drink, lemonade",C,
+holdout_1,v1,Lifesaver Gummies (wild berries),2000066.0,Chewing gum,G,1001870.0,Chewing gum,G,us_product
+holdout_1,v1,Lifesavers Breath Mints,1002246.0,Thin mints w/ dark chocolate couverture,G,1002246.0,Thin mints w/ dark chocolate couverture,G,us_product
+holdout_1,v1,Low Fat Cottage Cheese,2032385.0,"Cottage cheese, 1.5% fat",C,2032385.0,"Cottage cheese, 1.5% fat",C,
+holdout_1,v1,M&Ms,1002055.0,Milk chocolate,C,1002055.0,Milk chocolate,C,
+holdout_1,v1,Maple Syrup,2000003.0,Syrup,C,2000003.0,Syrup,C,
+holdout_1,v1,Mint Chocolate Milano Cookies,2029753.0,Biscuit,C,2029753.0,Biscuit,C,
+holdout_1,v1,Mixed Nut,2011086.0,"Nut, cashew nut",C,2033128.0,"Nut, chili nut",G,
+holdout_1,v1,Mixed Vegetable,2035469.0,"Vegetable soup, water, potato, mixed vegetables",W,2003319.0,Vegetable soup,W,generic_name
+holdout_1,v1,Mozarrella Sticks,2032194.0,Mozzarella cheddar sticks,C,2032194.0,Mozzarella cheddar sticks,C,
+holdout_1,v1,Mozzarella,1002255.0,Mozzarella cheese 18% fat,C,1002255.0,Mozzarella cheese 18% fat,C,
+holdout_1,v1,"NABISCO, NEWTONS, FRUIT CHEWY COOKIES, FIG",1000561.0,Fig,W,2029753.0,Biscuit,C,us_product
+holdout_1,v1,Nutrigrain bar,2032450.0,"Cereal bar, wholegrain muesli bar",C,2032450.0,"Cereal bar, wholegrain muesli bar",C,
+holdout_1,v1,Nutty Bar,2035005.0,"Snack bar, date bar with nuts, bare bar",G,2035005.0,"Snack bar, date bar with nuts, bare bar",G,us_product
+holdout_1,v1,Oreo Cookies,2029753.0,Biscuit,C,2029753.0,Biscuit,C,
+holdout_1,v1,PB protein whey powder,2034991.0,"Meal replacement, whey protein powder, 85% protein",C,2034990.0,"Meal replacement, whey protein powder, 74% protein",C,
+holdout_1,v1,Peach Cobbler,1000580.0,Peach,W,1000580.0,Peach,W,us_food
+holdout_1,v1,Peach juice,1000662.0,Juice,C,1000662.0,Juice,C,
+holdout_1,v1,Pepperjack Cheese,1001988.0,Cheese sauce,G,1001988.0,Cheese sauce,G,generic_name
+holdout_1,v1,Pepperoni,2032761.0,"Pizza, kebab pizza, onion, pepperoni",W,2032761.0,"Pizza, kebab pizza, onion, pepperoni",W,generic_name
+holdout_1,v1,Pineapple and Ginger Juice,1000550.0,Pineapple,G,1000550.0,Pineapple,G,dish
+holdout_1,v1,Pizza,2033457.0,"Pizza, ham pizza",C,2033457.0,"Pizza, ham pizza",C,
+holdout_1,v1,Potato Chip,2011505.0,Banana chip,W,2011505.0,Banana chip,W,vocabulary
+holdout_1,v1,Potato Salad,2003337.0,"Salad, potato salad with mayonnaise",C,2003337.0,"Salad, potato salad with mayonnaise",C,
+holdout_1,v1,Pretzel Rod,1001585.0,Mini pretzel rods e.g. salta pinnar ,C,1001585.0,Mini pretzel rods e.g. salta pinnar ,C,
+holdout_1,v1,Quest Bar cookie dough,2033403.0,"Meal replacement, protein bar, 54 % protein",C,2031566.0,Swiss roll dough,W,
+holdout_1,v1,Ranch Wings,2029041.0,"Tuna salad with vegetables, without dressing",W,2034700.0,"Salad dressing, caesar dressing",W,dish
+holdout_1,v1,Red Wine Vinaigrette,1000460.0,Tomato salad w/ vinaigrette,W,1000062.0,Vinaigrette 65% fat,C,generic_name
+holdout_1,v1,Riced Cauliflower,2000322.0,Cauliflower,C,2000322.0,Cauliflower,C,
+holdout_1,v1,Salad,1004052.0,Corn salad,G,1000638.0,Fruit salad,W,generic_name
+holdout_1,v1,"Sargento Cranberries Snack Pack Cheese, Cashews",2001461.0,Cheese pasty,W,1000584.0,Cranberries,W,us_product
+holdout_1,v1,Sausage Biscuit,2007615.0,Sausage soup,W,2007615.0,Sausage soup,W,dish
+holdout_1,v1,Scrambled Eggs,1002197.0,Scrambled eggs,C,1002197.0,Scrambled eggs,C,
+holdout_1,v1,Side of home fried potatoes,1000274.0,Mashed potatoes homemade,G,1000274.0,Mashed potatoes homemade,G,vocabulary
+holdout_1,v1,Slim fast shake,2035000.0,"Sport beverage, protein drink, protein shake, fast",C,2035000.0,"Sport beverage, protein drink, protein shake, fast",C,
+holdout_1,v1,Soda,1001828.0,Soft drink carbonated,C,2000920.0,"Soft drink, light, sugar-free",C,
+holdout_1,v1,Spaghetti,2001373.0,"Pasta, spaghetti, boiled, salt",C,1000858.0,Spaghetti w/ mince meat sauce,G,
+holdout_1,v1,Spring Mix,2030221.0,Rice and oat mix,W,2034907.0,Rice and rye mix,W,vocabulary
+holdout_1,v1,Std Bfast,2029778.0,"Breakfast cereal, wheat loops",U,2000163.0,"Breakfast cereal, corn flakes",U,
+holdout_1,v1,Std bfast,2029778.0,"Breakfast cereal, wheat loops",U,2000163.0,"Breakfast cereal, corn flakes",U,
+holdout_1,v1,Stevia,2000039.0,"Sweetener, aspartam, powder",C,2000070.0,"Sweetener, saccharin",C,
+holdout_1,v1,"Stouffer's, Salisbury Steak",2007165.0,"Meat soup, beef steak",G,1000924.0,Lamb steak raw,W,dish
+holdout_1,v1,Strawberry,2000447.0,Strawberry,C,2000447.0,Strawberry,C,
+holdout_1,v1,Strawberry Scone,1000205.0,Scone,C,1000205.0,Scone,C,
+holdout_1,v1,Stuffing,1002098.0,Ham stuffing,G,1002098.0,Ham stuffing,G,us_food
+holdout_1,v1,Sugar,1001892.0,Sugar,C,1001892.0,Sugar,C,
+holdout_1,v1,Sugg's coconut greek yogurt,2006048.0,"Tzatziki, greek yoghurt sauce",G,2006048.0,"Tzatziki, greek yoghurt sauce",G,near_variant
+holdout_1,v1,Sushi,1001363.0,Sushi nigiri w/ salmon,C,1006782.0,Sushi rice boiled,G,
+holdout_1,v1,Tea,1001962.0,Tea brewed,C,1001962.0,Tea brewed,C,
+holdout_1,v1,Tilapia,1002468.0,Tilapia raw,C,1002468.0,Tilapia raw,C,
+holdout_1,v1,Toffee,2000011.0,Toffee,C,2000011.0,Toffee,C,
+holdout_1,v1,Townhouse Cracker,1001628.0,Cheese crackers,C,1001611.0,Cream Crackers,C,
+holdout_1,v1,Turkey Wings,1001178.0,Turkey boiled,C,1001178.0,Turkey boiled,C,
+holdout_1,v1,Turkey and Brie Sandwich,1006341.0,Cheese sauce w/ turkey ,W,1001178.0,Turkey boiled,W,dish
+holdout_1,v1,Veggie omelet,2033588.0,"Omelette, vegetable omelette",C,2007630.0,"Omelette, ham omelette",G,
+holdout_1,v1,Whole grapefruit,1000521.0,Grapefruit,C,1000521.0,Grapefruit,C,
+holdout_1,v1,Yogurt,2034664.0,Yoghurt sauce,G,2034664.0,Yoghurt sauce,G,generic_name
+holdout_1,v1,cheese,1001988.0,Cheese sauce,G,1001988.0,Cheese sauce,G,generic_name
+holdout_1,v1,chicken cesear salad wrap,1000786.0,Wrap wheat tortilla w/ chicken fajitas sour cream lettuce,C,1000786.0,Wrap wheat tortilla w/ chicken fajitas sour cream lettuce,C,
+holdout_1,v1,chicken leg,2011563.0,Chicken leg and thigh with skin,C,2011563.0,Chicken leg and thigh with skin,C,
+holdout_1,v1,duck burrito,2001031.0,"Wheat tortilla, burrito, wrap, vegetable filling",C,2001035.0,"Wheat tortilla, burrito, wrap, chicken filling",C,
+holdout_1,v1,french bread,2001309.0,"White bread, wheat bread, french bread, industrial",C,2001309.0,"White bread, wheat bread, french bread, industrial",C,
+holdout_1,v1,potato chip,2011505.0,Banana chip,W,2011505.0,Banana chip,W,vocabulary
+holdout_2,v2,(BlueBird) Peanut Butter Wafers,1001851.0,Wafers w/ milk chocolate couverture ,G,1001633.0,Wafers plain,G,near_variant
+holdout_2,v2,(Buffets) Traditional Baked Chicken - Thigh,2000750.0,Chicken,C,2000750.0,Chicken,C,
+holdout_2,v2,"(Giant) Breakfast Blend, Trail Mix",2034668.0,Seed blend,G,2034668.0,Seed blend,G,us_food
+holdout_2,v2,(HoneyBaked Ham) Baked Potato Salad,2003337.0,"Salad, potato salad with mayonnaise",C,2003337.0,"Salad, potato salad with mayonnaise",C,
+holdout_2,v2,"(Kellogg's) Frosted Flakes, Cereal",1000727.0,Breakfast cereal corn flakes w/ sugar,C,1006781.0,Breakfast cereal e.g. corn flakes,C,
+holdout_2,v2,(Peppridge Farm) Whole Wheat Hamburger Bun,1003818.0,Hamburger bun,C,1003818.0,Hamburger bun,C,
+holdout_2,v2,"(Superb & Simple) Chicken Breast, Parmesan Crusted",1001173.0,Chicken breast fillet raw w/o skin ,C,2011564.0,Chicken breast with skin,C,
+holdout_2,v2,(Virgil's) Zero Black Cherry Cream Soda,2000920.0,"Soft drink, light, sugar-free",C,2000920.0,"Soft drink, light, sugar-free",C,
+holdout_2,v2,(Wendy's) Southwest Avocado Chicken Salad,2000750.0,Chicken,W,2033853.0,"Chicken salad, saarioinen",C,dish
+holdout_2,v2,1 whole grapefruit,1000521.0,Grapefruit,C,1000521.0,Grapefruit,C,
+holdout_2,v2,2 muffins,1003055.0,Muffin homemade,C,1003055.0,Muffin homemade,C,
+holdout_2,v2,2 slices bacon,1001003.0,Pork bacon raw,C,1001003.0,Pork bacon raw,C,
+holdout_2,v2,Baked Beans,1000368.0,Wax beans,W,1000331.0,Green beans,W,vocabulary
+holdout_2,v2,Beet,2000305.0,"Beetroot, red beet",C,2000305.0,"Beetroot, red beet",C,
+holdout_2,v2,Biscotti,2031664.0,"Oat biscuit gluten-free, home-made",G,2029753.0,Biscuit,C,near_variant
+holdout_2,v2,Blackberries,1000554.0,Blackberries,C,1000554.0,Blackberries,C,
+holdout_2,v2,Blue Bunny fudge bar,1001865.0,Toffee fudge,W,1001865.0,Toffee fudge,W,us_product
+holdout_2,v2,Broccoli,1000325.0,Broccoli,C,2000324.0,Broccoli,C,
+holdout_2,v2,Brunswick Stew,2003713.0,Bean stew,G,2003713.0,Bean stew,G,dish
+holdout_2,v2,Buttered Toast,2031682.0,"Toast, gluten-free",C,2031682.0,"Toast, gluten-free",C,
+holdout_2,v2,Candy Bar,2034831.0,Chocolate confection filled with chocolate,C,1001863.0,Jelly sweets,G,
+holdout_2,v2,Cashew Nut,2011086.0,"Nut, cashew nut",C,2011086.0,"Nut, cashew nut",C,
+holdout_2,v2,Celery,2000339.0,Celery,C,2000339.0,Celery,C,
+holdout_2,v2,Cheddar Cheese,2000698.0,"Cheese, cheddar type, 34% fat",C,2000698.0,"Cheese, cheddar type, 34% fat",C,
+holdout_2,v2,Chicken BBQ,2000750.0,Chicken,C,2000750.0,Chicken,C,
+holdout_2,v2,Chicken Breast,2011564.0,Chicken breast with skin,C,2011564.0,Chicken breast with skin,C,
+holdout_2,v2,Chicken Cheese Sandwich,2029132.0,"Sandwich, toast sandwich, cheese and egg",C,2029132.0,"Sandwich, toast sandwich, cheese and egg",C,
+holdout_2,v2,Chicken Noodle Soup,2029031.0,"Noodle soup, vegetables",C,2032199.0,Chicken soup,C,
+holdout_2,v2,Chicken and Rice,2000750.0,Chicken,G,2000750.0,Chicken,G,dish
+holdout_2,v2,"Chicken enchiladas with black beans, spanish rice, salsa",1000901.0,White beans w/ tomato sauce canned,W,2001448.0,Tomato salsa,W,dish
+holdout_2,v2,Chicken soup,2032199.0,Chicken soup,C,2032199.0,Chicken soup,C,
+holdout_2,v2,Chipotle Bowl,2032905.0,"Thin nettle pancake, low-fat milk",W,2033269.0,Apple chips,W,dish
+holdout_2,v2,Chips,1001581.0,Corn crisps,C,1001581.0,Corn crisps,C,
+holdout_2,v2,Chocolate Cake,2034263.0,"Cake, mud cake, chocolate cake",C,2034528.0,"Cake, raw chocolate cake",C,
+holdout_2,v2,Cinnamon,1002306.0,Cinnamon,C,1002306.0,Cinnamon,C,
+holdout_2,v2,Cinnamon raisin bagel,2032968.0,Bagel,C,2032968.0,Bagel,C,
+holdout_2,v2,Cooked Spinach,2033456.0,Spinach,C,2033456.0,Spinach,C,
+holdout_2,v2,Corn Cheese Puffs,1001582.0,Cheese puffs,C,1001582.0,Cheese puffs,C,
+holdout_2,v2,Cottage Cheese,1000070.0,Cottage cheese plain 4% fat,C,2032385.0,"Cottage cheese, 1.5% fat",C,
+holdout_2,v2,Diced Celery,2000339.0,Celery,C,1000321.0,Celery,C,
+holdout_2,v2,Eggo Waffle,1000736.0,Waffle w/ egg,C,1000736.0,Waffle w/ egg,C,
+holdout_2,v2,Flaxseed,1003433.0,Flaxseed oil,W,1003433.0,Flaxseed oil,W,generic_name
+holdout_2,v2,Fried Potato,1001946.0,Potato flour,W,2002002.0,"Potato, fried",C,generic_name
+holdout_2,v2,Glucerna snack bar,2011580.0,"Snack bar with nuts, sweet",G,2011580.0,"Snack bar with nuts, sweet",G,us_product
+holdout_2,v2,Grapes,1000587.0,Grapes,C,1000587.0,Grapes,C,
+holdout_2,v2,Greek Yogurt,2006048.0,"Tzatziki, greek yoghurt sauce",G,2006048.0,"Tzatziki, greek yoghurt sauce",G,us_food
+holdout_2,v2,Green Beans,1000331.0,Green beans,C,1000331.0,Green beans,C,
+holdout_2,v2,"Green Smoothie (with avocado, cotton candy green grapes, pear, broccoli, kale, spinach, banana)",2034545.0,"Smoothie, green smoothie, kale, apple, cucumber, banana",C,2034550.0,"Smoothie, green smoothie, apple, celery, cucumber",C,
+holdout_2,v2,Grilled Chicken,2000750.0,Chicken,C,2000750.0,Chicken,C,
+holdout_2,v2,Half and Half,2034591.0,"Cream quark, 10% fat",G,1001691.0,Ice cream app. 10% fat,W,vocabulary
+holdout_2,v2,Ham Sandwich,2031464.0,"Sandwich, ham",C,2031464.0,"Sandwich, ham",C,
+holdout_2,v2,Hamburger,2034403.0,"Hamburger, gluten-free hamburger, hesburger",C,2034403.0,"Hamburger, gluten-free hamburger, hesburger",C,
+holdout_2,v2,Hershey Kiss,2001326.0,"Swiss roll, gluten-free",G,2033850.0,"Berry kissel, 20 mg added vitamin c, industrial",W,us_product
+holdout_2,v2,Lanad o Lakes Cinnamon Sugar,2000001.0,Sugar,C,2000001.0,Sugar,C,
+holdout_2,v2,Large Egg,1003840.0,Egg raw organic,C,1001225.0,Egg raw,C,
+holdout_2,v2,Large coffee with heavy cream,1001957.0,Coffee brewed,C,1001957.0,Coffee brewed,C,
+holdout_2,v2,Lasgagna,1006463.0,Lasagna homemade,C,1006463.0,Lasagna homemade,C,
+holdout_2,v2,Lifesaver Peppermint Breath Mint,1001869.0,Peppermint sweet e.g. polkagris,C,1007194.0,Mint leaves,W,
+holdout_2,v2,Mash Potatoes,1000274.0,Mashed potatoes homemade,C,1000274.0,Mashed potatoes homemade,C,
+holdout_2,v2,Mashed Potatoes with Brown Gravy,1000274.0,Mashed potatoes homemade,C,1000274.0,Mashed potatoes homemade,C,
+holdout_2,v2,Mini Croissants,1000229.0,Croissant,C,1000229.0,Croissant,C,
+holdout_2,v2,Mixed Drink,1001841.0,Apple drink RTD fortified ,W,2011687.0,Rice drink,W,dish
+holdout_2,v2,Mojito,2011210.0,"Pastille sweetened with xylitol, added vitamin c",W,2035481.0,Erythritol,W,dish
+holdout_2,v2,Moon Cheddar Cheese,2000698.0,"Cheese, cheddar type, 34% fat",C,2000698.0,"Cheese, cheddar type, 34% fat",C,
+holdout_2,v2,Navel Orange,1000551.0,Orange,C,1000551.0,Orange,C,
+holdout_2,v2,Oatmeal,1000677.0,Oatmeal porridge wholegrain,C,1000677.0,Oatmeal porridge wholegrain,C,
+holdout_2,v2,Olives,1000402.0,Olives black w/ oil drained,C,1000402.0,Olives black w/ oil drained,C,
+holdout_2,v2,Onion,2000335.0,Onion,C,2000335.0,Onion,C,
+holdout_2,v2,Peach,1000580.0,Peach,C,1000580.0,Peach,C,
+holdout_2,v2,Peanut Butter Cracker,1001628.0,Cheese crackers,G,1001611.0,Cream Crackers,G,us_product
+holdout_2,v2,Peanuts,1001561.0,Peanuts roasted,C,1003069.0,Chili peanuts,C,
+holdout_2,v2,Pecans,1001569.0,Pecan nuts,C,1001569.0,Pecan nuts,C,
+holdout_2,v2,Pistachio,1001570.0,Pistachio nuts w/o salt,C,1001570.0,Pistachio nuts w/o salt,C,
+holdout_2,v2,Plain cheese pizza,2033457.0,"Pizza, ham pizza",C,2033457.0,"Pizza, ham pizza",C,
+holdout_2,v2,Pork Loin Tenderloin (Hornet),1000970.0,Pork tenderloin raw,C,2034187.0,Beef tenderloin,G,
+holdout_2,v2,Premier protein choc shake,2032619.0,"Meal replacement, shake, naturdiet",C,2032619.0,"Meal replacement, shake, naturdiet",C,
+holdout_2,v2,Quest Protein Bar Birthday Cake,2033403.0,"Meal replacement, protein bar, 54 % protein",C,2031252.0,Rice cake,W,
+holdout_2,v2,Reeses Peanut Butter Cup,1001559.0,Peanut butter,W,1001559.0,Peanut butter,W,us_product
+holdout_2,v2,Roasted Red Pepper Hummus,2034666.0,"Hummus, chick pea paste",C,1003051.0,Hummus mashed chickpeas,C,
+holdout_2,v2,Salmon,1001316.0,Salmon fried w/ salt,C,2000871.0,Salmon fillet,C,
+holdout_2,v2,Salmon with Lemon Butter,2000871.0,Salmon fillet,C,2000871.0,Salmon fillet,C,
+holdout_2,v2,Salt and vinegar chips,1001584.0,Potato crisps w/ sea salt ,C,2000933.0,Vinegar,W,
+holdout_2,v2,Seafood Stuffed Salmon,1001286.0,Salmon cured,C,2000871.0,Salmon fillet,C,
+holdout_2,v2,Slice Swiss Cheese,2029017.0,Cheese fondue,G,2029017.0,Cheese fondue,G,generic_name
+holdout_2,v2,Slim Fast,1000051.0,Relish w/ pickled gherkins mayonnaise fast food,W,1000051.0,Relish w/ pickled gherkins mayonnaise fast food,W,us_product
+holdout_2,v2,Small Apple,1000588.0,Apple w/ skin,C,1000588.0,Apple w/ skin,C,
+holdout_2,v2,Small chocolate shake (1/2),1000122.0,Milkshake chocolate strawberry,C,2032619.0,"Meal replacement, shake, naturdiet",G,
+holdout_2,v2,Spinach,2033456.0,Spinach,C,2033456.0,Spinach,C,
+holdout_2,v2,Spinach And Strawberry Salad,2033456.0,Spinach,G,2033456.0,Spinach,G,dish
+holdout_2,v2,Std breakfast,2029778.0,"Breakfast cereal, wheat loops",U,2000163.0,"Breakfast cereal, corn flakes",U,
+holdout_2,v2,Steamed Broccoli,1000325.0,Broccoli,C,1000325.0,Broccoli,C,
+holdout_2,v2,String beans,1000331.0,Green beans,C,1000331.0,Green beans,C,
+holdout_2,v2,Taco Bell Nachos Grande,2035631.0,Baked minced meat and nachos,C,1005973.0,Spicemix taco,C,
+holdout_2,v2,Toast,2031682.0,"Toast, gluten-free",C,2031682.0,"Toast, gluten-free",C,
+holdout_2,v2,Tootsie Roll,2031580.0,Swiss roll,G,2031580.0,Swiss roll,G,us_product
+holdout_2,v2,Tortilla,1005974.0,Bread white tortilla,C,1005974.0,Bread white tortilla,C,
+holdout_2,v2,Uncle Al's Strawberry Cremes Cookies,2029753.0,Biscuit,C,2029753.0,Biscuit,C,
+holdout_2,v2,brown rice,1000804.0,Brown rice boiled w/ salt,C,1000804.0,Brown rice boiled w/ salt,C,
+holdout_2,v2,multigrain cakes,2031608.0,Fat used in cakes,W,2031608.0,Fat used in cakes,W,vocabulary
+holdout_2,v2,peach slices,1000580.0,Peach,C,1000580.0,Peach,C,
