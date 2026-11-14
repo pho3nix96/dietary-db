@@ -23,6 +23,7 @@ people runs on **simulated** food records only: no real records have been analys
 | Clustering all foods (main pipeline) | Runs; agrees weakly with GIFT (ARI 0.21) | `python -m foodspace.run` |
 | Placing new foods | Works: the name alone finds the GIFT group for 82-89% of foods | `src/foodspace/placement.py` |
 | Food records | **Simulated only**: 100 people x 3 days | `data/simulated/food_records/` |
+| Real glucose data (CGMacros) | First test, meal level only (no food codes): responses are personal and pooling similar meals covers all meals, but macro-only meal similarity adds little beyond the person; relative dose gives weak, inconsistent support | `scripts/cgmacros_analysis.py`, [`docs/cgmacros_findings.md`](docs/cgmacros_findings.md) |
 | Diet comparison between people | Runs on the simulated records; weak but real signal; GIFT subgroup tree is the best tested food tree | `scripts/compare_diets.py`, `results/diet_similarity/` |
 | Splitting composite dishes into ingredients | Not done: needs the recipe download | see [Open work](#open-work) |
 | Explorer website | Live at https://pho3nix96.github.io/dietary-db/ (first deployed 2026-11-06) | `.github/workflows/pages.yml` |

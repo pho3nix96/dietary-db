@@ -108,3 +108,11 @@ The reference as a tool for dietary records: people are compared by what they ea
 - [ ] Test whether composition inside subgroups helps on real records, against an outside criterion (e.g. biomarkers)
 - [ ] Compare with servings per recommendation group as the person profile
 - [x] Enable GitHub Pages so the explorer site deploys (live at https://pho3nix96.github.io/dietary-db/)
+
+## 8. Real-data validation (CGMacros)
+- [x] Meal-level glucose responses, relative dose, subgroups and meal similarity on CGMacros (`scripts/cgmacros_analysis.py`, `docs/cgmacros_findings.md`)
+- [ ] Rerun on the official PhysioNet download (`scripts/fetch_cgmacros.sh`) and confirm the numbers
+- [ ] Code a sample of CGMacros meal photos into foods (FNDDS or the Nordic table) so the food trees can be tested
+- [ ] Check the personal response phenotype against fingerstick glucose
+- [ ] Explore personal response level vs gut microbiome (n = 45, exploratory)
+

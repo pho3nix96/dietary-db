@@ -1,0 +1,54 @@
+{
+  "people": 45,
+  "people_per_group": {
+    "prediabetes": 16,
+    "healthy": 15,
+    "T2D": 14
+  },
+  "meals_logged": 1661,
+  "meals_by_type": {
+    "dinner": 466,
+    "breakfast": 436,
+    "lunch": 435,
+    "snack": 324
+  },
+  "meals_standardised": 861,
+  "standardised_profiles": 16,
+  "meals_with_glucose_window": 1636,
+  "meals_clean_window": 1405,
+  "fiber_entries_set_missing": 26,
+  "libre_vs_dexcom_spearman": 0.8422955416510275,
+  "eer_hb_median": 2327.26404142551,
+  "tee_fitbit_median": 2559.9925011098358,
+  "eer_hb_vs_fitbit_spearman": 0.7474277660324172,
+  "meals_analysed": 1405,
+  "standard_analysed": 830,
+  "free_meals_with_exact_repeat_same_person": 0.06782608695652174,
+  "mantel_within_person": {
+    "composition": {
+      "rho": 0.0634969897835356,
+      "p": 0.001
+    },
+    "fraction": {
+      "rho": 0.07101586079005749,
+      "p": 0.001
+    },
+    "fused": {
+      "rho": 0.07288859247108188,
+      "p": 0.001
+    }
+  },
+  "phenotype_agreement": {
+    "n_people": 42.0,
+    "spearman_standard_vs_free": 0.7233611538773196,
+    "spearman_within_group": 0.6340653107527754,
+    "p_within_group": 6.53524360561758e-06,
+    "n_people_libre_std_vs_dexcom_free": 42.0,
+    "spearman_standard_vs_free_libre_std_vs_dexcom_free": 0.4741106879507334,
+    "spearman_within_group_libre_std_vs_dexcom_free": 0.31804553925937934,
+    "p_within_group_libre_std_vs_dexcom_free": 0.04011092970120994
+  },
+  "identical_meal_abs_diff_within": 14.477092544953369,
+  "identical_meal_abs_diff_between": 28.766321987463378,
+  "identical_meal_pairs_within": 169
+}

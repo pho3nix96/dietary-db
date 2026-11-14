@@ -1,0 +1,5 @@
+a,b,r_diff,ci_low,ci_high,n_meals
+"similar meals, same person (kNN)",population + person offset,0.0711331015629611,-0.028632126796621336,0.14962911552534439,575
+"similar meals, same person (kNN)",population (macros + group),0.28531908238993503,0.13816330624523399,0.4201248970859609,575
+population + person offset,population (macros + group),0.21418598082697393,0.1128738631378813,0.3222422014199548,575
+"similar meals, same subgroup (kNN, other people)",population (macros + group),0.06369352716057661,-0.023310981551793813,0.13488818500371544,575
