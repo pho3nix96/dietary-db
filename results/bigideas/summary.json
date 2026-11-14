@@ -1,0 +1,128 @@
+{
+  "dataset": "BIG IDEAs Lab Glycemic Variability and Wearable Device Data 1.1.2 (PhysioNet, ODC-By 1.0)",
+  "reference": "data/processed/foods_nordic.csv",
+  "reference_foods": 6841,
+  "participants": 16,
+  "lines": 1422,
+  "distinct_item_names": 617,
+  "lines_with_app_description": 0.774,
+  "coverage_hybrid": {
+    "lines": {
+      "matched": 0.7925,
+      "no_similar_name": 0.1097,
+      "composition_mismatch": 0.0956,
+      "non_food": 0.0021
+    },
+    "energy": {
+      "matched": 0.7796,
+      "composition_mismatch": 0.1055,
+      "no_similar_name": 0.1149,
+      "non_food": 0.0
+    }
+  },
+  "coverage_name_only": {
+    "lines": {
+      "matched": 0.7278,
+      "composition_mismatch": 0.192,
+      "no_similar_name": 0.0781,
+      "non_food": 0.0021
+    },
+    "energy": {
+      "matched": 0.6913,
+      "composition_mismatch": 0.2114,
+      "no_similar_name": 0.0973,
+      "non_food": 0.0
+    }
+  },
+  "items_matched": {
+    "hybrid": 0.724,
+    "name_only": 0.639,
+    "hybrid_without_wording_table": 0.676
+  },
+  "hybrid_changed_name_only_choice": 0.335,
+  "macro_agreement": {
+    "weighed_matched_lines": 177,
+    "profile_distance_matched_items": {
+      "median": 0.086,
+      "p75": 0.148,
+      "p90": 0.218
+    }
+  },
+  "hand_review": {
+    "holdout_1": {
+      "n_items": 148,
+      "matcher_version_reviewed": "v1",
+      "hybrid": {
+        "items_scored": 121,
+        "top_candidate_right_food": 0.669,
+        "top_candidate_right_group": 0.851,
+        "accepted": 0.702,
+        "precision_food_among_accepted": 0.8,
+        "precision_group_among_accepted": 0.906,
+        "recall_of_right_food": 0.84
+      },
+      "name": {
+        "items_scored": 129,
+        "top_candidate_right_food": 0.597,
+        "top_candidate_right_group": 0.767,
+        "accepted": 0.605,
+        "precision_food_among_accepted": 0.808,
+        "precision_group_among_accepted": 0.962,
+        "recall_of_right_food": 0.818
+      },
+      "failure_types": {
+        "dish": 18,
+        "us_product": 10,
+        "generic_name": 10,
+        "vocabulary": 10,
+        "us_food": 9,
+        "near_variant": 2
+      }
+    },
+    "holdout_2": {
+      "n_items": 99,
+      "matcher_version_reviewed": "v2",
+      "hybrid": {
+        "items_scored": 98,
+        "top_candidate_right_food": 0.755,
+        "top_candidate_right_group": 0.878,
+        "accepted": 0.724,
+        "precision_food_among_accepted": 0.831,
+        "precision_group_among_accepted": 0.915,
+        "recall_of_right_food": 0.797
+      },
+      "name": {
+        "items_scored": 99,
+        "top_candidate_right_food": 0.717,
+        "top_candidate_right_group": 0.848,
+        "accepted": 0.667,
+        "precision_food_among_accepted": 0.864,
+        "precision_group_among_accepted": 0.955,
+        "recall_of_right_food": 0.803
+      },
+      "failure_types": {
+        "dish": 8,
+        "us_product": 7,
+        "vocabulary": 3,
+        "generic_name": 3,
+        "near_variant": 2,
+        "us_food": 2
+      }
+    }
+  },
+  "glucose": {
+    "meals_with_cgm_window": 428,
+    "meals_analysed_carb_ge_10g": 345,
+    "meals_in_model": 327,
+    "groups_in_model": 10,
+    "r2_carb_fat_protein_person": 0.143,
+    "r2_plus_main_source_group": 0.183,
+    "f_test_group": {
+      "F": 1.59,
+      "p": 0.117,
+      "df": 9
+    },
+    "r2_plus_sugar_share_instead": 0.148,
+    "spearman_iauc_vs_carb": 0.268
+  }
+}
